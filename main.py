@@ -1,6 +1,6 @@
 from scraper.extractor import obtener_html
 from scraper.parser import extraer_datos
-from scraper.db import guardar_datos  # Importación correcta
+from scraper.db import guardar_datos
 
 # URL de la página del IBEX 35 en Investing.com
 url = "https://es.investing.com/indices/spain-35"
