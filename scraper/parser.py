@@ -2,7 +2,8 @@ from bs4 import BeautifulSoup
 
 def extraer_datos(html):
     """
-    Analiza el HTML y extrae el nombre del índice y su precio actual.
+    Analiza el HTML y extrae el nombre del índice, su precio actual,
+    la variación en puntos y la variación en porcentaje.
     """
     soup = BeautifulSoup(html, 'html.parser')
 
@@ -11,7 +12,17 @@ def extraer_datos(html):
     nombre = nombre_elemento.text.strip() if nombre_elemento else 'Nombre no encontrado'
 
     # Extraer el precio actual
-    precio_elemento = soup.find('div', class_='ml-3 table-cell w-[75px] max-w-[75px] flex-none overflow-hidden whitespace-nowrap text-right text-xs font-normal leading-4 text-[#181C21] rtl:text-right')
+    precio_elemento = soup.find('span', {'data-test': 'instrument-price-last'})
     precio = precio_elemento.text.strip() if precio_elemento else 'Precio no encontrado'
 
-    return nombre, precio
+    # Extraer la variación en puntos (manteniendo el signo)
+    variacion_elemento = soup.find('span', {'data-test': 'instrument-price-change'})
+    variacion = variacion_elemento.text.strip() if variacion_elemento else 'Variación no encontrada'
+
+    # Extraer la variación en porcentaje (manteniendo el signo y el símbolo %)
+    porcentaje_elemento = soup.find('span', {'data-test': 'instrument-price-change-percent'})
+    porcentaje = porcentaje_elemento.text.strip() if porcentaje_elemento else 'Porcentaje no encontrado'
+
+    return nombre, precio, variacion, porcentaje
+
+
