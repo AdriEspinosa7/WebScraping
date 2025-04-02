@@ -1,27 +1,36 @@
 from bs4 import BeautifulSoup
 
-def extraer_datos(html):
+
+def extraer_datos(html, indice):
     """
-    Analiza el HTML y extrae el nombre del índice, su precio actual,
-    la variación en puntos y la variación en porcentaje.
+    Extrae el nombre del índice, precio, variación y porcentaje usando los atributos data-test.
+    Se espera que para IBEX 35 y otros índices con estructura similar se encuentren:
+      - Precio: data-test="instrument-price-last"
+      - Variación: data-test="instrument-price-change"
+      - Porcentaje: data-test="instrument-price-change-percent"
     """
     soup = BeautifulSoup(html, 'html.parser')
 
-    # Extraer el nombre del índice
+    # Extraer el nombre (generalmente en <h1>)
     nombre_elemento = soup.find('h1')
-    nombre = nombre_elemento.text.strip() if nombre_elemento else 'Nombre no encontrado'
+    nombre = nombre_elemento.text.strip() if nombre_elemento else "No encontrado"
 
-    # Extraer el precio actual
+    # Extraer el precio
     precio_elemento = soup.find('span', {'data-test': 'instrument-price-last'})
-    precio = precio_elemento.text.strip() if precio_elemento else 'Precio no encontrado'
+    precio = precio_elemento.text.strip() if precio_elemento else "No encontrado"
 
-    # Extraer la variación en puntos (manteniendo el signo)
+    # Extraer la variación
     variacion_elemento = soup.find('span', {'data-test': 'instrument-price-change'})
-    variacion = variacion_elemento.text.strip() if variacion_elemento else 'Variación no encontrada'
+    variacion = variacion_elemento.text.strip() if variacion_elemento else "No encontrado"
 
-    # Extraer la variación en porcentaje (manteniendo el signo y el símbolo %)
+    # Extraer el porcentaje
     porcentaje_elemento = soup.find('span', {'data-test': 'instrument-price-change-percent'})
-    porcentaje = porcentaje_elemento.text.strip() if porcentaje_elemento else 'Porcentaje no encontrado'
+    porcentaje = porcentaje_elemento.text.strip() if porcentaje_elemento else "No encontrado"
+
+    print(f"Nombre encontrado: {nombre}")
+    print(f"Precio encontrado: {precio}")
+    print(f"Variación encontrada: {variacion}")
+    print(f"Porcentaje encontrado: {porcentaje}")
 
     return nombre, precio, variacion, porcentaje
 

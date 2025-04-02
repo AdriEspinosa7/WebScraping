@@ -6,24 +6,31 @@ import time
 
 def obtener_html(url):
     """
-    Selenium para obtener el HTML de una página que carga contenido dinámico con JavaScript.
+    Abre la URL con Selenium en modo headless, espera a que cargue la página y devuelve el HTML.
     """
-    # Configurar Chrome en modo "headless" (sin abrir ventana)
     options = Options()
-    options.add_argument("--headless")
+    options.add_argument("--headless")       # Modo sin interfaz gráfica
     options.add_argument("--disable-gpu")
-    options.add_argument("--window-size=1920x1080")
+    options.add_argument("--no-sandbox")
+    options.add_argument("--disable-dev-shm-usage")
 
-    # Descargar y configurar ChromeDriver automáticamente
+    # Iniciar el WebDriver
     service = Service(ChromeDriverManager().install())
     driver = webdriver.Chrome(service=service, options=options)
 
     try:
-        driver.get(url)  # Abrir la URL
-        time.sleep(5)  # Esperar a que la página cargue
-
-        return driver.page_source  # Devolver el HTML de la página
+        driver.get(url)
+        # Esperar 5-10 segundos para que se cargue todo el contenido dinámico
+        time.sleep(8)
+        html = driver.page_source
+        return html
+    except Exception as e:
+        print(f"Error al obtener el HTML: {e}")
+        return None
     finally:
-        driver.quit()  # Cerrar el navegador
+        driver.quit()
+
+
+
 
 

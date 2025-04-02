@@ -1,23 +1,33 @@
 from scraper.extractor import obtener_html
 from scraper.parser import extraer_datos
-from scraper.db import guardar_datos
+from scraper.db import guardar_datos  # Asumiendo que guardar_datos ya está funcionando bien
 
-# URL de la página del IBEX 35 en Investing.com
-url = "https://es.investing.com/indices/spain-35"
+indices = {
+    "IBEX 35": "https://es.investing.com/indices/spain-35",
+    "S&P 500": "https://es.investing.com/indices/us-spx-500",
+    "NASDAQ 100": "https://es.investing.com/indices/nq-100",
+    "DAX 40": "https://es.investing.com/indices/germany-30",
+    "MSCI WORLD": "https://es.investing.com/indices/msci-world"
+}
 
-# Obtener HTML de la página
-html = obtener_html(url)
+for nombre_indice, url in indices.items():
+    print(f"Procesando {nombre_indice}...")
+    html = obtener_html(url)
+    if html:
+        try:
+            nombre, precio, variacion, porcentaje = extraer_datos(html, nombre_indice)
+            # Aquí puedes convertir el precio a float si es necesario
+            # Por ejemplo, quitar separadores y cambiar coma por punto:
+            if precio != "No encontrado":
+                precio_num = float(precio.replace('.', '').replace(',', '.'))
+            else:
+                precio_num = 0.0
 
-# Extraer datos si el HTML se ha obtenido correctamente
-if html:
-    nombre, precio, variacion, porcentaje = extraer_datos(html)
-    print(f"Nombre del índice: {nombre}")
-    print(f"Precio actual: {precio}")
-    print(f"Variación en puntos: {variacion}")
-    print(f"Variación porcentual: {porcentaje}")
+            # Luego guarda los datos en la base de datos
+            guardar_datos(nombre, precio_num, variacion, porcentaje)
+        except Exception as e:
+            print(f"Error al procesar {nombre_indice}: {e}")
+    else:
+        print(f"No se pudo obtener HTML para {nombre_indice}")
 
-    # Guardar en MySQL
-    guardar_datos(nombre, precio, variacion, porcentaje)
-else:
-    print("No se pudo obtener el HTML de la página.")
 
