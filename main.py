@@ -9,6 +9,7 @@ from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
 from database.db_manager import guardar_datos
 from log_utils import log_info, log_error
+from scraper.bme_scraper import ejecutar_scraping_empresas_bme
 
 # ===============================
 # Configuración del Navegador
@@ -81,14 +82,14 @@ def obtener_datos(url, reintentos=3):
     for intento in range(reintentos):
         try:
             driver.get(url)
-            time.sleep(5)
+            time.sleep(5)  # Espera estática: podría sustituirse por espera explícita si fallara
 
             nombre = driver.find_element(By.CSS_SELECTOR, "h1").text.strip()
             precio_text = driver.find_element(By.CSS_SELECTOR, "span[data-test='instrument-price-last']").text.strip()
             variacion = driver.find_element(By.CSS_SELECTOR, "span[data-test='instrument-price-change']").text.strip()
             porcentaje = driver.find_element(By.CSS_SELECTOR, "span[data-test='instrument-price-change-percent']").text.strip()
 
-            precio_num = float(precio_text.replace(".", "").replace(",", "."))
+            precio_num = float(precio_text.replace(".", "").replace(",", "."))  # Adaptación al formato europeo
 
             return nombre, precio_num, variacion, porcentaje
 
@@ -123,17 +124,12 @@ for indice, url in indices.items():
         else:
             omitidos += 1
             print(f"ℹ️ Ya existía un registro para {nombre} hoy. Se omitió.")
-
     else:
         log_error(f"❌ No se pudieron obtener datos para {indice}.")
         fallidos += 1
 
-# ===============================
-# Cierre del navegador
-# ===============================
-
-log_info("🏁 Fin del proceso de scraping. Navegador cerrado.")
 driver.quit()
+log_info("🏁 Fin del proceso de scraping. Navegador cerrado.")
 
 # ===============================
 # Resumen Final
@@ -147,6 +143,12 @@ log_info("📊 RESUMEN FINAL:")
 log_info(f"✅ Índices guardados: {guardados}")
 log_info(f"ℹ️ Índices omitidos (ya estaban en la BD): {omitidos}")
 log_info(f"❌ Fallos al obtener datos: {fallidos}")
+
+# ===============================
+# Scraping de empresas BME
+# ===============================
+ejecutar_scraping_empresas_bme()
+
 
 
 

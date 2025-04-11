@@ -42,7 +42,7 @@ def conectar():
     )
 
 # ========================
-# Crear tabla si no existe
+# Crear tabla 'indices' si no existe (solo para índices bursátiles)
 # ========================
 def crear_tabla_si_no_existe():
     conexion = conectar()
@@ -70,7 +70,7 @@ def crear_tabla_si_no_existe():
         conexion.close()
 
 # ========================
-# Verificar si ya existe un registro ese día
+# Verificar si ya existe un registro ese día para un índice concreto
 # ========================
 def existe_registro(nombre):
     conexion = conectar()
@@ -92,12 +92,12 @@ def existe_registro(nombre):
         conexion.close()
 
 # ========================
-# Guardar datos
+# Guardar datos de un índice bursátil
 # ========================
 def guardar_datos(nombre, precio, variacion, porcentaje, fecha_hora):
     if existe_registro(nombre):
         log_info(f"📛 Ya existe un registro para '{nombre}' en la fecha actual. No se insertó.")
-        return
+        return False  # Ya existía
 
     conexion = conectar()
     cursor = conexion.cursor()
@@ -111,17 +111,60 @@ def guardar_datos(nombre, precio, variacion, porcentaje, fecha_hora):
         cursor.execute(consulta, valores)
         conexion.commit()
         log_info(f"📥 Guardado: {nombre} - {precio} - {variacion} - {porcentaje}")
+        return True  # Guardado exitosamente
     except mysql.connector.Error as error:
         log_error(f"❌ Error al guardar en MySQL: {error}")
+        return False
     finally:
         cursor.close()
         conexion.close()
 
 # ========================
-# Inicialización
+# Inicialización (crear BD y tabla 'indices')
 # ========================
 crear_base_datos_si_no_existe()
 crear_tabla_si_no_existe()
+
+# ========================
+# Guardar datos anuales de empresas cotizadas (BME)
+# ========================
+def insertar_datos_empresa(datos):
+    conexion = conectar()
+    cursor = conexion.cursor()
+
+    consulta = """
+        INSERT INTO datos_empresas (
+            empresa, anio, capitalizacion, num_acciones,
+            precio_cierre, ultimo_precio, precio_max,
+            precio_min, volumen, efectivo, fecha_registro
+        ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+        ON DUPLICATE KEY UPDATE
+            capitalizacion = VALUES(capitalizacion),
+            num_acciones = VALUES(num_acciones),
+            precio_cierre = VALUES(precio_cierre),
+            ultimo_precio = VALUES(ultimo_precio),
+            precio_max = VALUES(precio_max),
+            precio_min = VALUES(precio_min),
+            volumen = VALUES(volumen),
+            efectivo = VALUES(efectivo)
+    """
+
+    valores = (
+        datos["empresa"], datos["anio"], datos["capitalizacion"], datos["num_acciones"],
+        datos["precio_cierre"], datos["ultimo_precio"], datos["precio_max"],
+        datos["precio_min"], datos["volumen"], datos["efectivo"], datos["fecha_registro"]
+    )
+
+    try:
+        cursor.execute(consulta, valores)
+        conexion.commit()
+        log_info(f"📥 Insertado/actualizado: {datos['empresa']} - {datos['anio']}")
+    except mysql.connector.Error as error:
+        log_error(f"❌ Error al insertar datos de empresa: {error}")
+    finally:
+        cursor.close()
+        conexion.close()
+
 
 
 

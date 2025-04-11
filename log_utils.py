@@ -1,14 +1,33 @@
-from datetime import datetime
+import logging
 
-# Ruta del archivo de log
-LOG_FILE = "log.txt"
+def configurar_logger():
+    """
+    Configura el logger principal del proyecto para escribir en 'log.txt'.
+    Asegura que no se añadan múltiples handlers si ya hay uno configurado.
+    """
+    logger = logging.getLogger()
+    logger.setLevel(logging.INFO)
 
+    if not logger.handlers:
+        handler = logging.FileHandler('log.txt', encoding='utf-8')
+        formatter = logging.Formatter('%(asctime)s [%(levelname)s] %(message)s')
+        handler.setFormatter(formatter)
+        logger.addHandler(handler)
+
+    return logger
+
+# Configurar logger al importar el módulo
+configurar_logger()
+
+# Funciones auxiliares para registrar mensajes
 def log_info(mensaje):
-    """Registra un mensaje informativo con marca de tiempo."""
-    with open(LOG_FILE, "a", encoding="utf-8") as f:
-        f.write(f"[INFO] {datetime.now()} - {mensaje}\n")
+    logging.info(mensaje)
 
 def log_error(mensaje):
-    """Registra un mensaje de error con marca de tiempo."""
-    with open(LOG_FILE, "a", encoding="utf-8") as f:
-        f.write(f"[ERROR] {datetime.now()} - {mensaje}\n")
+    logging.error(mensaje)
+
+
+
+
+
+

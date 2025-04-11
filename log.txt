@@ -1,0 +1,127 @@
+2025-04-04 19:36:54,358 - INFO - ====== WebDriver manager ======
+2025-04-04 19:36:55,073 - INFO - Get LATEST chromedriver version for google-chrome
+2025-04-04 19:36:55,123 - INFO - Get LATEST chromedriver version for google-chrome
+2025-04-04 19:36:55,166 - INFO - Driver [C:\Users\yo_xa\.wdm\drivers\chromedriver\win64\134.0.6998.165\chromedriver-win32/chromedriver.exe] found in cache
+2025-04-04 19:37:02,396 - INFO - Datos guardados: IBEX 35 (IBEX) - 12430.6 - -760,60 - (-5,77%)
+2025-04-04 19:37:08,907 - INFO - Datos guardados: S&P 500 (SPX) - 5145.31 - -251,21 - (-4,66%)
+2025-04-04 19:37:15,208 - INFO - Datos guardados: Nasdaq 100 (NDX) - 17617.53 - -903,94 - (-4,88%)
+2025-04-04 19:37:21,313 - INFO - Datos guardados: DAX (GDAXI) - 20705.02 - -1.012,37 - (-4,66%)
+2025-04-04 19:37:27,830 - INFO - Datos guardados: MSCI World (MIWO00000PUS) - 3352.65 - -179,99 - (-5,10%)
+2025-04-07 18:25:33,421 - INFO - ====== WebDriver manager ======
+2025-04-07 18:25:34,473 - INFO - Get LATEST chromedriver version for google-chrome
+2025-04-07 18:25:34,568 - INFO - Get LATEST chromedriver version for google-chrome
+2025-04-07 18:25:34,621 - INFO - Get LATEST chromedriver version for google-chrome
+2025-04-07 18:25:34,731 - INFO - WebDriver version 134.0.6998.165 selected
+2025-04-07 18:25:34,735 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/134.0.6998.165/win32/chromedriver-win32.zip
+2025-04-07 18:25:34,735 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/134.0.6998.165/win32/chromedriver-win32.zip
+2025-04-07 18:25:34,818 - INFO - Driver downloading response is 200
+2025-04-07 18:25:35,538 - INFO - Get LATEST chromedriver version for google-chrome
+2025-04-07 18:25:36,136 - INFO - Driver has been saved in cache [C:\Users\yo_xa\.wdm\drivers\chromedriver\win64\134.0.6998.165]
+2025-04-07 18:25:45,370 - INFO - \u2705 Registro insertado en MySQL: IBEX 35 (IBEX) - 2025-04-07 18:25:45.319673
+2025-04-07 18:25:45,371 - INFO - \u2705 Datos guardados: IBEX 35 (IBEX) - 11783.4 - -638,60 - (-5,14%)
+2025-04-07 18:25:51,953 - INFO - \u2705 Registro insertado en MySQL: S&P 500 (SPX) - 2025-04-07 18:25:51.939596
+2025-04-07 18:25:51,953 - INFO - \u2705 Datos guardados: S&P 500 (SPX) - 4997.9 - -76,15 - (-1,48%)
+2025-04-07 18:25:58,614 - INFO - \u2705 Registro insertado en MySQL: Nasdaq 100 (NDX) - 2025-04-07 18:25:58.598877
+2025-04-07 18:25:58,614 - INFO - \u2705 Datos guardados: Nasdaq 100 (NDX) - 17230.37 - -167,33 - (-0,96%)
+2025-04-07 18:26:05,184 - INFO - \u2705 Registro insertado en MySQL: DAX (GDAXI) - 2025-04-07 18:26:05.180383
+2025-04-07 18:26:05,185 - INFO - \u2705 Datos guardados: DAX (GDAXI) - 19761.8 - -879,92 - (-4,26%)
+2025-04-07 18:26:11,446 - INFO - \u2705 Registro insertado en MySQL: MSCI World (MIWO00000PUS) - 2025-04-07 18:26:11.430282
+2025-04-07 18:26:11,447 - INFO - \u2705 Datos guardados: MSCI World (MIWO00000PUS) - 3227.5 - -98,78 - (-2,97%)
+[ERROR] 2025-04-08 09:22:13.274065 - ❌ Error al crear la base de datos: 2003 (HY000): Can't connect to MySQL server on 'localhost:3306' (10061)
+[INFO] 2025-04-08 09:23:28.574587 - ✅ Base de datos 'bolsa' verificada o creada.
+[INFO] 2025-04-08 09:23:28.578403 - ✅ Tabla 'indices' verificada o creada correctamente.
+[INFO] 2025-04-08 09:26:26.406906 - ✅ Base de datos 'bolsa' verificada o creada.
+[INFO] 2025-04-08 09:26:26.408650 - ✅ Tabla 'indices' verificada o creada correctamente.
+[INFO] 2025-04-08 09:30:43.652558 - ✅ Base de datos 'bolsa' verificada o creada.
+[INFO] 2025-04-08 09:30:43.654354 - ✅ Tabla 'indices' verificada o creada correctamente.
+[ERROR] 2025-04-08 09:30:52.404619 - ❌ Error al guardar en MySQL: 1054 (42S22): Unknown column 'fecha' in 'where clause'
+[ERROR] 2025-04-08 09:30:58.942460 - ❌ Error al guardar en MySQL: 1054 (42S22): Unknown column 'fecha' in 'where clause'
+[ERROR] 2025-04-08 09:31:05.236240 - ❌ Error al guardar en MySQL: 1054 (42S22): Unknown column 'fecha' in 'where clause'
+[ERROR] 2025-04-08 09:31:11.589591 - ❌ Error al guardar en MySQL: 1054 (42S22): Unknown column 'fecha' in 'where clause'
+[ERROR] 2025-04-08 09:31:17.979940 - ❌ Error al guardar en MySQL: 1054 (42S22): Unknown column 'fecha' in 'where clause'
+[INFO] 2025-04-08 09:37:18.589068 - ✅ Base de datos 'bolsa' verificada o creada.
+[INFO] 2025-04-08 09:37:18.591010 - ✅ Tabla 'indices' verificada o creada correctamente.
+[ERROR] 2025-04-08 09:37:27.973902 - ❌ Error al guardar en MySQL: 1054 (42S22): Unknown column 'fecha' in 'field list'
+[ERROR] 2025-04-08 09:37:34.629862 - ❌ Error al guardar en MySQL: 1054 (42S22): Unknown column 'fecha' in 'field list'
+[ERROR] 2025-04-08 09:37:41.496904 - ❌ Error al guardar en MySQL: 1054 (42S22): Unknown column 'fecha' in 'field list'
+[ERROR] 2025-04-08 09:37:47.831168 - ❌ Error al guardar en MySQL: 1054 (42S22): Unknown column 'fecha' in 'field list'
+[ERROR] 2025-04-08 09:37:54.680346 - ❌ Error al guardar en MySQL: 1054 (42S22): Unknown column 'fecha' in 'field list'
+[INFO] 2025-04-08 09:39:22.256168 - ✅ Base de datos 'bolsa' verificada o creada.
+[INFO] 2025-04-08 09:39:22.258442 - ✅ Tabla 'indices' verificada o creada correctamente.
+[INFO] 2025-04-08 09:44:05.574702 - ✅ Base de datos 'bolsa' verificada o creada.
+[INFO] 2025-04-08 09:44:05.576264 - ✅ Tabla 'indices' verificada o creada correctamente.
+[INFO] 2025-04-08 09:44:14.445124 - 📥 Guardado: IBEX 35 (IBEX) - 11749.31 - -34,09 - (-0,29%)
+[INFO] 2025-04-08 09:44:20.925667 - 📥 Guardado: S&P 500 (SPX) - 5062.25 - -11,83 - (-0,23%)
+[INFO] 2025-04-08 09:44:27.236793 - 📥 Guardado: Nasdaq 100 (NDX) - 17430.68 - +32,99 - (+0,19%)
+[INFO] 2025-04-08 09:44:33.564652 - 📥 Guardado: DAX (GDAXI) - 20020.86 - +259,06 - (+1,31%)
+[INFO] 2025-04-08 09:44:39.941735 - 📥 Guardado: MSCI World (MIWO00000PUS) - 3287.14 - +20,14 - (+0,62%)
+[INFO] 2025-04-08 14:15:05.684447 - ✅ Base de datos 'bolsa' verificada o creada.
+[INFO] 2025-04-08 14:15:05.686983 - ✅ Tabla 'indices' verificada o creada correctamente.
+[INFO] 2025-04-08 14:15:14.909593 - 📛 Ya existe un registro para 'IBEX 35 (IBEX)' en la fecha actual. No se insertó.
+[INFO] 2025-04-08 14:15:21.387160 - 📛 Ya existe un registro para 'S&P 500 (SPX)' en la fecha actual. No se insertó.
+[INFO] 2025-04-08 14:15:27.643465 - 📛 Ya existe un registro para 'Nasdaq 100 (NDX)' en la fecha actual. No se insertó.
+[INFO] 2025-04-08 14:15:34.105059 - 📛 Ya existe un registro para 'DAX (GDAXI)' en la fecha actual. No se insertó.
+[INFO] 2025-04-08 14:15:40.561417 - 📛 Ya existe un registro para 'MSCI World (MIWO00000PUS)' en la fecha actual. No se insertó.
+[INFO] 2025-04-08 14:26:35.892041 - ✅ Base de datos 'bolsa' verificada o creada.
+[INFO] 2025-04-08 14:26:35.894502 - ✅ Tabla 'indices' verificada o creada correctamente.
+[INFO] 2025-04-08 14:26:41.185042 - 🚀 Inicio del proceso de scraping de índices bursátiles.
+[INFO] 2025-04-08 14:26:48.138423 - 📛 Ya existe un registro para 'IBEX 35 (IBEX)' en la fecha actual. No se insertó.
+[INFO] 2025-04-08 14:26:54.875424 - 📛 Ya existe un registro para 'S&P 500 (SPX)' en la fecha actual. No se insertó.
+[INFO] 2025-04-08 14:27:01.620810 - 📛 Ya existe un registro para 'Nasdaq 100 (NDX)' en la fecha actual. No se insertó.
+[INFO] 2025-04-08 14:27:08.317204 - 📛 Ya existe un registro para 'DAX (GDAXI)' en la fecha actual. No se insertó.
+[INFO] 2025-04-08 14:27:14.893596 - 📛 Ya existe un registro para 'MSCI World (MIWO00000PUS)' en la fecha actual. No se insertó.
+[INFO] 2025-04-08 14:27:14.893834 - 🏁 Fin del proceso de scraping. Navegador cerrado.
+[INFO] 2025-04-08 14:27:17.006356 - 📊 RESUMEN FINAL:
+[INFO] 2025-04-08 14:27:17.007263 - ✅ Índices guardados: 0
+[INFO] 2025-04-08 14:27:17.007926 - ℹ️ Índices omitidos (ya estaban en la BD): 5
+[INFO] 2025-04-08 14:27:17.008538 - ❌ Fallos al obtener datos: 0
+[INFO] 2025-04-08 14:30:39.607179 - ✅ Base de datos 'bolsa' verificada o creada.
+[INFO] 2025-04-08 14:30:39.609874 - ✅ Tabla 'indices' verificada o creada correctamente.
+[INFO] 2025-04-08 14:30:41.514811 - 🚀 Inicio del proceso de scraping de índices bursátiles.
+[INFO] 2025-04-08 14:30:48.473969 - 📥 Guardado: IBEX 35 (IBEX) - 12045.21 - +261,81 - (+2,22%)
+[INFO] 2025-04-08 14:30:54.978300 - 📛 Ya existe un registro para 'S&P 500 (SPX)' en la fecha actual. No se insertó.
+[INFO] 2025-04-08 14:31:01.574417 - 📛 Ya existe un registro para 'Nasdaq 100 (NDX)' en la fecha actual. No se insertó.
+[INFO] 2025-04-08 14:31:08.015857 - 📛 Ya existe un registro para 'DAX (GDAXI)' en la fecha actual. No se insertó.
+[INFO] 2025-04-08 14:31:14.513815 - 📛 Ya existe un registro para 'MSCI World (MIWO00000PUS)' en la fecha actual. No se insertó.
+[INFO] 2025-04-08 14:31:14.514063 - 🏁 Fin del proceso de scraping. Navegador cerrado.
+[INFO] 2025-04-08 14:31:16.620343 - 📊 RESUMEN FINAL:
+[INFO] 2025-04-08 14:31:16.621192 - ✅ Índices guardados: 0
+[INFO] 2025-04-08 14:31:16.621870 - ℹ️ Índices omitidos (ya estaban en la BD): 5
+[INFO] 2025-04-08 14:31:16.622530 - ❌ Fallos al obtener datos: 0
+2025-04-10 11:36:24,265 [INFO] ✅ Base de datos 'bolsa' verificada o creada.
+2025-04-10 11:36:24,267 [INFO] ✅ Tabla 'indices' verificada o creada correctamente.
+2025-04-10 11:36:24,336 [INFO] ====== WebDriver manager ======
+2025-04-10 11:36:25,371 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-10 11:36:25,476 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-10 11:36:25,527 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-10 11:36:25,640 [INFO] WebDriver version 135.0.7049.84 selected
+2025-04-10 11:36:25,642 [INFO] Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/135.0.7049.84/win32/chromedriver-win32.zip
+2025-04-10 11:36:25,643 [INFO] About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/135.0.7049.84/win32/chromedriver-win32.zip
+2025-04-10 11:36:25,722 [INFO] Driver downloading response is 200
+2025-04-10 11:36:26,495 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-10 11:36:27,519 [INFO] Driver has been saved in cache [C:\Users\yo_xa\.wdm\drivers\chromedriver\win64\135.0.7049.84]
+2025-04-10 11:36:28,827 [INFO] 🚀 Inicio del proceso de scraping de índices bursátiles.
+2025-04-10 11:36:36,099 [INFO] 📥 Guardado: IBEX 35 (IBEX) - 12421.29 - +597,79 - (+5,06%)
+2025-04-10 11:36:42,437 [INFO] 📥 Guardado: S&P 500 (SPX) - 5456.9 - +474,13 - (+9,52%)
+2025-04-10 11:36:48,724 [INFO] 📥 Guardado: Nasdaq 100 (NDX) - 19145.06 - +2.054,66 - (+12,02%)
+2025-04-10 11:36:54,910 [INFO] 📥 Guardado: DAX (GDAXI) - 20744.72 - +1.065,06 - (+5,41%)
+2025-04-10 11:37:01,442 [INFO] 📥 Guardado: MSCI World (MIWO00000PUS) - 3511.35 - +46,59 - (+1,34%)
+2025-04-10 11:37:03,555 [INFO] 🏁 Fin del proceso de scraping. Navegador cerrado.
+2025-04-10 11:37:03,555 [INFO] 📊 RESUMEN FINAL:
+2025-04-10 11:37:03,555 [INFO] ✅ Índices guardados: 5
+2025-04-10 11:37:03,556 [INFO] ℹ️ Índices omitidos (ya estaban en la BD): 0
+2025-04-10 11:37:03,556 [INFO] ❌ Fallos al obtener datos: 0
+2025-04-10 11:37:03,556 [INFO] 🚀 Iniciando scraping de empresas BME
+2025-04-10 11:37:04,970 [INFO] 🔍 Iniciando scraping para BBVA
+2025-04-10 11:37:04,970 [INFO] 📄 Accediendo a la web de BBVA: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Banco-Bilbao-Vizcaya-Argentaria-ES0113211835
+2025-04-10 11:37:09,271 [INFO] 📥 Insertado/actualizado: BBVA - 2025
+2025-04-10 11:37:09,271 [INFO] ✅ Datos insertados para BBVA, año 2025
+2025-04-10 11:37:09,346 [INFO] 📥 Insertado/actualizado: BBVA - 2024
+2025-04-10 11:37:09,346 [INFO] ✅ Datos insertados para BBVA, año 2024
+2025-04-10 11:37:09,433 [INFO] 📥 Insertado/actualizado: BBVA - 2023
+2025-04-10 11:37:09,433 [INFO] ✅ Datos insertados para BBVA, año 2023
+2025-04-10 11:37:09,506 [INFO] 📥 Insertado/actualizado: BBVA - 2022
+2025-04-10 11:37:09,506 [INFO] ✅ Datos insertados para BBVA, año 2022
+2025-04-10 11:37:09,574 [INFO] 📥 Insertado/actualizado: BBVA - 2021
+2025-04-10 11:37:09,574 [INFO] ✅ Datos insertados para BBVA, año 2021
+2025-04-10 11:37:11,679 [INFO] ✅ Scraping de empresas BME finalizado.
