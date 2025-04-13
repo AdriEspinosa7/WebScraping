@@ -1,3 +1,5 @@
+import os
+import csv
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
@@ -15,6 +17,24 @@ def configurar_driver():
     opciones.add_argument("--no-sandbox")
     opciones.add_argument("--disable-dev-shm-usage")
     return webdriver.Chrome(options=opciones)
+
+
+def leer_empresas_bme_csv():
+    ruta_csv = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "empresas_bme.csv")
+    empresas = {}
+    try:
+        with open(ruta_csv, mode="r", encoding="utf-8") as archivo:
+            lector = csv.DictReader(archivo)
+            for fila in lector:
+                nombre = fila.get("nombre")
+                url = fila.get("url")
+                if nombre and url:
+                    empresas[nombre.strip()] = url.strip()
+        return empresas
+    except Exception as e:
+        log_error(f"❌ Error al leer empresas_bme.csv: {e}")
+        print(f"❌ Error al leer empresas_bme.csv: {e}")
+        return {}
 
 
 def extraer_tabla_bme(driver, url, empresa):
@@ -45,17 +65,30 @@ def extraer_tabla_bme(driver, url, empresa):
             print(f"⚠️ No se encontraron filas de datos para {empresa}")
             return
 
+        filas_validas = 0
+
         for fila in filas[1:]:
             celdas = fila.find_elements(By.XPATH, ".//td | .//th")
             valores = [celda.text.strip() for celda in celdas]
 
             if len(valores) == 9:
                 datos = parsear_fila_bme(valores, empresa)
+
+                if all(valor in ("", "-") for valor in datos.values()):
+                    log_info(f"⚠️ Fila ignorada para {empresa}, datos vacíos o nulos: {valores}")
+                    print(f"⚠️ Fila ignorada para {empresa}, datos vacíos o nulos")
+                    continue
+
                 insertar_datos_empresa(datos)
+                filas_validas += 1
                 log_info(f"✅ Datos insertados para {empresa}, año {datos['anio']}")
             else:
                 log_info(f"⚠️ Fila con columnas inesperadas en {empresa}: {len(valores)} columnas")
                 print(f"⚠️ Fila con columnas inesperadas en {empresa}: {len(valores)} columnas")
+
+        if filas_validas == 0:
+            log_info(f"⚠️ Todas las filas fueron ignoradas para {empresa}")
+            print(f"⚠️ Todas las filas fueron ignoradas para {empresa}")
 
     except TimeoutException:
         mensaje = f"❌ Timeout: no se encontró la tabla para {empresa}"
@@ -71,13 +104,16 @@ def extraer_tabla_bme(driver, url, empresa):
         print(mensaje)
 
 
+
 def ejecutar_scraping_empresas_bme():
-    empresas = {
-        "BBVA": "https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Banco-Bilbao-Vizcaya-Argentaria-ES0113211835"
-    }
+    empresas = leer_empresas_bme_csv()
 
     log_info("🚀 Iniciando scraping de empresas BME")
     print("🚀 Iniciando scraping de empresas BME...")
+
+    if not empresas:
+        print("❌ No se encontraron empresas válidas en el archivo CSV.")
+        return
 
     driver = configurar_driver()
 
@@ -93,6 +129,8 @@ def ejecutar_scraping_empresas_bme():
 
 if __name__ == "__main__":
     ejecutar_scraping_empresas_bme()
+
+
 
 
 

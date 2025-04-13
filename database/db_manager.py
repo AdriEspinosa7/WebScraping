@@ -132,30 +132,48 @@ def insertar_datos_empresa(datos):
     conexion = conectar()
     cursor = conexion.cursor()
 
-    consulta = """
-        INSERT INTO datos_empresas (
-            empresa, anio, capitalizacion, num_acciones,
-            precio_cierre, ultimo_precio, precio_max,
-            precio_min, volumen, efectivo, fecha_registro
-        ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
-        ON DUPLICATE KEY UPDATE
-            capitalizacion = VALUES(capitalizacion),
-            num_acciones = VALUES(num_acciones),
-            precio_cierre = VALUES(precio_cierre),
-            ultimo_precio = VALUES(ultimo_precio),
-            precio_max = VALUES(precio_max),
-            precio_min = VALUES(precio_min),
-            volumen = VALUES(volumen),
-            efectivo = VALUES(efectivo)
+    # Verificación previa: evitar duplicados exactos
+    consulta_check = """
+        SELECT COUNT(*) FROM datos_empresas WHERE 
+            empresa = %s AND anio = %s AND capitalizacion = %s AND num_acciones = %s AND 
+            precio_cierre = %s AND ultimo_precio = %s AND precio_max = %s AND precio_min = %s AND 
+            volumen = %s AND efectivo = %s
     """
-
-    valores = (
+    valores_check = (
         datos["empresa"], datos["anio"], datos["capitalizacion"], datos["num_acciones"],
-        datos["precio_cierre"], datos["ultimo_precio"], datos["precio_max"],
-        datos["precio_min"], datos["volumen"], datos["efectivo"], datos["fecha_registro"]
+        datos["precio_cierre"], datos["ultimo_precio"], datos["precio_max"], datos["precio_min"],
+        datos["volumen"], datos["efectivo"]
     )
 
     try:
+        cursor.execute(consulta_check, valores_check)
+        if cursor.fetchone()[0] > 0:
+            log_info(f"📛 Registro duplicado: {datos['empresa']} - {datos['anio']}. No se insertó.")
+            return  # Evita duplicado exacto
+
+        consulta = """
+            INSERT INTO datos_empresas (
+                empresa, anio, capitalizacion, num_acciones,
+                precio_cierre, ultimo_precio, precio_max,
+                precio_min, volumen, efectivo, fecha_registro
+            ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+            ON DUPLICATE KEY UPDATE
+                capitalizacion = VALUES(capitalizacion),
+                num_acciones = VALUES(num_acciones),
+                precio_cierre = VALUES(precio_cierre),
+                ultimo_precio = VALUES(ultimo_precio),
+                precio_max = VALUES(precio_max),
+                precio_min = VALUES(precio_min),
+                volumen = VALUES(volumen),
+                efectivo = VALUES(efectivo)
+        """
+
+        valores = (
+            datos["empresa"], datos["anio"], datos["capitalizacion"], datos["num_acciones"],
+            datos["precio_cierre"], datos["ultimo_precio"], datos["precio_max"],
+            datos["precio_min"], datos["volumen"], datos["efectivo"], datos["fecha_registro"]
+        )
+
         cursor.execute(consulta, valores)
         conexion.commit()
         log_info(f"📥 Insertado/actualizado: {datos['empresa']} - {datos['anio']}")
@@ -164,6 +182,7 @@ def insertar_datos_empresa(datos):
     finally:
         cursor.close()
         conexion.close()
+
 
 
 
