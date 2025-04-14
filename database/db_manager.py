@@ -149,7 +149,7 @@ def insertar_datos_empresa(datos):
         cursor.execute(consulta_check, valores_check)
         if cursor.fetchone()[0] > 0:
             log_info(f"📛 Registro duplicado: {datos['empresa']} - {datos['anio']}. No se insertó.")
-            return  # Evita duplicado exacto
+            return False  # Duplicado, no se insertó
 
         consulta = """
             INSERT INTO datos_empresas (
@@ -177,8 +177,12 @@ def insertar_datos_empresa(datos):
         cursor.execute(consulta, valores)
         conexion.commit()
         log_info(f"📥 Insertado/actualizado: {datos['empresa']} - {datos['anio']}")
+        return True  # Insertado correctamente
+
     except mysql.connector.Error as error:
         log_error(f"❌ Error al insertar datos de empresa: {error}")
+        return False
+
     finally:
         cursor.close()
         conexion.close()
