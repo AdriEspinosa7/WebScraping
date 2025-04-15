@@ -897,3 +897,231 @@
 2025-04-14 18:41:50,599 [INFO] ✅ Scraping de empresas BME finalizado.
 2025-04-14 18:41:50,600 [INFO] ✅ Scraping de empresas BME completado.
 2025-04-14 18:41:50,600 [INFO] === FIN DEL PROCESO DE SCRAPING ===
+2025-04-15 20:46:59,057 [INFO] ✅ Base de datos 'bolsa' verificada o creada.
+2025-04-15 20:46:59,059 [INFO] ✅ Tabla 'indices' verificada o creada correctamente.
+2025-04-15 20:50:51,594 [INFO] ✅ Base de datos 'bolsa' verificada o creada.
+2025-04-15 20:50:51,596 [INFO] ✅ Tabla 'indices' verificada o creada correctamente.
+2025-04-15 20:59:03,788 [INFO] ✅ Base de datos 'bolsa' verificada o creada.
+2025-04-15 20:59:03,790 [INFO] ✅ Tabla 'indices' verificada o creada correctamente.
+2025-04-15 20:59:03,897 [INFO] === INICIO DEL PROCESO DE SCRAPING ===
+2025-04-15 20:59:03,898 [INFO] ====== WebDriver manager ======
+2025-04-15 20:59:06,251 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-15 20:59:06,329 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-15 20:59:06,379 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-15 20:59:06,487 [INFO] WebDriver version 135.0.7049.84 selected
+2025-04-15 20:59:06,490 [INFO] Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/135.0.7049.84/win32/chromedriver-win32.zip
+2025-04-15 20:59:06,490 [INFO] About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/135.0.7049.84/win32/chromedriver-win32.zip
+2025-04-15 20:59:06,572 [INFO] Driver downloading response is 200
+2025-04-15 20:59:07,199 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-15 20:59:07,546 [INFO] Driver has been saved in cache [C:\Users\yo_xa\.wdm\drivers\chromedriver\win64\135.0.7049.84]
+2025-04-15 20:59:09,118 [INFO] 🚀 Inicio del scraping de índices bursátiles.
+2025-04-15 20:59:16,418 [INFO] 📥 Guardado: IBEX 35 (IBEX) - 12879.3 - +269,50 - (+2,14%)
+2025-04-15 20:59:22,734 [INFO] 📥 Guardado: S&P 500 (SPX) - 5406.7 - +0,73 - (+0,01%)
+2025-04-15 20:59:28,995 [INFO] 📥 Guardado: Nasdaq 100 (NDX) - 18846.43 - +50,41 - (+0,27%)
+2025-04-15 20:59:35,059 [INFO] 📥 Guardado: DAX (GDAXI) - 21231.52 - +276,69 - (+1,32%)
+2025-04-15 20:59:41,174 [INFO] 📥 Guardado: MSCI World (MIWO00000PUS) - 3516.27 - +2,11 - (+0,06%)
+2025-04-15 20:59:43,279 [INFO] 🏁 Fin del scraping. Navegador cerrado.
+2025-04-15 20:59:43,280 [INFO] 📊 RESUMEN FINAL:
+2025-04-15 20:59:43,280 [INFO] ✅ Índices guardados: 5
+2025-04-15 20:59:43,280 [INFO] ℹ️ Índices omitidos: 0
+2025-04-15 20:59:43,280 [INFO] ❌ Fallos: 0
+2025-04-15 20:59:43,280 [INFO] ✅ Scraping de índices completado.
+2025-04-15 20:59:45,214 [INFO] Se cargaron 3 empresas desde empresas_bme.csv
+2025-04-15 20:59:45,214 [INFO] 🚀 Iniciando scraping de empresas BME
+2025-04-15 20:59:45,214 [INFO] 🔍 Iniciando scraping para BBVA
+2025-04-15 20:59:45,214 [INFO] 📄 Accediendo a la web de BBVA: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Banco-Bilbao-Vizcaya-Argentaria-ES0113211835
+2025-04-15 20:59:46,358 [INFO] 📥 Insertado/actualizado: BBVA - 2025
+2025-04-15 20:59:46,358 [INFO] ✅ Datos insertados para BBVA, año 2025
+2025-04-15 20:59:46,432 [INFO] 📛 Registro duplicado: BBVA - 2024. No se insertó.
+2025-04-15 20:59:46,503 [INFO] 📛 Registro duplicado: BBVA - 2023. No se insertó.
+2025-04-15 20:59:46,576 [INFO] 📛 Registro duplicado: BBVA - 2022. No se insertó.
+2025-04-15 20:59:46,659 [INFO] 📛 Registro duplicado: BBVA - 2021. No se insertó.
+2025-04-15 20:59:46,659 [INFO] 🔍 Iniciando scraping para Inditex
+2025-04-15 20:59:46,659 [INFO] 📄 Accediendo a la web de Inditex: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Ind-De-Diseno-Textil-Inditex-ES0148396007
+2025-04-15 20:59:47,489 [INFO] 📥 Insertado/actualizado: Inditex - 2025
+2025-04-15 20:59:47,489 [INFO] ✅ Datos insertados para Inditex, año 2025
+2025-04-15 20:59:47,566 [INFO] 📛 Registro duplicado: Inditex - 2024. No se insertó.
+2025-04-15 20:59:47,637 [INFO] 📛 Registro duplicado: Inditex - 2023. No se insertó.
+2025-04-15 20:59:47,727 [INFO] 📛 Registro duplicado: Inditex - 2022. No se insertó.
+2025-04-15 20:59:47,792 [INFO] 📛 Registro duplicado: Inditex - 2021. No se insertó.
+2025-04-15 20:59:47,792 [INFO] 🔍 Iniciando scraping para Santander
+2025-04-15 20:59:47,792 [INFO] 📄 Accediendo a la web de Santander: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Banco-Santander-ES0113900J37
+2025-04-15 20:59:48,626 [INFO] 📥 Insertado/actualizado: Santander - 2025
+2025-04-15 20:59:48,627 [INFO] ✅ Datos insertados para Santander, año 2025
+2025-04-15 20:59:48,704 [INFO] 📛 Registro duplicado: Santander - 2024. No se insertó.
+2025-04-15 20:59:48,779 [INFO] 📛 Registro duplicado: Santander - 2023. No se insertó.
+2025-04-15 20:59:48,865 [INFO] 📛 Registro duplicado: Santander - 2022. No se insertó.
+2025-04-15 20:59:48,933 [INFO] 📛 Registro duplicado: Santander - 2021. No se insertó.
+2025-04-15 20:59:51,028 [INFO] ✅ Scraping de empresas BME finalizado.
+2025-04-15 20:59:51,028 [INFO] ✅ Scraping de empresas BME completado.
+2025-04-15 20:59:51,028 [INFO] 🔍 Iniciando scraping de PDFs IBEX 35...
+2025-04-15 20:59:55,314 [INFO] 📄 PDF encontrado: https://www.bolsasymercados.es/bme-exchange/docs/Indices/Avisos/esp/gestorindice/Aviso_Gestor_Indices_02-25.pdf
+2025-04-15 20:59:55,506 [INFO] 📥 PDF descargado correctamente.
+2025-04-15 20:59:55,682 [INFO] ⚠️ No se encontraron datos para insertar.
+2025-04-15 20:59:55,683 [ERROR] ❌ Error general durante el scraping de PDF: [WinError 32] El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso: 'C:\\Users\\yo_xa\\AppData\\Local\\Temp\\tmpcimx9x76.pdf'
+2025-04-15 20:59:55,683 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
+2025-04-15 20:59:55,683 [INFO] === FIN DEL PROCESO DE SCRAPING ===
+2025-04-15 21:04:49,520 [INFO] ✅ Base de datos 'bolsa' verificada o creada.
+2025-04-15 21:04:49,522 [INFO] ✅ Tabla 'indices' verificada o creada correctamente.
+2025-04-15 21:04:49,619 [INFO] === INICIO DEL PROCESO DE SCRAPING ===
+2025-04-15 21:04:49,619 [INFO] ====== WebDriver manager ======
+2025-04-15 21:04:51,753 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-15 21:04:51,812 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-15 21:04:51,861 [INFO] Driver [C:\Users\yo_xa\.wdm\drivers\chromedriver\win64\135.0.7049.84\chromedriver-win32/chromedriver.exe] found in cache
+2025-04-15 21:04:52,957 [INFO] 🚀 Inicio del scraping de índices bursátiles.
+2025-04-15 21:04:59,902 [INFO] 📛 Ya existe un registro para 'IBEX 35 (IBEX)' en la fecha actual. No se insertó.
+2025-04-15 21:05:06,208 [INFO] 📛 Ya existe un registro para 'S&P 500 (SPX)' en la fecha actual. No se insertó.
+2025-04-15 21:05:12,474 [INFO] 📛 Ya existe un registro para 'Nasdaq 100 (NDX)' en la fecha actual. No se insertó.
+2025-04-15 21:05:18,990 [INFO] 📛 Ya existe un registro para 'DAX (GDAXI)' en la fecha actual. No se insertó.
+2025-04-15 21:05:25,184 [INFO] 📛 Ya existe un registro para 'MSCI World (MIWO00000PUS)' en la fecha actual. No se insertó.
+2025-04-15 21:05:27,282 [INFO] 🏁 Fin del scraping. Navegador cerrado.
+2025-04-15 21:05:27,283 [INFO] 📊 RESUMEN FINAL:
+2025-04-15 21:05:27,283 [INFO] ✅ Índices guardados: 0
+2025-04-15 21:05:27,283 [INFO] ℹ️ Índices omitidos: 5
+2025-04-15 21:05:27,283 [INFO] ❌ Fallos: 0
+2025-04-15 21:05:27,283 [INFO] ✅ Scraping de índices completado.
+2025-04-15 21:05:28,666 [INFO] Se cargaron 3 empresas desde empresas_bme.csv
+2025-04-15 21:05:28,666 [INFO] 🚀 Iniciando scraping de empresas BME
+2025-04-15 21:05:28,666 [INFO] 🔍 Iniciando scraping para BBVA
+2025-04-15 21:05:28,666 [INFO] 📄 Accediendo a la web de BBVA: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Banco-Bilbao-Vizcaya-Argentaria-ES0113211835
+2025-04-15 21:05:31,072 [INFO] 📛 Registro duplicado: BBVA - 2025. No se insertó.
+2025-04-15 21:05:31,130 [INFO] 📛 Registro duplicado: BBVA - 2024. No se insertó.
+2025-04-15 21:05:31,184 [INFO] 📛 Registro duplicado: BBVA - 2023. No se insertó.
+2025-04-15 21:05:31,241 [INFO] 📛 Registro duplicado: BBVA - 2022. No se insertó.
+2025-04-15 21:05:31,300 [INFO] 📛 Registro duplicado: BBVA - 2021. No se insertó.
+2025-04-15 21:05:31,300 [INFO] ⚠️ Todas las filas fueron ignoradas para BBVA
+2025-04-15 21:05:31,300 [INFO] 🔍 Iniciando scraping para Inditex
+2025-04-15 21:05:31,300 [INFO] 📄 Accediendo a la web de Inditex: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Ind-De-Diseno-Textil-Inditex-ES0148396007
+2025-04-15 21:05:32,165 [INFO] 📛 Registro duplicado: Inditex - 2025. No se insertó.
+2025-04-15 21:05:32,235 [INFO] 📛 Registro duplicado: Inditex - 2024. No se insertó.
+2025-04-15 21:05:32,314 [INFO] 📛 Registro duplicado: Inditex - 2023. No se insertó.
+2025-04-15 21:05:32,397 [INFO] 📛 Registro duplicado: Inditex - 2022. No se insertó.
+2025-04-15 21:05:32,460 [INFO] 📛 Registro duplicado: Inditex - 2021. No se insertó.
+2025-04-15 21:05:32,461 [INFO] ⚠️ Todas las filas fueron ignoradas para Inditex
+2025-04-15 21:05:32,461 [INFO] 🔍 Iniciando scraping para Santander
+2025-04-15 21:05:32,461 [INFO] 📄 Accediendo a la web de Santander: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Banco-Santander-ES0113900J37
+2025-04-15 21:05:33,298 [INFO] 📛 Registro duplicado: Santander - 2025. No se insertó.
+2025-04-15 21:05:33,381 [INFO] 📛 Registro duplicado: Santander - 2024. No se insertó.
+2025-04-15 21:05:33,456 [INFO] 📛 Registro duplicado: Santander - 2023. No se insertó.
+2025-04-15 21:05:33,539 [INFO] 📛 Registro duplicado: Santander - 2022. No se insertó.
+2025-04-15 21:05:33,610 [INFO] 📛 Registro duplicado: Santander - 2021. No se insertó.
+2025-04-15 21:05:33,610 [INFO] ⚠️ Todas las filas fueron ignoradas para Santander
+2025-04-15 21:05:35,696 [INFO] ✅ Scraping de empresas BME finalizado.
+2025-04-15 21:05:35,696 [INFO] ✅ Scraping de empresas BME completado.
+2025-04-15 21:05:35,696 [INFO] 🚀 Iniciando scraping de PDF del IBEX 35
+2025-04-15 21:05:36,002 [INFO] 📥 PDF descargado correctamente: https://www.bolsasymercados.es/bme-exchange/docs/Indices/Avisos/esp/gestorindice/Aviso_Gestor_Indices_02-25.pdf
+2025-04-15 21:05:36,199 [INFO] Se extrajeron 0 filas de la tabla del PDF.
+2025-04-15 21:05:36,200 [INFO] 🗑️ Archivo PDF temporal eliminado.
+2025-04-15 21:05:36,200 [ERROR] ❌ No se extrajeron datos de la tabla del PDF.
+2025-04-15 21:05:36,200 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
+2025-04-15 21:05:36,200 [INFO] === FIN DEL PROCESO DE SCRAPING ===
+2025-04-15 21:15:11,561 [INFO] ✅ Base de datos 'bolsa' verificada o creada.
+2025-04-15 21:15:11,564 [INFO] ✅ Tabla 'indices' verificada o creada correctamente.
+2025-04-15 21:15:11,666 [INFO] === INICIO DEL PROCESO DE SCRAPING ===
+2025-04-15 21:15:11,666 [INFO] ====== WebDriver manager ======
+2025-04-15 21:15:13,823 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-15 21:15:13,907 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-15 21:15:13,960 [INFO] Driver [C:\Users\yo_xa\.wdm\drivers\chromedriver\win64\135.0.7049.84\chromedriver-win32/chromedriver.exe] found in cache
+2025-04-15 21:15:15,047 [INFO] 🚀 Inicio del scraping de índices bursátiles.
+2025-04-15 21:15:22,159 [INFO] 📛 Ya existe un registro para 'IBEX 35 (IBEX)' en la fecha actual. No se insertó.
+2025-04-15 21:15:28,277 [INFO] 📛 Ya existe un registro para 'S&P 500 (SPX)' en la fecha actual. No se insertó.
+2025-04-15 21:15:34,376 [INFO] 📛 Ya existe un registro para 'Nasdaq 100 (NDX)' en la fecha actual. No se insertó.
+2025-04-15 21:15:40,844 [INFO] 📛 Ya existe un registro para 'DAX (GDAXI)' en la fecha actual. No se insertó.
+2025-04-15 21:15:47,296 [INFO] 📛 Ya existe un registro para 'MSCI World (MIWO00000PUS)' en la fecha actual. No se insertó.
+2025-04-15 21:15:49,398 [INFO] 🏁 Fin del scraping. Navegador cerrado.
+2025-04-15 21:15:49,399 [INFO] 📊 RESUMEN FINAL:
+2025-04-15 21:15:49,399 [INFO] ✅ Índices guardados: 0
+2025-04-15 21:15:49,399 [INFO] ℹ️ Índices omitidos: 5
+2025-04-15 21:15:49,399 [INFO] ❌ Fallos: 0
+2025-04-15 21:15:49,399 [INFO] ✅ Scraping de índices completado.
+2025-04-15 21:15:50,682 [INFO] Se cargaron 3 empresas desde empresas_bme.csv
+2025-04-15 21:15:50,682 [INFO] 🚀 Iniciando scraping de empresas BME
+2025-04-15 21:15:50,682 [INFO] 🔍 Iniciando scraping para BBVA
+2025-04-15 21:15:50,682 [INFO] 📄 Accediendo a la web de BBVA: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Banco-Bilbao-Vizcaya-Argentaria-ES0113211835
+2025-04-15 21:15:52,544 [INFO] 📛 Registro duplicado: BBVA - 2025. No se insertó.
+2025-04-15 21:15:52,593 [INFO] 📛 Registro duplicado: BBVA - 2024. No se insertó.
+2025-04-15 21:15:52,776 [INFO] 📛 Registro duplicado: BBVA - 2023. No se insertó.
+2025-04-15 21:15:52,849 [INFO] 📛 Registro duplicado: BBVA - 2022. No se insertó.
+2025-04-15 21:15:52,913 [INFO] 📛 Registro duplicado: BBVA - 2021. No se insertó.
+2025-04-15 21:15:52,913 [INFO] ⚠️ Todas las filas fueron ignoradas para BBVA
+2025-04-15 21:15:52,913 [INFO] 🔍 Iniciando scraping para Inditex
+2025-04-15 21:15:52,913 [INFO] 📄 Accediendo a la web de Inditex: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Ind-De-Diseno-Textil-Inditex-ES0148396007
+2025-04-15 21:15:53,777 [INFO] 📛 Registro duplicado: Inditex - 2025. No se insertó.
+2025-04-15 21:15:53,843 [INFO] 📛 Registro duplicado: Inditex - 2024. No se insertó.
+2025-04-15 21:15:53,915 [INFO] 📛 Registro duplicado: Inditex - 2023. No se insertó.
+2025-04-15 21:15:53,991 [INFO] 📛 Registro duplicado: Inditex - 2022. No se insertó.
+2025-04-15 21:15:54,060 [INFO] 📛 Registro duplicado: Inditex - 2021. No se insertó.
+2025-04-15 21:15:54,060 [INFO] ⚠️ Todas las filas fueron ignoradas para Inditex
+2025-04-15 21:15:54,061 [INFO] 🔍 Iniciando scraping para Santander
+2025-04-15 21:15:54,061 [INFO] 📄 Accediendo a la web de Santander: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Banco-Santander-ES0113900J37
+2025-04-15 21:15:54,955 [INFO] 📛 Registro duplicado: Santander - 2025. No se insertó.
+2025-04-15 21:15:55,042 [INFO] 📛 Registro duplicado: Santander - 2024. No se insertó.
+2025-04-15 21:15:55,125 [INFO] 📛 Registro duplicado: Santander - 2023. No se insertó.
+2025-04-15 21:15:55,207 [INFO] 📛 Registro duplicado: Santander - 2022. No se insertó.
+2025-04-15 21:15:55,278 [INFO] 📛 Registro duplicado: Santander - 2021. No se insertó.
+2025-04-15 21:15:55,278 [INFO] ⚠️ Todas las filas fueron ignoradas para Santander
+2025-04-15 21:15:57,364 [INFO] ✅ Scraping de empresas BME finalizado.
+2025-04-15 21:15:57,365 [INFO] ✅ Scraping de empresas BME completado.
+2025-04-15 21:15:57,365 [INFO] 🚀 Iniciando scraping de PDF del IBEX 35
+2025-04-15 21:15:57,676 [INFO] 📥 PDF descargado correctamente: https://www.bolsasymercados.es/bme-exchange/docs/Indices/Avisos/esp/gestorindice/Aviso_Gestor_Indices_02-25.pdf
+2025-04-15 21:15:57,822 [INFO] Se extrajeron 0 filas de la tabla del PDF.
+2025-04-15 21:15:57,822 [ERROR] ❌ No se extrajeron datos de la tabla del PDF.
+2025-04-15 21:15:57,822 [INFO] 🗑️ Archivo PDF temporal eliminado.
+2025-04-15 21:15:57,822 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
+2025-04-15 21:15:57,822 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
+2025-04-15 21:15:57,822 [INFO] === FIN DEL PROCESO DE SCRAPING ===
+2025-04-15 21:19:06,068 [INFO] ✅ Base de datos 'bolsa' verificada o creada.
+2025-04-15 21:19:06,070 [INFO] ✅ Tabla 'indices' verificada o creada correctamente.
+2025-04-15 21:19:06,178 [INFO] === INICIO DEL PROCESO DE SCRAPING ===
+2025-04-15 21:19:06,178 [INFO] ====== WebDriver manager ======
+2025-04-15 21:19:08,319 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-15 21:19:08,363 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-15 21:19:08,404 [INFO] Driver [C:\Users\yo_xa\.wdm\drivers\chromedriver\win64\135.0.7049.84\chromedriver-win32/chromedriver.exe] found in cache
+2025-04-15 21:19:09,467 [INFO] 🚀 Inicio del scraping de índices bursátiles.
+2025-04-15 21:19:16,800 [INFO] 📛 Ya existe un registro para 'IBEX 35 (IBEX)' en la fecha actual. No se insertó.
+2025-04-15 21:19:23,204 [INFO] 📛 Ya existe un registro para 'S&P 500 (SPX)' en la fecha actual. No se insertó.
+2025-04-15 21:19:29,318 [INFO] 📛 Ya existe un registro para 'Nasdaq 100 (NDX)' en la fecha actual. No se insertó.
+2025-04-15 21:19:35,874 [INFO] 📛 Ya existe un registro para 'DAX (GDAXI)' en la fecha actual. No se insertó.
+2025-04-15 21:19:42,212 [INFO] 📛 Ya existe un registro para 'MSCI World (MIWO00000PUS)' en la fecha actual. No se insertó.
+2025-04-15 21:19:44,343 [INFO] 🏁 Fin del scraping. Navegador cerrado.
+2025-04-15 21:19:44,344 [INFO] 📊 RESUMEN FINAL:
+2025-04-15 21:19:44,344 [INFO] ✅ Índices guardados: 0
+2025-04-15 21:19:44,344 [INFO] ℹ️ Índices omitidos: 5
+2025-04-15 21:19:44,344 [INFO] ❌ Fallos: 0
+2025-04-15 21:19:44,344 [INFO] ✅ Scraping de índices completado.
+2025-04-15 21:19:45,620 [INFO] Se cargaron 3 empresas desde empresas_bme.csv
+2025-04-15 21:19:45,620 [INFO] 🚀 Iniciando scraping de empresas BME
+2025-04-15 21:19:45,620 [INFO] 🔍 Iniciando scraping para BBVA
+2025-04-15 21:19:45,620 [INFO] 📄 Accediendo a la web de BBVA: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Banco-Bilbao-Vizcaya-Argentaria-ES0113211835
+2025-04-15 21:19:48,365 [INFO] 📛 Registro duplicado: BBVA - 2025. No se insertó.
+2025-04-15 21:19:48,434 [INFO] 📛 Registro duplicado: BBVA - 2024. No se insertó.
+2025-04-15 21:19:48,507 [INFO] 📛 Registro duplicado: BBVA - 2023. No se insertó.
+2025-04-15 21:19:48,581 [INFO] 📛 Registro duplicado: BBVA - 2022. No se insertó.
+2025-04-15 21:19:48,660 [INFO] 📛 Registro duplicado: BBVA - 2021. No se insertó.
+2025-04-15 21:19:48,660 [INFO] ⚠️ Todas las filas fueron ignoradas para BBVA
+2025-04-15 21:19:48,660 [INFO] 🔍 Iniciando scraping para Inditex
+2025-04-15 21:19:48,660 [INFO] 📄 Accediendo a la web de Inditex: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Ind-De-Diseno-Textil-Inditex-ES0148396007
+2025-04-15 21:19:50,318 [INFO] 📛 Registro duplicado: Inditex - 2025. No se insertó.
+2025-04-15 21:19:50,406 [INFO] 📛 Registro duplicado: Inditex - 2024. No se insertó.
+2025-04-15 21:19:50,503 [INFO] 📛 Registro duplicado: Inditex - 2023. No se insertó.
+2025-04-15 21:19:50,587 [INFO] 📛 Registro duplicado: Inditex - 2022. No se insertó.
+2025-04-15 21:19:50,662 [INFO] 📛 Registro duplicado: Inditex - 2021. No se insertó.
+2025-04-15 21:19:50,663 [INFO] ⚠️ Todas las filas fueron ignoradas para Inditex
+2025-04-15 21:19:50,663 [INFO] 🔍 Iniciando scraping para Santander
+2025-04-15 21:19:50,663 [INFO] 📄 Accediendo a la web de Santander: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Banco-Santander-ES0113900J37
+2025-04-15 21:19:52,676 [INFO] 📛 Registro duplicado: Santander - 2025. No se insertó.
+2025-04-15 21:19:52,780 [INFO] 📛 Registro duplicado: Santander - 2024. No se insertó.
+2025-04-15 21:19:52,884 [INFO] 📛 Registro duplicado: Santander - 2023. No se insertó.
+2025-04-15 21:19:52,990 [INFO] 📛 Registro duplicado: Santander - 2022. No se insertó.
+2025-04-15 21:19:53,065 [INFO] 📛 Registro duplicado: Santander - 2021. No se insertó.
+2025-04-15 21:19:53,066 [INFO] ⚠️ Todas las filas fueron ignoradas para Santander
+2025-04-15 21:19:55,183 [INFO] ✅ Scraping de empresas BME finalizado.
+2025-04-15 21:19:55,183 [INFO] ✅ Scraping de empresas BME completado.
+2025-04-15 21:19:55,183 [INFO] 🚀 Iniciando scraping de PDF del IBEX 35
+2025-04-15 21:19:55,516 [INFO] 📥 PDF descargado correctamente: https://www.bolsasymercados.es/bme-exchange/docs/Indices/Avisos/esp/gestorindice/Aviso_Gestor_Indices_02-25.pdf
+2025-04-15 21:19:55,712 [INFO] Se extrajeron 0 filas de la tabla del PDF.
+2025-04-15 21:19:55,712 [ERROR] ❌ No se extrajeron datos de la tabla del PDF.
+2025-04-15 21:19:55,713 [INFO] 🗑️ Archivo PDF temporal eliminado.
+2025-04-15 21:19:55,713 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
+2025-04-15 21:19:55,713 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
+2025-04-15 21:19:55,713 [INFO] === FIN DEL PROCESO DE SCRAPING ===

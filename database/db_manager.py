@@ -187,6 +187,35 @@ def insertar_datos_empresa(datos):
         cursor.close()
         conexion.close()
 
+def insertar_datos_composicion(datos):
+    conexion = conectar()
+    cursor = conexion.cursor()
+    try:
+        consulta = """
+            INSERT INTO composicion_ibex35 (
+                simbolo, nombre, titulos_antes, estatus, modificaciones, comp, porcentaje_coef_ff, fecha_registro
+            ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
+            ON DUPLICATE KEY UPDATE
+                titulos_antes = VALUES(titulos_antes),
+                estatus = VALUES(estatus),
+                modificaciones = VALUES(modificaciones),
+                comp = VALUES(comp),
+                porcentaje_coef_ff = VALUES(porcentaje_coef_ff)
+        """
+        valores = (
+            datos["simbolo"], datos["nombre"], datos["titulos_antes"], datos["estatus"],
+            datos["modificaciones"], datos["comp"], datos["porcentaje_coef_ff"], datos["fecha_registro"]
+        )
+        cursor.execute(consulta, valores)
+        conexion.commit()
+        log_info(f"📥 Insertado/actualizado: {datos['simbolo']} - {datos['nombre']}")
+        return True
+    except mysql.connector.Error as error:
+        log_error(f"❌ Error al insertar datos de composición: {error}")
+        return False
+    finally:
+        cursor.close()
+        conexion.close()
 
 
 
