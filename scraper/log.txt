@@ -1,0 +1,776 @@
+2025-04-18 22:10:59,312 [INFO] ✅ Base de datos 'bolsa' verificada o creada.
+2025-04-18 22:10:59,314 [INFO] ✅ Tabla 'indices' verificada o creada correctamente.
+2025-04-18 22:10:59,315 [ERROR] ❌ No se encontró 'poppler.zip' en extras/.
+2025-04-18 22:10:59,315 [ERROR] ❌ No se encontró 'tesseract.zip' en extras/. OCR no funcionará.
+2025-04-18 22:10:59,315 [INFO] 🚀 Iniciando scraping de PDF del IBEX 35
+2025-04-18 22:10:59,669 [INFO] 📥 PDF descargado: https://www.bolsasymercados.es/bme-exchange/docs/Indices/Avisos/esp/gestorindice/Aviso_Gestor_Indices_02-25.pdf
+2025-04-18 22:10:59,807 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:10:59,807 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:10:59,819 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:10:59,820 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:10:59,820 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:11:00,275 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:11:00,275 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:11:00,275 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:11:00,275 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:11:00,275 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:11:00,275 [INFO] 📊 Se extrajeron 4 filas con pdfplumber.
+2025-04-18 22:11:00,275 [INFO] ⚠️ Menos de 5 filas con pdfplumber; intentando OCR...
+2025-04-18 22:11:00,322 [INFO] ⚠️ Línea ignorada por no coincidir: ® a partir del 24 de
+2025-04-18 22:11:00,322 [INFO] ⚠️ Línea ignorada por no coincidir: marzo de 2025
+2025-04-18 22:11:00,322 [INFO] ⚠️ Línea ignorada por no coincidir: Índices
+2025-04-18 22:11:00,322 [INFO] ⚠️ Línea ignorada por no coincidir: 19 de marzo 2025
+2025-04-18 22:11:00,322 [INFO] ⚠️ Línea ignorada por no coincidir: º
+2025-04-18 22:11:00,322 [INFO] ⚠️ Línea ignorada por no coincidir: Aviso 02/2025 – Gestor del Índice
+2025-04-18 22:11:00,322 [INFO] ⚠️ Línea ignorada por no coincidir: Índices
+2025-04-18 22:11:00,322 [INFO] ⚠️ Línea ignorada por no coincidir: Secretaría de Gestión de los Índices
+2025-04-18 22:11:00,322 [INFO] ⚠️ Línea ignorada por no coincidir: ibex@grupobme.es
+2025-04-18 22:11:00,322 [INFO] ⚠️ Línea ignorada por no coincidir: 91.709.53.86
+2025-04-18 22:11:00,322 [INFO] ⚠️ Línea ignorada por no coincidir: Sociedad Bolsas, S.A.U., domicilio social en Madrid, Plaza de la Lealtad 1, C.I.F. A-82695677 e inscrita en el Registro
+2025-04-18 22:11:00,323 [INFO] ⚠️ Línea ignorada por no coincidir: Mercantil de Madrid en el tomo 15.611, folio 5, sección 8, hoja núm. M-262818.
+2025-04-18 22:11:00,323 [INFO] ⚠️ Línea ignorada por no coincidir: 2
+2025-04-18 22:11:00,323 [INFO] ⚠️ Línea ignorada por no coincidir: En consonancia con el Aviso nº 03/2025 del Comité de 13 de marzo de 2025, y hechas las
+2025-04-18 22:11:00,323 [INFO] ⚠️ Línea ignorada por no coincidir: modificaciones previstas en las Normas de Técnicas para la Composición y Cálculo de los
+2025-04-18 22:11:00,323 [INFO] ⚠️ Línea ignorada por no coincidir: Índices IBEX® y de Estrategia sobre Acciones, Sociedad de Bolsas, como Gestor del índice
+2025-04-18 22:11:00,323 [INFO] ⚠️ Línea ignorada por no coincidir: IBEX 35®, comunica la composición del mismo a partir del 24 de marzo de 2025.
+2025-04-18 22:11:00,323 [INFO] ⚠️ Línea ignorada por no coincidir: IBEX 35®
+2025-04-18 22:11:00,323 [INFO] ⚠️ Línea ignorada por no coincidir: Simb.
+2025-04-18 22:11:00,323 [INFO] ⚠️ Línea ignorada por no coincidir: Nombre
+2025-04-18 22:11:00,323 [INFO] ⚠️ Línea ignorada por no coincidir: Titulos Antes
+2025-04-18 22:11:00,323 [INFO] ⚠️ Línea ignorada por no coincidir: Estatus
+2025-04-18 22:11:00,323 [INFO] ⚠️ Línea ignorada por no coincidir: Modificaciones
+2025-04-18 22:11:00,323 [INFO] ⚠️ Línea ignorada por no coincidir: Comp.
+2025-04-18 22:11:00,323 [INFO] ⚠️ Línea ignorada por no coincidir: 24/03/2025
+2025-04-18 22:11:00,323 [INFO] ⚠️ Línea ignorada por no coincidir: %Coef
+2025-04-18 22:11:00,323 [INFO] ⚠️ Línea ignorada por no coincidir: FF
+2025-04-18 22:11:00,323 [INFO] ⚠️ Línea ignorada por no coincidir: ACS
+2025-04-18 22:11:00,323 [INFO] ⚠️ Línea ignorada por no coincidir: ACS CONST.
+2025-04-18 22:11:00,323 [INFO] ⚠️ Línea ignorada por no coincidir: 271.664.594
+2025-04-18 22:11:00,323 [INFO] ⚠️ Línea ignorada por no coincidir: -
+2025-04-18 22:11:00,323 [INFO] ⚠️ Línea ignorada por no coincidir: 271.664.594
+2025-04-18 22:11:00,323 [INFO] ⚠️ Línea ignorada por no coincidir: 100
+2025-04-18 22:11:00,323 [INFO] ⚠️ Línea ignorada por no coincidir: ACX
+2025-04-18 22:11:00,323 [INFO] ⚠️ Línea ignorada por no coincidir: ACERINOX
+2025-04-18 22:11:00,323 [INFO] ⚠️ Línea ignorada por no coincidir: 249.335.371
+2025-04-18 22:11:00,323 [INFO] ⚠️ Línea ignorada por no coincidir: -
+2025-04-18 22:11:00,323 [INFO] ⚠️ Línea ignorada por no coincidir: 249.335.371
+2025-04-18 22:11:00,323 [INFO] ⚠️ Línea ignorada por no coincidir: 100
+2025-04-18 22:11:00,323 [INFO] ⚠️ Línea ignorada por no coincidir: AENA
+2025-04-18 22:11:00,323 [INFO] ⚠️ Línea ignorada por no coincidir: AENA
+2025-04-18 22:11:00,324 [INFO] ⚠️ Línea ignorada por no coincidir: 120.000.000
+2025-04-18 22:11:00,324 [INFO] ⚠️ Línea ignorada por no coincidir: -
+2025-04-18 22:11:00,324 [INFO] ⚠️ Línea ignorada por no coincidir: 120.000.000
+2025-04-18 22:11:00,327 [INFO] ⚠️ Línea ignorada por no coincidir: 80
+2025-04-18 22:11:00,328 [INFO] ⚠️ Línea ignorada por no coincidir: AMS
+2025-04-18 22:11:00,328 [INFO] ⚠️ Línea ignorada por no coincidir: AMADEUS IT
+2025-04-18 22:11:00,328 [INFO] ⚠️ Línea ignorada por no coincidir: 450.499.205
+2025-04-18 22:11:00,328 [INFO] ⚠️ Línea ignorada por no coincidir: -
+2025-04-18 22:11:00,328 [INFO] ⚠️ Línea ignorada por no coincidir: 450.499.205
+2025-04-18 22:11:00,328 [INFO] ⚠️ Línea ignorada por no coincidir: 100
+2025-04-18 22:11:00,328 [INFO] ⚠️ Línea ignorada por no coincidir: ANA
+2025-04-18 22:11:00,329 [INFO] ⚠️ Línea ignorada por no coincidir: ACCIONA
+2025-04-18 22:11:00,329 [INFO] ⚠️ Línea ignorada por no coincidir: 43.885.322
+2025-04-18 22:11:00,329 [INFO] ⚠️ Línea ignorada por no coincidir: -
+2025-04-18 22:11:00,329 [INFO] ⚠️ Línea ignorada por no coincidir: 43.885.322
+2025-04-18 22:11:00,329 [INFO] ⚠️ Línea ignorada por no coincidir: 80
+2025-04-18 22:11:00,329 [INFO] ⚠️ Línea ignorada por no coincidir: ANE
+2025-04-18 22:11:00,329 [INFO] ⚠️ Línea ignorada por no coincidir: ACCIONA ENER
+2025-04-18 22:11:00,329 [INFO] ⚠️ Línea ignorada por no coincidir: 64.952.366
+2025-04-18 22:11:00,329 [INFO] ⚠️ Línea ignorada por no coincidir: -
+2025-04-18 22:11:00,330 [INFO] ⚠️ Línea ignorada por no coincidir: 64.952.366
+2025-04-18 22:11:00,330 [INFO] ⚠️ Línea ignorada por no coincidir: 20
+2025-04-18 22:11:00,330 [INFO] ⚠️ Línea ignorada por no coincidir: BBVA
+2025-04-18 22:11:00,330 [INFO] ⚠️ Línea ignorada por no coincidir: BBVA
+2025-04-18 22:11:00,330 [INFO] ⚠️ Línea ignorada por no coincidir: 5.763.285.465
+2025-04-18 22:11:00,330 [INFO] ⚠️ Línea ignorada por no coincidir: -
+2025-04-18 22:11:00,330 [INFO] ⚠️ Línea ignorada por no coincidir: 5.763.285.465
+2025-04-18 22:11:00,330 [INFO] ⚠️ Línea ignorada por no coincidir: 100
+2025-04-18 22:11:00,330 [INFO] ⚠️ Línea ignorada por no coincidir: BKT
+2025-04-18 22:11:00,330 [INFO] ⚠️ Línea ignorada por no coincidir: BANKINTER
+2025-04-18 22:11:00,330 [INFO] ⚠️ Línea ignorada por no coincidir: 898.866.154
+2025-04-18 22:11:00,330 [INFO] ⚠️ Línea ignorada por no coincidir: -
+2025-04-18 22:11:00,330 [INFO] ⚠️ Línea ignorada por no coincidir: 898.866.154
+2025-04-18 22:11:00,330 [INFO] ⚠️ Línea ignorada por no coincidir: 100
+2025-04-18 22:11:00,330 [INFO] ⚠️ Línea ignorada por no coincidir: CABK
+2025-04-18 22:11:00,330 [INFO] ⚠️ Línea ignorada por no coincidir: CAIXABANK
+2025-04-18 22:11:00,330 [INFO] ⚠️ Línea ignorada por no coincidir: 5.739.950.277
+2025-04-18 22:11:00,330 [INFO] ⚠️ Línea ignorada por no coincidir: -
+2025-04-18 22:11:00,330 [INFO] ⚠️ Línea ignorada por no coincidir: 5.739.950.277
+2025-04-18 22:11:00,330 [INFO] ⚠️ Línea ignorada por no coincidir: 80
+2025-04-18 22:11:00,330 [INFO] ⚠️ Línea ignorada por no coincidir: CLNX
+2025-04-18 22:11:00,330 [INFO] ⚠️ Línea ignorada por no coincidir: CELLNEX
+2025-04-18 22:11:00,330 [INFO] ⚠️ Línea ignorada por no coincidir: 706.475.375
+2025-04-18 22:11:00,330 [INFO] ⚠️ Línea ignorada por no coincidir: -
+2025-04-18 22:11:00,330 [INFO] ⚠️ Línea ignorada por no coincidir: 706.475.375
+2025-04-18 22:11:00,330 [INFO] ⚠️ Línea ignorada por no coincidir: 100
+2025-04-18 22:11:00,330 [INFO] ⚠️ Línea ignorada por no coincidir: COL
+2025-04-18 22:11:00,330 [INFO] ⚠️ Línea ignorada por no coincidir: INM.COLONIAL
+2025-04-18 22:11:00,330 [INFO] ⚠️ Línea ignorada por no coincidir: 250.937.875
+2025-04-18 22:11:00,330 [INFO] ⚠️ Línea ignorada por no coincidir: -
+2025-04-18 22:11:00,330 [INFO] ⚠️ Línea ignorada por no coincidir: 250.937.875
+2025-04-18 22:11:00,331 [INFO] ⚠️ Línea ignorada por no coincidir: 40
+2025-04-18 22:11:00,331 [INFO] ⚠️ Línea ignorada por no coincidir: ELE
+2025-04-18 22:11:00,331 [INFO] ⚠️ Línea ignorada por no coincidir: ENDESA
+2025-04-18 22:11:00,331 [INFO] ⚠️ Línea ignorada por no coincidir: 423.500.847
+2025-04-18 22:11:00,331 [INFO] ⚠️ Línea ignorada por no coincidir: -
+2025-04-18 22:11:00,331 [INFO] ⚠️ Línea ignorada por no coincidir: 423.500.847
+2025-04-18 22:11:00,331 [INFO] ⚠️ Línea ignorada por no coincidir: 40
+2025-04-18 22:11:00,331 [INFO] ⚠️ Línea ignorada por no coincidir: ENG
+2025-04-18 22:11:00,331 [INFO] ⚠️ Línea ignorada por no coincidir: ENAGAS
+2025-04-18 22:11:00,331 [INFO] ⚠️ Línea ignorada por no coincidir: 261.990.074
+2025-04-18 22:11:00,331 [INFO] ⚠️ Línea ignorada por no coincidir: -
+2025-04-18 22:11:00,331 [INFO] ⚠️ Línea ignorada por no coincidir: 261.990.074
+2025-04-18 22:11:00,331 [INFO] ⚠️ Línea ignorada por no coincidir: 100
+2025-04-18 22:11:00,331 [INFO] ⚠️ Línea ignorada por no coincidir: FDR
+2025-04-18 22:11:00,331 [INFO] ⚠️ Línea ignorada por no coincidir: FLUIDRA
+2025-04-18 22:11:00,331 [INFO] ⚠️ Línea ignorada por no coincidir: 115.277.442
+2025-04-18 22:11:00,331 [INFO] ⚠️ Línea ignorada por no coincidir: -
+2025-04-18 22:11:00,331 [INFO] ⚠️ Línea ignorada por no coincidir: 115.277.442
+2025-04-18 22:11:00,332 [INFO] ⚠️ Línea ignorada por no coincidir: 60
+2025-04-18 22:11:00,332 [INFO] ⚠️ Línea ignorada por no coincidir: FER
+2025-04-18 22:11:00,332 [INFO] ⚠️ Línea ignorada por no coincidir: FERROVIAL SE
+2025-04-18 22:11:00,332 [INFO] ⚠️ Línea ignorada por no coincidir: 739.565.455
+2025-04-18 22:11:00,332 [INFO] ⚠️ Línea ignorada por no coincidir: -10.005.504
+2025-04-18 22:11:00,332 [INFO] ⚠️ Línea ignorada por no coincidir: 729.559.951
+2025-04-18 22:11:00,332 [INFO] ⚠️ Línea ignorada por no coincidir: 100
+2025-04-18 22:11:00,332 [INFO] ⚠️ Línea ignorada por no coincidir: GRF
+2025-04-18 22:11:00,332 [INFO] ⚠️ Línea ignorada por no coincidir: GRIFOLS
+2025-04-18 22:11:00,332 [INFO] ⚠️ Línea ignorada por no coincidir: 426.129.798
+2025-04-18 22:11:00,332 [INFO] ⚠️ Línea ignorada por no coincidir: -
+2025-04-18 22:11:00,332 [INFO] ⚠️ Línea ignorada por no coincidir: 426.129.798
+2025-04-18 22:11:00,332 [INFO] ⚠️ Línea ignorada por no coincidir: 100
+2025-04-18 22:11:00,332 [INFO] ⚠️ Línea ignorada por no coincidir: IAG
+2025-04-18 22:11:00,332 [INFO] ⚠️ Línea ignorada por no coincidir: INT.AIRL.GRP
+2025-04-18 22:11:00,332 [INFO] ⚠️ Línea ignorada por no coincidir: 4.971.476.010
+2025-04-18 22:11:00,332 [INFO] ⚠️ Línea ignorada por no coincidir: -
+2025-04-18 22:11:00,332 [INFO] ⚠️ Línea ignorada por no coincidir: 4.971.476.010
+2025-04-18 22:11:00,332 [INFO] ⚠️ Línea ignorada por no coincidir: 100
+2025-04-18 22:11:00,332 [INFO] ⚠️ Línea ignorada por no coincidir: IBE
+2025-04-18 22:11:00,332 [INFO] ⚠️ Línea ignorada por no coincidir: IBERDROLA
+2025-04-18 22:11:00,332 [INFO] ⚠️ Línea ignorada por no coincidir: 6.364.251.000
+2025-04-18 22:11:00,332 [INFO] ⚠️ Línea ignorada por no coincidir: 76.310.000
+2025-04-18 22:11:00,332 [INFO] ⚠️ Línea ignorada por no coincidir: 6.440.561.000
+2025-04-18 22:11:00,332 [INFO] ⚠️ Línea ignorada por no coincidir: 100
+2025-04-18 22:11:00,332 [INFO] ⚠️ Línea ignorada por no coincidir: IDR
+2025-04-18 22:11:00,332 [INFO] ⚠️ Línea ignorada por no coincidir: INDRA A
+2025-04-18 22:11:00,332 [INFO] ⚠️ Línea ignorada por no coincidir: 176.654.402
+2025-04-18 22:11:00,332 [INFO] ⚠️ Línea ignorada por no coincidir: -
+2025-04-18 22:11:00,332 [INFO] ⚠️ Línea ignorada por no coincidir: 176.654.402
+2025-04-18 22:11:00,333 [INFO] ⚠️ Línea ignorada por no coincidir: 100
+2025-04-18 22:11:00,333 [INFO] ⚠️ Línea ignorada por no coincidir: ITX
+2025-04-18 22:11:00,333 [INFO] ⚠️ Línea ignorada por no coincidir: INDITEX
+2025-04-18 22:11:00,333 [INFO] ⚠️ Línea ignorada por no coincidir: 1.869.991.200
+2025-04-18 22:11:00,333 [INFO] ⚠️ Línea ignorada por no coincidir: -
+2025-04-18 22:11:00,333 [INFO] ⚠️ Línea ignorada por no coincidir: 1.869.991.200
+2025-04-18 22:11:00,333 [INFO] ⚠️ Línea ignorada por no coincidir: 60
+2025-04-18 22:11:00,333 [INFO] ⚠️ Línea ignorada por no coincidir: LOG
+2025-04-18 22:11:00,333 [INFO] ⚠️ Línea ignorada por no coincidir: LOGISTA
+2025-04-18 22:11:00,333 [INFO] ⚠️ Línea ignorada por no coincidir: 106.200.000
+2025-04-18 22:11:00,333 [INFO] ⚠️ Línea ignorada por no coincidir: -
+2025-04-18 22:11:00,333 [INFO] ⚠️ Línea ignorada por no coincidir: 106.200.000
+2025-04-18 22:11:00,333 [INFO] ⚠️ Línea ignorada por no coincidir: 80
+2025-04-18 22:11:00,333 [INFO] ⚠️ Línea ignorada por no coincidir: MAP
+2025-04-18 22:11:00,333 [INFO] ⚠️ Línea ignorada por no coincidir: MAPFRE
+2025-04-18 22:11:00,333 [INFO] ⚠️ Línea ignorada por no coincidir: 1.847.731.964
+2025-04-18 22:11:00,333 [INFO] ⚠️ Línea ignorada por no coincidir: -
+2025-04-18 22:11:00,333 [INFO] ⚠️ Línea ignorada por no coincidir: 1.847.731.964
+2025-04-18 22:11:00,333 [INFO] ⚠️ Línea ignorada por no coincidir: 60
+2025-04-18 22:11:00,333 [INFO] ⚠️ Línea ignorada por no coincidir: MRL
+2025-04-18 22:11:00,333 [INFO] ⚠️ Línea ignorada por no coincidir: MERLIN PROP.
+2025-04-18 22:11:00,333 [INFO] ⚠️ Línea ignorada por no coincidir: 563.724.899
+2025-04-18 22:11:00,333 [INFO] ⚠️ Línea ignorada por no coincidir: -
+2025-04-18 22:11:00,333 [INFO] ⚠️ Línea ignorada por no coincidir: 563.724.899
+2025-04-18 22:11:00,333 [INFO] ⚠️ Línea ignorada por no coincidir: 100
+2025-04-18 22:11:00,333 [INFO] ⚠️ Línea ignorada por no coincidir: MTS
+2025-04-18 22:11:00,333 [INFO] ⚠️ Línea ignorada por no coincidir: ARCEL.MITTAL
+2025-04-18 22:11:00,333 [INFO] ⚠️ Línea ignorada por no coincidir: 170.561.954
+2025-04-18 22:11:00,333 [INFO] ⚠️ Línea ignorada por no coincidir: -
+2025-04-18 22:11:00,333 [INFO] ⚠️ Línea ignorada por no coincidir: 170.561.954
+2025-04-18 22:11:00,333 [INFO] ⚠️ Línea ignorada por no coincidir: 20
+2025-04-18 22:11:00,334 [INFO] ⚠️ Línea ignorada por no coincidir: NTGY
+2025-04-18 22:11:00,334 [INFO] ⚠️ Línea ignorada por no coincidir: NATURGY
+2025-04-18 22:11:00,334 [INFO] ⚠️ Línea ignorada por no coincidir: 193.922.760
+2025-04-18 22:11:00,334 [INFO] ⚠️ Línea ignorada por no coincidir: -
+2025-04-18 22:11:00,334 [INFO] ⚠️ Línea ignorada por no coincidir: 193.922.760
+2025-04-18 22:11:00,334 [INFO] ⚠️ Línea ignorada por no coincidir: 20
+2025-04-18 22:11:00,334 [INFO] ⚠️ Línea ignorada por no coincidir: PUIG
+2025-04-18 22:11:00,334 [INFO] ⚠️ Línea ignorada por no coincidir: PUIG BRANDS
+2025-04-18 22:11:00,334 [INFO] ⚠️ Línea ignorada por no coincidir: 174.819.678
+2025-04-18 22:11:00,334 [INFO] ⚠️ Línea ignorada por no coincidir: -
+2025-04-18 22:11:00,334 [INFO] ⚠️ Línea ignorada por no coincidir: 174.819.678
+2025-04-18 22:11:00,334 [INFO] ⚠️ Línea ignorada por no coincidir: 100
+2025-04-18 22:11:00,334 [INFO] ⚠️ Línea ignorada por no coincidir: º
+2025-04-18 22:11:00,334 [INFO] ⚠️ Línea ignorada por no coincidir: Aviso 02/2025 – Gestor del Índice
+2025-04-18 22:11:00,334 [INFO] ⚠️ Línea ignorada por no coincidir: Índices
+2025-04-18 22:11:00,334 [INFO] ⚠️ Línea ignorada por no coincidir: Secretaría de Gestión de los Índices
+2025-04-18 22:11:00,335 [INFO] ⚠️ Línea ignorada por no coincidir: ibex@grupobme.es
+2025-04-18 22:11:00,335 [INFO] ⚠️ Línea ignorada por no coincidir: 91.709.53.86
+2025-04-18 22:11:00,335 [INFO] ⚠️ Línea ignorada por no coincidir: Sociedad Bolsas, S.A.U., domicilio social en Madrid, Plaza de la Lealtad 1, C.I.F. A-82695677 e inscrita en el Registro
+2025-04-18 22:11:00,335 [INFO] ⚠️ Línea ignorada por no coincidir: Mercantil de Madrid en el tomo 15.611, folio 5, sección 8, hoja núm. M-262818.
+2025-04-18 22:11:00,335 [INFO] ⚠️ Línea ignorada por no coincidir: 3
+2025-04-18 22:11:00,335 [INFO] ⚠️ Línea ignorada por no coincidir: RED
+2025-04-18 22:11:00,335 [INFO] ⚠️ Línea ignorada por no coincidir: REDEIA CORPO
+2025-04-18 22:11:00,335 [INFO] ⚠️ Línea ignorada por no coincidir: 541.080.000
+2025-04-18 22:11:00,335 [INFO] ⚠️ Línea ignorada por no coincidir: -
+2025-04-18 22:11:00,336 [INFO] ⚠️ Línea ignorada por no coincidir: 541.080.000
+2025-04-18 22:11:00,336 [INFO] ⚠️ Línea ignorada por no coincidir: 100
+2025-04-18 22:11:00,336 [INFO] ⚠️ Línea ignorada por no coincidir: REP
+2025-04-18 22:11:00,336 [INFO] ⚠️ Línea ignorada por no coincidir: REPSOL
+2025-04-18 22:11:00,336 [INFO] ⚠️ Línea ignorada por no coincidir: 1.177.396.053
+2025-04-18 22:11:00,336 [INFO] ⚠️ Línea ignorada por no coincidir: -20.000.000
+2025-04-18 22:11:00,336 [INFO] ⚠️ Línea ignorada por no coincidir: 1.157.396.053
+2025-04-18 22:11:00,336 [INFO] ⚠️ Línea ignorada por no coincidir: 100
+2025-04-18 22:11:00,336 [INFO] ⚠️ Línea ignorada por no coincidir: ROVI
+2025-04-18 22:11:00,336 [INFO] ⚠️ Línea ignorada por no coincidir: LABORAT.ROVI
+2025-04-18 22:11:00,336 [INFO] ⚠️ Línea ignorada por no coincidir: 30.741.457
+2025-04-18 22:11:00,336 [INFO] ⚠️ Línea ignorada por no coincidir: -
+2025-04-18 22:11:00,336 [INFO] ⚠️ Línea ignorada por no coincidir: 30.741.457
+2025-04-18 22:11:00,336 [INFO] ⚠️ Línea ignorada por no coincidir: 60
+2025-04-18 22:11:00,336 [INFO] ⚠️ Línea ignorada por no coincidir: SAB
+2025-04-18 22:11:00,336 [INFO] ⚠️ Línea ignorada por no coincidir: B. SABADELL
+2025-04-18 22:11:00,336 [INFO] ⚠️ Línea ignorada por no coincidir: 5.440.221.447
+2025-04-18 22:11:00,336 [INFO] ⚠️ Línea ignorada por no coincidir: -52.531.365
+2025-04-18 22:11:00,336 [INFO] ⚠️ Línea ignorada por no coincidir: 5.387.690.082
+2025-04-18 22:11:00,336 [INFO] ⚠️ Línea ignorada por no coincidir: 100
+2025-04-18 22:11:00,336 [INFO] ⚠️ Línea ignorada por no coincidir: SAN
+2025-04-18 22:11:00,336 [INFO] ⚠️ Línea ignorada por no coincidir: SANTANDER
+2025-04-18 22:11:00,336 [INFO] ⚠️ Línea ignorada por no coincidir: 15.152.492.322
+2025-04-18 22:11:00,336 [INFO] ⚠️ Línea ignorada por no coincidir: -   15.152.492.322
+2025-04-18 22:11:00,336 [INFO] ⚠️ Línea ignorada por no coincidir: 100
+2025-04-18 22:11:00,336 [INFO] ⚠️ Línea ignorada por no coincidir: SCYR
+2025-04-18 22:11:00,336 [INFO] ⚠️ Línea ignorada por no coincidir: SACYR
+2025-04-18 22:11:00,336 [INFO] ⚠️ Línea ignorada por no coincidir: 779.906.655
+2025-04-18 22:11:00,336 [INFO] ⚠️ Línea ignorada por no coincidir: 16.951.143
+2025-04-18 22:11:00,337 [INFO] ⚠️ Línea ignorada por no coincidir: 796.857.798
+2025-04-18 22:11:00,337 [INFO] ⚠️ Línea ignorada por no coincidir: 100
+2025-04-18 22:11:00,337 [INFO] ⚠️ Línea ignorada por no coincidir: SLR
+2025-04-18 22:11:00,337 [INFO] ⚠️ Línea ignorada por no coincidir: SOLARIA
+2025-04-18 22:11:00,337 [INFO] ⚠️ Línea ignorada por no coincidir: 124.950.876
+2025-04-18 22:11:00,337 [INFO] ⚠️ Línea ignorada por no coincidir: -
+2025-04-18 22:11:00,337 [INFO] ⚠️ Línea ignorada por no coincidir: 124.950.876
+2025-04-18 22:11:00,337 [INFO] ⚠️ Línea ignorada por no coincidir: 100
+2025-04-18 22:11:00,337 [INFO] ⚠️ Línea ignorada por no coincidir: TEF
+2025-04-18 22:11:00,337 [INFO] ⚠️ Línea ignorada por no coincidir: TELEFONICA
+2025-04-18 22:11:00,337 [INFO] ⚠️ Línea ignorada por no coincidir: 5.670.161.554
+2025-04-18 22:11:00,337 [INFO] ⚠️ Línea ignorada por no coincidir: -
+2025-04-18 22:11:00,337 [INFO] ⚠️ Línea ignorada por no coincidir: 5.670.161.554
+2025-04-18 22:11:00,337 [INFO] ⚠️ Línea ignorada por no coincidir: 100
+2025-04-18 22:11:00,337 [INFO] ⚠️ Línea ignorada por no coincidir: UNI
+2025-04-18 22:11:00,337 [INFO] ⚠️ Línea ignorada por no coincidir: UNICAJA
+2025-04-18 22:11:00,337 [INFO] ⚠️ Línea ignorada por no coincidir: 2.057.147.574
+2025-04-18 22:11:00,337 [INFO] ⚠️ Línea ignorada por no coincidir: -
+2025-04-18 22:11:00,337 [INFO] ⚠️ Línea ignorada por no coincidir: 2.057.147.574
+2025-04-18 22:11:00,337 [INFO] ⚠️ Línea ignorada por no coincidir: 80
+2025-04-18 22:11:00,337 [INFO] ⚠️ Línea ignorada por no coincidir: IBEX 35® BANCOS
+2025-04-18 22:11:00,338 [INFO] ⚠️ Línea ignorada por no coincidir: Simb.
+2025-04-18 22:11:00,338 [INFO] ⚠️ Línea ignorada por no coincidir: Nombre
+2025-04-18 22:11:00,338 [INFO] ⚠️ Línea ignorada por no coincidir: Titulos Antes
+2025-04-18 22:11:00,338 [INFO] ⚠️ Línea ignorada por no coincidir: Estatus
+2025-04-18 22:11:00,338 [INFO] ⚠️ Línea ignorada por no coincidir: Modificaciones
+2025-04-18 22:11:00,338 [INFO] ⚠️ Línea ignorada por no coincidir: Comp.
+2025-04-18 22:11:00,338 [INFO] ⚠️ Línea ignorada por no coincidir: 24/03/2025
+2025-04-18 22:11:00,338 [INFO] ⚠️ Línea ignorada por no coincidir: % Coef
+2025-04-18 22:11:00,338 [INFO] ⚠️ Línea ignorada por no coincidir: FF
+2025-04-18 22:11:00,338 [INFO] ⚠️ Línea ignorada por no coincidir: BBVA
+2025-04-18 22:11:00,338 [INFO] ⚠️ Línea ignorada por no coincidir: BBVA
+2025-04-18 22:11:00,338 [INFO] ⚠️ Línea ignorada por no coincidir: 5.763.285.465
+2025-04-18 22:11:00,338 [INFO] ⚠️ Línea ignorada por no coincidir: -
+2025-04-18 22:11:00,339 [INFO] ⚠️ Línea ignorada por no coincidir: 5.763.285.465
+2025-04-18 22:11:00,339 [INFO] ⚠️ Línea ignorada por no coincidir: 100
+2025-04-18 22:11:00,339 [INFO] ⚠️ Línea ignorada por no coincidir: BKT
+2025-04-18 22:11:00,339 [INFO] ⚠️ Línea ignorada por no coincidir: BANKINTER
+2025-04-18 22:11:00,339 [INFO] ⚠️ Línea ignorada por no coincidir: 898.866.154
+2025-04-18 22:11:00,339 [INFO] ⚠️ Línea ignorada por no coincidir: -
+2025-04-18 22:11:00,339 [INFO] ⚠️ Línea ignorada por no coincidir: 898.866.154
+2025-04-18 22:11:00,339 [INFO] ⚠️ Línea ignorada por no coincidir: 100
+2025-04-18 22:11:00,339 [INFO] ⚠️ Línea ignorada por no coincidir: CABK
+2025-04-18 22:11:00,339 [INFO] ⚠️ Línea ignorada por no coincidir: CAIXABANK              5.739.950.277
+2025-04-18 22:11:00,339 [INFO] ⚠️ Línea ignorada por no coincidir: -
+2025-04-18 22:11:00,339 [INFO] ⚠️ Línea ignorada por no coincidir: 5.739.950.277
+2025-04-18 22:11:00,339 [INFO] ⚠️ Línea ignorada por no coincidir: 80
+2025-04-18 22:11:00,339 [INFO] ⚠️ Línea ignorada por no coincidir: SAB
+2025-04-18 22:11:00,339 [INFO] ⚠️ Línea ignorada por no coincidir: B. SABADELL
+2025-04-18 22:11:00,339 [INFO] ⚠️ Línea ignorada por no coincidir: 5.440.221.447
+2025-04-18 22:11:00,339 [INFO] ⚠️ Línea ignorada por no coincidir: -52.531.365
+2025-04-18 22:11:00,339 [INFO] ⚠️ Línea ignorada por no coincidir: 5.387.690.082
+2025-04-18 22:11:00,339 [INFO] ⚠️ Línea ignorada por no coincidir: 100
+2025-04-18 22:11:00,339 [INFO] ⚠️ Línea ignorada por no coincidir: SAN
+2025-04-18 22:11:00,339 [INFO] ⚠️ Línea ignorada por no coincidir: SANTANDER           15.429.599.106
+2025-04-18 22:11:00,339 [INFO] ⚠️ Línea ignorada por no coincidir: -  15.429.599.106
+2025-04-18 22:11:00,339 [INFO] ⚠️ Línea ignorada por no coincidir: 100
+2025-04-18 22:11:00,339 [INFO] ⚠️ Línea ignorada por no coincidir: UNI
+2025-04-18 22:11:00,339 [INFO] ⚠️ Línea ignorada por no coincidir: UNICAJA                    2.057.147.574
+2025-04-18 22:11:00,339 [INFO] ⚠️ Línea ignorada por no coincidir: -
+2025-04-18 22:11:00,339 [INFO] ⚠️ Línea ignorada por no coincidir: 2.057.147.574
+2025-04-18 22:11:00,339 [INFO] ⚠️ Línea ignorada por no coincidir: 80
+2025-04-18 22:11:00,339 [INFO] ⚠️ Línea ignorada por no coincidir: IBEX 35® ENERGÍA
+2025-04-18 22:11:00,339 [INFO] ⚠️ Línea ignorada por no coincidir: Simb.
+2025-04-18 22:11:00,339 [INFO] ⚠️ Línea ignorada por no coincidir: Nombre
+2025-04-18 22:11:00,339 [INFO] ⚠️ Línea ignorada por no coincidir: Titulos Antes
+2025-04-18 22:11:00,339 [INFO] ⚠️ Línea ignorada por no coincidir: Estatus
+2025-04-18 22:11:00,339 [INFO] ⚠️ Línea ignorada por no coincidir: Modificaciones
+2025-04-18 22:11:00,340 [INFO] ⚠️ Línea ignorada por no coincidir: Comp.
+2025-04-18 22:11:00,340 [INFO] ⚠️ Línea ignorada por no coincidir: 24/03/2025
+2025-04-18 22:11:00,340 [INFO] ⚠️ Línea ignorada por no coincidir: % Coef
+2025-04-18 22:11:00,340 [INFO] ⚠️ Línea ignorada por no coincidir: FF
+2025-04-18 22:11:00,340 [INFO] ⚠️ Línea ignorada por no coincidir: ANE
+2025-04-18 22:11:00,340 [INFO] ⚠️ Línea ignorada por no coincidir: ACCIONA ENER
+2025-04-18 22:11:00,340 [INFO] ⚠️ Línea ignorada por no coincidir: 64.952.366
+2025-04-18 22:11:00,340 [INFO] ⚠️ Línea ignorada por no coincidir: -           64.952.366
+2025-04-18 22:11:00,340 [INFO] ⚠️ Línea ignorada por no coincidir: 20
+2025-04-18 22:11:00,340 [INFO] ⚠️ Línea ignorada por no coincidir: ELE
+2025-04-18 22:11:00,340 [INFO] ⚠️ Línea ignorada por no coincidir: ENDESA
+2025-04-18 22:11:00,340 [INFO] ⚠️ Línea ignorada por no coincidir: 423.500.847
+2025-04-18 22:11:00,340 [INFO] ⚠️ Línea ignorada por no coincidir: -        423.500.847
+2025-04-18 22:11:00,340 [INFO] ⚠️ Línea ignorada por no coincidir: 40
+2025-04-18 22:11:00,340 [INFO] ⚠️ Línea ignorada por no coincidir: ENG
+2025-04-18 22:11:00,340 [INFO] ⚠️ Línea ignorada por no coincidir: ENAGAS
+2025-04-18 22:11:00,340 [INFO] ⚠️ Línea ignorada por no coincidir: 261.990.074
+2025-04-18 22:11:00,340 [INFO] ⚠️ Línea ignorada por no coincidir: -        261.990.074
+2025-04-18 22:11:00,340 [INFO] ⚠️ Línea ignorada por no coincidir: 100
+2025-04-18 22:11:00,340 [INFO] ⚠️ Línea ignorada por no coincidir: IBE
+2025-04-18 22:11:00,340 [INFO] ⚠️ Línea ignorada por no coincidir: IBERDROLA
+2025-04-18 22:11:00,340 [INFO] ⚠️ Línea ignorada por no coincidir: 2.056.022.731
+2025-04-18 22:11:00,340 [INFO] ⚠️ Línea ignorada por no coincidir: -
+2025-04-18 22:11:00,340 [INFO] ⚠️ Línea ignorada por no coincidir: 2.056.022.731
+2025-04-18 22:11:00,340 [INFO] ⚠️ Línea ignorada por no coincidir: 100
+2025-04-18 22:11:00,340 [INFO] ⚠️ Línea ignorada por no coincidir: NTGY
+2025-04-18 22:11:00,340 [INFO] ⚠️ Línea ignorada por no coincidir: NATURGY
+2025-04-18 22:11:00,340 [INFO] ⚠️ Línea ignorada por no coincidir: 193.922.760
+2025-04-18 22:11:00,340 [INFO] ⚠️ Línea ignorada por no coincidir: -        193.922.760
+2025-04-18 22:11:00,340 [INFO] ⚠️ Línea ignorada por no coincidir: 20
+2025-04-18 22:11:00,340 [INFO] ⚠️ Línea ignorada por no coincidir: RED
+2025-04-18 22:11:00,340 [INFO] ⚠️ Línea ignorada por no coincidir: REDEIA CORPO
+2025-04-18 22:11:00,340 [INFO] ⚠️ Línea ignorada por no coincidir: 541.080.000
+2025-04-18 22:11:00,340 [INFO] ⚠️ Línea ignorada por no coincidir: -       541.080.000
+2025-04-18 22:11:00,341 [INFO] ⚠️ Línea ignorada por no coincidir: 100
+2025-04-18 22:11:00,341 [INFO] ⚠️ Línea ignorada por no coincidir: REP
+2025-04-18 22:11:00,341 [INFO] ⚠️ Línea ignorada por no coincidir: REPSOL
+2025-04-18 22:11:00,341 [INFO] ⚠️ Línea ignorada por no coincidir: 1.177.396.053
+2025-04-18 22:11:00,341 [INFO] ⚠️ Línea ignorada por no coincidir: -20.000.000    1.157.396.053
+2025-04-18 22:11:00,341 [INFO] ⚠️ Línea ignorada por no coincidir: 100
+2025-04-18 22:11:00,341 [INFO] ⚠️ Línea ignorada por no coincidir: SLR
+2025-04-18 22:11:00,341 [INFO] ⚠️ Línea ignorada por no coincidir: SOLARIA
+2025-04-18 22:11:00,341 [INFO] ⚠️ Línea ignorada por no coincidir: 124.950.876
+2025-04-18 22:11:00,341 [INFO] ⚠️ Línea ignorada por no coincidir: -
+2025-04-18 22:11:00,341 [INFO] ⚠️ Línea ignorada por no coincidir: 124.950.876
+2025-04-18 22:11:00,341 [INFO] ⚠️ Línea ignorada por no coincidir: 100
+2025-04-18 22:11:00,341 [INFO] ⚠️ Línea ignorada por no coincidir: º
+2025-04-18 22:11:00,341 [INFO] ⚠️ Línea ignorada por no coincidir: Aviso 02/2025 – Gestor del Índice
+2025-04-18 22:11:00,341 [INFO] ⚠️ Línea ignorada por no coincidir: Índices
+2025-04-18 22:11:00,341 [INFO] ⚠️ Línea ignorada por no coincidir: Secretaría de Gestión de los Índices
+2025-04-18 22:11:00,341 [INFO] ⚠️ Línea ignorada por no coincidir: ibex@grupobme.es
+2025-04-18 22:11:00,341 [INFO] ⚠️ Línea ignorada por no coincidir: 91.709.53.86
+2025-04-18 22:11:00,341 [INFO] ⚠️ Línea ignorada por no coincidir: Sociedad Bolsas, S.A.U., domicilio social en Madrid, Plaza de la Lealtad 1, C.I.F. A-82695677 e inscrita en el Registro
+2025-04-18 22:11:00,341 [INFO] ⚠️ Línea ignorada por no coincidir: Mercantil de Madrid en el tomo 15.611, folio 5, sección 8, hoja núm. M-262818.
+2025-04-18 22:11:00,341 [INFO] ⚠️ Línea ignorada por no coincidir: 4
+2025-04-18 22:11:00,341 [INFO] ⚠️ Línea ignorada por no coincidir: IBEX ® CONSTRUCCIÓN
+2025-04-18 22:11:00,342 [INFO] ⚠️ Línea ignorada por no coincidir: Simb.
+2025-04-18 22:11:00,342 [INFO] ⚠️ Línea ignorada por no coincidir: Nombre
+2025-04-18 22:11:00,342 [INFO] ⚠️ Línea ignorada por no coincidir: Titulos Antes
+2025-04-18 22:11:00,342 [INFO] ⚠️ Línea ignorada por no coincidir: Estatus
+2025-04-18 22:11:00,342 [INFO] ⚠️ Línea ignorada por no coincidir: Modificaciones
+2025-04-18 22:11:00,342 [INFO] ⚠️ Línea ignorada por no coincidir: Comp.
+2025-04-18 22:11:00,342 [INFO] ⚠️ Línea ignorada por no coincidir: 24/03/2025
+2025-04-18 22:11:00,342 [INFO] ⚠️ Línea ignorada por no coincidir: % Coef
+2025-04-18 22:11:00,342 [INFO] ⚠️ Línea ignorada por no coincidir: FF
+2025-04-18 22:11:00,342 [INFO] ⚠️ Línea ignorada por no coincidir: ACS
+2025-04-18 22:11:00,342 [INFO] ⚠️ Línea ignorada por no coincidir: ACS CONST.
+2025-04-18 22:11:00,342 [INFO] ⚠️ Línea ignorada por no coincidir: 271.664.594
+2025-04-18 22:11:00,342 [INFO] ⚠️ Línea ignorada por no coincidir: -        271.664.594
+2025-04-18 22:11:00,342 [INFO] ⚠️ Línea ignorada por no coincidir: 100
+2025-04-18 22:11:00,342 [INFO] ⚠️ Línea ignorada por no coincidir: ANA
+2025-04-18 22:11:00,342 [INFO] ⚠️ Línea ignorada por no coincidir: ACCIONA
+2025-04-18 22:11:00,342 [INFO] ⚠️ Línea ignorada por no coincidir: 43.885.322
+2025-04-18 22:11:00,342 [INFO] ⚠️ Línea ignorada por no coincidir: -          43.885.322
+2025-04-18 22:11:00,342 [INFO] ⚠️ Línea ignorada por no coincidir: 80
+2025-04-18 22:11:00,342 [INFO] ⚠️ Línea ignorada por no coincidir: FER
+2025-04-18 22:11:00,342 [INFO] ⚠️ Línea ignorada por no coincidir: FERROVIAL
+2025-04-18 22:11:00,342 [INFO] ⚠️ Línea ignorada por no coincidir: 333.069.476
+2025-04-18 22:11:00,342 [INFO] ⚠️ Línea ignorada por no coincidir: -
+2025-04-18 22:11:00,342 [INFO] ⚠️ Línea ignorada por no coincidir: 333.069.476
+2025-04-18 22:11:00,342 [INFO] ⚠️ Línea ignorada por no coincidir: 100
+2025-04-18 22:11:00,342 [INFO] ⚠️ Línea ignorada por no coincidir: SCYR
+2025-04-18 22:11:00,342 [INFO] ⚠️ Línea ignorada por no coincidir: SACYR
+2025-04-18 22:11:00,342 [INFO] ⚠️ Línea ignorada por no coincidir: 779.906.655
+2025-04-18 22:11:00,342 [INFO] ⚠️ Línea ignorada por no coincidir: 16.951.143        796.857.798
+2025-04-18 22:11:00,342 [INFO] ⚠️ Línea ignorada por no coincidir: 100
+2025-04-18 22:11:00,342 [INFO] ⚠️ Línea ignorada por no coincidir: Esta relación tiene el carácter de composición definitiva, a no ser que el Gestor tenga que
+2025-04-18 22:11:00,342 [INFO] ⚠️ Línea ignorada por no coincidir: realizar algún ajuste como consecuencia de operaciones financieras comunicadas con
+2025-04-18 22:11:00,343 [INFO] ⚠️ Línea ignorada por no coincidir: posterioridad a este anuncio.
+2025-04-18 22:11:00,343 [INFO] ⚠️ Línea ignorada por no coincidir: Lo que se pone en conocimiento del público en general a los efectos oportunos.
+2025-04-18 22:11:00,343 [INFO] ⚠️ Línea ignorada por no coincidir: Madrid, 19 de marzo de 2025
+2025-04-18 22:11:00,343 [INFO] ⚠️ Línea ignorada por no coincidir: Este material ha sido preparado por Bolsas y Mercados Españoles, Sociedad Holding de Mercados y Sistemas Financieros S. A. (BME) y/o sus filiales (en
+2025-04-18 22:11:00,343 [INFO] ⚠️ Línea ignorada por no coincidir: conjunto, "BME") para el uso exclusivo de las personas a las que a las que BME entrega este material. Este material o cualquiera de sus contenidos no debe
+2025-04-18 22:11:00,343 [INFO] ⚠️ Línea ignorada por no coincidir: interpretarse como un acuerdo vinculante, una recomendación, un consejo de inversión, solicitud, invitación u oferta de compra o venta de información
+2025-04-18 22:11:00,343 [INFO] ⚠️ Línea ignorada por no coincidir: financiera, productos, soluciones o servicios. Dicha información tampoco es un reflejo de posiciones (propias o de terceros) en firme de los intervinientes en el
+2025-04-18 22:11:00,343 [INFO] ⚠️ Línea ignorada por no coincidir: Mercado de Valores Español. BME no tiene ninguna obligación de actualizar, revisar o mantener al día el contenido de este material, y estará sujeto a cambios
+2025-04-18 22:11:00,343 [INFO] ⚠️ Línea ignorada por no coincidir: sin previo aviso en cualquier momento. Ninguna representación, garantía o compromiso -expreso o implícito- es compromiso -expreso o implícito- es o será
+2025-04-18 22:11:00,343 [INFO] ⚠️ Línea ignorada por no coincidir: dado por BME en cuanto a la exactitud, integridad, suficiencia, idoneidad o fiabilidad del contenido de este material.
+2025-04-18 22:11:00,343 [INFO] ⚠️ Línea ignorada por no coincidir: Al reflejar opiniones teóricas, su contenido es meramente informativo y por tanto no debe ser utilizado para valoración de carteras o patrimonios, ni servir de
+2025-04-18 22:11:00,343 [INFO] ⚠️ Línea ignorada por no coincidir: base para recomendaciones de inversión. Ni las Entidades contribuidoras, ni Bolsas y Mercados Españoles, Sociedad Holding de Mercados y Sistemas
+2025-04-18 22:11:00,343 [INFO] ⚠️ Línea ignorada por no coincidir: Financieros S.A.(BME) ni de ninguna de sus filiales, serán responsables de ninguna pérdida financiera, ni decisión tomada sobre la base de la información
+2025-04-18 22:11:00,343 [INFO] ⚠️ Línea ignorada por no coincidir: contenida en este material. En general, Bolsas y Mercados Españoles, Sociedad Holding de Mercados y Sistemas Financieros S. A. (BME) ni ninguna de sus
+2025-04-18 22:11:00,343 [INFO] ⚠️ Línea ignorada por no coincidir: filiales, ni las Entidades contribuidoras, sus administradores, representantes, asociados, sociedades controladas, directores, socios, empleados o asesores
+2025-04-18 22:11:00,343 [INFO] ⚠️ Línea ignorada por no coincidir: asumen responsabilidad alguna en relación con dicha información, ni de cualquier uso no autorizado del mismo.
+2025-04-18 22:11:00,343 [INFO] ⚠️ Línea ignorada por no coincidir: Este material es propiedad de BME y no puede ser impreso, copiado, reproducido, publicado, transmitido, divulgado o distribuido de ninguna forma sin el
+2025-04-18 22:11:00,343 [INFO] ⚠️ Línea ignorada por no coincidir: consentimiento previo por escrito de BME.
+2025-04-18 22:11:00,343 [INFO] ⚠️ Línea ignorada por no coincidir: 2025 Bolsas y Mercados Españoles, Sociedad Holding de Mercados y Sistemas Financieros S. A. Todos los derechos reservados.
+2025-04-18 22:11:00,343 [INFO] ⚠️ Línea ignorada por no coincidir: BME
+2025-04-18 22:11:00,343 [INFO] ⚠️ Línea ignorada por no coincidir: Plaza de la Lealtad,1
+2025-04-18 22:11:00,343 [INFO] ⚠️ Línea ignorada por no coincidir: Palacio de la Bolsa
+2025-04-18 22:11:00,343 [INFO] ⚠️ Línea ignorada por no coincidir: 28014 Madrid
+2025-04-18 22:11:00,343 [INFO] ⚠️ Línea ignorada por no coincidir: www.bolsasymercados.es
+2025-04-18 22:11:00,344 [ERROR] ❌ Error en OCR del PDF: Unable to get page count. Is poppler installed and in PATH?
+2025-04-18 22:11:00,344 [INFO] ⚠️ Usando datos parciales extraídos con pdfplumber.
+2025-04-18 22:11:00,344 [INFO] ⚠️ Fila ignorada por falta de datos clave: {'simbolo': '', 'nombre': '', 'titulos_antes': '', 'estatus': None, 'modificaciones': None, 'comp': '', 'coef_ff': '24/03/2025', 'fecha_insercion': datetime.date(2025, 4, 18)}
+2025-04-18 22:11:00,344 [INFO] ⚠️ Fila ignorada por falta de datos clave: {'simbolo': '', 'nombre': '', 'titulos_antes': '', 'estatus': None, 'modificaciones': None, 'comp': '', 'coef_ff': '24/03/2025', 'fecha_insercion': datetime.date(2025, 4, 18)}
+2025-04-18 22:11:00,344 [INFO] ⚠️ Fila ignorada por falta de datos clave: {'simbolo': '', 'nombre': '', 'titulos_antes': '', 'estatus': None, 'modificaciones': None, 'comp': '', 'coef_ff': '24/03/2025', 'fecha_insercion': datetime.date(2025, 4, 18)}
+2025-04-18 22:11:00,344 [INFO] ⚠️ Fila ignorada por falta de datos clave: {'simbolo': '', 'nombre': '', 'titulos_antes': '', 'estatus': None, 'modificaciones': None, 'comp': '', 'coef_ff': '24/03/2025', 'fecha_insercion': datetime.date(2025, 4, 18)}
+2025-04-18 22:11:00,345 [INFO] 🗑️ PDF temporal eliminado.
+2025-04-18 22:11:00,345 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
+2025-04-18 22:15:09,228 [INFO] ✅ Base de datos 'bolsa' verificada o creada.
+2025-04-18 22:15:09,230 [INFO] ✅ Tabla 'indices' verificada o creada correctamente.
+2025-04-18 22:15:09,230 [ERROR] ❌ No se encontró 'poppler.zip' en extras/.
+2025-04-18 22:15:09,231 [ERROR] ❌ No se encontró 'tesseract.zip' en extras/. OCR no funcionará.
+2025-04-18 22:15:09,231 [INFO] 🚀 Iniciando scraping de PDF del IBEX 35
+2025-04-18 22:15:09,536 [INFO] 📥 PDF descargado: https://www.bolsasymercados.es/bme-exchange/docs/Indices/Avisos/esp/gestorindice/Aviso_Gestor_Indices_02-25.pdf
+2025-04-18 22:15:09,730 [INFO] 📊 (Bloque) Se extrajeron 45 filas de la tabla.
+2025-04-18 22:15:09,737 [INFO] 📥 Insertado/actualizado: IBEX – 35®, comunica la composición del mismo a partir del 24 de marzo de 2025. IBEX 35® Simb. Nombre Titulos Antes Estatus Modificaciones Comp. 24/03/2025 %Coef FF ACS ACS CONST.
+2025-04-18 22:15:09,737 [INFO] 📥 IBEX – 35®, comunica la composición del mismo a partir del 24 de marzo de 2025. IBEX 35® Simb. Nombre Titulos Antes Estatus Modificaciones Comp. 24/03/2025 %Coef FF ACS ACS CONST.
+2025-04-18 22:15:09,742 [INFO] 📥 Insertado/actualizado: ACX – ACERINOX
+2025-04-18 22:15:09,742 [INFO] 📥 ACX – ACERINOX
+2025-04-18 22:15:09,749 [INFO] 📥 Insertado/actualizado: AENA – AENA
+2025-04-18 22:15:09,750 [INFO] 📥 AENA – AENA
+2025-04-18 22:15:09,754 [INFO] 📥 Insertado/actualizado: AMS – AMADEUS IT
+2025-04-18 22:15:09,754 [INFO] 📥 AMS – AMADEUS IT
+2025-04-18 22:15:09,758 [INFO] 📥 Insertado/actualizado: ANA – ACCIONA
+2025-04-18 22:15:09,758 [INFO] 📥 ANA – ACCIONA
+2025-04-18 22:15:09,762 [INFO] 📥 Insertado/actualizado: ANE – ACCIONA ENER
+2025-04-18 22:15:09,763 [INFO] 📥 ANE – ACCIONA ENER
+2025-04-18 22:15:09,766 [INFO] 📥 Insertado/actualizado: BBVA – BBVA
+2025-04-18 22:15:09,767 [INFO] 📥 BBVA – BBVA
+2025-04-18 22:15:09,770 [INFO] 📥 Insertado/actualizado: BKT – BANKINTER
+2025-04-18 22:15:09,770 [INFO] 📥 BKT – BANKINTER
+2025-04-18 22:15:09,774 [INFO] 📥 Insertado/actualizado: CABK – CAIXABANK
+2025-04-18 22:15:09,774 [INFO] 📥 CABK – CAIXABANK
+2025-04-18 22:15:09,777 [INFO] 📥 Insertado/actualizado: CLNX – CELLNEX
+2025-04-18 22:15:09,777 [INFO] 📥 CLNX – CELLNEX
+2025-04-18 22:15:09,781 [INFO] 📥 Insertado/actualizado: COL – INM.COLONIAL
+2025-04-18 22:15:09,781 [INFO] 📥 COL – INM.COLONIAL
+2025-04-18 22:15:09,784 [INFO] 📥 Insertado/actualizado: ELE – ENDESA
+2025-04-18 22:15:09,784 [INFO] 📥 ELE – ENDESA
+2025-04-18 22:15:09,788 [INFO] 📥 Insertado/actualizado: ENG – ENAGAS
+2025-04-18 22:15:09,788 [INFO] 📥 ENG – ENAGAS
+2025-04-18 22:15:09,793 [INFO] 📥 Insertado/actualizado: FDR – FLUIDRA
+2025-04-18 22:15:09,793 [INFO] 📥 FDR – FLUIDRA
+2025-04-18 22:15:09,796 [INFO] 📥 Insertado/actualizado: FER – FERROVIAL SE 739.565.455 -10.005.504 729.559.951 100 GRF GRIFOLS
+2025-04-18 22:15:09,796 [INFO] 📥 FER – FERROVIAL SE 739.565.455 -10.005.504 729.559.951 100 GRF GRIFOLS
+2025-04-18 22:15:09,800 [INFO] 📥 Insertado/actualizado: IAG – INT.AIRL.GRP
+2025-04-18 22:15:09,800 [INFO] 📥 IAG – INT.AIRL.GRP
+2025-04-18 22:15:09,804 [INFO] 📥 Insertado/actualizado: IBE – IBERDROLA
+2025-04-18 22:15:09,804 [INFO] 📥 IBE – IBERDROLA
+2025-04-18 22:15:09,807 [INFO] 📥 Insertado/actualizado: IDR – INDRA A
+2025-04-18 22:15:09,807 [INFO] 📥 IDR – INDRA A
+2025-04-18 22:15:09,811 [INFO] 📥 Insertado/actualizado: ITX – INDITEX
+2025-04-18 22:15:09,811 [INFO] 📥 ITX – INDITEX
+2025-04-18 22:15:09,814 [INFO] 📥 Insertado/actualizado: LOG – LOGISTA
+2025-04-18 22:15:09,814 [INFO] 📥 LOG – LOGISTA
+2025-04-18 22:15:09,818 [INFO] 📥 Insertado/actualizado: MAP – MAPFRE
+2025-04-18 22:15:09,818 [INFO] 📥 MAP – MAPFRE
+2025-04-18 22:15:09,821 [INFO] 📥 Insertado/actualizado: MRL – MERLIN PROP.
+2025-04-18 22:15:09,821 [INFO] 📥 MRL – MERLIN PROP.
+2025-04-18 22:15:09,824 [INFO] 📥 Insertado/actualizado: MTS – ARCEL.MITTAL
+2025-04-18 22:15:09,825 [INFO] 📥 MTS – ARCEL.MITTAL
+2025-04-18 22:15:09,828 [INFO] 📥 Insertado/actualizado: NTGY – NATURGY
+2025-04-18 22:15:09,828 [INFO] 📥 NTGY – NATURGY
+2025-04-18 22:15:09,831 [INFO] 📥 Insertado/actualizado: PUIG – PUIG BRANDS 174.819.678 - 174.819.678 100 º Aviso 02/2025 – Gestor del Índice Índices Secretaría de Gestión de los Índices ibex@grupobme.es 91.709.53.86 Sociedad Bolsas, S.A.U., domicilio social en Madrid, Plaza de la Lealtad 1, C.I.F. A-82695677 e inscrita en el Registro Mercantil de Madrid en el tomo 15.611, folio 5, sección 8, hoja núm. M-262818. 3 RED REDEIA CORPO
+2025-04-18 22:15:09,832 [INFO] 📥 PUIG – PUIG BRANDS 174.819.678 - 174.819.678 100 º Aviso 02/2025 – Gestor del Índice Índices Secretaría de Gestión de los Índices ibex@grupobme.es 91.709.53.86 Sociedad Bolsas, S.A.U., domicilio social en Madrid, Plaza de la Lealtad 1, C.I.F. A-82695677 e inscrita en el Registro Mercantil de Madrid en el tomo 15.611, folio 5, sección 8, hoja núm. M-262818. 3 RED REDEIA CORPO
+2025-04-18 22:15:09,835 [INFO] 📥 Insertado/actualizado: REP – REPSOL 1.177.396.053 -20.000.000 1.157.396.053 100 ROVI LABORAT.ROVI
+2025-04-18 22:15:09,835 [INFO] 📥 REP – REPSOL 1.177.396.053 -20.000.000 1.157.396.053 100 ROVI LABORAT.ROVI
+2025-04-18 22:15:09,838 [INFO] 📥 Insertado/actualizado: SAB – B. SABADELL 5.440.221.447 -52.531.365 5.387.690.082 100 SAN SANTANDER
+2025-04-18 22:15:09,838 [INFO] 📥 SAB – B. SABADELL 5.440.221.447 -52.531.365 5.387.690.082 100 SAN SANTANDER
+2025-04-18 22:15:09,842 [INFO] 📥 Insertado/actualizado: SCYR – SACYR
+2025-04-18 22:15:09,842 [INFO] 📥 SCYR – SACYR
+2025-04-18 22:15:09,845 [INFO] 📥 Insertado/actualizado: SLR – SOLARIA
+2025-04-18 22:15:09,845 [INFO] 📥 SLR – SOLARIA
+2025-04-18 22:15:09,848 [INFO] 📥 Insertado/actualizado: TEF – TELEFONICA
+2025-04-18 22:15:09,848 [INFO] 📥 TEF – TELEFONICA
+2025-04-18 22:15:09,851 [INFO] 📥 Insertado/actualizado: UNI – UNICAJA
+2025-04-18 22:15:09,852 [INFO] 📥 UNI – UNICAJA
+2025-04-18 22:15:09,855 [INFO] 📥 Insertado/actualizado: IBEX – 35® BANCOS Simb. Nombre Titulos Antes Estatus Modificaciones Comp. 24/03/2025 % Coef FF BBVA BBVA
+2025-04-18 22:15:09,855 [INFO] 📥 IBEX – 35® BANCOS Simb. Nombre Titulos Antes Estatus Modificaciones Comp. 24/03/2025 % Coef FF BBVA BBVA
+2025-04-18 22:15:09,859 [INFO] 📥 Insertado/actualizado: BKT – BANKINTER
+2025-04-18 22:15:09,859 [INFO] 📥 BKT – BANKINTER
+2025-04-18 22:15:09,863 [INFO] 📥 Insertado/actualizado: CABK – CAIXABANK
+2025-04-18 22:15:09,863 [INFO] 📥 CABK – CAIXABANK
+2025-04-18 22:15:09,866 [INFO] 📥 Insertado/actualizado: SAB – B. SABADELL 5.440.221.447 -52.531.365 5.387.690.082 100 SAN SANTANDER
+2025-04-18 22:15:09,867 [INFO] 📥 SAB – B. SABADELL 5.440.221.447 -52.531.365 5.387.690.082 100 SAN SANTANDER
+2025-04-18 22:15:09,870 [INFO] 📥 Insertado/actualizado: UNI – UNICAJA
+2025-04-18 22:15:09,870 [INFO] 📥 UNI – UNICAJA
+2025-04-18 22:15:09,873 [INFO] 📥 Insertado/actualizado: IBEX – 35® ENERGÍA Simb. Nombre Titulos Antes Estatus Modificaciones Comp. 24/03/2025 % Coef FF ANE ACCIONA ENER
+2025-04-18 22:15:09,873 [INFO] 📥 IBEX – 35® ENERGÍA Simb. Nombre Titulos Antes Estatus Modificaciones Comp. 24/03/2025 % Coef FF ANE ACCIONA ENER
+2025-04-18 22:15:09,876 [INFO] 📥 Insertado/actualizado: ELE – ENDESA
+2025-04-18 22:15:09,877 [INFO] 📥 ELE – ENDESA
+2025-04-18 22:15:09,896 [INFO] 📥 Insertado/actualizado: ENG – ENAGAS
+2025-04-18 22:15:09,897 [INFO] 📥 ENG – ENAGAS
+2025-04-18 22:15:09,904 [INFO] 📥 Insertado/actualizado: IBE – IBERDROLA
+2025-04-18 22:15:09,904 [INFO] 📥 IBE – IBERDROLA
+2025-04-18 22:15:09,910 [INFO] 📥 Insertado/actualizado: NTGY – NATURGY
+2025-04-18 22:15:09,910 [INFO] 📥 NTGY – NATURGY
+2025-04-18 22:15:09,915 [INFO] 📥 Insertado/actualizado: RED – REDEIA CORPO
+2025-04-18 22:15:09,915 [INFO] 📥 RED – REDEIA CORPO
+2025-04-18 22:15:09,919 [INFO] 📥 Insertado/actualizado: REP – REPSOL 1.177.396.053 -20.000.000 1.157.396.053 100 SLR SOLARIA 124.950.876 - 124.950.876 100 º Aviso 02/2025 – Gestor del Índice Índices Secretaría de Gestión de los Índices ibex@grupobme.es 91.709.53.86 Sociedad Bolsas, S.A.U., domicilio social en Madrid, Plaza de la Lealtad 1, C.I.F. A-82695677 e inscrita en el Registro Mercantil de Madrid en el tomo 15.611, folio 5, sección 8, hoja núm. M-262818. 4 IBEX ® CONSTRUCCIÓN Simb. Nombre Titulos Antes Estatus Modificaciones Comp. 24/03/2025 % Coef FF ACS ACS CONST.
+2025-04-18 22:15:09,919 [INFO] 📥 REP – REPSOL 1.177.396.053 -20.000.000 1.157.396.053 100 SLR SOLARIA 124.950.876 - 124.950.876 100 º Aviso 02/2025 – Gestor del Índice Índices Secretaría de Gestión de los Índices ibex@grupobme.es 91.709.53.86 Sociedad Bolsas, S.A.U., domicilio social en Madrid, Plaza de la Lealtad 1, C.I.F. A-82695677 e inscrita en el Registro Mercantil de Madrid en el tomo 15.611, folio 5, sección 8, hoja núm. M-262818. 4 IBEX ® CONSTRUCCIÓN Simb. Nombre Titulos Antes Estatus Modificaciones Comp. 24/03/2025 % Coef FF ACS ACS CONST.
+2025-04-18 22:15:09,923 [INFO] 📥 Insertado/actualizado: ANA – ACCIONA
+2025-04-18 22:15:09,923 [INFO] 📥 ANA – ACCIONA
+2025-04-18 22:15:09,927 [INFO] 📥 Insertado/actualizado: FER – FERROVIAL
+2025-04-18 22:15:09,927 [INFO] 📥 FER – FERROVIAL
+2025-04-18 22:15:09,927 [INFO] 🗑️ PDF temporal eliminado.
+2025-04-18 22:15:09,927 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
+2025-04-18 22:18:48,809 [INFO] ✅ Base de datos 'bolsa' verificada o creada.
+2025-04-18 22:18:48,811 [INFO] ✅ Tabla 'indices' verificada o creada correctamente.
+2025-04-18 22:18:48,811 [ERROR] ❌ No se encontró 'poppler.zip' en extras/.
+2025-04-18 22:18:48,811 [ERROR] ❌ No se encontró 'tesseract.zip' en extras/. OCR no funcionará.
+2025-04-18 22:18:48,811 [INFO] 🚀 Iniciando scraping de PDF del IBEX 35
+2025-04-18 22:18:49,064 [INFO] 📥 PDF descargado: https://www.bolsasymercados.es/bme-exchange/docs/Indices/Avisos/esp/gestorindice/Aviso_Gestor_Indices_02-25.pdf
+2025-04-18 22:18:49,254 [INFO] ⚠️ Línea ignorada por no encajar en 6 columnas: IBEX 35®, comunica la composición del mismo a partir del 24 de marzo de 2025.
+2025-04-18 22:18:49,254 [INFO] ⚠️ Línea ignorada por no encajar en 6 columnas: IBEX 35®
+2025-04-18 22:18:49,254 [INFO] ⚠️ Línea ignorada por no encajar en 6 columnas: ACS CONST.
+2025-04-18 22:18:49,254 [INFO] ⚠️ Línea ignorada por no encajar en 6 columnas: INDRA A
+2025-04-18 22:18:49,254 [INFO] ⚠️ Línea ignorada por no encajar en 6 columnas: PUIG BRANDS
+2025-04-18 22:18:49,254 [INFO] ⚠️ Línea ignorada por no encajar en 6 columnas: IBEX 35® BANCOS
+2025-04-18 22:18:49,254 [INFO] ⚠️ Línea ignorada por no encajar en 6 columnas: IBEX 35® ENERGÍA
+2025-04-18 22:18:49,254 [INFO] ⚠️ Línea ignorada por no encajar en 6 columnas: IBEX ® CONSTRUCCIÓN
+2025-04-18 22:18:49,254 [INFO] ⚠️ Línea ignorada por no encajar en 6 columnas: ACS CONST.
+2025-04-18 22:18:49,259 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:18:49,259 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:18:49,260 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:18:49,260 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:18:49,260 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:18:49,715 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:18:49,716 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:18:49,716 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:18:49,716 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:18:49,716 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:18:49,716 [INFO] 📊 Se extrajeron 4 filas con pdfplumber.
+2025-04-18 22:18:49,716 [INFO] ⚠️ Fila ignorada por falta de datos clave: {'simbolo': '', 'nombre': '', 'titulos_antes': '', 'estatus': None, 'modificaciones': None, 'comp': '', 'coef_ff': '24/03/2025', 'fecha_insercion': datetime.date(2025, 4, 18)}
+2025-04-18 22:18:49,716 [INFO] ⚠️ Fila ignorada por falta de datos clave: {'simbolo': '', 'nombre': '', 'titulos_antes': '', 'estatus': None, 'modificaciones': None, 'comp': '', 'coef_ff': '24/03/2025', 'fecha_insercion': datetime.date(2025, 4, 18)}
+2025-04-18 22:18:49,716 [INFO] ⚠️ Fila ignorada por falta de datos clave: {'simbolo': '', 'nombre': '', 'titulos_antes': '', 'estatus': None, 'modificaciones': None, 'comp': '', 'coef_ff': '24/03/2025', 'fecha_insercion': datetime.date(2025, 4, 18)}
+2025-04-18 22:18:49,716 [INFO] ⚠️ Fila ignorada por falta de datos clave: {'simbolo': '', 'nombre': '', 'titulos_antes': '', 'estatus': None, 'modificaciones': None, 'comp': '', 'coef_ff': '24/03/2025', 'fecha_insercion': datetime.date(2025, 4, 18)}
+2025-04-18 22:18:49,716 [INFO] 🗑️ PDF temporal eliminado.
+2025-04-18 22:18:49,716 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
+2025-04-18 22:22:13,735 [INFO] ✅ Base de datos 'bolsa' verificada o creada.
+2025-04-18 22:22:13,736 [INFO] ✅ Tabla 'indices' verificada o creada correctamente.
+2025-04-18 22:22:13,737 [ERROR] ❌ No se encontró 'poppler.zip' en extras/.
+2025-04-18 22:22:13,737 [ERROR] ❌ No se encontró 'tesseract.zip' en extras/. OCR no funcionará.
+2025-04-18 22:22:13,737 [INFO] 🚀 Iniciando scraping de PDF del IBEX 35
+2025-04-18 22:22:13,989 [INFO] 📥 PDF descargado: https://www.bolsasymercados.es/bme-exchange/docs/Indices/Avisos/esp/gestorindice/Aviso_Gestor_Indices_02-25.pdf
+2025-04-18 22:22:14,125 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:22:14,126 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:22:14,126 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:22:14,127 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:22:14,128 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:22:14,592 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:22:14,592 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:22:14,592 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:22:14,592 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:22:14,592 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:22:14,592 [INFO] 📊 Se extrajeron 0 filas con pdfplumber.
+2025-04-18 22:22:14,593 [ERROR] ❌ Error en OCR del PDF: Unable to get page count. Is poppler installed and in PATH?
+2025-04-18 22:22:14,593 [ERROR] ❌ No se extrajeron datos del PDF.
+2025-04-18 22:22:14,594 [INFO] 🗑️ PDF temporal eliminado.
+2025-04-18 22:22:14,594 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
+2025-04-18 22:24:09,352 [INFO] ✅ Base de datos 'bolsa' verificada o creada.
+2025-04-18 22:24:09,355 [INFO] ✅ Tabla 'indices' verificada o creada correctamente.
+2025-04-18 22:24:09,355 [ERROR] ❌ No se encontró 'poppler.zip' en extras/.
+2025-04-18 22:24:09,355 [ERROR] ❌ No se encontró 'tesseract.zip' en extras/. OCR no funcionará.
+2025-04-18 22:24:09,355 [INFO] 🚀 Iniciando scraping de PDF del IBEX 35
+2025-04-18 22:24:09,661 [INFO] 📥 PDF descargado: https://www.bolsasymercados.es/bme-exchange/docs/Indices/Avisos/esp/gestorindice/Aviso_Gestor_Indices_02-25.pdf
+2025-04-18 22:24:09,846 [INFO] ⚠️ Línea ignorada por no encajar en 6 columnas: IBEX 35®, comunica la composición del mismo a partir del 24 de marzo de 2025.
+2025-04-18 22:24:09,846 [INFO] ⚠️ Línea ignorada por no encajar en 6 columnas: IBEX 35®
+2025-04-18 22:24:09,846 [INFO] ⚠️ Línea ignorada por no encajar en 6 columnas: ACS CONST.
+2025-04-18 22:24:09,846 [INFO] ⚠️ Línea ignorada por no encajar en 6 columnas: INDRA A
+2025-04-18 22:24:09,846 [INFO] ⚠️ Línea ignorada por no encajar en 6 columnas: PUIG BRANDS
+2025-04-18 22:24:09,847 [INFO] ⚠️ Línea ignorada por no encajar en 6 columnas: IBEX 35® BANCOS
+2025-04-18 22:24:09,847 [INFO] ⚠️ Línea ignorada por no encajar en 6 columnas: IBEX 35® ENERGÍA
+2025-04-18 22:24:09,847 [INFO] ⚠️ Línea ignorada por no encajar en 6 columnas: IBEX ® CONSTRUCCIÓN
+2025-04-18 22:24:09,847 [INFO] ⚠️ Línea ignorada por no encajar en 6 columnas: ACS CONST.
+2025-04-18 22:24:09,851 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:24:09,853 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:24:09,854 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:24:09,854 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:24:09,855 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:24:10,306 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:24:10,306 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:24:10,306 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:24:10,306 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:24:10,306 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:24:10,306 [INFO] 📊 Se extrajeron 0 filas con pdfplumber.
+2025-04-18 22:24:10,307 [ERROR] ❌ Error en OCR del PDF: Unable to get page count. Is poppler installed and in PATH?
+2025-04-18 22:24:10,307 [ERROR] ❌ No se extrajeron datos del PDF.
+2025-04-18 22:24:10,308 [INFO] 🗑️ PDF temporal eliminado.
+2025-04-18 22:24:10,308 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
+2025-04-18 22:24:19,037 [INFO] ✅ Base de datos 'bolsa' verificada o creada.
+2025-04-18 22:24:19,040 [INFO] ✅ Tabla 'indices' verificada o creada correctamente.
+2025-04-18 22:24:19,041 [ERROR] ❌ No se encontró 'poppler.zip' en extras/.
+2025-04-18 22:24:19,041 [ERROR] ❌ No se encontró 'tesseract.zip' en extras/. OCR no funcionará.
+2025-04-18 22:24:19,041 [INFO] 🚀 Iniciando scraping de PDF del IBEX 35
+2025-04-18 22:24:19,352 [INFO] 📥 PDF descargado: https://www.bolsasymercados.es/bme-exchange/docs/Indices/Avisos/esp/gestorindice/Aviso_Gestor_Indices_02-25.pdf
+2025-04-18 22:24:19,534 [INFO] ⚠️ Línea ignorada por no encajar en 6 columnas: IBEX 35®, comunica la composición del mismo a partir del 24 de marzo de 2025.
+2025-04-18 22:24:19,534 [INFO] ⚠️ Línea ignorada por no encajar en 6 columnas: IBEX 35®
+2025-04-18 22:24:19,534 [INFO] ⚠️ Línea ignorada por no encajar en 6 columnas: ACS CONST.
+2025-04-18 22:24:19,534 [INFO] ⚠️ Línea ignorada por no encajar en 6 columnas: INDRA A
+2025-04-18 22:24:19,534 [INFO] ⚠️ Línea ignorada por no encajar en 6 columnas: PUIG BRANDS
+2025-04-18 22:24:19,534 [INFO] ⚠️ Línea ignorada por no encajar en 6 columnas: IBEX 35® BANCOS
+2025-04-18 22:24:19,534 [INFO] ⚠️ Línea ignorada por no encajar en 6 columnas: IBEX 35® ENERGÍA
+2025-04-18 22:24:19,534 [INFO] ⚠️ Línea ignorada por no encajar en 6 columnas: IBEX ® CONSTRUCCIÓN
+2025-04-18 22:24:19,534 [INFO] ⚠️ Línea ignorada por no encajar en 6 columnas: ACS CONST.
+2025-04-18 22:24:19,538 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:24:19,539 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:24:19,539 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:24:19,540 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:24:19,540 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:24:19,995 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:24:19,995 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:24:19,995 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:24:19,995 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:24:19,995 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:24:19,995 [INFO] 📊 Se extrajeron 4 filas con pdfplumber.
+2025-04-18 22:24:19,995 [INFO] ⚠️ Fila ignorada por falta de datos clave: {'simbolo': '', 'nombre': '', 'titulos_antes': '', 'estatus': None, 'modificaciones': None, 'comp': '', 'coef_ff': '24/03/2025', 'fecha_insercion': datetime.date(2025, 4, 18)}
+2025-04-18 22:24:19,995 [INFO] ⚠️ Fila ignorada por falta de datos clave: {'simbolo': '', 'nombre': '', 'titulos_antes': '', 'estatus': None, 'modificaciones': None, 'comp': '', 'coef_ff': '24/03/2025', 'fecha_insercion': datetime.date(2025, 4, 18)}
+2025-04-18 22:24:19,995 [INFO] ⚠️ Fila ignorada por falta de datos clave: {'simbolo': '', 'nombre': '', 'titulos_antes': '', 'estatus': None, 'modificaciones': None, 'comp': '', 'coef_ff': '24/03/2025', 'fecha_insercion': datetime.date(2025, 4, 18)}
+2025-04-18 22:24:19,995 [INFO] ⚠️ Fila ignorada por falta de datos clave: {'simbolo': '', 'nombre': '', 'titulos_antes': '', 'estatus': None, 'modificaciones': None, 'comp': '', 'coef_ff': '24/03/2025', 'fecha_insercion': datetime.date(2025, 4, 18)}
+2025-04-18 22:24:19,996 [INFO] 🗑️ PDF temporal eliminado.
+2025-04-18 22:24:19,996 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
+2025-04-18 22:24:27,464 [INFO] ✅ Base de datos 'bolsa' verificada o creada.
+2025-04-18 22:24:27,466 [INFO] ✅ Tabla 'indices' verificada o creada correctamente.
+2025-04-18 22:24:27,466 [ERROR] ❌ No se encontró 'poppler.zip' en extras/.
+2025-04-18 22:24:27,466 [ERROR] ❌ No se encontró 'tesseract.zip' en extras/. OCR no funcionará.
+2025-04-18 22:24:27,466 [INFO] 🚀 Iniciando scraping de PDF del IBEX 35
+2025-04-18 22:24:27,807 [INFO] 📥 PDF descargado: https://www.bolsasymercados.es/bme-exchange/docs/Indices/Avisos/esp/gestorindice/Aviso_Gestor_Indices_02-25.pdf
+2025-04-18 22:24:27,992 [INFO] ⚠️ Línea ignorada por no encajar en 6 columnas: IBEX 35®, comunica la composición del mismo a partir del 24 de marzo de 2025.
+2025-04-18 22:24:27,992 [INFO] ⚠️ Línea ignorada por no encajar en 6 columnas: IBEX 35®
+2025-04-18 22:24:27,992 [INFO] ⚠️ Línea ignorada por no encajar en 6 columnas: ACS CONST.
+2025-04-18 22:24:27,992 [INFO] ⚠️ Línea ignorada por no encajar en 6 columnas: INDRA A
+2025-04-18 22:24:27,992 [INFO] ⚠️ Línea ignorada por no encajar en 6 columnas: PUIG BRANDS
+2025-04-18 22:24:27,992 [INFO] ⚠️ Línea ignorada por no encajar en 6 columnas: IBEX 35® BANCOS
+2025-04-18 22:24:27,992 [INFO] ⚠️ Línea ignorada por no encajar en 6 columnas: IBEX 35® ENERGÍA
+2025-04-18 22:24:27,992 [INFO] ⚠️ Línea ignorada por no encajar en 6 columnas: IBEX ® CONSTRUCCIÓN
+2025-04-18 22:24:27,992 [INFO] ⚠️ Línea ignorada por no encajar en 6 columnas: ACS CONST.
+2025-04-18 22:24:27,997 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:24:27,997 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:24:27,999 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:24:27,999 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:24:28,000 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:24:28,454 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:24:28,454 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:24:28,454 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:24:28,454 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:24:28,454 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:24:28,454 [INFO] 📊 Se extrajeron 4 filas con pdfplumber.
+2025-04-18 22:24:28,454 [INFO] ⚠️ Fila ignorada por falta de datos clave: {'simbolo': '', 'nombre': '', 'titulos_antes': '', 'estatus': None, 'modificaciones': None, 'comp': '', 'coef_ff': '24/03/2025', 'fecha_insercion': datetime.date(2025, 4, 18)}
+2025-04-18 22:24:28,454 [INFO] ⚠️ Fila ignorada por falta de datos clave: {'simbolo': '', 'nombre': '', 'titulos_antes': '', 'estatus': None, 'modificaciones': None, 'comp': '', 'coef_ff': '24/03/2025', 'fecha_insercion': datetime.date(2025, 4, 18)}
+2025-04-18 22:24:28,454 [INFO] ⚠️ Fila ignorada por falta de datos clave: {'simbolo': '', 'nombre': '', 'titulos_antes': '', 'estatus': None, 'modificaciones': None, 'comp': '', 'coef_ff': '24/03/2025', 'fecha_insercion': datetime.date(2025, 4, 18)}
+2025-04-18 22:24:28,454 [INFO] ⚠️ Fila ignorada por falta de datos clave: {'simbolo': '', 'nombre': '', 'titulos_antes': '', 'estatus': None, 'modificaciones': None, 'comp': '', 'coef_ff': '24/03/2025', 'fecha_insercion': datetime.date(2025, 4, 18)}
+2025-04-18 22:24:28,455 [INFO] 🗑️ PDF temporal eliminado.
+2025-04-18 22:24:28,455 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
+2025-04-18 22:24:34,868 [INFO] ✅ Base de datos 'bolsa' verificada o creada.
+2025-04-18 22:24:34,870 [INFO] ✅ Tabla 'indices' verificada o creada correctamente.
+2025-04-18 22:24:34,870 [ERROR] ❌ No se encontró 'poppler.zip' en extras/.
+2025-04-18 22:24:34,870 [ERROR] ❌ No se encontró 'tesseract.zip' en extras/. OCR no funcionará.
+2025-04-18 22:24:34,870 [INFO] 🚀 Iniciando scraping de PDF del IBEX 35
+2025-04-18 22:24:35,166 [INFO] 📥 PDF descargado: https://www.bolsasymercados.es/bme-exchange/docs/Indices/Avisos/esp/gestorindice/Aviso_Gestor_Indices_02-25.pdf
+2025-04-18 22:24:35,356 [INFO] 📊 (Bloque) Se extrajeron 45 filas de la tabla.
+2025-04-18 22:24:35,364 [INFO] 📥 Insertado/actualizado: IBEX – 35®, comunica la composición del mismo a partir del 24 de marzo de 2025. IBEX 35® Simb. Nombre Titulos Antes Estatus Modificaciones Comp. 24/03/2025 %Coef FF ACS ACS CONST.
+2025-04-18 22:24:35,365 [INFO] 📥 IBEX – 35®, comunica la composición del mismo a partir del 24 de marzo de 2025. IBEX 35® Simb. Nombre Titulos Antes Estatus Modificaciones Comp. 24/03/2025 %Coef FF ACS ACS CONST.
+2025-04-18 22:24:35,370 [INFO] 📥 Insertado/actualizado: ACX – ACERINOX
+2025-04-18 22:24:35,370 [INFO] 📥 ACX – ACERINOX
+2025-04-18 22:24:35,375 [INFO] 📥 Insertado/actualizado: AENA – AENA
+2025-04-18 22:24:35,376 [INFO] 📥 AENA – AENA
+2025-04-18 22:24:35,380 [INFO] 📥 Insertado/actualizado: AMS – AMADEUS IT
+2025-04-18 22:24:35,380 [INFO] 📥 AMS – AMADEUS IT
+2025-04-18 22:24:35,385 [INFO] 📥 Insertado/actualizado: ANA – ACCIONA
+2025-04-18 22:24:35,385 [INFO] 📥 ANA – ACCIONA
+2025-04-18 22:24:35,389 [INFO] 📥 Insertado/actualizado: ANE – ACCIONA ENER
+2025-04-18 22:24:35,389 [INFO] 📥 ANE – ACCIONA ENER
+2025-04-18 22:24:35,393 [INFO] 📥 Insertado/actualizado: BBVA – BBVA
+2025-04-18 22:24:35,393 [INFO] 📥 BBVA – BBVA
+2025-04-18 22:24:35,398 [INFO] 📥 Insertado/actualizado: BKT – BANKINTER
+2025-04-18 22:24:35,398 [INFO] 📥 BKT – BANKINTER
+2025-04-18 22:24:35,403 [INFO] 📥 Insertado/actualizado: CABK – CAIXABANK
+2025-04-18 22:24:35,403 [INFO] 📥 CABK – CAIXABANK
+2025-04-18 22:24:35,407 [INFO] 📥 Insertado/actualizado: CLNX – CELLNEX
+2025-04-18 22:24:35,408 [INFO] 📥 CLNX – CELLNEX
+2025-04-18 22:24:35,411 [INFO] 📥 Insertado/actualizado: COL – INM.COLONIAL
+2025-04-18 22:24:35,412 [INFO] 📥 COL – INM.COLONIAL
+2025-04-18 22:24:35,415 [INFO] 📥 Insertado/actualizado: ELE – ENDESA
+2025-04-18 22:24:35,415 [INFO] 📥 ELE – ENDESA
+2025-04-18 22:24:35,418 [INFO] 📥 Insertado/actualizado: ENG – ENAGAS
+2025-04-18 22:24:35,419 [INFO] 📥 ENG – ENAGAS
+2025-04-18 22:24:35,422 [INFO] 📥 Insertado/actualizado: FDR – FLUIDRA
+2025-04-18 22:24:35,422 [INFO] 📥 FDR – FLUIDRA
+2025-04-18 22:24:35,430 [INFO] 📥 Insertado/actualizado: FER – FERROVIAL SE 739.565.455 -10.005.504 729.559.951 100 GRF GRIFOLS
+2025-04-18 22:24:35,430 [INFO] 📥 FER – FERROVIAL SE 739.565.455 -10.005.504 729.559.951 100 GRF GRIFOLS
+2025-04-18 22:24:35,434 [INFO] 📥 Insertado/actualizado: IAG – INT.AIRL.GRP
+2025-04-18 22:24:35,434 [INFO] 📥 IAG – INT.AIRL.GRP
+2025-04-18 22:24:35,438 [INFO] 📥 Insertado/actualizado: IBE – IBERDROLA
+2025-04-18 22:24:35,438 [INFO] 📥 IBE – IBERDROLA
+2025-04-18 22:24:35,442 [INFO] 📥 Insertado/actualizado: IDR – INDRA A
+2025-04-18 22:24:35,442 [INFO] 📥 IDR – INDRA A
+2025-04-18 22:24:35,446 [INFO] 📥 Insertado/actualizado: ITX – INDITEX
+2025-04-18 22:24:35,446 [INFO] 📥 ITX – INDITEX
+2025-04-18 22:24:35,450 [INFO] 📥 Insertado/actualizado: LOG – LOGISTA
+2025-04-18 22:24:35,450 [INFO] 📥 LOG – LOGISTA
+2025-04-18 22:24:35,454 [INFO] 📥 Insertado/actualizado: MAP – MAPFRE
+2025-04-18 22:24:35,455 [INFO] 📥 MAP – MAPFRE
+2025-04-18 22:24:35,459 [INFO] 📥 Insertado/actualizado: MRL – MERLIN PROP.
+2025-04-18 22:24:35,459 [INFO] 📥 MRL – MERLIN PROP.
+2025-04-18 22:24:35,462 [INFO] 📥 Insertado/actualizado: MTS – ARCEL.MITTAL
+2025-04-18 22:24:35,462 [INFO] 📥 MTS – ARCEL.MITTAL
+2025-04-18 22:24:35,466 [INFO] 📥 Insertado/actualizado: NTGY – NATURGY
+2025-04-18 22:24:35,466 [INFO] 📥 NTGY – NATURGY
+2025-04-18 22:24:35,470 [INFO] 📥 Insertado/actualizado: PUIG – PUIG BRANDS 174.819.678 - 174.819.678 100 º Aviso 02/2025 – Gestor del Índice Índices Secretaría de Gestión de los Índices ibex@grupobme.es 91.709.53.86 Sociedad Bolsas, S.A.U., domicilio social en Madrid, Plaza de la Lealtad 1, C.I.F. A-82695677 e inscrita en el Registro Mercantil de Madrid en el tomo 15.611, folio 5, sección 8, hoja núm. M-262818. 3 RED REDEIA CORPO
+2025-04-18 22:24:35,470 [INFO] 📥 PUIG – PUIG BRANDS 174.819.678 - 174.819.678 100 º Aviso 02/2025 – Gestor del Índice Índices Secretaría de Gestión de los Índices ibex@grupobme.es 91.709.53.86 Sociedad Bolsas, S.A.U., domicilio social en Madrid, Plaza de la Lealtad 1, C.I.F. A-82695677 e inscrita en el Registro Mercantil de Madrid en el tomo 15.611, folio 5, sección 8, hoja núm. M-262818. 3 RED REDEIA CORPO
+2025-04-18 22:24:35,474 [INFO] 📥 Insertado/actualizado: REP – REPSOL 1.177.396.053 -20.000.000 1.157.396.053 100 ROVI LABORAT.ROVI
+2025-04-18 22:24:35,474 [INFO] 📥 REP – REPSOL 1.177.396.053 -20.000.000 1.157.396.053 100 ROVI LABORAT.ROVI
+2025-04-18 22:24:35,477 [INFO] 📥 Insertado/actualizado: SAB – B. SABADELL 5.440.221.447 -52.531.365 5.387.690.082 100 SAN SANTANDER
+2025-04-18 22:24:35,477 [INFO] 📥 SAB – B. SABADELL 5.440.221.447 -52.531.365 5.387.690.082 100 SAN SANTANDER
+2025-04-18 22:24:35,481 [INFO] 📥 Insertado/actualizado: SCYR – SACYR
+2025-04-18 22:24:35,481 [INFO] 📥 SCYR – SACYR
+2025-04-18 22:24:35,485 [INFO] 📥 Insertado/actualizado: SLR – SOLARIA
+2025-04-18 22:24:35,485 [INFO] 📥 SLR – SOLARIA
+2025-04-18 22:24:35,488 [INFO] 📥 Insertado/actualizado: TEF – TELEFONICA
+2025-04-18 22:24:35,488 [INFO] 📥 TEF – TELEFONICA
+2025-04-18 22:24:35,491 [INFO] 📥 Insertado/actualizado: UNI – UNICAJA
+2025-04-18 22:24:35,492 [INFO] 📥 UNI – UNICAJA
+2025-04-18 22:24:35,495 [INFO] 📥 Insertado/actualizado: IBEX – 35® BANCOS Simb. Nombre Titulos Antes Estatus Modificaciones Comp. 24/03/2025 % Coef FF BBVA BBVA
+2025-04-18 22:24:35,495 [INFO] 📥 IBEX – 35® BANCOS Simb. Nombre Titulos Antes Estatus Modificaciones Comp. 24/03/2025 % Coef FF BBVA BBVA
+2025-04-18 22:24:35,498 [INFO] 📥 Insertado/actualizado: BKT – BANKINTER
+2025-04-18 22:24:35,499 [INFO] 📥 BKT – BANKINTER
+2025-04-18 22:24:35,502 [INFO] 📥 Insertado/actualizado: CABK – CAIXABANK
+2025-04-18 22:24:35,502 [INFO] 📥 CABK – CAIXABANK
+2025-04-18 22:24:35,505 [INFO] 📥 Insertado/actualizado: SAB – B. SABADELL 5.440.221.447 -52.531.365 5.387.690.082 100 SAN SANTANDER
+2025-04-18 22:24:35,505 [INFO] 📥 SAB – B. SABADELL 5.440.221.447 -52.531.365 5.387.690.082 100 SAN SANTANDER
+2025-04-18 22:24:35,510 [INFO] 📥 Insertado/actualizado: UNI – UNICAJA
+2025-04-18 22:24:35,510 [INFO] 📥 UNI – UNICAJA
+2025-04-18 22:24:35,513 [INFO] 📥 Insertado/actualizado: IBEX – 35® ENERGÍA Simb. Nombre Titulos Antes Estatus Modificaciones Comp. 24/03/2025 % Coef FF ANE ACCIONA ENER
+2025-04-18 22:24:35,513 [INFO] 📥 IBEX – 35® ENERGÍA Simb. Nombre Titulos Antes Estatus Modificaciones Comp. 24/03/2025 % Coef FF ANE ACCIONA ENER
+2025-04-18 22:24:35,517 [INFO] 📥 Insertado/actualizado: ELE – ENDESA
+2025-04-18 22:24:35,517 [INFO] 📥 ELE – ENDESA
+2025-04-18 22:24:35,520 [INFO] 📥 Insertado/actualizado: ENG – ENAGAS
+2025-04-18 22:24:35,521 [INFO] 📥 ENG – ENAGAS
+2025-04-18 22:24:35,524 [INFO] 📥 Insertado/actualizado: IBE – IBERDROLA
+2025-04-18 22:24:35,524 [INFO] 📥 IBE – IBERDROLA
+2025-04-18 22:24:35,528 [INFO] 📥 Insertado/actualizado: NTGY – NATURGY
+2025-04-18 22:24:35,528 [INFO] 📥 NTGY – NATURGY
+2025-04-18 22:24:35,532 [INFO] 📥 Insertado/actualizado: RED – REDEIA CORPO
+2025-04-18 22:24:35,532 [INFO] 📥 RED – REDEIA CORPO
+2025-04-18 22:24:35,535 [INFO] 📥 Insertado/actualizado: REP – REPSOL 1.177.396.053 -20.000.000 1.157.396.053 100 SLR SOLARIA 124.950.876 - 124.950.876 100 º Aviso 02/2025 – Gestor del Índice Índices Secretaría de Gestión de los Índices ibex@grupobme.es 91.709.53.86 Sociedad Bolsas, S.A.U., domicilio social en Madrid, Plaza de la Lealtad 1, C.I.F. A-82695677 e inscrita en el Registro Mercantil de Madrid en el tomo 15.611, folio 5, sección 8, hoja núm. M-262818. 4 IBEX ® CONSTRUCCIÓN Simb. Nombre Titulos Antes Estatus Modificaciones Comp. 24/03/2025 % Coef FF ACS ACS CONST.
+2025-04-18 22:24:35,536 [INFO] 📥 REP – REPSOL 1.177.396.053 -20.000.000 1.157.396.053 100 SLR SOLARIA 124.950.876 - 124.950.876 100 º Aviso 02/2025 – Gestor del Índice Índices Secretaría de Gestión de los Índices ibex@grupobme.es 91.709.53.86 Sociedad Bolsas, S.A.U., domicilio social en Madrid, Plaza de la Lealtad 1, C.I.F. A-82695677 e inscrita en el Registro Mercantil de Madrid en el tomo 15.611, folio 5, sección 8, hoja núm. M-262818. 4 IBEX ® CONSTRUCCIÓN Simb. Nombre Titulos Antes Estatus Modificaciones Comp. 24/03/2025 % Coef FF ACS ACS CONST.
+2025-04-18 22:24:35,539 [INFO] 📥 Insertado/actualizado: ANA – ACCIONA
+2025-04-18 22:24:35,539 [INFO] 📥 ANA – ACCIONA
+2025-04-18 22:24:35,543 [INFO] 📥 Insertado/actualizado: FER – FERROVIAL
+2025-04-18 22:24:35,543 [INFO] 📥 FER – FERROVIAL
+2025-04-18 22:24:35,543 [INFO] 🗑️ PDF temporal eliminado.
+2025-04-18 22:24:35,543 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.

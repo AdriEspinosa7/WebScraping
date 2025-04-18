@@ -1,19 +1,33 @@
 import subprocess
 import sys
 
-# Lista de módulos requeridos
+# Lista de paquetes PyPI requeridos
 requisitos = [
     "selenium",
     "beautifulsoup4",
     "pymupdf",
     "mysql-connector-python",
-    "requests"
+    "requests",
+    "pdfplumber",
+    "pdf2image",
+    "pytesseract"
 ]
 
 def instalar_paquete(paquete):
+    """
+    Verifica si el módulo correspondiente está importable, y si no,
+    lo instala vía pip.
+    """
     print(f"📦 Verificando {paquete}...")
+    # Mapear nombre de paquete → nombre de módulo para __import__
+    nombre_modulo = {
+        "beautifulsoup4": "bs4",
+        "mysql-connector-python": "mysql.connector",
+        "pymupdf": "fitz"
+    }.get(paquete, paquete)
+
     try:
-        __import__(paquete.split("-")[0])  # para importar el módulo base
+        __import__(nombre_modulo)
         print(f"✅ {paquete} ya está instalado.")
     except ImportError:
         print(f"❌ {paquete} no está instalado. Instalando...")
@@ -28,3 +42,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

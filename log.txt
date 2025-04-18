@@ -1125,3 +1125,1119 @@
 2025-04-15 21:19:55,713 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
 2025-04-15 21:19:55,713 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
 2025-04-15 21:19:55,713 [INFO] === FIN DEL PROCESO DE SCRAPING ===
+2025-04-16 22:43:47,023 [INFO] ✅ Base de datos 'bolsa' verificada o creada.
+2025-04-16 22:43:47,026 [INFO] ✅ Tabla 'indices' verificada o creada correctamente.
+2025-04-16 22:43:47,186 [INFO] === INICIO DEL PROCESO DE SCRAPING ===
+2025-04-16 22:43:47,186 [INFO] ====== WebDriver manager ======
+2025-04-16 22:43:49,299 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-16 22:43:49,395 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-16 22:43:49,435 [INFO] There is no [win64] chromedriver "135.0.7049.95" for browser google-chrome "135.0.7049" in cache
+2025-04-16 22:43:49,436 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-16 22:43:49,538 [INFO] WebDriver version 135.0.7049.95 selected
+2025-04-16 22:43:49,540 [INFO] Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/135.0.7049.95/win32/chromedriver-win32.zip
+2025-04-16 22:43:49,540 [INFO] About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/135.0.7049.95/win32/chromedriver-win32.zip
+2025-04-16 22:43:49,633 [INFO] Driver downloading response is 200
+2025-04-16 22:43:50,380 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-16 22:43:51,761 [INFO] Driver has been saved in cache [C:\Users\yo_xa\.wdm\drivers\chromedriver\win64\135.0.7049.95]
+2025-04-16 22:43:53,227 [INFO] 🚀 Inicio del scraping de índices bursátiles.
+2025-04-16 22:44:00,680 [INFO] 📥 Guardado: IBEX 35 (IBEX) - 12942.1 - +62,80 - (+0,49%)
+2025-04-16 22:44:07,026 [INFO] 📥 Guardado: S&P 500 (SPX) - 5275.74 - -120,89 - (-2,24%)
+2025-04-16 22:44:13,345 [INFO] 📥 Guardado: Nasdaq 100 (NDX) - 18257.64 - -572,58 - (-3,04%)
+2025-04-16 22:44:19,637 [INFO] 📥 Guardado: DAX (GDAXI) - 21311.02 - +57,32 - (+0,27%)
+2025-04-16 22:44:26,007 [INFO] 📥 Guardado: MSCI World (MIWO00000PUS) - 3468.47 - -54,33 - (-1,54%)
+2025-04-16 22:44:28,102 [INFO] 🏁 Fin del scraping. Navegador cerrado.
+2025-04-16 22:44:28,102 [INFO] 📊 RESUMEN FINAL:
+2025-04-16 22:44:28,102 [INFO] ✅ Índices guardados: 5
+2025-04-16 22:44:28,102 [INFO] ℹ️ Índices omitidos: 0
+2025-04-16 22:44:28,102 [INFO] ❌ Fallos: 0
+2025-04-16 22:44:28,102 [INFO] ✅ Scraping de índices completado.
+2025-04-16 22:44:30,695 [INFO] Se cargaron 3 empresas desde empresas_bme.csv
+2025-04-16 22:44:30,696 [INFO] 🚀 Iniciando scraping de empresas BME
+2025-04-16 22:44:30,696 [INFO] 🔍 Iniciando scraping para BBVA
+2025-04-16 22:44:30,696 [INFO] 📄 Accediendo a la web de BBVA: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Banco-Bilbao-Vizcaya-Argentaria-ES0113211835
+2025-04-16 22:44:31,764 [INFO] 📥 Insertado/actualizado: BBVA - 2025
+2025-04-16 22:44:31,764 [INFO] ✅ Datos insertados para BBVA, año 2025
+2025-04-16 22:44:31,835 [INFO] 📛 Registro duplicado: BBVA - 2024. No se insertó.
+2025-04-16 22:44:31,904 [INFO] 📛 Registro duplicado: BBVA - 2023. No se insertó.
+2025-04-16 22:44:31,969 [INFO] 📛 Registro duplicado: BBVA - 2022. No se insertó.
+2025-04-16 22:44:32,055 [INFO] 📛 Registro duplicado: BBVA - 2021. No se insertó.
+2025-04-16 22:44:32,055 [INFO] 🔍 Iniciando scraping para Inditex
+2025-04-16 22:44:32,055 [INFO] 📄 Accediendo a la web de Inditex: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Ind-De-Diseno-Textil-Inditex-ES0148396007
+2025-04-16 22:44:32,892 [INFO] 📥 Insertado/actualizado: Inditex - 2025
+2025-04-16 22:44:32,892 [INFO] ✅ Datos insertados para Inditex, año 2025
+2025-04-16 22:44:32,971 [INFO] 📛 Registro duplicado: Inditex - 2024. No se insertó.
+2025-04-16 22:44:33,047 [INFO] 📛 Registro duplicado: Inditex - 2023. No se insertó.
+2025-04-16 22:44:33,109 [INFO] 📛 Registro duplicado: Inditex - 2022. No se insertó.
+2025-04-16 22:44:33,176 [INFO] 📛 Registro duplicado: Inditex - 2021. No se insertó.
+2025-04-16 22:44:33,176 [INFO] 🔍 Iniciando scraping para Santander
+2025-04-16 22:44:33,176 [INFO] 📄 Accediendo a la web de Santander: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Banco-Santander-ES0113900J37
+2025-04-16 22:44:33,997 [INFO] 📥 Insertado/actualizado: Santander - 2025
+2025-04-16 22:44:33,997 [INFO] ✅ Datos insertados para Santander, año 2025
+2025-04-16 22:44:34,078 [INFO] 📛 Registro duplicado: Santander - 2024. No se insertó.
+2025-04-16 22:44:34,153 [INFO] 📛 Registro duplicado: Santander - 2023. No se insertó.
+2025-04-16 22:44:34,230 [INFO] 📛 Registro duplicado: Santander - 2022. No se insertó.
+2025-04-16 22:44:34,295 [INFO] 📛 Registro duplicado: Santander - 2021. No se insertó.
+2025-04-16 22:44:36,391 [INFO] ✅ Scraping de empresas BME finalizado.
+2025-04-16 22:44:36,392 [INFO] ✅ Scraping de empresas BME completado.
+2025-04-16 22:44:36,392 [ERROR] ❌ No se encontró 'poppler.zip'. OCR no funcionará en Windows.
+2025-04-16 22:44:36,393 [ERROR] ❌ No se encontró Tesseract en la ruta esperada. OCR no funcionará.
+2025-04-16 22:44:36,393 [INFO] 🚀 Iniciando scraping de PDF del IBEX 35
+2025-04-16 22:44:36,504 [INFO] 📥 PDF descargado correctamente: https://www.bolsasymercados.es/bme-exchange/docs/Indices/Avisos/esp/gestorindice/Aviso_Gestor_Indices_02-25.pdf
+2025-04-16 22:44:36,786 [INFO] 📊 Se extrajeron 0 filas de la tabla.
+2025-04-16 22:44:36,786 [ERROR] ❌ No se extrajeron datos del PDF.
+2025-04-16 22:44:36,787 [INFO] 🗑️ Archivo PDF temporal eliminado.
+2025-04-16 22:44:36,787 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
+2025-04-16 22:44:36,787 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
+2025-04-16 22:44:36,787 [INFO] === FIN DEL PROCESO DE SCRAPING ===
+2025-04-16 22:52:56,838 [INFO] ✅ Base de datos 'bolsa' verificada o creada.
+2025-04-16 22:52:56,840 [INFO] ✅ Tabla 'indices' verificada o creada correctamente.
+2025-04-16 22:52:56,962 [INFO] === INICIO DEL PROCESO DE SCRAPING ===
+2025-04-16 22:52:56,962 [INFO] ====== WebDriver manager ======
+2025-04-16 22:52:59,049 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-16 22:52:59,105 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-16 22:52:59,159 [INFO] Driver [C:\Users\yo_xa\.wdm\drivers\chromedriver\win64\135.0.7049.95\chromedriver-win32/chromedriver.exe] found in cache
+2025-04-16 22:53:00,240 [INFO] 🚀 Inicio del scraping de índices bursátiles.
+2025-04-16 22:53:07,405 [INFO] 📛 Ya existe un registro para 'IBEX 35 (IBEX)' en la fecha actual. No se insertó.
+2025-04-16 22:53:13,192 [INFO] 📛 Ya existe un registro para 'S&P 500 (SPX)' en la fecha actual. No se insertó.
+2025-04-16 22:53:19,454 [INFO] 📛 Ya existe un registro para 'Nasdaq 100 (NDX)' en la fecha actual. No se insertó.
+2025-04-16 22:53:25,535 [INFO] 📛 Ya existe un registro para 'DAX (GDAXI)' en la fecha actual. No se insertó.
+2025-04-16 22:53:31,753 [INFO] 📛 Ya existe un registro para 'MSCI World (MIWO00000PUS)' en la fecha actual. No se insertó.
+2025-04-16 22:53:33,891 [INFO] 🏁 Fin del scraping. Navegador cerrado.
+2025-04-16 22:53:33,891 [INFO] 📊 RESUMEN FINAL:
+2025-04-16 22:53:33,891 [INFO] ✅ Índices guardados: 0
+2025-04-16 22:53:33,891 [INFO] ℹ️ Índices omitidos: 5
+2025-04-16 22:53:33,891 [INFO] ❌ Fallos: 0
+2025-04-16 22:53:33,892 [INFO] ✅ Scraping de índices completado.
+2025-04-16 22:53:35,178 [INFO] Se cargaron 3 empresas desde empresas_bme.csv
+2025-04-16 22:53:35,178 [INFO] 🚀 Iniciando scraping de empresas BME
+2025-04-16 22:53:35,178 [INFO] 🔍 Iniciando scraping para BBVA
+2025-04-16 22:53:35,178 [INFO] 📄 Accediendo a la web de BBVA: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Banco-Bilbao-Vizcaya-Argentaria-ES0113211835
+2025-04-16 22:53:36,929 [INFO] 📥 Insertado/actualizado: BBVA - 2025
+2025-04-16 22:53:36,929 [INFO] ✅ Datos insertados para BBVA, año 2025
+2025-04-16 22:53:37,001 [INFO] 📛 Registro duplicado: BBVA - 2024. No se insertó.
+2025-04-16 22:53:37,069 [INFO] 📛 Registro duplicado: BBVA - 2023. No se insertó.
+2025-04-16 22:53:37,130 [INFO] 📛 Registro duplicado: BBVA - 2022. No se insertó.
+2025-04-16 22:53:37,198 [INFO] 📛 Registro duplicado: BBVA - 2021. No se insertó.
+2025-04-16 22:53:37,198 [INFO] 🔍 Iniciando scraping para Inditex
+2025-04-16 22:53:37,198 [INFO] 📄 Accediendo a la web de Inditex: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Ind-De-Diseno-Textil-Inditex-ES0148396007
+2025-04-16 22:53:38,045 [INFO] 📥 Insertado/actualizado: Inditex - 2025
+2025-04-16 22:53:38,045 [INFO] ✅ Datos insertados para Inditex, año 2025
+2025-04-16 22:53:38,121 [INFO] 📛 Registro duplicado: Inditex - 2024. No se insertó.
+2025-04-16 22:53:38,200 [INFO] 📛 Registro duplicado: Inditex - 2023. No se insertó.
+2025-04-16 22:53:38,264 [INFO] 📛 Registro duplicado: Inditex - 2022. No se insertó.
+2025-04-16 22:53:38,330 [INFO] 📛 Registro duplicado: Inditex - 2021. No se insertó.
+2025-04-16 22:53:38,331 [INFO] 🔍 Iniciando scraping para Santander
+2025-04-16 22:53:38,331 [INFO] 📄 Accediendo a la web de Santander: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Banco-Santander-ES0113900J37
+2025-04-16 22:53:39,673 [INFO] 📥 Insertado/actualizado: Santander - 2025
+2025-04-16 22:53:39,673 [INFO] ✅ Datos insertados para Santander, año 2025
+2025-04-16 22:53:39,745 [INFO] 📛 Registro duplicado: Santander - 2024. No se insertó.
+2025-04-16 22:53:39,800 [INFO] 📛 Registro duplicado: Santander - 2023. No se insertó.
+2025-04-16 22:53:39,854 [INFO] 📛 Registro duplicado: Santander - 2022. No se insertó.
+2025-04-16 22:53:39,918 [INFO] 📛 Registro duplicado: Santander - 2021. No se insertó.
+2025-04-16 22:53:42,008 [INFO] ✅ Scraping de empresas BME finalizado.
+2025-04-16 22:53:42,009 [INFO] ✅ Scraping de empresas BME completado.
+2025-04-16 22:53:42,385 [INFO] 🧩 Poppler descomprimido automáticamente.
+2025-04-16 22:53:42,385 [ERROR] ❌ No se encontró Tesseract en la ruta esperada. OCR no funcionará.
+2025-04-16 22:53:42,385 [INFO] 🚀 Iniciando scraping de PDF del IBEX 35
+2025-04-16 22:53:42,655 [INFO] 📥 PDF descargado correctamente: https://www.bolsasymercados.es/bme-exchange/docs/Indices/Avisos/esp/gestorindice/Aviso_Gestor_Indices_02-25.pdf
+2025-04-16 22:53:42,871 [INFO] 📊 Se extrajeron 0 filas de la tabla.
+2025-04-16 22:53:42,871 [ERROR] ❌ No se extrajeron datos del PDF.
+2025-04-16 22:53:42,871 [INFO] 🗑️ Archivo PDF temporal eliminado.
+2025-04-16 22:53:42,871 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
+2025-04-16 22:53:42,871 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
+2025-04-16 22:53:42,871 [INFO] === FIN DEL PROCESO DE SCRAPING ===
+2025-04-16 22:57:01,009 [INFO] ✅ Base de datos 'bolsa' verificada o creada.
+2025-04-16 22:57:01,011 [INFO] ✅ Tabla 'indices' verificada o creada correctamente.
+2025-04-16 22:57:01,133 [INFO] === INICIO DEL PROCESO DE SCRAPING ===
+2025-04-16 22:57:01,133 [INFO] ====== WebDriver manager ======
+2025-04-16 22:57:03,246 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-16 22:57:03,294 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-16 22:57:03,341 [INFO] Driver [C:\Users\yo_xa\.wdm\drivers\chromedriver\win64\135.0.7049.95\chromedriver-win32/chromedriver.exe] found in cache
+2025-04-16 22:57:04,425 [INFO] 🚀 Inicio del scraping de índices bursátiles.
+2025-04-16 22:57:12,618 [INFO] 📛 Ya existe un registro para 'IBEX 35 (IBEX)' en la fecha actual. No se insertó.
+2025-04-16 22:57:19,016 [INFO] 📛 Ya existe un registro para 'S&P 500 (SPX)' en la fecha actual. No se insertó.
+2025-04-16 22:57:25,193 [INFO] 📛 Ya existe un registro para 'Nasdaq 100 (NDX)' en la fecha actual. No se insertó.
+2025-04-16 22:57:31,665 [INFO] 📛 Ya existe un registro para 'DAX (GDAXI)' en la fecha actual. No se insertó.
+2025-04-16 22:57:38,055 [INFO] 📛 Ya existe un registro para 'MSCI World (MIWO00000PUS)' en la fecha actual. No se insertó.
+2025-04-16 22:57:40,179 [INFO] 🏁 Fin del scraping. Navegador cerrado.
+2025-04-16 22:57:40,180 [INFO] 📊 RESUMEN FINAL:
+2025-04-16 22:57:40,180 [INFO] ✅ Índices guardados: 0
+2025-04-16 22:57:40,180 [INFO] ℹ️ Índices omitidos: 5
+2025-04-16 22:57:40,180 [INFO] ❌ Fallos: 0
+2025-04-16 22:57:40,180 [INFO] ✅ Scraping de índices completado.
+2025-04-16 22:57:41,460 [INFO] Se cargaron 3 empresas desde empresas_bme.csv
+2025-04-16 22:57:41,460 [INFO] 🚀 Iniciando scraping de empresas BME
+2025-04-16 22:57:41,460 [INFO] 🔍 Iniciando scraping para BBVA
+2025-04-16 22:57:41,460 [INFO] 📄 Accediendo a la web de BBVA: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Banco-Bilbao-Vizcaya-Argentaria-ES0113211835
+2025-04-16 22:57:42,790 [INFO] 📛 Registro duplicado: BBVA - 2025. No se insertó.
+2025-04-16 22:57:42,841 [INFO] 📛 Registro duplicado: BBVA - 2024. No se insertó.
+2025-04-16 22:57:42,893 [INFO] 📛 Registro duplicado: BBVA - 2023. No se insertó.
+2025-04-16 22:57:42,944 [INFO] 📛 Registro duplicado: BBVA - 2022. No se insertó.
+2025-04-16 22:57:42,996 [INFO] 📛 Registro duplicado: BBVA - 2021. No se insertó.
+2025-04-16 22:57:42,996 [INFO] ⚠️ Todas las filas fueron ignoradas para BBVA
+2025-04-16 22:57:42,996 [INFO] 🔍 Iniciando scraping para Inditex
+2025-04-16 22:57:42,997 [INFO] 📄 Accediendo a la web de Inditex: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Ind-De-Diseno-Textil-Inditex-ES0148396007
+2025-04-16 22:57:44,318 [INFO] 📛 Registro duplicado: Inditex - 2025. No se insertó.
+2025-04-16 22:57:44,377 [INFO] 📛 Registro duplicado: Inditex - 2024. No se insertó.
+2025-04-16 22:57:44,428 [INFO] 📛 Registro duplicado: Inditex - 2023. No se insertó.
+2025-04-16 22:57:44,481 [INFO] 📛 Registro duplicado: Inditex - 2022. No se insertó.
+2025-04-16 22:57:44,539 [INFO] 📛 Registro duplicado: Inditex - 2021. No se insertó.
+2025-04-16 22:57:44,539 [INFO] ⚠️ Todas las filas fueron ignoradas para Inditex
+2025-04-16 22:57:44,539 [INFO] 🔍 Iniciando scraping para Santander
+2025-04-16 22:57:44,539 [INFO] 📄 Accediendo a la web de Santander: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Banco-Santander-ES0113900J37
+2025-04-16 22:57:45,407 [INFO] 📛 Registro duplicado: Santander - 2025. No se insertó.
+2025-04-16 22:57:45,486 [INFO] 📛 Registro duplicado: Santander - 2024. No se insertó.
+2025-04-16 22:57:45,563 [INFO] 📛 Registro duplicado: Santander - 2023. No se insertó.
+2025-04-16 22:57:45,664 [INFO] 📛 Registro duplicado: Santander - 2022. No se insertó.
+2025-04-16 22:57:45,736 [INFO] 📛 Registro duplicado: Santander - 2021. No se insertó.
+2025-04-16 22:57:45,736 [INFO] ⚠️ Todas las filas fueron ignoradas para Santander
+2025-04-16 22:57:47,836 [INFO] ✅ Scraping de empresas BME finalizado.
+2025-04-16 22:57:47,836 [INFO] ✅ Scraping de empresas BME completado.
+2025-04-16 22:57:48,164 [INFO] 🧩 Poppler descomprimido automáticamente.
+2025-04-16 22:57:48,202 [INFO] 🧠 Tesseract descomprimido automáticamente.
+2025-04-16 22:57:48,202 [ERROR] ❌ Tesseract fue descomprimido pero no se encontró el ejecutable.
+2025-04-16 22:57:48,202 [INFO] 🚀 Iniciando scraping de PDF del IBEX 35
+2025-04-16 22:57:48,499 [INFO] 📥 PDF descargado correctamente: https://www.bolsasymercados.es/bme-exchange/docs/Indices/Avisos/esp/gestorindice/Aviso_Gestor_Indices_02-25.pdf
+2025-04-16 22:57:48,708 [INFO] 📊 Se extrajeron 0 filas de la tabla.
+2025-04-16 22:57:48,708 [ERROR] ❌ No se extrajeron datos del PDF.
+2025-04-16 22:57:48,708 [INFO] 🗑️ Archivo PDF temporal eliminado.
+2025-04-16 22:57:48,708 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
+2025-04-16 22:57:48,708 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
+2025-04-16 22:57:48,708 [INFO] === FIN DEL PROCESO DE SCRAPING ===
+2025-04-16 23:15:22,677 [INFO] ✅ Base de datos 'bolsa' verificada o creada.
+2025-04-16 23:15:22,679 [INFO] ✅ Tabla 'indices' verificada o creada correctamente.
+2025-04-16 23:15:22,797 [INFO] === INICIO DEL PROCESO DE SCRAPING ===
+2025-04-16 23:15:22,798 [INFO] ====== WebDriver manager ======
+2025-04-16 23:15:24,942 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-16 23:15:24,986 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-16 23:15:25,034 [INFO] Driver [C:\Users\yo_xa\.wdm\drivers\chromedriver\win64\135.0.7049.95\chromedriver-win32/chromedriver.exe] found in cache
+2025-04-16 23:15:26,179 [INFO] 🚀 Inicio del scraping de índices bursátiles.
+2025-04-16 23:15:33,514 [INFO] 📛 Ya existe un registro para 'IBEX 35 (IBEX)' en la fecha actual. No se insertó.
+2025-04-16 23:15:39,795 [INFO] 📛 Ya existe un registro para 'S&P 500 (SPX)' en la fecha actual. No se insertó.
+2025-04-16 23:15:46,084 [INFO] 📛 Ya existe un registro para 'Nasdaq 100 (NDX)' en la fecha actual. No se insertó.
+2025-04-16 23:15:52,722 [INFO] 📛 Ya existe un registro para 'DAX (GDAXI)' en la fecha actual. No se insertó.
+2025-04-16 23:15:59,165 [INFO] 📛 Ya existe un registro para 'MSCI World (MIWO00000PUS)' en la fecha actual. No se insertó.
+2025-04-16 23:16:01,281 [INFO] 🏁 Fin del scraping. Navegador cerrado.
+2025-04-16 23:16:01,281 [INFO] 📊 RESUMEN FINAL:
+2025-04-16 23:16:01,281 [INFO] ✅ Índices guardados: 0
+2025-04-16 23:16:01,281 [INFO] ℹ️ Índices omitidos: 5
+2025-04-16 23:16:01,281 [INFO] ❌ Fallos: 0
+2025-04-16 23:16:01,281 [INFO] ✅ Scraping de índices completado.
+2025-04-16 23:16:02,543 [INFO] Se cargaron 3 empresas desde empresas_bme.csv
+2025-04-16 23:16:02,543 [INFO] 🚀 Iniciando scraping de empresas BME
+2025-04-16 23:16:02,543 [INFO] 🔍 Iniciando scraping para BBVA
+2025-04-16 23:16:02,543 [INFO] 📄 Accediendo a la web de BBVA: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Banco-Bilbao-Vizcaya-Argentaria-ES0113211835
+2025-04-16 23:16:03,876 [INFO] 📛 Registro duplicado: BBVA - 2025. No se insertó.
+2025-04-16 23:16:03,929 [INFO] 📛 Registro duplicado: BBVA - 2024. No se insertó.
+2025-04-16 23:16:03,981 [INFO] 📛 Registro duplicado: BBVA - 2023. No se insertó.
+2025-04-16 23:16:04,034 [INFO] 📛 Registro duplicado: BBVA - 2022. No se insertó.
+2025-04-16 23:16:04,087 [INFO] 📛 Registro duplicado: BBVA - 2021. No se insertó.
+2025-04-16 23:16:04,088 [INFO] ⚠️ Todas las filas fueron ignoradas para BBVA
+2025-04-16 23:16:04,088 [INFO] 🔍 Iniciando scraping para Inditex
+2025-04-16 23:16:04,088 [INFO] 📄 Accediendo a la web de Inditex: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Ind-De-Diseno-Textil-Inditex-ES0148396007
+2025-04-16 23:16:04,998 [INFO] 📛 Registro duplicado: Inditex - 2025. No se insertó.
+2025-04-16 23:16:05,058 [INFO] 📛 Registro duplicado: Inditex - 2024. No se insertó.
+2025-04-16 23:16:05,136 [INFO] 📛 Registro duplicado: Inditex - 2023. No se insertó.
+2025-04-16 23:16:05,208 [INFO] 📛 Registro duplicado: Inditex - 2022. No se insertó.
+2025-04-16 23:16:05,300 [INFO] 📛 Registro duplicado: Inditex - 2021. No se insertó.
+2025-04-16 23:16:05,300 [INFO] ⚠️ Todas las filas fueron ignoradas para Inditex
+2025-04-16 23:16:05,300 [INFO] 🔍 Iniciando scraping para Santander
+2025-04-16 23:16:05,300 [INFO] 📄 Accediendo a la web de Santander: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Banco-Santander-ES0113900J37
+2025-04-16 23:16:06,105 [INFO] 📛 Registro duplicado: Santander - 2025. No se insertó.
+2025-04-16 23:16:06,187 [INFO] 📛 Registro duplicado: Santander - 2024. No se insertó.
+2025-04-16 23:16:06,265 [INFO] 📛 Registro duplicado: Santander - 2023. No se insertó.
+2025-04-16 23:16:06,360 [INFO] 📛 Registro duplicado: Santander - 2022. No se insertó.
+2025-04-16 23:16:06,441 [INFO] 📛 Registro duplicado: Santander - 2021. No se insertó.
+2025-04-16 23:16:06,441 [INFO] ⚠️ Todas las filas fueron ignoradas para Santander
+2025-04-16 23:16:08,540 [INFO] ✅ Scraping de empresas BME finalizado.
+2025-04-16 23:16:08,540 [INFO] ✅ Scraping de empresas BME completado.
+2025-04-16 23:16:08,911 [ERROR] ❌ Poppler descomprimido pero faltan binarios.
+2025-04-16 23:16:09,129 [INFO] 🧠 Tesseract descomprimido y configurado: C:\Users\yo_xa\PycharmProjects\PythonProject\tesseract\Tesseract-OCR\tesseract.exe
+2025-04-16 23:16:09,129 [INFO] 🚀 Iniciando scraping de PDF del IBEX 35
+2025-04-16 23:16:09,438 [INFO] 📥 PDF descargado: https://www.bolsasymercados.es/bme-exchange/docs/Indices/Avisos/esp/gestorindice/Aviso_Gestor_Indices_02-25.pdf
+2025-04-16 23:16:09,633 [INFO] 📊 Se extrajeron 0 filas de la tabla.
+2025-04-16 23:16:09,633 [ERROR] ❌ No se extrajeron datos del PDF.
+2025-04-16 23:16:09,633 [INFO] 🗑️ PDF temporal eliminado.
+2025-04-16 23:16:09,633 [INFO] ✅ Scraping de PDF del IBEX 35 completado.
+2025-04-16 23:16:09,633 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
+2025-04-16 23:16:09,633 [INFO] === FIN DEL PROCESO DE SCRAPING ===
+2025-04-16 23:16:55,707 [INFO] ✅ Base de datos 'bolsa' verificada o creada.
+2025-04-16 23:16:55,708 [INFO] ✅ Tabla 'indices' verificada o creada correctamente.
+2025-04-16 23:16:55,834 [INFO] === INICIO DEL PROCESO DE SCRAPING ===
+2025-04-16 23:16:55,834 [INFO] ====== WebDriver manager ======
+2025-04-16 23:16:58,083 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-16 23:16:58,128 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-16 23:16:58,167 [INFO] Driver [C:\Users\yo_xa\.wdm\drivers\chromedriver\win64\135.0.7049.95\chromedriver-win32/chromedriver.exe] found in cache
+2025-04-16 23:16:59,220 [INFO] 🚀 Inicio del scraping de índices bursátiles.
+2025-04-16 23:17:07,424 [INFO] 📛 Ya existe un registro para 'IBEX 35 (IBEX)' en la fecha actual. No se insertó.
+2025-04-16 23:17:13,808 [INFO] 📛 Ya existe un registro para 'S&P 500 (SPX)' en la fecha actual. No se insertó.
+2025-04-16 23:17:20,255 [INFO] 📛 Ya existe un registro para 'Nasdaq 100 (NDX)' en la fecha actual. No se insertó.
+2025-04-16 23:17:26,542 [INFO] 📛 Ya existe un registro para 'DAX (GDAXI)' en la fecha actual. No se insertó.
+2025-04-16 23:17:32,652 [INFO] 📛 Ya existe un registro para 'MSCI World (MIWO00000PUS)' en la fecha actual. No se insertó.
+2025-04-16 23:17:34,765 [INFO] 🏁 Fin del scraping. Navegador cerrado.
+2025-04-16 23:17:34,765 [INFO] 📊 RESUMEN FINAL:
+2025-04-16 23:17:34,765 [INFO] ✅ Índices guardados: 0
+2025-04-16 23:17:34,765 [INFO] ℹ️ Índices omitidos: 5
+2025-04-16 23:17:34,765 [INFO] ❌ Fallos: 0
+2025-04-16 23:17:34,765 [INFO] ✅ Scraping de índices completado.
+2025-04-16 23:17:35,991 [INFO] Se cargaron 3 empresas desde empresas_bme.csv
+2025-04-16 23:17:35,991 [INFO] 🚀 Iniciando scraping de empresas BME
+2025-04-16 23:17:35,992 [INFO] 🔍 Iniciando scraping para BBVA
+2025-04-16 23:17:35,992 [INFO] 📄 Accediendo a la web de BBVA: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Banco-Bilbao-Vizcaya-Argentaria-ES0113211835
+2025-04-16 23:17:37,907 [INFO] 📛 Registro duplicado: BBVA - 2025. No se insertó.
+2025-04-16 23:17:37,978 [INFO] 📛 Registro duplicado: BBVA - 2024. No se insertó.
+2025-04-16 23:17:38,045 [INFO] 📛 Registro duplicado: BBVA - 2023. No se insertó.
+2025-04-16 23:17:38,106 [INFO] 📛 Registro duplicado: BBVA - 2022. No se insertó.
+2025-04-16 23:17:38,178 [INFO] 📛 Registro duplicado: BBVA - 2021. No se insertó.
+2025-04-16 23:17:38,179 [INFO] ⚠️ Todas las filas fueron ignoradas para BBVA
+2025-04-16 23:17:38,179 [INFO] 🔍 Iniciando scraping para Inditex
+2025-04-16 23:17:38,179 [INFO] 📄 Accediendo a la web de Inditex: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Ind-De-Diseno-Textil-Inditex-ES0148396007
+2025-04-16 23:17:39,062 [INFO] 📛 Registro duplicado: Inditex - 2025. No se insertó.
+2025-04-16 23:17:39,150 [INFO] 📛 Registro duplicado: Inditex - 2024. No se insertó.
+2025-04-16 23:17:39,228 [INFO] 📛 Registro duplicado: Inditex - 2023. No se insertó.
+2025-04-16 23:17:39,316 [INFO] 📛 Registro duplicado: Inditex - 2022. No se insertó.
+2025-04-16 23:17:39,381 [INFO] 📛 Registro duplicado: Inditex - 2021. No se insertó.
+2025-04-16 23:17:39,382 [INFO] ⚠️ Todas las filas fueron ignoradas para Inditex
+2025-04-16 23:17:39,382 [INFO] 🔍 Iniciando scraping para Santander
+2025-04-16 23:17:39,382 [INFO] 📄 Accediendo a la web de Santander: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Banco-Santander-ES0113900J37
+2025-04-16 23:17:40,259 [INFO] 📛 Registro duplicado: Santander - 2025. No se insertó.
+2025-04-16 23:17:40,354 [INFO] 📛 Registro duplicado: Santander - 2024. No se insertó.
+2025-04-16 23:17:40,442 [INFO] 📛 Registro duplicado: Santander - 2023. No se insertó.
+2025-04-16 23:17:40,539 [INFO] 📛 Registro duplicado: Santander - 2022. No se insertó.
+2025-04-16 23:17:40,601 [INFO] 📛 Registro duplicado: Santander - 2021. No se insertó.
+2025-04-16 23:17:40,601 [INFO] ⚠️ Todas las filas fueron ignoradas para Santander
+2025-04-16 23:17:42,697 [INFO] ✅ Scraping de empresas BME finalizado.
+2025-04-16 23:17:42,697 [INFO] ✅ Scraping de empresas BME completado.
+2025-04-16 23:17:43,044 [ERROR] ❌ Poppler descomprimido pero faltan binarios.
+2025-04-16 23:17:43,261 [INFO] 🧠 Tesseract descomprimido y configurado: C:\Users\yo_xa\PycharmProjects\PythonProject\tesseract\Tesseract-OCR\tesseract.exe
+2025-04-16 23:17:43,261 [INFO] 🚀 Iniciando scraping de PDF del IBEX 35
+2025-04-16 23:17:43,565 [INFO] 📥 PDF descargado: https://www.bolsasymercados.es/bme-exchange/docs/Indices/Avisos/esp/gestorindice/Aviso_Gestor_Indices_02-25.pdf
+2025-04-16 23:17:43,778 [INFO] 📊 Se extrajeron 0 filas de la tabla.
+2025-04-16 23:17:43,778 [ERROR] ❌ No se extrajeron datos del PDF.
+2025-04-16 23:17:43,779 [INFO] 🗑️ PDF temporal eliminado.
+2025-04-16 23:17:43,779 [INFO] ✅ Scraping de PDF del IBEX 35 completado.
+2025-04-16 23:17:43,779 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
+2025-04-16 23:17:43,779 [INFO] === FIN DEL PROCESO DE SCRAPING ===
+2025-04-16 23:18:39,827 [INFO] ✅ Base de datos 'bolsa' verificada o creada.
+2025-04-16 23:18:39,829 [INFO] ✅ Tabla 'indices' verificada o creada correctamente.
+2025-04-16 23:18:39,946 [INFO] === INICIO DEL PROCESO DE SCRAPING ===
+2025-04-16 23:18:39,947 [INFO] ====== WebDriver manager ======
+2025-04-16 23:18:42,093 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-16 23:18:42,141 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-16 23:18:42,188 [INFO] Driver [C:\Users\yo_xa\.wdm\drivers\chromedriver\win64\135.0.7049.95\chromedriver-win32/chromedriver.exe] found in cache
+2025-04-16 23:18:43,250 [INFO] 🚀 Inicio del scraping de índices bursátiles.
+2025-04-16 23:18:51,356 [INFO] 📛 Ya existe un registro para 'IBEX 35 (IBEX)' en la fecha actual. No se insertó.
+2025-04-16 23:18:57,707 [INFO] 📛 Ya existe un registro para 'S&P 500 (SPX)' en la fecha actual. No se insertó.
+2025-04-16 23:19:04,143 [INFO] 📛 Ya existe un registro para 'Nasdaq 100 (NDX)' en la fecha actual. No se insertó.
+2025-04-16 23:19:10,535 [INFO] 📛 Ya existe un registro para 'DAX (GDAXI)' en la fecha actual. No se insertó.
+2025-04-16 23:19:17,248 [INFO] 📛 Ya existe un registro para 'MSCI World (MIWO00000PUS)' en la fecha actual. No se insertó.
+2025-04-16 23:19:19,393 [INFO] 🏁 Fin del scraping. Navegador cerrado.
+2025-04-16 23:19:19,394 [INFO] 📊 RESUMEN FINAL:
+2025-04-16 23:19:19,394 [INFO] ✅ Índices guardados: 0
+2025-04-16 23:19:19,394 [INFO] ℹ️ Índices omitidos: 5
+2025-04-16 23:19:19,394 [INFO] ❌ Fallos: 0
+2025-04-16 23:19:19,394 [INFO] ✅ Scraping de índices completado.
+2025-04-16 23:19:21,019 [INFO] Se cargaron 3 empresas desde empresas_bme.csv
+2025-04-16 23:19:21,019 [INFO] 🚀 Iniciando scraping de empresas BME
+2025-04-16 23:19:21,019 [INFO] 🔍 Iniciando scraping para BBVA
+2025-04-16 23:19:21,019 [INFO] 📄 Accediendo a la web de BBVA: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Banco-Bilbao-Vizcaya-Argentaria-ES0113211835
+2025-04-16 23:19:22,178 [INFO] 📛 Registro duplicado: BBVA - 2025. No se insertó.
+2025-04-16 23:19:22,270 [INFO] 📛 Registro duplicado: BBVA - 2024. No se insertó.
+2025-04-16 23:19:22,357 [INFO] 📛 Registro duplicado: BBVA - 2023. No se insertó.
+2025-04-16 23:19:22,450 [INFO] 📛 Registro duplicado: BBVA - 2022. No se insertó.
+2025-04-16 23:19:22,524 [INFO] 📛 Registro duplicado: BBVA - 2021. No se insertó.
+2025-04-16 23:19:22,525 [INFO] ⚠️ Todas las filas fueron ignoradas para BBVA
+2025-04-16 23:19:22,525 [INFO] 🔍 Iniciando scraping para Inditex
+2025-04-16 23:19:22,525 [INFO] 📄 Accediendo a la web de Inditex: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Ind-De-Diseno-Textil-Inditex-ES0148396007
+2025-04-16 23:19:23,415 [INFO] 📛 Registro duplicado: Inditex - 2025. No se insertó.
+2025-04-16 23:19:23,506 [INFO] 📛 Registro duplicado: Inditex - 2024. No se insertó.
+2025-04-16 23:19:23,594 [INFO] 📛 Registro duplicado: Inditex - 2023. No se insertó.
+2025-04-16 23:19:23,678 [INFO] 📛 Registro duplicado: Inditex - 2022. No se insertó.
+2025-04-16 23:19:23,744 [INFO] 📛 Registro duplicado: Inditex - 2021. No se insertó.
+2025-04-16 23:19:23,744 [INFO] ⚠️ Todas las filas fueron ignoradas para Inditex
+2025-04-16 23:19:23,744 [INFO] 🔍 Iniciando scraping para Santander
+2025-04-16 23:19:23,744 [INFO] 📄 Accediendo a la web de Santander: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Banco-Santander-ES0113900J37
+2025-04-16 23:19:24,610 [INFO] 📛 Registro duplicado: Santander - 2025. No se insertó.
+2025-04-16 23:19:24,706 [INFO] 📛 Registro duplicado: Santander - 2024. No se insertó.
+2025-04-16 23:19:24,797 [INFO] 📛 Registro duplicado: Santander - 2023. No se insertó.
+2025-04-16 23:19:24,893 [INFO] 📛 Registro duplicado: Santander - 2022. No se insertó.
+2025-04-16 23:19:24,960 [INFO] 📛 Registro duplicado: Santander - 2021. No se insertó.
+2025-04-16 23:19:24,961 [INFO] ⚠️ Todas las filas fueron ignoradas para Santander
+2025-04-16 23:19:27,046 [INFO] ✅ Scraping de empresas BME finalizado.
+2025-04-16 23:19:27,046 [INFO] ✅ Scraping de empresas BME completado.
+2025-04-16 23:19:27,047 [INFO] 🔧 Poppler configurado en: C:\Users\yo_xa\PycharmProjects\PythonProject\poppler\poppler-24.08.0\Library\bin
+2025-04-16 23:19:27,047 [INFO] 🔍 Tesseract configurado en: C:\Users\yo_xa\PycharmProjects\PythonProject\tesseract\Tesseract-OCR\tesseract.exe
+2025-04-16 23:19:27,047 [INFO] 🚀 Iniciando scraping de PDF del IBEX 35
+2025-04-16 23:19:27,142 [INFO] 📥 PDF descargado: https://www.bolsasymercados.es/bme-exchange/docs/Indices/Avisos/esp/gestorindice/Aviso_Gestor_Indices_02-25.pdf
+2025-04-16 23:19:27,409 [ERROR] ❌ No se extrajeron datos del PDF.
+2025-04-16 23:19:27,410 [INFO] 🗑️ PDF temporal eliminado.
+2025-04-16 23:19:27,410 [INFO] ✅ Scraping completado.
+2025-04-16 23:19:27,410 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
+2025-04-16 23:19:27,410 [INFO] === FIN DEL PROCESO DE SCRAPING ===
+2025-04-16 23:24:54,733 [INFO] ✅ Base de datos 'bolsa' verificada o creada.
+2025-04-16 23:24:54,735 [INFO] ✅ Tabla 'indices' verificada o creada correctamente.
+2025-04-16 23:26:05,009 [INFO] ✅ Base de datos 'bolsa' verificada o creada.
+2025-04-16 23:26:05,011 [INFO] ✅ Tabla 'indices' verificada o creada correctamente.
+2025-04-18 08:56:31,981 [INFO] ✅ Base de datos 'bolsa' verificada o creada.
+2025-04-18 08:56:31,984 [INFO] ✅ Tabla 'indices' verificada o creada correctamente.
+2025-04-18 08:56:32,411 [INFO] === INICIO DEL PROCESO DE SCRAPING ===
+2025-04-18 08:56:32,412 [INFO] ====== WebDriver manager ======
+2025-04-18 08:56:34,743 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-18 08:56:34,854 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-18 08:56:34,899 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-18 08:56:35,008 [INFO] WebDriver version 135.0.7049.95 selected
+2025-04-18 08:56:35,011 [INFO] Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/135.0.7049.95/win32/chromedriver-win32.zip
+2025-04-18 08:56:35,011 [INFO] About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/135.0.7049.95/win32/chromedriver-win32.zip
+2025-04-18 08:56:35,085 [INFO] Driver downloading response is 200
+2025-04-18 08:56:35,969 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-18 08:56:36,755 [INFO] Driver has been saved in cache [C:\Users\yo_xa\.wdm\drivers\chromedriver\win64\135.0.7049.95]
+2025-04-18 08:56:38,225 [INFO] 🚀 Inicio del scraping de índices bursátiles.
+2025-04-18 08:56:46,233 [INFO] 📥 Guardado: IBEX 35 (IBEX) - 12918.0 - -24,10 - (-0,19%)
+2025-04-18 08:56:52,766 [INFO] 📥 Guardado: S&P 500 (SPX) - 5282.7 - +7,00 - (+0,13%)
+2025-04-18 08:56:59,495 [INFO] 📥 Guardado: Nasdaq 100 (NDX) - 18258.09 - +0,45 - (+0,00%)
+2025-04-18 08:57:06,300 [INFO] 📥 Guardado: DAX (GDAXI) - 21205.86 - -105,16 - (-0,49%)
+2025-04-18 08:57:12,796 [INFO] 📥 Guardado: MSCI World (MIWO00000PUS) - 3477.15 - +3,09 - (+0,09%)
+2025-04-18 08:57:14,917 [INFO] 🏁 Fin del scraping. Navegador cerrado.
+2025-04-18 08:57:14,917 [INFO] 📊 RESUMEN FINAL:
+2025-04-18 08:57:14,917 [INFO] ✅ Índices guardados: 5
+2025-04-18 08:57:14,917 [INFO] ℹ️ Índices omitidos: 0
+2025-04-18 08:57:14,917 [INFO] ❌ Fallos: 0
+2025-04-18 08:57:14,918 [INFO] ✅ Scraping de índices completado.
+2025-04-18 08:57:16,520 [INFO] Se cargaron 3 empresas desde empresas_bme.csv
+2025-04-18 08:57:16,520 [INFO] 🚀 Iniciando scraping de empresas BME
+2025-04-18 08:57:16,521 [INFO] 🔍 Iniciando scraping para BBVA
+2025-04-18 08:57:16,521 [INFO] 📄 Accediendo a la web de BBVA: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Banco-Bilbao-Vizcaya-Argentaria-ES0113211835
+2025-04-18 08:57:17,604 [INFO] 📥 Insertado/actualizado: BBVA - 2025
+2025-04-18 08:57:17,605 [INFO] ✅ Datos insertados para BBVA, año 2025
+2025-04-18 08:57:17,685 [INFO] 📛 Registro duplicado: BBVA - 2024. No se insertó.
+2025-04-18 08:57:17,757 [INFO] 📛 Registro duplicado: BBVA - 2023. No se insertó.
+2025-04-18 08:57:17,840 [INFO] 📛 Registro duplicado: BBVA - 2022. No se insertó.
+2025-04-18 08:57:17,930 [INFO] 📛 Registro duplicado: BBVA - 2021. No se insertó.
+2025-04-18 08:57:17,930 [INFO] 🔍 Iniciando scraping para Inditex
+2025-04-18 08:57:17,930 [INFO] 📄 Accediendo a la web de Inditex: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Ind-De-Diseno-Textil-Inditex-ES0148396007
+2025-04-18 08:57:18,899 [INFO] 📥 Insertado/actualizado: Inditex - 2025
+2025-04-18 08:57:18,899 [INFO] ✅ Datos insertados para Inditex, año 2025
+2025-04-18 08:57:18,989 [INFO] 📛 Registro duplicado: Inditex - 2024. No se insertó.
+2025-04-18 08:57:19,076 [INFO] 📛 Registro duplicado: Inditex - 2023. No se insertó.
+2025-04-18 08:57:19,185 [INFO] 📛 Registro duplicado: Inditex - 2022. No se insertó.
+2025-04-18 08:57:19,259 [INFO] 📛 Registro duplicado: Inditex - 2021. No se insertó.
+2025-04-18 08:57:19,259 [INFO] 🔍 Iniciando scraping para Santander
+2025-04-18 08:57:19,260 [INFO] 📄 Accediendo a la web de Santander: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Banco-Santander-ES0113900J37
+2025-04-18 08:57:20,102 [INFO] 📥 Insertado/actualizado: Santander - 2025
+2025-04-18 08:57:20,102 [INFO] ✅ Datos insertados para Santander, año 2025
+2025-04-18 08:57:20,190 [INFO] 📛 Registro duplicado: Santander - 2024. No se insertó.
+2025-04-18 08:57:20,298 [INFO] 📛 Registro duplicado: Santander - 2023. No se insertó.
+2025-04-18 08:57:20,387 [INFO] 📛 Registro duplicado: Santander - 2022. No se insertó.
+2025-04-18 08:57:20,445 [INFO] 📛 Registro duplicado: Santander - 2021. No se insertó.
+2025-04-18 08:57:22,539 [INFO] ✅ Scraping de empresas BME finalizado.
+2025-04-18 08:57:22,539 [INFO] ✅ Scraping de empresas BME completado.
+2025-04-18 08:57:22,540 [INFO] 🔧 Poppler configurado en: C:\Users\yo_xa\PycharmProjects\PythonProject\poppler\poppler-24.08.0\Library\bin
+2025-04-18 08:57:22,540 [INFO] 🔍 Tesseract configurado en: C:\Users\yo_xa\PycharmProjects\PythonProject\tesseract\Tesseract-OCR\tesseract.exe
+2025-04-18 08:57:22,540 [INFO] 🚀 Iniciando scraping de PDF del IBEX 35
+2025-04-18 08:57:22,653 [INFO] 📥 PDF descargado: https://www.bolsasymercados.es/bme-exchange/docs/Indices/Avisos/esp/gestorindice/Aviso_Gestor_Indices_02-25.pdf
+2025-04-18 08:57:22,859 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 08:57:22,859 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 08:57:22,860 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 08:57:22,860 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 08:57:22,860 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 08:57:27,148 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 08:57:27,149 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 08:57:27,149 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 08:57:27,149 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 08:57:27,149 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 08:57:27,149 [ERROR] ❌ Error con pdfplumber: 'NoneType' object has no attribute 'strip'
+2025-04-18 08:57:28,661 [ERROR] ❌ Error en OCR del PDF: (1, 'Error opening data file C:\\Users\\yo_xa\\PycharmProjects\\PythonProject\\tesseract\\Tesseract-OCR\\tessdata/spa.traineddata Please make sure the TESSDATA_PREFIX environment variable is set to the parent directory of your "tessdata" directory. Failed loading language \'spa\' Tesseract couldn\'t load any languages! Could not initialize tesseract.')
+2025-04-18 08:57:28,667 [ERROR] ❌ No se extrajeron datos del PDF.
+2025-04-18 08:57:28,668 [INFO] 🗑️ PDF temporal eliminado.
+2025-04-18 08:57:28,668 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
+2025-04-18 08:57:28,668 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
+2025-04-18 08:57:28,668 [INFO] === FIN DEL PROCESO DE SCRAPING ===
+2025-04-18 09:02:26,371 [INFO] ✅ Base de datos 'bolsa' verificada o creada.
+2025-04-18 09:02:26,374 [INFO] ✅ Tabla 'indices' verificada o creada correctamente.
+2025-04-18 09:02:26,571 [INFO] === INICIO DEL PROCESO DE SCRAPING ===
+2025-04-18 09:02:26,571 [INFO] ====== WebDriver manager ======
+2025-04-18 09:02:28,725 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-18 09:02:28,783 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-18 09:02:28,832 [INFO] Driver [C:\Users\yo_xa\.wdm\drivers\chromedriver\win64\135.0.7049.95\chromedriver-win32/chromedriver.exe] found in cache
+2025-04-18 09:02:30,002 [INFO] 🚀 Inicio del scraping de índices bursátiles.
+2025-04-18 09:02:36,866 [INFO] 📛 Ya existe un registro para 'IBEX 35 (IBEX)' en la fecha actual. No se insertó.
+2025-04-18 09:02:43,099 [INFO] 📛 Ya existe un registro para 'S&P 500 (SPX)' en la fecha actual. No se insertó.
+2025-04-18 09:02:49,439 [INFO] 📛 Ya existe un registro para 'Nasdaq 100 (NDX)' en la fecha actual. No se insertó.
+2025-04-18 09:02:55,771 [INFO] 📛 Ya existe un registro para 'DAX (GDAXI)' en la fecha actual. No se insertó.
+2025-04-18 09:03:02,850 [INFO] 📛 Ya existe un registro para 'MSCI World (MIWO00000PUS)' en la fecha actual. No se insertó.
+2025-04-18 09:03:04,961 [INFO] 🏁 Fin del scraping. Navegador cerrado.
+2025-04-18 09:03:04,962 [INFO] 📊 RESUMEN FINAL:
+2025-04-18 09:03:04,962 [INFO] ✅ Índices guardados: 0
+2025-04-18 09:03:04,962 [INFO] ℹ️ Índices omitidos: 5
+2025-04-18 09:03:04,962 [INFO] ❌ Fallos: 0
+2025-04-18 09:03:04,962 [INFO] ✅ Scraping de índices completado.
+2025-04-18 09:03:06,359 [INFO] Se cargaron 3 empresas desde empresas_bme.csv
+2025-04-18 09:03:06,359 [INFO] 🚀 Iniciando scraping de empresas BME
+2025-04-18 09:03:06,359 [INFO] 🔍 Iniciando scraping para BBVA
+2025-04-18 09:03:06,359 [INFO] 📄 Accediendo a la web de BBVA: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Banco-Bilbao-Vizcaya-Argentaria-ES0113211835
+2025-04-18 09:03:07,481 [INFO] 📛 Registro duplicado: BBVA - 2025. No se insertó.
+2025-04-18 09:03:07,553 [INFO] 📛 Registro duplicado: BBVA - 2024. No se insertó.
+2025-04-18 09:03:07,623 [INFO] 📛 Registro duplicado: BBVA - 2023. No se insertó.
+2025-04-18 09:03:07,697 [INFO] 📛 Registro duplicado: BBVA - 2022. No se insertó.
+2025-04-18 09:03:07,781 [INFO] 📛 Registro duplicado: BBVA - 2021. No se insertó.
+2025-04-18 09:03:07,782 [INFO] ⚠️ Todas las filas fueron ignoradas para BBVA
+2025-04-18 09:03:07,782 [INFO] 🔍 Iniciando scraping para Inditex
+2025-04-18 09:03:07,782 [INFO] 📄 Accediendo a la web de Inditex: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Ind-De-Diseno-Textil-Inditex-ES0148396007
+2025-04-18 09:03:08,666 [INFO] 📛 Registro duplicado: Inditex - 2025. No se insertó.
+2025-04-18 09:03:08,748 [INFO] 📛 Registro duplicado: Inditex - 2024. No se insertó.
+2025-04-18 09:03:08,826 [INFO] 📛 Registro duplicado: Inditex - 2023. No se insertó.
+2025-04-18 09:03:08,901 [INFO] 📛 Registro duplicado: Inditex - 2022. No se insertó.
+2025-04-18 09:03:08,966 [INFO] 📛 Registro duplicado: Inditex - 2021. No se insertó.
+2025-04-18 09:03:08,967 [INFO] ⚠️ Todas las filas fueron ignoradas para Inditex
+2025-04-18 09:03:08,967 [INFO] 🔍 Iniciando scraping para Santander
+2025-04-18 09:03:08,967 [INFO] 📄 Accediendo a la web de Santander: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Banco-Santander-ES0113900J37
+2025-04-18 09:03:09,821 [INFO] 📛 Registro duplicado: Santander - 2025. No se insertó.
+2025-04-18 09:03:09,907 [INFO] 📛 Registro duplicado: Santander - 2024. No se insertó.
+2025-04-18 09:03:09,991 [INFO] 📛 Registro duplicado: Santander - 2023. No se insertó.
+2025-04-18 09:03:10,090 [INFO] 📛 Registro duplicado: Santander - 2022. No se insertó.
+2025-04-18 09:03:10,150 [INFO] 📛 Registro duplicado: Santander - 2021. No se insertó.
+2025-04-18 09:03:10,151 [INFO] ⚠️ Todas las filas fueron ignoradas para Santander
+2025-04-18 09:03:12,249 [INFO] ✅ Scraping de empresas BME finalizado.
+2025-04-18 09:03:12,250 [INFO] ✅ Scraping de empresas BME completado.
+2025-04-18 09:03:12,253 [INFO] 🔧 Poppler configurado en: C:\Users\yo_xa\PycharmProjects\PythonProject\poppler\poppler-24.08.0\Library\bin
+2025-04-18 09:03:12,253 [ERROR] ❌ Falta el archivo 'spa.traineddata' en la carpeta tessdata.
+2025-04-18 09:03:12,253 [INFO] 🚀 Iniciando scraping de PDF del IBEX 35
+2025-04-18 09:03:12,367 [INFO] 📥 PDF descargado: https://www.bolsasymercados.es/bme-exchange/docs/Indices/Avisos/esp/gestorindice/Aviso_Gestor_Indices_02-25.pdf
+2025-04-18 09:03:12,511 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:03:12,512 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:03:12,512 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:03:12,513 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:03:12,513 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:03:16,803 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:03:16,804 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:03:16,804 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:03:16,804 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:03:16,804 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:03:16,804 [ERROR] ❌ Error con pdfplumber: 'NoneType' object has no attribute 'strip'
+2025-04-18 09:03:18,123 [ERROR] ❌ Error en OCR del PDF: (1, 'Error opening data file C:\\Users\\yo_xa\\PycharmProjects\\PythonProject\\tesseract\\Tesseract-OCR/tessdata/spa.traineddata Please make sure the TESSDATA_PREFIX environment variable is set to the parent directory of your "tessdata" directory. Failed loading language \'spa\' Tesseract couldn\'t load any languages! Could not initialize tesseract.')
+2025-04-18 09:03:18,129 [ERROR] ❌ No se extrajeron datos del PDF.
+2025-04-18 09:03:18,130 [INFO] 🗑️ PDF temporal eliminado.
+2025-04-18 09:03:18,130 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
+2025-04-18 09:03:18,130 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
+2025-04-18 09:03:18,130 [INFO] === FIN DEL PROCESO DE SCRAPING ===
+2025-04-18 09:09:33,896 [INFO] ✅ Base de datos 'bolsa' verificada o creada.
+2025-04-18 09:09:33,897 [INFO] ✅ Tabla 'indices' verificada o creada correctamente.
+2025-04-18 09:09:34,101 [INFO] === INICIO DEL PROCESO DE SCRAPING ===
+2025-04-18 09:09:34,101 [INFO] ====== WebDriver manager ======
+2025-04-18 09:09:36,356 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-18 09:09:36,410 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-18 09:09:36,451 [INFO] Driver [C:\Users\yo_xa\.wdm\drivers\chromedriver\win64\135.0.7049.95\chromedriver-win32/chromedriver.exe] found in cache
+2025-04-18 09:09:37,618 [INFO] 🚀 Inicio del scraping de índices bursátiles.
+2025-04-18 09:09:44,573 [INFO] 📛 Ya existe un registro para 'IBEX 35 (IBEX)' en la fecha actual. No se insertó.
+2025-04-18 09:09:51,099 [INFO] 📛 Ya existe un registro para 'S&P 500 (SPX)' en la fecha actual. No se insertó.
+2025-04-18 09:09:57,402 [INFO] 📛 Ya existe un registro para 'Nasdaq 100 (NDX)' en la fecha actual. No se insertó.
+2025-04-18 09:10:03,888 [INFO] 📛 Ya existe un registro para 'DAX (GDAXI)' en la fecha actual. No se insertó.
+2025-04-18 09:10:10,172 [INFO] 📛 Ya existe un registro para 'MSCI World (MIWO00000PUS)' en la fecha actual. No se insertó.
+2025-04-18 09:10:12,298 [INFO] 🏁 Fin del scraping. Navegador cerrado.
+2025-04-18 09:10:12,298 [INFO] 📊 RESUMEN FINAL:
+2025-04-18 09:10:12,298 [INFO] ✅ Índices guardados: 0
+2025-04-18 09:10:12,298 [INFO] ℹ️ Índices omitidos: 5
+2025-04-18 09:10:12,298 [INFO] ❌ Fallos: 0
+2025-04-18 09:10:12,299 [INFO] ✅ Scraping de índices completado.
+2025-04-18 09:10:13,696 [INFO] Se cargaron 3 empresas desde empresas_bme.csv
+2025-04-18 09:10:13,696 [INFO] 🚀 Iniciando scraping de empresas BME
+2025-04-18 09:10:13,696 [INFO] 🔍 Iniciando scraping para BBVA
+2025-04-18 09:10:13,696 [INFO] 📄 Accediendo a la web de BBVA: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Banco-Bilbao-Vizcaya-Argentaria-ES0113211835
+2025-04-18 09:10:14,780 [INFO] 📛 Registro duplicado: BBVA - 2025. No se insertó.
+2025-04-18 09:10:14,852 [INFO] 📛 Registro duplicado: BBVA - 2024. No se insertó.
+2025-04-18 09:10:14,923 [INFO] 📛 Registro duplicado: BBVA - 2023. No se insertó.
+2025-04-18 09:10:14,995 [INFO] 📛 Registro duplicado: BBVA - 2022. No se insertó.
+2025-04-18 09:10:15,081 [INFO] 📛 Registro duplicado: BBVA - 2021. No se insertó.
+2025-04-18 09:10:15,081 [INFO] ⚠️ Todas las filas fueron ignoradas para BBVA
+2025-04-18 09:10:15,081 [INFO] 🔍 Iniciando scraping para Inditex
+2025-04-18 09:10:15,081 [INFO] 📄 Accediendo a la web de Inditex: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Ind-De-Diseno-Textil-Inditex-ES0148396007
+2025-04-18 09:10:15,924 [INFO] 📛 Registro duplicado: Inditex - 2025. No se insertó.
+2025-04-18 09:10:15,997 [INFO] 📛 Registro duplicado: Inditex - 2024. No se insertó.
+2025-04-18 09:10:16,071 [INFO] 📛 Registro duplicado: Inditex - 2023. No se insertó.
+2025-04-18 09:10:16,137 [INFO] 📛 Registro duplicado: Inditex - 2022. No se insertó.
+2025-04-18 09:10:16,202 [INFO] 📛 Registro duplicado: Inditex - 2021. No se insertó.
+2025-04-18 09:10:16,202 [INFO] ⚠️ Todas las filas fueron ignoradas para Inditex
+2025-04-18 09:10:16,203 [INFO] 🔍 Iniciando scraping para Santander
+2025-04-18 09:10:16,203 [INFO] 📄 Accediendo a la web de Santander: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Banco-Santander-ES0113900J37
+2025-04-18 09:10:17,013 [INFO] 📛 Registro duplicado: Santander - 2025. No se insertó.
+2025-04-18 09:10:17,132 [INFO] 📛 Registro duplicado: Santander - 2024. No se insertó.
+2025-04-18 09:10:17,242 [INFO] 📛 Registro duplicado: Santander - 2023. No se insertó.
+2025-04-18 09:10:17,321 [INFO] 📛 Registro duplicado: Santander - 2022. No se insertó.
+2025-04-18 09:10:17,390 [INFO] 📛 Registro duplicado: Santander - 2021. No se insertó.
+2025-04-18 09:10:17,391 [INFO] ⚠️ Todas las filas fueron ignoradas para Santander
+2025-04-18 09:10:19,485 [INFO] ✅ Scraping de empresas BME finalizado.
+2025-04-18 09:10:19,486 [INFO] ✅ Scraping de empresas BME completado.
+2025-04-18 09:10:19,489 [INFO] 🔧 Poppler configurado en: C:\Users\yo_xa\PycharmProjects\PythonProject\poppler\poppler-24.08.0\Library\bin
+2025-04-18 09:10:19,491 [INFO] 🔍 Tesseract configurado en: C:\Users\yo_xa\PycharmProjects\PythonProject\tesseract\Tesseract-OCR\tesseract.exe
+2025-04-18 09:10:19,491 [INFO] 🚀 Iniciando scraping de PDF del IBEX 35
+2025-04-18 09:10:19,628 [INFO] 📥 PDF descargado: https://www.bolsasymercados.es/bme-exchange/docs/Indices/Avisos/esp/gestorindice/Aviso_Gestor_Indices_02-25.pdf
+2025-04-18 09:10:19,784 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:10:19,785 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:10:19,785 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:10:19,786 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:10:19,786 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:10:24,054 [INFO] 📊 Se extrajeron 1 filas con pdfplumber.
+2025-04-18 09:10:24,055 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:10:24,055 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:10:24,055 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:10:24,055 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:10:24,055 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:10:24,082 [ERROR] ❌ Error al insertar datos de composición: 1054 (42S22): Unknown column 'porcentaje_coef_ff' in 'field list'
+2025-04-18 09:10:24,082 [INFO] 📛  – 
+2025-04-18 09:10:24,083 [INFO] 🗑️ PDF temporal eliminado.
+2025-04-18 09:10:24,083 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
+2025-04-18 09:10:24,083 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
+2025-04-18 09:10:24,083 [INFO] === FIN DEL PROCESO DE SCRAPING ===
+2025-04-18 09:14:17,102 [INFO] ✅ Base de datos 'bolsa' verificada o creada.
+2025-04-18 09:14:17,104 [INFO] ✅ Tabla 'indices' verificada o creada correctamente.
+2025-04-18 09:14:17,273 [INFO] === INICIO DEL PROCESO DE SCRAPING ===
+2025-04-18 09:14:17,273 [INFO] ====== WebDriver manager ======
+2025-04-18 09:14:19,346 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-18 09:14:19,397 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-18 09:14:19,445 [INFO] Driver [C:\Users\yo_xa\.wdm\drivers\chromedriver\win64\135.0.7049.95\chromedriver-win32/chromedriver.exe] found in cache
+2025-04-18 09:14:20,532 [INFO] 🚀 Inicio del scraping de índices bursátiles.
+2025-04-18 09:14:27,384 [INFO] 📛 Ya existe un registro para 'IBEX 35 (IBEX)' en la fecha actual. No se insertó.
+2025-04-18 09:14:33,569 [INFO] 📛 Ya existe un registro para 'S&P 500 (SPX)' en la fecha actual. No se insertó.
+2025-04-18 09:14:40,056 [INFO] 📛 Ya existe un registro para 'Nasdaq 100 (NDX)' en la fecha actual. No se insertó.
+2025-04-18 09:14:46,489 [INFO] 📛 Ya existe un registro para 'DAX (GDAXI)' en la fecha actual. No se insertó.
+2025-04-18 09:14:53,767 [INFO] 📛 Ya existe un registro para 'MSCI World (MIWO00000PUS)' en la fecha actual. No se insertó.
+2025-04-18 09:14:55,902 [INFO] 🏁 Fin del scraping. Navegador cerrado.
+2025-04-18 09:14:55,902 [INFO] 📊 RESUMEN FINAL:
+2025-04-18 09:14:55,902 [INFO] ✅ Índices guardados: 0
+2025-04-18 09:14:55,902 [INFO] ℹ️ Índices omitidos: 5
+2025-04-18 09:14:55,903 [INFO] ❌ Fallos: 0
+2025-04-18 09:14:55,903 [INFO] ✅ Scraping de índices completado.
+2025-04-18 09:14:57,191 [INFO] Se cargaron 3 empresas desde empresas_bme.csv
+2025-04-18 09:14:57,191 [INFO] 🚀 Iniciando scraping de empresas BME
+2025-04-18 09:14:57,191 [INFO] 🔍 Iniciando scraping para BBVA
+2025-04-18 09:14:57,191 [INFO] 📄 Accediendo a la web de BBVA: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Banco-Bilbao-Vizcaya-Argentaria-ES0113211835
+2025-04-18 09:14:58,230 [INFO] 📛 Registro duplicado: BBVA - 2025. No se insertó.
+2025-04-18 09:14:58,304 [INFO] 📛 Registro duplicado: BBVA - 2024. No se insertó.
+2025-04-18 09:14:58,379 [INFO] 📛 Registro duplicado: BBVA - 2023. No se insertó.
+2025-04-18 09:14:58,453 [INFO] 📛 Registro duplicado: BBVA - 2022. No se insertó.
+2025-04-18 09:14:58,531 [INFO] 📛 Registro duplicado: BBVA - 2021. No se insertó.
+2025-04-18 09:14:58,531 [INFO] ⚠️ Todas las filas fueron ignoradas para BBVA
+2025-04-18 09:14:58,531 [INFO] 🔍 Iniciando scraping para Inditex
+2025-04-18 09:14:58,531 [INFO] 📄 Accediendo a la web de Inditex: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Ind-De-Diseno-Textil-Inditex-ES0148396007
+2025-04-18 09:14:59,365 [INFO] 📛 Registro duplicado: Inditex - 2025. No se insertó.
+2025-04-18 09:14:59,439 [INFO] 📛 Registro duplicado: Inditex - 2024. No se insertó.
+2025-04-18 09:14:59,516 [INFO] 📛 Registro duplicado: Inditex - 2023. No se insertó.
+2025-04-18 09:14:59,587 [INFO] 📛 Registro duplicado: Inditex - 2022. No se insertó.
+2025-04-18 09:14:59,658 [INFO] 📛 Registro duplicado: Inditex - 2021. No se insertó.
+2025-04-18 09:14:59,658 [INFO] ⚠️ Todas las filas fueron ignoradas para Inditex
+2025-04-18 09:14:59,659 [INFO] 🔍 Iniciando scraping para Santander
+2025-04-18 09:14:59,659 [INFO] 📄 Accediendo a la web de Santander: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Banco-Santander-ES0113900J37
+2025-04-18 09:15:00,480 [INFO] 📛 Registro duplicado: Santander - 2025. No se insertó.
+2025-04-18 09:15:00,565 [INFO] 📛 Registro duplicado: Santander - 2024. No se insertó.
+2025-04-18 09:15:00,647 [INFO] 📛 Registro duplicado: Santander - 2023. No se insertó.
+2025-04-18 09:15:00,736 [INFO] 📛 Registro duplicado: Santander - 2022. No se insertó.
+2025-04-18 09:15:00,796 [INFO] 📛 Registro duplicado: Santander - 2021. No se insertó.
+2025-04-18 09:15:00,796 [INFO] ⚠️ Todas las filas fueron ignoradas para Santander
+2025-04-18 09:15:02,890 [INFO] ✅ Scraping de empresas BME finalizado.
+2025-04-18 09:15:02,890 [INFO] ✅ Scraping de empresas BME completado.
+2025-04-18 09:15:02,893 [INFO] 🔧 Poppler configurado en: C:\Users\yo_xa\PycharmProjects\PythonProject\poppler\poppler-24.08.0\Library\bin
+2025-04-18 09:15:02,895 [INFO] 🔍 Tesseract configurado en: C:\Users\yo_xa\PycharmProjects\PythonProject\tesseract\Tesseract-OCR\tesseract.exe
+2025-04-18 09:15:02,895 [INFO] 🚀 Iniciando scraping de PDF del IBEX 35
+2025-04-18 09:15:03,033 [INFO] 📥 PDF descargado: https://www.bolsasymercados.es/bme-exchange/docs/Indices/Avisos/esp/gestorindice/Aviso_Gestor_Indices_02-25.pdf
+2025-04-18 09:15:03,191 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:15:03,191 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:15:03,192 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:15:03,192 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:15:03,192 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:15:07,458 [INFO] 📊 Se extrajeron 1 filas con pdfplumber.
+2025-04-18 09:15:07,458 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:15:07,458 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:15:07,458 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:15:07,458 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:15:07,458 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:15:07,461 [ERROR] ❌ Error al insertar datos de composición: 1054 (42S22): Unknown column 'fecha_registro' in 'field list'
+2025-04-18 09:15:07,462 [INFO] 📛  – 
+2025-04-18 09:15:07,462 [INFO] 🗑️ PDF temporal eliminado.
+2025-04-18 09:15:07,462 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
+2025-04-18 09:15:07,462 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
+2025-04-18 09:15:07,462 [INFO] === FIN DEL PROCESO DE SCRAPING ===
+2025-04-18 09:18:21,568 [INFO] ✅ Base de datos 'bolsa' verificada o creada.
+2025-04-18 09:18:21,570 [INFO] ✅ Tabla 'indices' verificada o creada correctamente.
+2025-04-18 09:18:21,729 [INFO] === INICIO DEL PROCESO DE SCRAPING ===
+2025-04-18 09:18:21,729 [INFO] ====== WebDriver manager ======
+2025-04-18 09:18:23,888 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-18 09:18:23,933 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-18 09:18:23,977 [INFO] Driver [C:\Users\yo_xa\.wdm\drivers\chromedriver\win64\135.0.7049.95\chromedriver-win32/chromedriver.exe] found in cache
+2025-04-18 09:18:25,044 [INFO] 🚀 Inicio del scraping de índices bursátiles.
+2025-04-18 09:18:32,006 [INFO] 📛 Ya existe un registro para 'IBEX 35 (IBEX)' en la fecha actual. No se insertó.
+2025-04-18 09:18:38,426 [INFO] 📛 Ya existe un registro para 'S&P 500 (SPX)' en la fecha actual. No se insertó.
+2025-04-18 09:18:44,726 [INFO] 📛 Ya existe un registro para 'Nasdaq 100 (NDX)' en la fecha actual. No se insertó.
+2025-04-18 09:18:50,942 [INFO] 📛 Ya existe un registro para 'DAX (GDAXI)' en la fecha actual. No se insertó.
+2025-04-18 09:18:57,226 [INFO] 📛 Ya existe un registro para 'MSCI World (MIWO00000PUS)' en la fecha actual. No se insertó.
+2025-04-18 09:18:59,340 [INFO] 🏁 Fin del scraping. Navegador cerrado.
+2025-04-18 09:18:59,340 [INFO] 📊 RESUMEN FINAL:
+2025-04-18 09:18:59,340 [INFO] ✅ Índices guardados: 0
+2025-04-18 09:18:59,340 [INFO] ℹ️ Índices omitidos: 5
+2025-04-18 09:18:59,340 [INFO] ❌ Fallos: 0
+2025-04-18 09:18:59,341 [INFO] ✅ Scraping de índices completado.
+2025-04-18 09:19:00,643 [INFO] Se cargaron 3 empresas desde empresas_bme.csv
+2025-04-18 09:19:00,643 [INFO] 🚀 Iniciando scraping de empresas BME
+2025-04-18 09:19:00,643 [INFO] 🔍 Iniciando scraping para BBVA
+2025-04-18 09:19:00,643 [INFO] 📄 Accediendo a la web de BBVA: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Banco-Bilbao-Vizcaya-Argentaria-ES0113211835
+2025-04-18 09:19:01,778 [INFO] 📛 Registro duplicado: BBVA - 2025. No se insertó.
+2025-04-18 09:19:01,850 [INFO] 📛 Registro duplicado: BBVA - 2024. No se insertó.
+2025-04-18 09:19:01,919 [INFO] 📛 Registro duplicado: BBVA - 2023. No se insertó.
+2025-04-18 09:19:01,986 [INFO] 📛 Registro duplicado: BBVA - 2022. No se insertó.
+2025-04-18 09:19:02,065 [INFO] 📛 Registro duplicado: BBVA - 2021. No se insertó.
+2025-04-18 09:19:02,065 [INFO] ⚠️ Todas las filas fueron ignoradas para BBVA
+2025-04-18 09:19:02,065 [INFO] 🔍 Iniciando scraping para Inditex
+2025-04-18 09:19:02,065 [INFO] 📄 Accediendo a la web de Inditex: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Ind-De-Diseno-Textil-Inditex-ES0148396007
+2025-04-18 09:19:02,929 [INFO] 📛 Registro duplicado: Inditex - 2025. No se insertó.
+2025-04-18 09:19:03,008 [INFO] 📛 Registro duplicado: Inditex - 2024. No se insertó.
+2025-04-18 09:19:03,082 [INFO] 📛 Registro duplicado: Inditex - 2023. No se insertó.
+2025-04-18 09:19:03,161 [INFO] 📛 Registro duplicado: Inditex - 2022. No se insertó.
+2025-04-18 09:19:03,222 [INFO] 📛 Registro duplicado: Inditex - 2021. No se insertó.
+2025-04-18 09:19:03,222 [INFO] ⚠️ Todas las filas fueron ignoradas para Inditex
+2025-04-18 09:19:03,222 [INFO] 🔍 Iniciando scraping para Santander
+2025-04-18 09:19:03,222 [INFO] 📄 Accediendo a la web de Santander: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Banco-Santander-ES0113900J37
+2025-04-18 09:19:04,048 [INFO] 📛 Registro duplicado: Santander - 2025. No se insertó.
+2025-04-18 09:19:04,118 [INFO] 📛 Registro duplicado: Santander - 2024. No se insertó.
+2025-04-18 09:19:04,194 [INFO] 📛 Registro duplicado: Santander - 2023. No se insertó.
+2025-04-18 09:19:04,274 [INFO] 📛 Registro duplicado: Santander - 2022. No se insertó.
+2025-04-18 09:19:04,352 [INFO] 📛 Registro duplicado: Santander - 2021. No se insertó.
+2025-04-18 09:19:04,353 [INFO] ⚠️ Todas las filas fueron ignoradas para Santander
+2025-04-18 09:19:06,438 [INFO] ✅ Scraping de empresas BME finalizado.
+2025-04-18 09:19:06,438 [INFO] ✅ Scraping de empresas BME completado.
+2025-04-18 09:19:06,441 [INFO] 🔧 Poppler configurado en: C:\Users\yo_xa\PycharmProjects\PythonProject\poppler\poppler-24.08.0\Library\bin
+2025-04-18 09:19:06,443 [INFO] 🔍 Tesseract configurado en: C:\Users\yo_xa\PycharmProjects\PythonProject\tesseract\Tesseract-OCR\tesseract.exe
+2025-04-18 09:19:06,443 [INFO] 🚀 Iniciando scraping de PDF del IBEX 35
+2025-04-18 09:19:06,574 [INFO] 📥 PDF descargado: https://www.bolsasymercados.es/bme-exchange/docs/Indices/Avisos/esp/gestorindice/Aviso_Gestor_Indices_02-25.pdf
+2025-04-18 09:19:06,724 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:19:06,726 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:19:06,727 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:19:06,728 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:19:06,729 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:19:11,018 [INFO] 📊 Se extrajeron 1 filas con pdfplumber.
+2025-04-18 09:19:11,018 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:19:11,018 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:19:11,018 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:19:11,018 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:19:11,018 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:19:11,021 [ERROR] ❌ Error durante el scraping de PDFs IBEX 35: 'fecha_insercion'
+2025-04-18 09:19:11,021 [INFO] === FIN DEL PROCESO DE SCRAPING ===
+2025-04-18 09:20:49,160 [INFO] ✅ Base de datos 'bolsa' verificada o creada.
+2025-04-18 09:20:49,161 [INFO] ✅ Tabla 'indices' verificada o creada correctamente.
+2025-04-18 09:20:49,335 [INFO] === INICIO DEL PROCESO DE SCRAPING ===
+2025-04-18 09:20:49,335 [INFO] ====== WebDriver manager ======
+2025-04-18 09:20:51,430 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-18 09:20:51,471 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-18 09:20:51,511 [INFO] Driver [C:\Users\yo_xa\.wdm\drivers\chromedriver\win64\135.0.7049.95\chromedriver-win32/chromedriver.exe] found in cache
+2025-04-18 09:20:52,596 [INFO] 🚀 Inicio del scraping de índices bursátiles.
+2025-04-18 09:20:59,559 [INFO] 📛 Ya existe un registro para 'IBEX 35 (IBEX)' en la fecha actual. No se insertó.
+2025-04-18 09:21:05,533 [INFO] 📛 Ya existe un registro para 'S&P 500 (SPX)' en la fecha actual. No se insertó.
+2025-04-18 09:21:12,346 [INFO] 📛 Ya existe un registro para 'Nasdaq 100 (NDX)' en la fecha actual. No se insertó.
+2025-04-18 09:21:20,206 [INFO] 📛 Ya existe un registro para 'DAX (GDAXI)' en la fecha actual. No se insertó.
+2025-04-18 09:21:26,825 [INFO] 📛 Ya existe un registro para 'MSCI World (MIWO00000PUS)' en la fecha actual. No se insertó.
+2025-04-18 09:21:28,950 [INFO] 🏁 Fin del scraping. Navegador cerrado.
+2025-04-18 09:21:28,950 [INFO] 📊 RESUMEN FINAL:
+2025-04-18 09:21:28,951 [INFO] ✅ Índices guardados: 0
+2025-04-18 09:21:28,951 [INFO] ℹ️ Índices omitidos: 5
+2025-04-18 09:21:28,951 [INFO] ❌ Fallos: 0
+2025-04-18 09:21:28,951 [INFO] ✅ Scraping de índices completado.
+2025-04-18 09:21:30,201 [INFO] Se cargaron 3 empresas desde empresas_bme.csv
+2025-04-18 09:21:30,202 [INFO] 🚀 Iniciando scraping de empresas BME
+2025-04-18 09:21:30,202 [INFO] 🔍 Iniciando scraping para BBVA
+2025-04-18 09:21:30,202 [INFO] 📄 Accediendo a la web de BBVA: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Banco-Bilbao-Vizcaya-Argentaria-ES0113211835
+2025-04-18 09:21:32,019 [INFO] 📛 Registro duplicado: BBVA - 2025. No se insertó.
+2025-04-18 09:21:32,104 [INFO] 📛 Registro duplicado: BBVA - 2024. No se insertó.
+2025-04-18 09:21:32,191 [INFO] 📛 Registro duplicado: BBVA - 2023. No se insertó.
+2025-04-18 09:21:32,268 [INFO] 📛 Registro duplicado: BBVA - 2022. No se insertó.
+2025-04-18 09:21:32,342 [INFO] 📛 Registro duplicado: BBVA - 2021. No se insertó.
+2025-04-18 09:21:32,342 [INFO] ⚠️ Todas las filas fueron ignoradas para BBVA
+2025-04-18 09:21:32,342 [INFO] 🔍 Iniciando scraping para Inditex
+2025-04-18 09:21:32,342 [INFO] 📄 Accediendo a la web de Inditex: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Ind-De-Diseno-Textil-Inditex-ES0148396007
+2025-04-18 09:21:33,256 [INFO] 📛 Registro duplicado: Inditex - 2025. No se insertó.
+2025-04-18 09:21:33,346 [INFO] 📛 Registro duplicado: Inditex - 2024. No se insertó.
+2025-04-18 09:21:33,431 [INFO] 📛 Registro duplicado: Inditex - 2023. No se insertó.
+2025-04-18 09:21:33,509 [INFO] 📛 Registro duplicado: Inditex - 2022. No se insertó.
+2025-04-18 09:21:33,580 [INFO] 📛 Registro duplicado: Inditex - 2021. No se insertó.
+2025-04-18 09:21:33,580 [INFO] ⚠️ Todas las filas fueron ignoradas para Inditex
+2025-04-18 09:21:33,580 [INFO] 🔍 Iniciando scraping para Santander
+2025-04-18 09:21:33,580 [INFO] 📄 Accediendo a la web de Santander: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Banco-Santander-ES0113900J37
+2025-04-18 09:21:34,658 [INFO] 📛 Registro duplicado: Santander - 2025. No se insertó.
+2025-04-18 09:21:34,756 [INFO] 📛 Registro duplicado: Santander - 2024. No se insertó.
+2025-04-18 09:21:34,893 [INFO] 📛 Registro duplicado: Santander - 2023. No se insertó.
+2025-04-18 09:21:34,981 [INFO] 📛 Registro duplicado: Santander - 2022. No se insertó.
+2025-04-18 09:21:35,074 [INFO] 📛 Registro duplicado: Santander - 2021. No se insertó.
+2025-04-18 09:21:35,074 [INFO] ⚠️ Todas las filas fueron ignoradas para Santander
+2025-04-18 09:21:37,178 [INFO] ✅ Scraping de empresas BME finalizado.
+2025-04-18 09:21:37,178 [INFO] ✅ Scraping de empresas BME completado.
+2025-04-18 09:21:37,179 [INFO] 🔧 Poppler configurado en: C:\Users\yo_xa\PycharmProjects\PythonProject\poppler\poppler-24.08.0\Library\bin
+2025-04-18 09:21:37,180 [INFO] 🔍 Tesseract configurado en: C:\Users\yo_xa\PycharmProjects\PythonProject\tesseract\Tesseract-OCR\tesseract.exe
+2025-04-18 09:21:37,180 [INFO] 🚀 Iniciando scraping de PDF del IBEX 35
+2025-04-18 09:21:37,301 [INFO] 📥 PDF descargado: https://www.bolsasymercados.es/bme-exchange/docs/Indices/Avisos/esp/gestorindice/Aviso_Gestor_Indices_02-25.pdf
+2025-04-18 09:21:37,487 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:21:37,487 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:21:37,488 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:21:37,488 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:21:37,489 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:21:41,798 [INFO] 📊 Se extrajeron 1 filas con pdfplumber.
+2025-04-18 09:21:41,798 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:21:41,798 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:21:41,798 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:21:41,798 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:21:41,798 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:21:41,804 [INFO] 📥 Insertado/actualizado:  - 
+2025-04-18 09:21:41,804 [INFO] 📥  – 
+2025-04-18 09:21:41,805 [INFO] 🗑️ PDF temporal eliminado.
+2025-04-18 09:21:41,805 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
+2025-04-18 09:21:41,805 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
+2025-04-18 09:21:41,805 [INFO] === FIN DEL PROCESO DE SCRAPING ===
+2025-04-18 09:29:45,370 [INFO] ✅ Base de datos 'bolsa' verificada o creada.
+2025-04-18 09:29:45,373 [INFO] ✅ Tabla 'indices' verificada o creada correctamente.
+2025-04-18 09:29:45,552 [INFO] === INICIO DEL PROCESO DE SCRAPING ===
+2025-04-18 09:29:45,552 [INFO] ====== WebDriver manager ======
+2025-04-18 09:29:47,698 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-18 09:29:47,742 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-18 09:29:47,789 [INFO] Driver [C:\Users\yo_xa\.wdm\drivers\chromedriver\win64\135.0.7049.95\chromedriver-win32/chromedriver.exe] found in cache
+2025-04-18 09:29:48,876 [INFO] 🚀 Inicio del scraping de índices bursátiles.
+2025-04-18 09:29:55,837 [INFO] 📛 Ya existe un registro para 'IBEX 35 (IBEX)' en la fecha actual. No se insertó.
+2025-04-18 09:30:02,303 [INFO] 📛 Ya existe un registro para 'S&P 500 (SPX)' en la fecha actual. No se insertó.
+2025-04-18 09:30:08,772 [INFO] 📛 Ya existe un registro para 'Nasdaq 100 (NDX)' en la fecha actual. No se insertó.
+2025-04-18 09:30:15,120 [INFO] 📛 Ya existe un registro para 'DAX (GDAXI)' en la fecha actual. No se insertó.
+2025-04-18 09:30:21,401 [INFO] 📛 Ya existe un registro para 'MSCI World (MIWO00000PUS)' en la fecha actual. No se insertó.
+2025-04-18 09:30:23,519 [INFO] 🏁 Fin del scraping. Navegador cerrado.
+2025-04-18 09:30:23,520 [INFO] 📊 RESUMEN FINAL:
+2025-04-18 09:30:23,520 [INFO] ✅ Índices guardados: 0
+2025-04-18 09:30:23,520 [INFO] ℹ️ Índices omitidos: 5
+2025-04-18 09:30:23,520 [INFO] ❌ Fallos: 0
+2025-04-18 09:30:23,520 [INFO] ✅ Scraping de índices completado.
+2025-04-18 09:30:24,838 [INFO] Se cargaron 3 empresas desde empresas_bme.csv
+2025-04-18 09:30:24,838 [INFO] 🚀 Iniciando scraping de empresas BME
+2025-04-18 09:30:24,838 [INFO] 🔍 Iniciando scraping para BBVA
+2025-04-18 09:30:24,838 [INFO] 📄 Accediendo a la web de BBVA: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Banco-Bilbao-Vizcaya-Argentaria-ES0113211835
+2025-04-18 09:30:25,902 [INFO] 📛 Registro duplicado: BBVA - 2025. No se insertó.
+2025-04-18 09:30:25,986 [INFO] 📛 Registro duplicado: BBVA - 2024. No se insertó.
+2025-04-18 09:30:26,053 [INFO] 📛 Registro duplicado: BBVA - 2023. No se insertó.
+2025-04-18 09:30:26,136 [INFO] 📛 Registro duplicado: BBVA - 2022. No se insertó.
+2025-04-18 09:30:26,214 [INFO] 📛 Registro duplicado: BBVA - 2021. No se insertó.
+2025-04-18 09:30:26,214 [INFO] ⚠️ Todas las filas fueron ignoradas para BBVA
+2025-04-18 09:30:26,214 [INFO] 🔍 Iniciando scraping para Inditex
+2025-04-18 09:30:26,214 [INFO] 📄 Accediendo a la web de Inditex: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Ind-De-Diseno-Textil-Inditex-ES0148396007
+2025-04-18 09:30:27,067 [INFO] 📛 Registro duplicado: Inditex - 2025. No se insertó.
+2025-04-18 09:30:27,139 [INFO] 📛 Registro duplicado: Inditex - 2024. No se insertó.
+2025-04-18 09:30:27,215 [INFO] 📛 Registro duplicado: Inditex - 2023. No se insertó.
+2025-04-18 09:30:27,280 [INFO] 📛 Registro duplicado: Inditex - 2022. No se insertó.
+2025-04-18 09:30:27,344 [INFO] 📛 Registro duplicado: Inditex - 2021. No se insertó.
+2025-04-18 09:30:27,345 [INFO] ⚠️ Todas las filas fueron ignoradas para Inditex
+2025-04-18 09:30:27,345 [INFO] 🔍 Iniciando scraping para Santander
+2025-04-18 09:30:27,345 [INFO] 📄 Accediendo a la web de Santander: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Banco-Santander-ES0113900J37
+2025-04-18 09:30:28,164 [INFO] 📛 Registro duplicado: Santander - 2025. No se insertó.
+2025-04-18 09:30:28,257 [INFO] 📛 Registro duplicado: Santander - 2024. No se insertó.
+2025-04-18 09:30:28,335 [INFO] 📛 Registro duplicado: Santander - 2023. No se insertó.
+2025-04-18 09:30:28,417 [INFO] 📛 Registro duplicado: Santander - 2022. No se insertó.
+2025-04-18 09:30:28,482 [INFO] 📛 Registro duplicado: Santander - 2021. No se insertó.
+2025-04-18 09:30:28,482 [INFO] ⚠️ Todas las filas fueron ignoradas para Santander
+2025-04-18 09:30:30,572 [INFO] ✅ Scraping de empresas BME finalizado.
+2025-04-18 09:30:30,572 [INFO] ✅ Scraping de empresas BME completado.
+2025-04-18 09:30:30,575 [INFO] 🔧 Poppler configurado en: C:\Users\yo_xa\PycharmProjects\PythonProject\poppler\poppler-24.08.0\Library\bin
+2025-04-18 09:30:30,577 [INFO] 🔍 Tesseract configurado en: C:\Users\yo_xa\PycharmProjects\PythonProject\tesseract\Tesseract-OCR\tesseract.exe
+2025-04-18 09:30:30,577 [INFO] 🚀 Iniciando scraping de PDF del IBEX 35
+2025-04-18 09:30:30,695 [INFO] 📥 PDF descargado: https://www.bolsasymercados.es/bme-exchange/docs/Indices/Avisos/esp/gestorindice/Aviso_Gestor_Indices_02-25.pdf
+2025-04-18 09:30:30,845 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:30:30,846 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:30:30,847 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:30:30,847 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:30:30,848 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:30:35,384 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:30:35,384 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:30:35,384 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:30:35,385 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:30:35,385 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:30:35,385 [INFO] 📊 Se extrajeron 4 filas con pdfplumber.
+2025-04-18 09:30:35,385 [INFO] ⚠️ Menos de 5 filas con pdfplumber; intentando OCR...
+2025-04-18 09:30:37,712 [ERROR] ❌ Error en OCR del PDF: (3221225477, '')
+2025-04-18 09:30:37,765 [ERROR] ❌ No se extrajeron datos del PDF.
+2025-04-18 09:30:37,766 [INFO] 🗑️ PDF temporal eliminado.
+2025-04-18 09:30:37,766 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
+2025-04-18 09:30:37,766 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
+2025-04-18 09:30:37,766 [INFO] === FIN DEL PROCESO DE SCRAPING ===
+2025-04-18 09:36:38,464 [INFO] ✅ Base de datos 'bolsa' verificada o creada.
+2025-04-18 09:36:38,466 [INFO] ✅ Tabla 'indices' verificada o creada correctamente.
+2025-04-18 09:36:38,655 [INFO] === INICIO DEL PROCESO DE SCRAPING ===
+2025-04-18 09:36:38,655 [INFO] ====== WebDriver manager ======
+2025-04-18 09:36:40,853 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-18 09:36:40,897 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-18 09:36:40,937 [INFO] Driver [C:\Users\yo_xa\.wdm\drivers\chromedriver\win64\135.0.7049.95\chromedriver-win32/chromedriver.exe] found in cache
+2025-04-18 09:36:42,038 [INFO] 🚀 Inicio del scraping de índices bursátiles.
+2025-04-18 09:36:49,708 [INFO] 📛 Ya existe un registro para 'IBEX 35 (IBEX)' en la fecha actual. No se insertó.
+2025-04-18 09:36:56,362 [INFO] 📛 Ya existe un registro para 'S&P 500 (SPX)' en la fecha actual. No se insertó.
+2025-04-18 09:37:03,118 [INFO] 📛 Ya existe un registro para 'Nasdaq 100 (NDX)' en la fecha actual. No se insertó.
+2025-04-18 09:37:09,760 [INFO] 📛 Ya existe un registro para 'DAX (GDAXI)' en la fecha actual. No se insertó.
+2025-04-18 09:37:16,403 [INFO] 📛 Ya existe un registro para 'MSCI World (MIWO00000PUS)' en la fecha actual. No se insertó.
+2025-04-18 09:37:18,516 [INFO] 🏁 Fin del scraping. Navegador cerrado.
+2025-04-18 09:37:18,517 [INFO] 📊 RESUMEN FINAL:
+2025-04-18 09:37:18,517 [INFO] ✅ Índices guardados: 0
+2025-04-18 09:37:18,517 [INFO] ℹ️ Índices omitidos: 5
+2025-04-18 09:37:18,517 [INFO] ❌ Fallos: 0
+2025-04-18 09:37:18,517 [INFO] ✅ Scraping de índices completado.
+2025-04-18 09:37:19,791 [INFO] Se cargaron 3 empresas desde empresas_bme.csv
+2025-04-18 09:37:19,791 [INFO] 🚀 Iniciando scraping de empresas BME
+2025-04-18 09:37:19,791 [INFO] 🔍 Iniciando scraping para BBVA
+2025-04-18 09:37:19,791 [INFO] 📄 Accediendo a la web de BBVA: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Banco-Bilbao-Vizcaya-Argentaria-ES0113211835
+2025-04-18 09:37:20,858 [INFO] 📛 Registro duplicado: BBVA - 2025. No se insertó.
+2025-04-18 09:37:20,930 [INFO] 📛 Registro duplicado: BBVA - 2024. No se insertó.
+2025-04-18 09:37:21,003 [INFO] 📛 Registro duplicado: BBVA - 2023. No se insertó.
+2025-04-18 09:37:21,076 [INFO] 📛 Registro duplicado: BBVA - 2022. No se insertó.
+2025-04-18 09:37:21,175 [INFO] 📛 Registro duplicado: BBVA - 2021. No se insertó.
+2025-04-18 09:37:21,175 [INFO] ⚠️ Todas las filas fueron ignoradas para BBVA
+2025-04-18 09:37:21,175 [INFO] 🔍 Iniciando scraping para Inditex
+2025-04-18 09:37:21,175 [INFO] 📄 Accediendo a la web de Inditex: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Ind-De-Diseno-Textil-Inditex-ES0148396007
+2025-04-18 09:37:22,020 [INFO] 📛 Registro duplicado: Inditex - 2025. No se insertó.
+2025-04-18 09:37:22,089 [INFO] 📛 Registro duplicado: Inditex - 2024. No se insertó.
+2025-04-18 09:37:22,159 [INFO] 📛 Registro duplicado: Inditex - 2023. No se insertó.
+2025-04-18 09:37:22,236 [INFO] 📛 Registro duplicado: Inditex - 2022. No se insertó.
+2025-04-18 09:37:22,303 [INFO] 📛 Registro duplicado: Inditex - 2021. No se insertó.
+2025-04-18 09:37:22,304 [INFO] ⚠️ Todas las filas fueron ignoradas para Inditex
+2025-04-18 09:37:22,304 [INFO] 🔍 Iniciando scraping para Santander
+2025-04-18 09:37:22,304 [INFO] 📄 Accediendo a la web de Santander: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Banco-Santander-ES0113900J37
+2025-04-18 09:37:23,158 [INFO] 📛 Registro duplicado: Santander - 2025. No se insertó.
+2025-04-18 09:37:23,239 [INFO] 📛 Registro duplicado: Santander - 2024. No se insertó.
+2025-04-18 09:37:23,323 [INFO] 📛 Registro duplicado: Santander - 2023. No se insertó.
+2025-04-18 09:37:23,399 [INFO] 📛 Registro duplicado: Santander - 2022. No se insertó.
+2025-04-18 09:37:23,459 [INFO] 📛 Registro duplicado: Santander - 2021. No se insertó.
+2025-04-18 09:37:23,459 [INFO] ⚠️ Todas las filas fueron ignoradas para Santander
+2025-04-18 09:37:25,553 [INFO] ✅ Scraping de empresas BME finalizado.
+2025-04-18 09:37:25,553 [INFO] ✅ Scraping de empresas BME completado.
+2025-04-18 09:37:25,556 [INFO] 🔧 Poppler configurado en: C:\Users\yo_xa\PycharmProjects\PythonProject\poppler\poppler-24.08.0\Library\bin
+2025-04-18 09:37:25,557 [INFO] 🔍 Tesseract configurado en: C:\Users\yo_xa\PycharmProjects\PythonProject\tesseract\Tesseract-OCR\tesseract.exe
+2025-04-18 09:37:25,557 [INFO] 🚀 Iniciando scraping de PDF del IBEX 35
+2025-04-18 09:37:25,678 [INFO] 📥 PDF descargado: https://www.bolsasymercados.es/bme-exchange/docs/Indices/Avisos/esp/gestorindice/Aviso_Gestor_Indices_02-25.pdf
+2025-04-18 09:37:25,818 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:37:25,818 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:37:25,819 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:37:25,819 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:37:25,819 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:37:30,383 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:37:30,383 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:37:30,383 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:37:30,383 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:37:30,383 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 09:37:30,384 [INFO] 📊 Se extrajeron 4 filas con pdfplumber.
+2025-04-18 09:37:30,384 [INFO] ⚠️ Menos de 5 filas con pdfplumber; intentando OCR...
+2025-04-18 09:37:32,459 [ERROR] ❌ Error en OCR del PDF: (3221225477, '')
+2025-04-18 09:37:32,465 [INFO] ⚠️ Usando datos parciales extraídos con pdfplumber.
+2025-04-18 09:37:32,468 [ERROR] ❌ Error durante el scraping de PDFs IBEX 35: 'porcentaje_coef_ff'
+2025-04-18 09:37:32,468 [INFO] === FIN DEL PROCESO DE SCRAPING ===
+2025-04-18 21:51:39,537 [INFO] ✅ Base de datos 'bolsa' verificada o creada.
+2025-04-18 21:51:39,539 [INFO] ✅ Tabla 'indices' verificada o creada correctamente.
+2025-04-18 21:51:39,762 [INFO] === INICIO DEL PROCESO DE SCRAPING ===
+2025-04-18 21:51:39,762 [INFO] ====== WebDriver manager ======
+2025-04-18 21:51:42,236 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-18 21:51:42,301 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-18 21:51:42,341 [INFO] Driver [C:\Users\yo_xa\.wdm\drivers\chromedriver\win64\135.0.7049.95\chromedriver-win32/chromedriver.exe] found in cache
+2025-04-18 21:51:43,543 [INFO] 🚀 Inicio del scraping de índices bursátiles.
+2025-04-18 21:51:51,090 [INFO] 📛 Ya existe un registro para 'IBEX 35 (IBEX)' en la fecha actual. No se insertó.
+2025-04-18 21:51:57,449 [INFO] 📛 Ya existe un registro para 'S&P 500 (SPX)' en la fecha actual. No se insertó.
+2025-04-18 21:52:03,903 [INFO] 📛 Ya existe un registro para 'Nasdaq 100 (NDX)' en la fecha actual. No se insertó.
+2025-04-18 21:52:10,029 [INFO] 📛 Ya existe un registro para 'DAX (GDAXI)' en la fecha actual. No se insertó.
+2025-04-18 21:52:16,010 [INFO] 📛 Ya existe un registro para 'MSCI World (MIWO00000PUS)' en la fecha actual. No se insertó.
+2025-04-18 21:52:18,123 [INFO] 🏁 Fin del scraping. Navegador cerrado.
+2025-04-18 21:52:18,124 [INFO] 📊 RESUMEN FINAL:
+2025-04-18 21:52:18,124 [INFO] ✅ Índices guardados: 0
+2025-04-18 21:52:18,124 [INFO] ℹ️ Índices omitidos: 5
+2025-04-18 21:52:18,124 [INFO] ❌ Fallos: 0
+2025-04-18 21:52:18,124 [INFO] ✅ Scraping de índices completado.
+2025-04-18 21:52:19,968 [INFO] Se cargaron 3 empresas desde empresas_bme.csv
+2025-04-18 21:52:19,968 [INFO] 🚀 Iniciando scraping de empresas BME
+2025-04-18 21:52:19,968 [INFO] 🔍 Iniciando scraping para BBVA
+2025-04-18 21:52:19,968 [INFO] 📄 Accediendo a la web de BBVA: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Banco-Bilbao-Vizcaya-Argentaria-ES0113211835
+2025-04-18 21:52:21,080 [INFO] 📛 Registro duplicado: BBVA - 2025. No se insertó.
+2025-04-18 21:52:21,160 [INFO] 📛 Registro duplicado: BBVA - 2024. No se insertó.
+2025-04-18 21:52:21,227 [INFO] 📛 Registro duplicado: BBVA - 2023. No se insertó.
+2025-04-18 21:52:21,304 [INFO] 📛 Registro duplicado: BBVA - 2022. No se insertó.
+2025-04-18 21:52:21,386 [INFO] 📛 Registro duplicado: BBVA - 2021. No se insertó.
+2025-04-18 21:52:21,386 [INFO] ⚠️ Todas las filas fueron ignoradas para BBVA
+2025-04-18 21:52:21,386 [INFO] 🔍 Iniciando scraping para Inditex
+2025-04-18 21:52:21,386 [INFO] 📄 Accediendo a la web de Inditex: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Ind-De-Diseno-Textil-Inditex-ES0148396007
+2025-04-18 21:52:22,223 [INFO] 📛 Registro duplicado: Inditex - 2025. No se insertó.
+2025-04-18 21:52:22,298 [INFO] 📛 Registro duplicado: Inditex - 2024. No se insertó.
+2025-04-18 21:52:22,367 [INFO] 📛 Registro duplicado: Inditex - 2023. No se insertó.
+2025-04-18 21:52:22,441 [INFO] 📛 Registro duplicado: Inditex - 2022. No se insertó.
+2025-04-18 21:52:22,503 [INFO] 📛 Registro duplicado: Inditex - 2021. No se insertó.
+2025-04-18 21:52:22,503 [INFO] ⚠️ Todas las filas fueron ignoradas para Inditex
+2025-04-18 21:52:22,503 [INFO] 🔍 Iniciando scraping para Santander
+2025-04-18 21:52:22,503 [INFO] 📄 Accediendo a la web de Santander: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Banco-Santander-ES0113900J37
+2025-04-18 21:52:23,320 [INFO] 📛 Registro duplicado: Santander - 2025. No se insertó.
+2025-04-18 21:52:23,399 [INFO] 📛 Registro duplicado: Santander - 2024. No se insertó.
+2025-04-18 21:52:23,472 [INFO] 📛 Registro duplicado: Santander - 2023. No se insertó.
+2025-04-18 21:52:23,552 [INFO] 📛 Registro duplicado: Santander - 2022. No se insertó.
+2025-04-18 21:52:23,621 [INFO] 📛 Registro duplicado: Santander - 2021. No se insertó.
+2025-04-18 21:52:23,621 [INFO] ⚠️ Todas las filas fueron ignoradas para Santander
+2025-04-18 21:52:25,718 [INFO] ✅ Scraping de empresas BME finalizado.
+2025-04-18 21:52:25,719 [INFO] ✅ Scraping de empresas BME completado.
+2025-04-18 21:52:25,722 [INFO] 🔧 Poppler configurado en: C:\Users\yo_xa\PycharmProjects\PythonProject\poppler\poppler-24.08.0\Library\bin
+2025-04-18 21:52:25,724 [INFO] 🔍 Tesseract configurado en: C:\Users\yo_xa\PycharmProjects\PythonProject\tesseract\Tesseract-OCR\tesseract.exe
+2025-04-18 21:52:25,724 [INFO] 🚀 Iniciando scraping de PDF del IBEX 35
+2025-04-18 21:52:25,859 [INFO] 📥 PDF descargado: https://www.bolsasymercados.es/bme-exchange/docs/Indices/Avisos/esp/gestorindice/Aviso_Gestor_Indices_02-25.pdf
+2025-04-18 21:52:26,032 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 21:52:26,033 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 21:52:26,033 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 21:52:26,034 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 21:52:26,034 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 21:52:30,593 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 21:52:30,593 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 21:52:30,593 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 21:52:30,593 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 21:52:30,593 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 21:52:30,593 [INFO] 📊 Se extrajeron 4 filas con pdfplumber.
+2025-04-18 21:52:30,593 [INFO] ⚠️ Menos de 5 filas con pdfplumber; intentando OCR...
+2025-04-18 21:52:32,943 [ERROR] ❌ Error en OCR del PDF: (3221225477, '')
+2025-04-18 21:52:32,948 [INFO] ⚠️ Usando datos parciales extraídos con pdfplumber.
+2025-04-18 21:52:32,950 [ERROR] ❌ Error durante el scraping de PDFs IBEX 35: 'porcentaje_coef_ff'
+2025-04-18 21:52:32,950 [INFO] === FIN DEL PROCESO DE SCRAPING ===
+2025-04-18 21:57:05,608 [INFO] ✅ Base de datos 'bolsa' verificada o creada.
+2025-04-18 21:57:05,610 [INFO] ✅ Tabla 'indices' verificada o creada correctamente.
+2025-04-18 21:57:05,777 [INFO] === INICIO DEL PROCESO DE SCRAPING ===
+2025-04-18 21:57:05,777 [INFO] ====== WebDriver manager ======
+2025-04-18 21:57:07,845 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-18 21:57:07,890 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-18 21:57:07,933 [INFO] Driver [C:\Users\yo_xa\.wdm\drivers\chromedriver\win64\135.0.7049.95\chromedriver-win32/chromedriver.exe] found in cache
+2025-04-18 21:57:09,013 [INFO] 🚀 Inicio del scraping de índices bursátiles.
+2025-04-18 21:57:16,526 [INFO] 📛 Ya existe un registro para 'IBEX 35 (IBEX)' en la fecha actual. No se insertó.
+2025-04-18 21:57:23,013 [INFO] 📛 Ya existe un registro para 'S&P 500 (SPX)' en la fecha actual. No se insertó.
+2025-04-18 21:57:29,539 [INFO] 📛 Ya existe un registro para 'Nasdaq 100 (NDX)' en la fecha actual. No se insertó.
+2025-04-18 21:57:35,946 [INFO] 📛 Ya existe un registro para 'DAX (GDAXI)' en la fecha actual. No se insertó.
+2025-04-18 21:57:42,344 [INFO] 📛 Ya existe un registro para 'MSCI World (MIWO00000PUS)' en la fecha actual. No se insertó.
+2025-04-18 21:57:44,455 [INFO] 🏁 Fin del scraping. Navegador cerrado.
+2025-04-18 21:57:44,455 [INFO] 📊 RESUMEN FINAL:
+2025-04-18 21:57:44,455 [INFO] ✅ Índices guardados: 0
+2025-04-18 21:57:44,455 [INFO] ℹ️ Índices omitidos: 5
+2025-04-18 21:57:44,456 [INFO] ❌ Fallos: 0
+2025-04-18 21:57:44,456 [INFO] ✅ Scraping de índices completado.
+2025-04-18 21:57:45,752 [INFO] Se cargaron 3 empresas desde empresas_bme.csv
+2025-04-18 21:57:45,752 [INFO] 🚀 Iniciando scraping de empresas BME
+2025-04-18 21:57:45,752 [INFO] 🔍 Iniciando scraping para BBVA
+2025-04-18 21:57:45,752 [INFO] 📄 Accediendo a la web de BBVA: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Banco-Bilbao-Vizcaya-Argentaria-ES0113211835
+2025-04-18 21:57:47,240 [INFO] 📛 Registro duplicado: BBVA - 2025. No se insertó.
+2025-04-18 21:57:47,418 [INFO] 📛 Registro duplicado: BBVA - 2024. No se insertó.
+2025-04-18 21:57:47,476 [INFO] 📛 Registro duplicado: BBVA - 2023. No se insertó.
+2025-04-18 21:57:47,537 [INFO] 📛 Registro duplicado: BBVA - 2022. No se insertó.
+2025-04-18 21:57:47,607 [INFO] 📛 Registro duplicado: BBVA - 2021. No se insertó.
+2025-04-18 21:57:47,608 [INFO] ⚠️ Todas las filas fueron ignoradas para BBVA
+2025-04-18 21:57:47,608 [INFO] 🔍 Iniciando scraping para Inditex
+2025-04-18 21:57:47,608 [INFO] 📄 Accediendo a la web de Inditex: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Ind-De-Diseno-Textil-Inditex-ES0148396007
+2025-04-18 21:57:48,491 [INFO] 📛 Registro duplicado: Inditex - 2025. No se insertó.
+2025-04-18 21:57:48,565 [INFO] 📛 Registro duplicado: Inditex - 2024. No se insertó.
+2025-04-18 21:57:48,641 [INFO] 📛 Registro duplicado: Inditex - 2023. No se insertó.
+2025-04-18 21:57:48,716 [INFO] 📛 Registro duplicado: Inditex - 2022. No se insertó.
+2025-04-18 21:57:48,798 [INFO] 📛 Registro duplicado: Inditex - 2021. No se insertó.
+2025-04-18 21:57:48,798 [INFO] ⚠️ Todas las filas fueron ignoradas para Inditex
+2025-04-18 21:57:48,798 [INFO] 🔍 Iniciando scraping para Santander
+2025-04-18 21:57:48,798 [INFO] 📄 Accediendo a la web de Santander: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Banco-Santander-ES0113900J37
+2025-04-18 21:57:49,664 [INFO] 📛 Registro duplicado: Santander - 2025. No se insertó.
+2025-04-18 21:57:49,733 [INFO] 📛 Registro duplicado: Santander - 2024. No se insertó.
+2025-04-18 21:57:49,813 [INFO] 📛 Registro duplicado: Santander - 2023. No se insertó.
+2025-04-18 21:57:49,897 [INFO] 📛 Registro duplicado: Santander - 2022. No se insertó.
+2025-04-18 21:57:49,954 [INFO] 📛 Registro duplicado: Santander - 2021. No se insertó.
+2025-04-18 21:57:49,954 [INFO] ⚠️ Todas las filas fueron ignoradas para Santander
+2025-04-18 21:57:52,045 [INFO] ✅ Scraping de empresas BME finalizado.
+2025-04-18 21:57:52,045 [INFO] ✅ Scraping de empresas BME completado.
+2025-04-18 21:57:52,048 [INFO] 🔧 Poppler configurado en: C:\Users\yo_xa\PycharmProjects\PythonProject\poppler\poppler-24.08.0\Library\bin
+2025-04-18 21:57:52,049 [INFO] 🔍 Tesseract configurado en: C:\Users\yo_xa\PycharmProjects\PythonProject\tesseract\Tesseract-OCR\tesseract.exe
+2025-04-18 21:57:52,049 [INFO] 🚀 Iniciando scraping de PDF del IBEX 35
+2025-04-18 21:57:52,242 [INFO] 📥 PDF descargado: https://www.bolsasymercados.es/bme-exchange/docs/Indices/Avisos/esp/gestorindice/Aviso_Gestor_Indices_02-25.pdf
+2025-04-18 21:57:52,401 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 21:57:52,402 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 21:57:52,403 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 21:57:52,404 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 21:57:52,405 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 21:57:56,939 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 21:57:56,939 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 21:57:56,939 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 21:57:56,939 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 21:57:56,939 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 21:57:56,939 [INFO] 📊 Se extrajeron 4 filas con pdfplumber.
+2025-04-18 21:57:56,939 [INFO] ⚠️ Menos de 5 filas con pdfplumber; intentando OCR...
+2025-04-18 21:57:59,032 [ERROR] ❌ Error en OCR del PDF: (3221225477, '')
+2025-04-18 21:57:59,039 [INFO] ⚠️ Usando datos parciales extraídos con pdfplumber.
+2025-04-18 21:57:59,052 [INFO] 📥 Insertado/actualizado:  - 
+2025-04-18 21:57:59,052 [INFO] 📥  – 
+2025-04-18 21:57:59,057 [INFO] 📥 Insertado/actualizado:  - 
+2025-04-18 21:57:59,057 [INFO] 📥  – 
+2025-04-18 21:57:59,061 [INFO] 📥 Insertado/actualizado:  - 
+2025-04-18 21:57:59,062 [INFO] 📥  – 
+2025-04-18 21:57:59,067 [INFO] 📥 Insertado/actualizado:  - 
+2025-04-18 21:57:59,068 [INFO] 📥  – 
+2025-04-18 21:57:59,068 [INFO] 🗑️ PDF temporal eliminado.
+2025-04-18 21:57:59,068 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
+2025-04-18 21:57:59,068 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
+2025-04-18 21:57:59,068 [INFO] === FIN DEL PROCESO DE SCRAPING ===
+2025-04-18 22:03:15,499 [INFO] ✅ Base de datos 'bolsa' verificada o creada.
+2025-04-18 22:03:15,502 [INFO] ✅ Tabla 'indices' verificada o creada correctamente.
+2025-04-18 22:03:15,676 [INFO] === INICIO DEL PROCESO DE SCRAPING ===
+2025-04-18 22:03:15,677 [INFO] ====== WebDriver manager ======
+2025-04-18 22:03:17,748 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-18 22:03:17,792 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-18 22:03:17,840 [INFO] Driver [C:\Users\yo_xa\.wdm\drivers\chromedriver\win64\135.0.7049.95\chromedriver-win32/chromedriver.exe] found in cache
+2025-04-18 22:03:18,923 [INFO] 🚀 Inicio del scraping de índices bursátiles.
+2025-04-18 22:03:26,075 [INFO] 📛 Ya existe un registro para 'IBEX 35 (IBEX)' en la fecha actual. No se insertó.
+2025-04-18 22:03:32,434 [INFO] 📛 Ya existe un registro para 'S&P 500 (SPX)' en la fecha actual. No se insertó.
+2025-04-18 22:03:39,837 [INFO] 📛 Ya existe un registro para 'Nasdaq 100 (NDX)' en la fecha actual. No se insertó.
+2025-04-18 22:03:46,049 [INFO] 📛 Ya existe un registro para 'DAX (GDAXI)' en la fecha actual. No se insertó.
+2025-04-18 22:03:52,505 [INFO] 📛 Ya existe un registro para 'MSCI World (MIWO00000PUS)' en la fecha actual. No se insertó.
+2025-04-18 22:03:54,631 [INFO] 🏁 Fin del scraping. Navegador cerrado.
+2025-04-18 22:03:54,631 [INFO] 📊 RESUMEN FINAL:
+2025-04-18 22:03:54,631 [INFO] ✅ Índices guardados: 0
+2025-04-18 22:03:54,632 [INFO] ℹ️ Índices omitidos: 5
+2025-04-18 22:03:54,632 [INFO] ❌ Fallos: 0
+2025-04-18 22:03:54,632 [INFO] ✅ Scraping de índices completado.
+2025-04-18 22:03:55,890 [INFO] Se cargaron 3 empresas desde empresas_bme.csv
+2025-04-18 22:03:55,890 [INFO] 🚀 Iniciando scraping de empresas BME
+2025-04-18 22:03:55,890 [INFO] 🔍 Iniciando scraping para BBVA
+2025-04-18 22:03:55,890 [INFO] 📄 Accediendo a la web de BBVA: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Banco-Bilbao-Vizcaya-Argentaria-ES0113211835
+2025-04-18 22:03:57,288 [INFO] 📛 Registro duplicado: BBVA - 2025. No se insertó.
+2025-04-18 22:03:57,467 [INFO] 📛 Registro duplicado: BBVA - 2024. No se insertó.
+2025-04-18 22:03:57,527 [INFO] 📛 Registro duplicado: BBVA - 2023. No se insertó.
+2025-04-18 22:03:57,597 [INFO] 📛 Registro duplicado: BBVA - 2022. No se insertó.
+2025-04-18 22:03:57,672 [INFO] 📛 Registro duplicado: BBVA - 2021. No se insertó.
+2025-04-18 22:03:57,672 [INFO] ⚠️ Todas las filas fueron ignoradas para BBVA
+2025-04-18 22:03:57,672 [INFO] 🔍 Iniciando scraping para Inditex
+2025-04-18 22:03:57,672 [INFO] 📄 Accediendo a la web de Inditex: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Ind-De-Diseno-Textil-Inditex-ES0148396007
+2025-04-18 22:03:58,523 [INFO] 📛 Registro duplicado: Inditex - 2025. No se insertó.
+2025-04-18 22:03:58,606 [INFO] 📛 Registro duplicado: Inditex - 2024. No se insertó.
+2025-04-18 22:03:58,684 [INFO] 📛 Registro duplicado: Inditex - 2023. No se insertó.
+2025-04-18 22:03:58,748 [INFO] 📛 Registro duplicado: Inditex - 2022. No se insertó.
+2025-04-18 22:03:58,814 [INFO] 📛 Registro duplicado: Inditex - 2021. No se insertó.
+2025-04-18 22:03:58,815 [INFO] ⚠️ Todas las filas fueron ignoradas para Inditex
+2025-04-18 22:03:58,815 [INFO] 🔍 Iniciando scraping para Santander
+2025-04-18 22:03:58,815 [INFO] 📄 Accediendo a la web de Santander: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Banco-Santander-ES0113900J37
+2025-04-18 22:04:00,128 [INFO] 📛 Registro duplicado: Santander - 2025. No se insertó.
+2025-04-18 22:04:00,192 [INFO] 📛 Registro duplicado: Santander - 2024. No se insertó.
+2025-04-18 22:04:00,251 [INFO] 📛 Registro duplicado: Santander - 2023. No se insertó.
+2025-04-18 22:04:00,309 [INFO] 📛 Registro duplicado: Santander - 2022. No se insertó.
+2025-04-18 22:04:00,376 [INFO] 📛 Registro duplicado: Santander - 2021. No se insertó.
+2025-04-18 22:04:00,376 [INFO] ⚠️ Todas las filas fueron ignoradas para Santander
+2025-04-18 22:04:02,470 [INFO] ✅ Scraping de empresas BME finalizado.
+2025-04-18 22:04:02,470 [INFO] ✅ Scraping de empresas BME completado.
+2025-04-18 22:04:02,471 [INFO] 🔧 Poppler configurado en: C:\Users\yo_xa\PycharmProjects\PythonProject\poppler\poppler-24.08.0\Library\bin
+2025-04-18 22:04:02,472 [INFO] 🔍 Tesseract configurado en: C:\Users\yo_xa\PycharmProjects\PythonProject\tesseract\Tesseract-OCR\tesseract.exe
+2025-04-18 22:04:02,472 [INFO] 🚀 Iniciando scraping de PDF del IBEX 35
+2025-04-18 22:04:02,708 [INFO] 📥 PDF descargado: https://www.bolsasymercados.es/bme-exchange/docs/Indices/Avisos/esp/gestorindice/Aviso_Gestor_Indices_02-25.pdf
+2025-04-18 22:04:02,902 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:04:02,903 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:04:02,903 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:04:02,903 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:04:02,904 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:04:07,501 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:04:07,501 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:04:07,501 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:04:07,502 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:04:07,502 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-18 22:04:07,502 [INFO] 📊 Se extrajeron 4 filas con pdfplumber.
+2025-04-18 22:04:07,502 [INFO] ⚠️ Menos de 5 filas con pdfplumber; intentando OCR...
+2025-04-18 22:04:09,443 [ERROR] ❌ Error en OCR del PDF: (3221225477, '')
+2025-04-18 22:04:09,451 [INFO] ⚠️ Usando datos parciales extraídos con pdfplumber.
+2025-04-18 22:04:09,451 [INFO] ⚠️ Fila ignorada por falta de datos clave: {'simbolo': '', 'nombre': '', 'titulos_antes': '', 'estatus': None, 'modificaciones': None, 'comp': '', 'coef_ff': '24/03/2025', 'fecha_insercion': datetime.date(2025, 4, 18)}
+2025-04-18 22:04:09,452 [INFO] ⚠️ Fila ignorada por falta de datos clave: {'simbolo': '', 'nombre': '', 'titulos_antes': '', 'estatus': None, 'modificaciones': None, 'comp': '', 'coef_ff': '24/03/2025', 'fecha_insercion': datetime.date(2025, 4, 18)}
+2025-04-18 22:04:09,452 [INFO] ⚠️ Fila ignorada por falta de datos clave: {'simbolo': '', 'nombre': '', 'titulos_antes': '', 'estatus': None, 'modificaciones': None, 'comp': '', 'coef_ff': '24/03/2025', 'fecha_insercion': datetime.date(2025, 4, 18)}
+2025-04-18 22:04:09,452 [INFO] ⚠️ Fila ignorada por falta de datos clave: {'simbolo': '', 'nombre': '', 'titulos_antes': '', 'estatus': None, 'modificaciones': None, 'comp': '', 'coef_ff': '24/03/2025', 'fecha_insercion': datetime.date(2025, 4, 18)}
+2025-04-18 22:04:09,452 [INFO] 🗑️ PDF temporal eliminado.
+2025-04-18 22:04:09,453 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
+2025-04-18 22:04:09,453 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
+2025-04-18 22:04:09,453 [INFO] === FIN DEL PROCESO DE SCRAPING ===

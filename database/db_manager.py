@@ -193,22 +193,29 @@ def insertar_datos_composicion(datos):
     try:
         consulta = """
             INSERT INTO composicion_ibex35 (
-                simbolo, nombre, titulos_antes, estatus, modificaciones, comp, porcentaje_coef_ff, fecha_registro
+                simbolo, nombre, titulos_antes, estatus,
+                modificaciones, comp, coef_ff, fecha_insercion
             ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
             ON DUPLICATE KEY UPDATE
-                titulos_antes = VALUES(titulos_antes),
-                estatus = VALUES(estatus),
-                modificaciones = VALUES(modificaciones),
-                comp = VALUES(comp),
-                porcentaje_coef_ff = VALUES(porcentaje_coef_ff)
+              titulos_antes = VALUES(titulos_antes),
+              estatus       = VALUES(estatus),
+              modificaciones= VALUES(modificaciones),
+              comp          = VALUES(comp),
+              coef_ff       = VALUES(coef_ff)
         """
         valores = (
-            datos["simbolo"], datos["nombre"], datos["titulos_antes"], datos["estatus"],
-            datos["modificaciones"], datos["comp"], datos["porcentaje_coef_ff"], datos["fecha_registro"]
+            datos.get("simbolo", ""),
+            datos.get("nombre", ""),
+            datos.get("titulos_antes", ""),
+            datos.get("estatus", ""),
+            datos.get("modificaciones", ""),
+            datos.get("comp", ""),
+            datos.get("coef_ff", ""),
+            datos.get("fecha_insercion", "")
         )
         cursor.execute(consulta, valores)
         conexion.commit()
-        log_info(f"📥 Insertado/actualizado: {datos['simbolo']} - {datos['nombre']}")
+        log_info(f"📥 Insertado/actualizado: {datos.get('simbolo', '')} – {datos.get('nombre', '')}")
         return True
     except mysql.connector.Error as error:
         log_error(f"❌ Error al insertar datos de composición: {error}")
@@ -216,6 +223,9 @@ def insertar_datos_composicion(datos):
     finally:
         cursor.close()
         conexion.close()
+
+
+
 
 
 
