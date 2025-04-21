@@ -2241,3 +2241,727 @@
 2025-04-18 22:04:09,453 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
 2025-04-18 22:04:09,453 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
 2025-04-18 22:04:09,453 [INFO] === FIN DEL PROCESO DE SCRAPING ===
+2025-04-20 11:28:57,425 [INFO] ✅ Base de datos 'bolsa' verificada o creada.
+2025-04-20 11:28:57,439 [INFO] ✅ Tabla 'indices' verificada o creada correctamente.
+2025-04-20 11:28:57,836 [INFO] === INICIO DEL PROCESO DE SCRAPING ===
+2025-04-20 11:28:57,836 [INFO] ====== WebDriver manager ======
+2025-04-20 11:28:59,382 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-20 11:28:59,471 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-20 11:28:59,515 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-20 11:28:59,627 [INFO] WebDriver version 135.0.7049.95 selected
+2025-04-20 11:28:59,629 [INFO] Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/135.0.7049.95/win32/chromedriver-win32.zip
+2025-04-20 11:28:59,629 [INFO] About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/135.0.7049.95/win32/chromedriver-win32.zip
+2025-04-20 11:28:59,717 [INFO] Driver downloading response is 200
+2025-04-20 11:29:00,491 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-20 11:29:00,805 [INFO] Driver has been saved in cache [C:\Users\yo_xa\.wdm\drivers\chromedriver\win64\135.0.7049.95]
+2025-04-20 11:29:02,180 [INFO] 🚀 Inicio del scraping de índices bursátiles.
+2025-04-20 11:29:09,474 [INFO] 📥 Guardado: IBEX 35 (IBEX) - 12918.0 - 0,00 - (0,00%)
+2025-04-20 11:29:16,052 [INFO] 📥 Guardado: S&P 500 (SPX) - 5282.7 - +7,00 - (+0,13%)
+2025-04-20 11:29:22,192 [INFO] 📥 Guardado: Nasdaq 100 (NDX) - 18258.09 - +0,45 - (+0,00%)
+2025-04-20 11:29:28,579 [INFO] 📥 Guardado: DAX (GDAXI) - 21205.86 - -105,16 - (-0,49%)
+2025-04-20 11:29:34,831 [INFO] 📥 Guardado: MSCI World (MIWO00000PUS) - 3476.06 - +2,00 - (+0,06%)
+2025-04-20 11:29:36,935 [INFO] 🏁 Fin del scraping. Navegador cerrado.
+2025-04-20 11:29:36,935 [INFO] 📊 RESUMEN FINAL:
+2025-04-20 11:29:36,935 [INFO] ✅ Índices guardados: 5
+2025-04-20 11:29:36,936 [INFO] ℹ️ Índices omitidos: 0
+2025-04-20 11:29:36,936 [INFO] ❌ Fallos: 0
+2025-04-20 11:29:36,936 [INFO] ✅ Scraping de índices completado.
+2025-04-20 11:29:39,006 [INFO] Se cargaron 3 empresas desde empresas_bme.csv
+2025-04-20 11:29:39,006 [INFO] 🚀 Iniciando scraping de empresas BME
+2025-04-20 11:29:39,006 [INFO] 🔍 Iniciando scraping para BBVA
+2025-04-20 11:29:39,006 [INFO] 📄 Accediendo a la web de BBVA: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Banco-Bilbao-Vizcaya-Argentaria-ES0113211835
+2025-04-20 11:29:40,136 [ERROR] ❌ Error al insertar datos de empresa: 1146 (42S02): Table 'bolsa.datos_empresas' doesn't exist
+2025-04-20 11:29:40,216 [ERROR] ❌ Error al insertar datos de empresa: 1146 (42S02): Table 'bolsa.datos_empresas' doesn't exist
+2025-04-20 11:29:40,287 [ERROR] ❌ Error al insertar datos de empresa: 1146 (42S02): Table 'bolsa.datos_empresas' doesn't exist
+2025-04-20 11:29:40,363 [ERROR] ❌ Error al insertar datos de empresa: 1146 (42S02): Table 'bolsa.datos_empresas' doesn't exist
+2025-04-20 11:29:40,444 [ERROR] ❌ Error al insertar datos de empresa: 1146 (42S02): Table 'bolsa.datos_empresas' doesn't exist
+2025-04-20 11:29:40,444 [INFO] ⚠️ Todas las filas fueron ignoradas para BBVA
+2025-04-20 11:29:40,444 [INFO] 🔍 Iniciando scraping para Inditex
+2025-04-20 11:29:40,444 [INFO] 📄 Accediendo a la web de Inditex: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Ind-De-Diseno-Textil-Inditex-ES0148396007
+2025-04-20 11:29:41,301 [ERROR] ❌ Error al insertar datos de empresa: 1146 (42S02): Table 'bolsa.datos_empresas' doesn't exist
+2025-04-20 11:29:41,375 [ERROR] ❌ Error al insertar datos de empresa: 1146 (42S02): Table 'bolsa.datos_empresas' doesn't exist
+2025-04-20 11:29:41,446 [ERROR] ❌ Error al insertar datos de empresa: 1146 (42S02): Table 'bolsa.datos_empresas' doesn't exist
+2025-04-20 11:29:41,517 [ERROR] ❌ Error al insertar datos de empresa: 1146 (42S02): Table 'bolsa.datos_empresas' doesn't exist
+2025-04-20 11:29:41,588 [ERROR] ❌ Error al insertar datos de empresa: 1146 (42S02): Table 'bolsa.datos_empresas' doesn't exist
+2025-04-20 11:29:41,588 [INFO] ⚠️ Todas las filas fueron ignoradas para Inditex
+2025-04-20 11:29:41,588 [INFO] 🔍 Iniciando scraping para Santander
+2025-04-20 11:29:41,588 [INFO] 📄 Accediendo a la web de Santander: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Banco-Santander-ES0113900J37
+2025-04-20 11:29:42,417 [ERROR] ❌ Error al insertar datos de empresa: 1146 (42S02): Table 'bolsa.datos_empresas' doesn't exist
+2025-04-20 11:29:42,506 [ERROR] ❌ Error al insertar datos de empresa: 1146 (42S02): Table 'bolsa.datos_empresas' doesn't exist
+2025-04-20 11:29:42,581 [ERROR] ❌ Error al insertar datos de empresa: 1146 (42S02): Table 'bolsa.datos_empresas' doesn't exist
+2025-04-20 11:29:42,667 [ERROR] ❌ Error al insertar datos de empresa: 1146 (42S02): Table 'bolsa.datos_empresas' doesn't exist
+2025-04-20 11:29:42,727 [ERROR] ❌ Error al insertar datos de empresa: 1146 (42S02): Table 'bolsa.datos_empresas' doesn't exist
+2025-04-20 11:29:42,727 [INFO] ⚠️ Todas las filas fueron ignoradas para Santander
+2025-04-20 11:29:44,834 [INFO] ✅ Scraping de empresas BME finalizado.
+2025-04-20 11:29:44,835 [INFO] ✅ Scraping de empresas BME completado.
+2025-04-20 11:29:44,838 [INFO] 🔧 Poppler configurado en: C:\Users\yo_xa\PycharmProjects\PythonProject\poppler\poppler-24.08.0\Library\bin
+2025-04-20 11:29:44,839 [INFO] 🔍 Tesseract configurado en: C:\Users\yo_xa\PycharmProjects\PythonProject\tesseract\Tesseract-OCR\tesseract.exe
+2025-04-20 11:29:44,839 [INFO] 🚀 Iniciando scraping de PDF del IBEX 35
+2025-04-20 11:29:44,971 [INFO] 📥 PDF descargado: https://www.bolsasymercados.es/bme-exchange/docs/Indices/Avisos/esp/gestorindice/Aviso_Gestor_Indices_02-25.pdf
+2025-04-20 11:29:45,230 [INFO] ⚠️ No coincide parte: del 24 de marzo de 2025 Índices 19 de marzo 2025 º Aviso 02/2025 – Gestor del Índice Índices Secretaría de Gestión de los Índices ibex@grupobme.es 91.709.53.86 Sociedad Bolsas, S.A.U., domicilio social en Madrid, Plaza de la Lealtad 1, C.I.F. A-82695677 e inscrita en el Registro Mercantil de Madrid en el tomo 15.611, folio 5, sección 8, hoja núm. M-262818. 2 En consonancia con el Aviso nº 03/2025 del Comité de 13 de marzo de 2025, y hechas las modificaciones previstas en las Normas de Técnicas para la Composición y Cálculo de los Índices IBEX® y de Estrategia sobre Acciones, Sociedad de Bolsas, como Gestor del índice IBEX 35®, comunica la composición del mismo a partir del 24 de marzo de 2025. IBEX 35® Simb. Nombre Titulos Antes Estatus Modificaciones Comp. 24/03/2025 %Coef FF ACS ACS CONST. 271.664.594 - 271.664.594 100
+2025-04-20 11:29:45,230 [INFO] ⚠️ No coincide parte: ACX ACERINOX 249.335.371 - 249.335.371 100
+2025-04-20 11:29:45,230 [INFO] ⚠️ No coincide parte: AENA AENA 120.000.000 - 120.000.000 80
+2025-04-20 11:29:45,230 [INFO] ⚠️ No coincide parte: AMS AMADEUS IT 450.499.205 - 450.499.205 100
+2025-04-20 11:29:45,231 [INFO] ⚠️ No coincide parte: ANA ACCIONA 43.885.322 - 43.885.322 80
+2025-04-20 11:29:45,231 [INFO] ⚠️ No coincide parte: ANE ACCIONA ENER 64.952.366 - 64.952.366 20
+2025-04-20 11:29:45,231 [INFO] ⚠️ No coincide parte: BBVA BBVA 5.763.285.465 - 5.763.285.465 100
+2025-04-20 11:29:45,231 [INFO] ⚠️ No coincide parte: BKT BANKINTER 898.866.154 - 898.866.154 100
+2025-04-20 11:29:45,231 [INFO] ⚠️ No coincide parte: CABK CAIXABANK 5.739.950.277 - 5.739.950.277 80
+2025-04-20 11:29:45,231 [INFO] ⚠️ No coincide parte: CLNX CELLNEX 706.475.375 - 706.475.375 100
+2025-04-20 11:29:45,231 [INFO] ⚠️ No coincide parte: COL INM.COLONIAL 250.937.875 - 250.937.875 40
+2025-04-20 11:29:45,231 [INFO] ⚠️ No coincide parte: ELE ENDESA 423.500.847 - 423.500.847 40
+2025-04-20 11:29:45,231 [INFO] ⚠️ No coincide parte: ENG ENAGAS 261.990.074 - 261.990.074 100
+2025-04-20 11:29:45,231 [INFO] ⚠️ No coincide parte: FDR FLUIDRA 115.277.442 - 115.277.442 60
+2025-04-20 11:29:45,231 [INFO] ⚠️ No coincide parte: GRF GRIFOLS 426.129.798 - 426.129.798 100
+2025-04-20 11:29:45,231 [INFO] ⚠️ No coincide parte: IAG INT.AIRL.GRP 4.971.476.010 - 4.971.476.010 100
+2025-04-20 11:29:45,231 [INFO] ⚠️ No coincide parte: IDR INDRA A 176.654.402 - 176.654.402 100
+2025-04-20 11:29:45,231 [INFO] ⚠️ No coincide parte: ITX INDITEX 1.869.991.200 - 1.869.991.200 60
+2025-04-20 11:29:45,231 [INFO] ⚠️ No coincide parte: LOG LOGISTA 106.200.000 - 106.200.000 80
+2025-04-20 11:29:45,231 [INFO] ⚠️ No coincide parte: MAP MAPFRE 1.847.731.964 - 1.847.731.964 60
+2025-04-20 11:29:45,231 [INFO] ⚠️ No coincide parte: MRL MERLIN PROP. 563.724.899 - 563.724.899 100
+2025-04-20 11:29:45,231 [INFO] ⚠️ No coincide parte: MTS ARCEL.MITTAL 170.561.954 - 170.561.954 20
+2025-04-20 11:29:45,231 [INFO] ⚠️ No coincide parte: NTGY NATURGY 193.922.760 - 193.922.760 20
+2025-04-20 11:29:45,231 [INFO] ⚠️ No coincide parte: PUIG PUIG BRANDS 174.819.678 - 174.819.678 100 º Aviso 02/2025 – Gestor del Índice Índices Secretaría de Gestión de los Índices ibex@grupobme.es 91.709.53.86 Sociedad Bolsas, S.A.U., domicilio social en Madrid, Plaza de la Lealtad 1, C.I.F. A-82695677 e inscrita en el Registro Mercantil de Madrid en el tomo 15.611, folio 5, sección 8, hoja núm. M-262818. 3
+2025-04-20 11:29:45,231 [INFO] ⚠️ No coincide parte: RED REDEIA CORPO 541.080.000 - 541.080.000 100
+2025-04-20 11:29:45,231 [INFO] ⚠️ No coincide parte: ROVI LABORAT.ROVI 30.741.457 - 30.741.457 60
+2025-04-20 11:29:45,231 [INFO] ⚠️ No coincide parte: SAN SANTANDER 15.152.492.322 - 15.152.492.322 100
+2025-04-20 11:29:45,231 [INFO] ⚠️ No coincide parte: SLR SOLARIA 124.950.876 - 124.950.876 100
+2025-04-20 11:29:45,231 [INFO] ⚠️ No coincide parte: TEF TELEFONICA 5.670.161.554 - 5.670.161.554 100
+2025-04-20 11:29:45,231 [INFO] ⚠️ No coincide parte: UNI UNICAJA 2.057.147.574 - 2.057.147.574 80
+2025-04-20 11:29:45,234 [INFO] ⚠️ No coincide parte: IBEX 35® BANCOS Simb. Nombre Titulos Antes Estatus Modificaciones Comp. 24/03/2025 % Coef FF BBVA BBVA 5.763.285.465 - 5.763.285.465 100
+2025-04-20 11:29:45,235 [INFO] ⚠️ No coincide parte: BKT BANKINTER 898.866.154 - 898.866.154 100
+2025-04-20 11:29:45,235 [INFO] ⚠️ No coincide parte: CABK CAIXABANK 5.739.950.277 - 5.739.950.277 80
+2025-04-20 11:29:45,235 [INFO] ⚠️ No coincide parte: SAN SANTANDER 15.429.599.106 - 15.429.599.106 100
+2025-04-20 11:29:45,235 [INFO] ⚠️ No coincide parte: UNI UNICAJA 2.057.147.574 - 2.057.147.574 80
+2025-04-20 11:29:45,235 [INFO] ⚠️ No coincide parte: IBEX 35® ENERGÍA Simb. Nombre Titulos Antes Estatus Modificaciones Comp. 24/03/2025 % Coef FF ANE ACCIONA ENER 64.952.366 - 64.952.366 20
+2025-04-20 11:29:45,235 [INFO] ⚠️ No coincide parte: ELE ENDESA 423.500.847 - 423.500.847 40
+2025-04-20 11:29:45,235 [INFO] ⚠️ No coincide parte: ENG ENAGAS 261.990.074 - 261.990.074 100
+2025-04-20 11:29:45,235 [INFO] ⚠️ No coincide parte: IBE IBERDROLA 2.056.022.731 - 2.056.022.731 100
+2025-04-20 11:29:45,235 [INFO] ⚠️ No coincide parte: NTGY NATURGY 193.922.760 - 193.922.760 20
+2025-04-20 11:29:45,235 [INFO] ⚠️ No coincide parte: RED REDEIA CORPO 541.080.000 - 541.080.000 100
+2025-04-20 11:29:45,235 [INFO] ⚠️ No coincide parte: SLR SOLARIA 124.950.876 - 124.950.876 100 º Aviso 02/2025 – Gestor del Índice Índices Secretaría de Gestión de los Índices ibex@grupobme.es 91.709.53.86 Sociedad Bolsas, S.A.U., domicilio social en Madrid, Plaza de la Lealtad 1, C.I.F. A-82695677 e inscrita en el Registro Mercantil de Madrid en el tomo 15.611, folio 5, sección 8, hoja núm. M-262818. 4
+2025-04-20 11:29:45,235 [INFO] ⚠️ No coincide parte: IBEX ® CONSTRUCCIÓN Simb. Nombre Titulos Antes Estatus Modificaciones Comp. 24/03/2025 % Coef FF ACS ACS CONST. 271.664.594 - 271.664.594 100
+2025-04-20 11:29:45,235 [INFO] ⚠️ No coincide parte: ANA ACCIONA 43.885.322 - 43.885.322 80
+2025-04-20 11:29:45,235 [INFO] ⚠️ No coincide parte: FER FERROVIAL 333.069.476 - 333.069.476 100
+2025-04-20 11:29:45,235 [INFO] ⚠️ No coincide parte: SCYR SACYR 779.906.655 16.951.143 796.857.798 100 Esta relación tiene el carácter de composición definitiva, a no ser que el Gestor tenga que realizar algún ajuste como consecuencia de operaciones financieras comunicadas con posterioridad a este anuncio. Lo que se pone en conocimiento del público en general a los efectos oportunos. Madrid, 19 de marzo de 2025 Este material ha sido preparado por Bolsas y Mercados Españoles, Sociedad Holding de Mercados y Sistemas Financieros S. A. (BME) y/o sus filiales (en conjunto, "BME") para el uso exclusivo de las personas a las que a las que BME entrega este material. Este material o cualquiera de sus contenidos no debe interpretarse como un acuerdo vinculante, una recomendación, un consejo de inversión, solicitud, invitación u oferta de compra o venta de información financiera, productos, soluciones o servicios. Dicha información tampoco es un reflejo de posiciones (propias o de terceros) en firme de los intervinientes en el Mercado de Valores Español. BME no tiene ninguna obligación de actualizar, revisar o mantener al día el contenido de este material, y estará sujeto a cambios sin previo aviso en cualquier momento. Ninguna representación, garantía o compromiso -expreso o implícito- es compromiso -expreso o implícito- es o será dado por BME en cuanto a la exactitud, integridad, suficiencia, idoneidad o fiabilidad del contenido de este material. Al reflejar opiniones teóricas, su contenido es meramente informativo y por tanto no debe ser utilizado para valoración de carteras o patrimonios, ni servir de base para recomendaciones de inversión. Ni las Entidades contribuidoras, ni Bolsas y Mercados Españoles, Sociedad Holding de Mercados y Sistemas Financieros S.A.(BME) ni de ninguna de sus filiales, serán responsables de ninguna pérdida financiera, ni decisión tomada sobre la base de la información contenida en este material. En general, Bolsas y Mercados Españoles, Sociedad Holding de Mercados y Sistemas Financieros S. A. (BME) ni ninguna de sus filiales, ni las Entidades contribuidoras, sus administradores, representantes, asociados, sociedades controladas, directores, socios, empleados o asesores asumen responsabilidad alguna en relación con dicha información, ni de cualquier uso no autorizado del mismo. Este material es propiedad de BME y no puede ser impreso, copiado, reproducido, publicado, transmitido, divulgado o distribuido de ninguna forma sin el consentimiento previo por escrito de BME. 2025 Bolsas y Mercados Españoles, Sociedad Holding de Mercados y Sistemas Financieros S. A. Todos los derechos reservados. BME Plaza de la Lealtad,1 Palacio de la Bolsa 28014 Madrid www.bolsasymercados.es
+2025-04-20 11:29:45,236 [INFO] 📊 (_parsear_bloque) Se extrajeron 7 filas de la tabla.
+2025-04-20 11:29:45,238 [ERROR] ❌ Error al insertar datos de composición: 1146 (42S02): Table 'bolsa.composicion_ibex35' doesn't exist
+2025-04-20 11:29:45,239 [INFO] 📛 FER – FERROVIAL SE
+2025-04-20 11:29:45,243 [ERROR] ❌ Error al insertar datos de composición: 1146 (42S02): Table 'bolsa.composicion_ibex35' doesn't exist
+2025-04-20 11:29:45,243 [INFO] 📛 IBE – IBERDROLA
+2025-04-20 11:29:45,245 [ERROR] ❌ Error al insertar datos de composición: 1146 (42S02): Table 'bolsa.composicion_ibex35' doesn't exist
+2025-04-20 11:29:45,245 [INFO] 📛 REP – REPSOL
+2025-04-20 11:29:45,248 [ERROR] ❌ Error al insertar datos de composición: 1146 (42S02): Table 'bolsa.composicion_ibex35' doesn't exist
+2025-04-20 11:29:45,248 [INFO] 📛 SAB – B. SABADELL
+2025-04-20 11:29:45,250 [ERROR] ❌ Error al insertar datos de composición: 1146 (42S02): Table 'bolsa.composicion_ibex35' doesn't exist
+2025-04-20 11:29:45,251 [INFO] 📛 SCYR – SACYR
+2025-04-20 11:29:45,253 [ERROR] ❌ Error al insertar datos de composición: 1146 (42S02): Table 'bolsa.composicion_ibex35' doesn't exist
+2025-04-20 11:29:45,253 [INFO] 📛 SAB – B. SABADELL
+2025-04-20 11:29:45,255 [ERROR] ❌ Error al insertar datos de composición: 1146 (42S02): Table 'bolsa.composicion_ibex35' doesn't exist
+2025-04-20 11:29:45,255 [INFO] 📛 REP – REPSOL
+2025-04-20 11:29:45,256 [INFO] 🗑️ PDF temporal eliminado.
+2025-04-20 11:29:45,256 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
+2025-04-20 11:29:45,256 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
+2025-04-20 11:29:45,256 [INFO] === FIN DEL PROCESO DE SCRAPING ===
+2025-04-20 11:44:22,451 [INFO] ✅ Base de datos 'bolsa' verificada o creada.
+2025-04-20 11:44:22,473 [INFO] ✅ Tabla 'indices' verificada o creada correctamente.
+2025-04-20 11:44:22,648 [INFO] === INICIO DEL PROCESO DE SCRAPING ===
+2025-04-20 11:44:22,649 [INFO] ====== WebDriver manager ======
+2025-04-20 11:44:23,459 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-20 11:44:23,543 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-20 11:44:23,583 [INFO] Driver [C:\Users\yo_xa\.wdm\drivers\chromedriver\win64\135.0.7049.95\chromedriver-win32/chromedriver.exe] found in cache
+2025-04-20 11:44:24,671 [INFO] 🚀 Inicio del scraping de índices bursátiles.
+2025-04-20 11:44:32,404 [INFO] 📥 Guardado: IBEX 35 (IBEX) - 12918.0 - 0,00 - (0,00%)
+2025-04-20 11:44:38,750 [INFO] 📥 Guardado: S&P 500 (SPX) - 5282.7 - +7,00 - (+0,13%)
+2025-04-20 11:44:44,793 [INFO] 📥 Guardado: Nasdaq 100 (NDX) - 18258.09 - +0,45 - (+0,00%)
+2025-04-20 11:44:51,437 [INFO] 📥 Guardado: DAX (GDAXI) - 21205.86 - -105,16 - (-0,49%)
+2025-04-20 11:44:58,251 [INFO] 📥 Guardado: MSCI World (MIWO00000PUS) - 3476.06 - +2,00 - (+0,06%)
+2025-04-20 11:45:00,347 [INFO] 🏁 Fin del scraping. Navegador cerrado.
+2025-04-20 11:45:00,348 [INFO] 📊 RESUMEN FINAL:
+2025-04-20 11:45:00,348 [INFO] ✅ Índices guardados: 5
+2025-04-20 11:45:00,348 [INFO] ℹ️ Índices omitidos: 0
+2025-04-20 11:45:00,348 [INFO] ❌ Fallos: 0
+2025-04-20 11:45:00,348 [INFO] ✅ Scraping de índices completado.
+2025-04-20 11:45:01,636 [INFO] Se cargaron 3 empresas desde empresas_bme.csv
+2025-04-20 11:45:01,636 [INFO] 🚀 Iniciando scraping de empresas BME
+2025-04-20 11:45:01,636 [INFO] 🔍 Iniciando scraping para BBVA
+2025-04-20 11:45:01,637 [INFO] 📄 Accediendo a la web de BBVA: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Banco-Bilbao-Vizcaya-Argentaria-ES0113211835
+2025-04-20 11:45:02,770 [ERROR] ❌ Error al insertar datos de empresa: 1054 (42S22): Unknown column 'empresa' in 'where clause'
+2025-04-20 11:45:02,841 [ERROR] ❌ Error al insertar datos de empresa: 1054 (42S22): Unknown column 'empresa' in 'where clause'
+2025-04-20 11:45:02,913 [ERROR] ❌ Error al insertar datos de empresa: 1054 (42S22): Unknown column 'empresa' in 'where clause'
+2025-04-20 11:45:02,994 [ERROR] ❌ Error al insertar datos de empresa: 1054 (42S22): Unknown column 'empresa' in 'where clause'
+2025-04-20 11:45:03,074 [ERROR] ❌ Error al insertar datos de empresa: 1054 (42S22): Unknown column 'empresa' in 'where clause'
+2025-04-20 11:45:03,074 [INFO] ⚠️ Todas las filas fueron ignoradas para BBVA
+2025-04-20 11:45:03,074 [INFO] 🔍 Iniciando scraping para Inditex
+2025-04-20 11:45:03,074 [INFO] 📄 Accediendo a la web de Inditex: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Ind-De-Diseno-Textil-Inditex-ES0148396007
+2025-04-20 11:45:03,926 [ERROR] ❌ Error al insertar datos de empresa: 1054 (42S22): Unknown column 'empresa' in 'where clause'
+2025-04-20 11:45:04,003 [ERROR] ❌ Error al insertar datos de empresa: 1054 (42S22): Unknown column 'empresa' in 'where clause'
+2025-04-20 11:45:04,079 [ERROR] ❌ Error al insertar datos de empresa: 1054 (42S22): Unknown column 'empresa' in 'where clause'
+2025-04-20 11:45:04,146 [ERROR] ❌ Error al insertar datos de empresa: 1054 (42S22): Unknown column 'empresa' in 'where clause'
+2025-04-20 11:45:04,216 [ERROR] ❌ Error al insertar datos de empresa: 1054 (42S22): Unknown column 'empresa' in 'where clause'
+2025-04-20 11:45:04,217 [INFO] ⚠️ Todas las filas fueron ignoradas para Inditex
+2025-04-20 11:45:04,217 [INFO] 🔍 Iniciando scraping para Santander
+2025-04-20 11:45:04,217 [INFO] 📄 Accediendo a la web de Santander: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Banco-Santander-ES0113900J37
+2025-04-20 11:45:05,064 [ERROR] ❌ Error al insertar datos de empresa: 1054 (42S22): Unknown column 'empresa' in 'where clause'
+2025-04-20 11:45:05,146 [ERROR] ❌ Error al insertar datos de empresa: 1054 (42S22): Unknown column 'empresa' in 'where clause'
+2025-04-20 11:45:05,226 [ERROR] ❌ Error al insertar datos de empresa: 1054 (42S22): Unknown column 'empresa' in 'where clause'
+2025-04-20 11:45:05,305 [ERROR] ❌ Error al insertar datos de empresa: 1054 (42S22): Unknown column 'empresa' in 'where clause'
+2025-04-20 11:45:05,364 [ERROR] ❌ Error al insertar datos de empresa: 1054 (42S22): Unknown column 'empresa' in 'where clause'
+2025-04-20 11:45:05,365 [INFO] ⚠️ Todas las filas fueron ignoradas para Santander
+2025-04-20 11:45:07,457 [INFO] ✅ Scraping de empresas BME finalizado.
+2025-04-20 11:45:07,457 [INFO] ✅ Scraping de empresas BME completado.
+2025-04-20 11:45:07,461 [INFO] 🔧 Poppler configurado en: C:\Users\yo_xa\PycharmProjects\PythonProject\poppler\poppler-24.08.0\Library\bin
+2025-04-20 11:45:07,462 [INFO] 🔍 Tesseract configurado en: C:\Users\yo_xa\PycharmProjects\PythonProject\tesseract\Tesseract-OCR\tesseract.exe
+2025-04-20 11:45:07,463 [INFO] 🚀 Iniciando scraping de PDF del IBEX 35
+2025-04-20 11:45:07,600 [INFO] 📥 PDF descargado: https://www.bolsasymercados.es/bme-exchange/docs/Indices/Avisos/esp/gestorindice/Aviso_Gestor_Indices_02-25.pdf
+2025-04-20 11:45:07,800 [INFO] ⚠️ No coincide parte: del 24 de marzo de 2025 Índices 19 de marzo 2025 º Aviso 02/2025 – Gestor del Índice Índices Secretaría de Gestión de los Índices ibex@grupobme.es 91.709.53.86 Sociedad Bolsas, S.A.U., domicilio social en Madrid, Plaza de la Lealtad 1, C.I.F. A-82695677 e inscrita en el Registro Mercantil de Madrid en el tomo 15.611, folio 5, sección 8, hoja núm. M-262818. 2 En consonancia con el Aviso nº 03/2025 del Comité de 13 de marzo de 2025, y hechas las modificaciones previstas en las Normas de Técnicas para la Composición y Cálculo de los Índices IBEX® y de Estrategia sobre Acciones, Sociedad de Bolsas, como Gestor del índice IBEX 35®, comunica la composición del mismo a partir del 24 de marzo de 2025. IBEX 35® Simb. Nombre Titulos Antes Estatus Modificaciones Comp. 24/03/2025 %Coef FF ACS ACS CONST. 271.664.594 - 271.664.594 100
+2025-04-20 11:45:07,800 [INFO] ⚠️ No coincide parte: ACX ACERINOX 249.335.371 - 249.335.371 100
+2025-04-20 11:45:07,800 [INFO] ⚠️ No coincide parte: AENA AENA 120.000.000 - 120.000.000 80
+2025-04-20 11:45:07,800 [INFO] ⚠️ No coincide parte: AMS AMADEUS IT 450.499.205 - 450.499.205 100
+2025-04-20 11:45:07,800 [INFO] ⚠️ No coincide parte: ANA ACCIONA 43.885.322 - 43.885.322 80
+2025-04-20 11:45:07,800 [INFO] ⚠️ No coincide parte: ANE ACCIONA ENER 64.952.366 - 64.952.366 20
+2025-04-20 11:45:07,800 [INFO] ⚠️ No coincide parte: BBVA BBVA 5.763.285.465 - 5.763.285.465 100
+2025-04-20 11:45:07,800 [INFO] ⚠️ No coincide parte: BKT BANKINTER 898.866.154 - 898.866.154 100
+2025-04-20 11:45:07,800 [INFO] ⚠️ No coincide parte: CABK CAIXABANK 5.739.950.277 - 5.739.950.277 80
+2025-04-20 11:45:07,801 [INFO] ⚠️ No coincide parte: CLNX CELLNEX 706.475.375 - 706.475.375 100
+2025-04-20 11:45:07,801 [INFO] ⚠️ No coincide parte: COL INM.COLONIAL 250.937.875 - 250.937.875 40
+2025-04-20 11:45:07,801 [INFO] ⚠️ No coincide parte: ELE ENDESA 423.500.847 - 423.500.847 40
+2025-04-20 11:45:07,801 [INFO] ⚠️ No coincide parte: ENG ENAGAS 261.990.074 - 261.990.074 100
+2025-04-20 11:45:07,801 [INFO] ⚠️ No coincide parte: FDR FLUIDRA 115.277.442 - 115.277.442 60
+2025-04-20 11:45:07,801 [INFO] ⚠️ No coincide parte: GRF GRIFOLS 426.129.798 - 426.129.798 100
+2025-04-20 11:45:07,801 [INFO] ⚠️ No coincide parte: IAG INT.AIRL.GRP 4.971.476.010 - 4.971.476.010 100
+2025-04-20 11:45:07,801 [INFO] ⚠️ No coincide parte: IDR INDRA A 176.654.402 - 176.654.402 100
+2025-04-20 11:45:07,801 [INFO] ⚠️ No coincide parte: ITX INDITEX 1.869.991.200 - 1.869.991.200 60
+2025-04-20 11:45:07,801 [INFO] ⚠️ No coincide parte: LOG LOGISTA 106.200.000 - 106.200.000 80
+2025-04-20 11:45:07,801 [INFO] ⚠️ No coincide parte: MAP MAPFRE 1.847.731.964 - 1.847.731.964 60
+2025-04-20 11:45:07,801 [INFO] ⚠️ No coincide parte: MRL MERLIN PROP. 563.724.899 - 563.724.899 100
+2025-04-20 11:45:07,801 [INFO] ⚠️ No coincide parte: MTS ARCEL.MITTAL 170.561.954 - 170.561.954 20
+2025-04-20 11:45:07,801 [INFO] ⚠️ No coincide parte: NTGY NATURGY 193.922.760 - 193.922.760 20
+2025-04-20 11:45:07,801 [INFO] ⚠️ No coincide parte: PUIG PUIG BRANDS 174.819.678 - 174.819.678 100 º Aviso 02/2025 – Gestor del Índice Índices Secretaría de Gestión de los Índices ibex@grupobme.es 91.709.53.86 Sociedad Bolsas, S.A.U., domicilio social en Madrid, Plaza de la Lealtad 1, C.I.F. A-82695677 e inscrita en el Registro Mercantil de Madrid en el tomo 15.611, folio 5, sección 8, hoja núm. M-262818. 3
+2025-04-20 11:45:07,801 [INFO] ⚠️ No coincide parte: RED REDEIA CORPO 541.080.000 - 541.080.000 100
+2025-04-20 11:45:07,801 [INFO] ⚠️ No coincide parte: ROVI LABORAT.ROVI 30.741.457 - 30.741.457 60
+2025-04-20 11:45:07,801 [INFO] ⚠️ No coincide parte: SAN SANTANDER 15.152.492.322 - 15.152.492.322 100
+2025-04-20 11:45:07,801 [INFO] ⚠️ No coincide parte: SLR SOLARIA 124.950.876 - 124.950.876 100
+2025-04-20 11:45:07,801 [INFO] ⚠️ No coincide parte: TEF TELEFONICA 5.670.161.554 - 5.670.161.554 100
+2025-04-20 11:45:07,801 [INFO] ⚠️ No coincide parte: UNI UNICAJA 2.057.147.574 - 2.057.147.574 80
+2025-04-20 11:45:07,804 [INFO] ⚠️ No coincide parte: IBEX 35® BANCOS Simb. Nombre Titulos Antes Estatus Modificaciones Comp. 24/03/2025 % Coef FF BBVA BBVA 5.763.285.465 - 5.763.285.465 100
+2025-04-20 11:45:07,804 [INFO] ⚠️ No coincide parte: BKT BANKINTER 898.866.154 - 898.866.154 100
+2025-04-20 11:45:07,804 [INFO] ⚠️ No coincide parte: CABK CAIXABANK 5.739.950.277 - 5.739.950.277 80
+2025-04-20 11:45:07,804 [INFO] ⚠️ No coincide parte: SAN SANTANDER 15.429.599.106 - 15.429.599.106 100
+2025-04-20 11:45:07,804 [INFO] ⚠️ No coincide parte: UNI UNICAJA 2.057.147.574 - 2.057.147.574 80
+2025-04-20 11:45:07,804 [INFO] ⚠️ No coincide parte: IBEX 35® ENERGÍA Simb. Nombre Titulos Antes Estatus Modificaciones Comp. 24/03/2025 % Coef FF ANE ACCIONA ENER 64.952.366 - 64.952.366 20
+2025-04-20 11:45:07,804 [INFO] ⚠️ No coincide parte: ELE ENDESA 423.500.847 - 423.500.847 40
+2025-04-20 11:45:07,804 [INFO] ⚠️ No coincide parte: ENG ENAGAS 261.990.074 - 261.990.074 100
+2025-04-20 11:45:07,804 [INFO] ⚠️ No coincide parte: IBE IBERDROLA 2.056.022.731 - 2.056.022.731 100
+2025-04-20 11:45:07,804 [INFO] ⚠️ No coincide parte: NTGY NATURGY 193.922.760 - 193.922.760 20
+2025-04-20 11:45:07,804 [INFO] ⚠️ No coincide parte: RED REDEIA CORPO 541.080.000 - 541.080.000 100
+2025-04-20 11:45:07,804 [INFO] ⚠️ No coincide parte: SLR SOLARIA 124.950.876 - 124.950.876 100 º Aviso 02/2025 – Gestor del Índice Índices Secretaría de Gestión de los Índices ibex@grupobme.es 91.709.53.86 Sociedad Bolsas, S.A.U., domicilio social en Madrid, Plaza de la Lealtad 1, C.I.F. A-82695677 e inscrita en el Registro Mercantil de Madrid en el tomo 15.611, folio 5, sección 8, hoja núm. M-262818. 4
+2025-04-20 11:45:07,804 [INFO] ⚠️ No coincide parte: IBEX ® CONSTRUCCIÓN Simb. Nombre Titulos Antes Estatus Modificaciones Comp. 24/03/2025 % Coef FF ACS ACS CONST. 271.664.594 - 271.664.594 100
+2025-04-20 11:45:07,804 [INFO] ⚠️ No coincide parte: ANA ACCIONA 43.885.322 - 43.885.322 80
+2025-04-20 11:45:07,804 [INFO] ⚠️ No coincide parte: FER FERROVIAL 333.069.476 - 333.069.476 100
+2025-04-20 11:45:07,805 [INFO] ⚠️ No coincide parte: SCYR SACYR 779.906.655 16.951.143 796.857.798 100 Esta relación tiene el carácter de composición definitiva, a no ser que el Gestor tenga que realizar algún ajuste como consecuencia de operaciones financieras comunicadas con posterioridad a este anuncio. Lo que se pone en conocimiento del público en general a los efectos oportunos. Madrid, 19 de marzo de 2025 Este material ha sido preparado por Bolsas y Mercados Españoles, Sociedad Holding de Mercados y Sistemas Financieros S. A. (BME) y/o sus filiales (en conjunto, "BME") para el uso exclusivo de las personas a las que a las que BME entrega este material. Este material o cualquiera de sus contenidos no debe interpretarse como un acuerdo vinculante, una recomendación, un consejo de inversión, solicitud, invitación u oferta de compra o venta de información financiera, productos, soluciones o servicios. Dicha información tampoco es un reflejo de posiciones (propias o de terceros) en firme de los intervinientes en el Mercado de Valores Español. BME no tiene ninguna obligación de actualizar, revisar o mantener al día el contenido de este material, y estará sujeto a cambios sin previo aviso en cualquier momento. Ninguna representación, garantía o compromiso -expreso o implícito- es compromiso -expreso o implícito- es o será dado por BME en cuanto a la exactitud, integridad, suficiencia, idoneidad o fiabilidad del contenido de este material. Al reflejar opiniones teóricas, su contenido es meramente informativo y por tanto no debe ser utilizado para valoración de carteras o patrimonios, ni servir de base para recomendaciones de inversión. Ni las Entidades contribuidoras, ni Bolsas y Mercados Españoles, Sociedad Holding de Mercados y Sistemas Financieros S.A.(BME) ni de ninguna de sus filiales, serán responsables de ninguna pérdida financiera, ni decisión tomada sobre la base de la información contenida en este material. En general, Bolsas y Mercados Españoles, Sociedad Holding de Mercados y Sistemas Financieros S. A. (BME) ni ninguna de sus filiales, ni las Entidades contribuidoras, sus administradores, representantes, asociados, sociedades controladas, directores, socios, empleados o asesores asumen responsabilidad alguna en relación con dicha información, ni de cualquier uso no autorizado del mismo. Este material es propiedad de BME y no puede ser impreso, copiado, reproducido, publicado, transmitido, divulgado o distribuido de ninguna forma sin el consentimiento previo por escrito de BME. 2025 Bolsas y Mercados Españoles, Sociedad Holding de Mercados y Sistemas Financieros S. A. Todos los derechos reservados. BME Plaza de la Lealtad,1 Palacio de la Bolsa 28014 Madrid www.bolsasymercados.es
+2025-04-20 11:45:07,805 [INFO] 📊 (_parsear_bloque) Se extrajeron 7 filas de la tabla.
+2025-04-20 11:45:07,822 [INFO] 📥 Insertado/actualizado: FER – FERROVIAL SE
+2025-04-20 11:45:07,822 [INFO] 📥 FER – FERROVIAL SE
+2025-04-20 11:45:07,828 [INFO] 📥 Insertado/actualizado: IBE – IBERDROLA
+2025-04-20 11:45:07,828 [INFO] 📥 IBE – IBERDROLA
+2025-04-20 11:45:07,835 [INFO] 📥 Insertado/actualizado: REP – REPSOL
+2025-04-20 11:45:07,835 [INFO] 📥 REP – REPSOL
+2025-04-20 11:45:07,841 [INFO] 📥 Insertado/actualizado: SAB – B. SABADELL
+2025-04-20 11:45:07,841 [INFO] 📥 SAB – B. SABADELL
+2025-04-20 11:45:07,846 [INFO] 📥 Insertado/actualizado: SCYR – SACYR
+2025-04-20 11:45:07,846 [INFO] 📥 SCYR – SACYR
+2025-04-20 11:45:07,848 [INFO] 📥 Insertado/actualizado: SAB – B. SABADELL
+2025-04-20 11:45:07,848 [INFO] 📥 SAB – B. SABADELL
+2025-04-20 11:45:07,849 [INFO] 📥 Insertado/actualizado: REP – REPSOL
+2025-04-20 11:45:07,849 [INFO] 📥 REP – REPSOL
+2025-04-20 11:45:07,850 [INFO] 🗑️ PDF temporal eliminado.
+2025-04-20 11:45:07,850 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
+2025-04-20 11:45:07,850 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
+2025-04-20 11:45:07,850 [INFO] === FIN DEL PROCESO DE SCRAPING ===
+2025-04-20 11:47:15,675 [INFO] ✅ Base de datos 'bolsa' verificada o creada.
+2025-04-20 11:47:15,676 [INFO] ✅ Tabla 'indices' verificada o creada correctamente.
+2025-04-20 11:47:15,854 [INFO] === INICIO DEL PROCESO DE SCRAPING ===
+2025-04-20 11:47:15,854 [INFO] ====== WebDriver manager ======
+2025-04-20 11:47:16,641 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-20 11:47:16,694 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-20 11:47:16,744 [INFO] Driver [C:\Users\yo_xa\.wdm\drivers\chromedriver\win64\135.0.7049.95\chromedriver-win32/chromedriver.exe] found in cache
+2025-04-20 11:47:17,832 [INFO] 🚀 Inicio del scraping de índices bursátiles.
+2025-04-20 11:47:25,222 [INFO] 📛 Ya existe un registro para 'IBEX 35 (IBEX)' en la fecha actual. No se insertó.
+2025-04-20 11:47:31,884 [INFO] 📛 Ya existe un registro para 'S&P 500 (SPX)' en la fecha actual. No se insertó.
+2025-04-20 11:47:37,890 [INFO] 📛 Ya existe un registro para 'Nasdaq 100 (NDX)' en la fecha actual. No se insertó.
+2025-04-20 11:47:44,240 [INFO] 📛 Ya existe un registro para 'DAX (GDAXI)' en la fecha actual. No se insertó.
+2025-04-20 11:47:50,613 [INFO] 📛 Ya existe un registro para 'MSCI World (MIWO00000PUS)' en la fecha actual. No se insertó.
+2025-04-20 11:47:52,721 [INFO] 🏁 Fin del scraping. Navegador cerrado.
+2025-04-20 11:47:52,721 [INFO] 📊 RESUMEN FINAL:
+2025-04-20 11:47:52,722 [INFO] ✅ Índices guardados: 0
+2025-04-20 11:47:52,722 [INFO] ℹ️ Índices omitidos: 5
+2025-04-20 11:47:52,722 [INFO] ❌ Fallos: 0
+2025-04-20 11:47:52,722 [INFO] ✅ Scraping de índices completado.
+2025-04-20 11:47:54,008 [INFO] Se cargaron 3 empresas desde empresas_bme.csv
+2025-04-20 11:47:54,009 [INFO] 🚀 Iniciando scraping de empresas BME
+2025-04-20 11:47:54,009 [INFO] 🔍 Iniciando scraping para BBVA
+2025-04-20 11:47:54,009 [INFO] 📄 Accediendo a la web de BBVA: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Banco-Bilbao-Vizcaya-Argentaria-ES0113211835
+2025-04-20 11:47:55,135 [ERROR] ❌ Error al insertar datos de empresa: 1054 (42S22): Unknown column 'anio' in 'where clause'
+2025-04-20 11:47:55,207 [ERROR] ❌ Error al insertar datos de empresa: 1054 (42S22): Unknown column 'anio' in 'where clause'
+2025-04-20 11:47:55,283 [ERROR] ❌ Error al insertar datos de empresa: 1054 (42S22): Unknown column 'anio' in 'where clause'
+2025-04-20 11:47:55,363 [ERROR] ❌ Error al insertar datos de empresa: 1054 (42S22): Unknown column 'anio' in 'where clause'
+2025-04-20 11:47:55,443 [ERROR] ❌ Error al insertar datos de empresa: 1054 (42S22): Unknown column 'anio' in 'where clause'
+2025-04-20 11:47:55,443 [INFO] ⚠️ Todas las filas fueron ignoradas para BBVA
+2025-04-20 11:47:55,443 [INFO] 🔍 Iniciando scraping para Inditex
+2025-04-20 11:47:55,443 [INFO] 📄 Accediendo a la web de Inditex: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Ind-De-Diseno-Textil-Inditex-ES0148396007
+2025-04-20 11:47:56,502 [ERROR] ❌ Error al insertar datos de empresa: 1054 (42S22): Unknown column 'anio' in 'where clause'
+2025-04-20 11:47:56,577 [ERROR] ❌ Error al insertar datos de empresa: 1054 (42S22): Unknown column 'anio' in 'where clause'
+2025-04-20 11:47:56,660 [ERROR] ❌ Error al insertar datos de empresa: 1054 (42S22): Unknown column 'anio' in 'where clause'
+2025-04-20 11:47:56,729 [ERROR] ❌ Error al insertar datos de empresa: 1054 (42S22): Unknown column 'anio' in 'where clause'
+2025-04-20 11:47:56,795 [ERROR] ❌ Error al insertar datos de empresa: 1054 (42S22): Unknown column 'anio' in 'where clause'
+2025-04-20 11:47:56,795 [INFO] ⚠️ Todas las filas fueron ignoradas para Inditex
+2025-04-20 11:47:56,795 [INFO] 🔍 Iniciando scraping para Santander
+2025-04-20 11:47:56,795 [INFO] 📄 Accediendo a la web de Santander: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Banco-Santander-ES0113900J37
+2025-04-20 11:47:57,632 [ERROR] ❌ Error al insertar datos de empresa: 1054 (42S22): Unknown column 'anio' in 'where clause'
+2025-04-20 11:47:57,707 [ERROR] ❌ Error al insertar datos de empresa: 1054 (42S22): Unknown column 'anio' in 'where clause'
+2025-04-20 11:47:57,786 [ERROR] ❌ Error al insertar datos de empresa: 1054 (42S22): Unknown column 'anio' in 'where clause'
+2025-04-20 11:47:57,857 [ERROR] ❌ Error al insertar datos de empresa: 1054 (42S22): Unknown column 'anio' in 'where clause'
+2025-04-20 11:47:57,922 [ERROR] ❌ Error al insertar datos de empresa: 1054 (42S22): Unknown column 'anio' in 'where clause'
+2025-04-20 11:47:57,922 [INFO] ⚠️ Todas las filas fueron ignoradas para Santander
+2025-04-20 11:47:59,998 [INFO] ✅ Scraping de empresas BME finalizado.
+2025-04-20 11:47:59,998 [INFO] ✅ Scraping de empresas BME completado.
+2025-04-20 11:48:00,000 [INFO] 🔧 Poppler configurado en: C:\Users\yo_xa\PycharmProjects\PythonProject\poppler\poppler-24.08.0\Library\bin
+2025-04-20 11:48:00,001 [INFO] 🔍 Tesseract configurado en: C:\Users\yo_xa\PycharmProjects\PythonProject\tesseract\Tesseract-OCR\tesseract.exe
+2025-04-20 11:48:00,001 [INFO] 🚀 Iniciando scraping de PDF del IBEX 35
+2025-04-20 11:48:00,139 [INFO] 📥 PDF descargado: https://www.bolsasymercados.es/bme-exchange/docs/Indices/Avisos/esp/gestorindice/Aviso_Gestor_Indices_02-25.pdf
+2025-04-20 11:48:00,332 [INFO] ⚠️ No coincide parte: del 24 de marzo de 2025 Índices 19 de marzo 2025 º Aviso 02/2025 – Gestor del Índice Índices Secretaría de Gestión de los Índices ibex@grupobme.es 91.709.53.86 Sociedad Bolsas, S.A.U., domicilio social en Madrid, Plaza de la Lealtad 1, C.I.F. A-82695677 e inscrita en el Registro Mercantil de Madrid en el tomo 15.611, folio 5, sección 8, hoja núm. M-262818. 2 En consonancia con el Aviso nº 03/2025 del Comité de 13 de marzo de 2025, y hechas las modificaciones previstas en las Normas de Técnicas para la Composición y Cálculo de los Índices IBEX® y de Estrategia sobre Acciones, Sociedad de Bolsas, como Gestor del índice IBEX 35®, comunica la composición del mismo a partir del 24 de marzo de 2025. IBEX 35® Simb. Nombre Titulos Antes Estatus Modificaciones Comp. 24/03/2025 %Coef FF ACS ACS CONST. 271.664.594 - 271.664.594 100
+2025-04-20 11:48:00,332 [INFO] ⚠️ No coincide parte: ACX ACERINOX 249.335.371 - 249.335.371 100
+2025-04-20 11:48:00,332 [INFO] ⚠️ No coincide parte: AENA AENA 120.000.000 - 120.000.000 80
+2025-04-20 11:48:00,332 [INFO] ⚠️ No coincide parte: AMS AMADEUS IT 450.499.205 - 450.499.205 100
+2025-04-20 11:48:00,332 [INFO] ⚠️ No coincide parte: ANA ACCIONA 43.885.322 - 43.885.322 80
+2025-04-20 11:48:00,332 [INFO] ⚠️ No coincide parte: ANE ACCIONA ENER 64.952.366 - 64.952.366 20
+2025-04-20 11:48:00,332 [INFO] ⚠️ No coincide parte: BBVA BBVA 5.763.285.465 - 5.763.285.465 100
+2025-04-20 11:48:00,332 [INFO] ⚠️ No coincide parte: BKT BANKINTER 898.866.154 - 898.866.154 100
+2025-04-20 11:48:00,333 [INFO] ⚠️ No coincide parte: CABK CAIXABANK 5.739.950.277 - 5.739.950.277 80
+2025-04-20 11:48:00,333 [INFO] ⚠️ No coincide parte: CLNX CELLNEX 706.475.375 - 706.475.375 100
+2025-04-20 11:48:00,333 [INFO] ⚠️ No coincide parte: COL INM.COLONIAL 250.937.875 - 250.937.875 40
+2025-04-20 11:48:00,333 [INFO] ⚠️ No coincide parte: ELE ENDESA 423.500.847 - 423.500.847 40
+2025-04-20 11:48:00,333 [INFO] ⚠️ No coincide parte: ENG ENAGAS 261.990.074 - 261.990.074 100
+2025-04-20 11:48:00,333 [INFO] ⚠️ No coincide parte: FDR FLUIDRA 115.277.442 - 115.277.442 60
+2025-04-20 11:48:00,333 [INFO] ⚠️ No coincide parte: GRF GRIFOLS 426.129.798 - 426.129.798 100
+2025-04-20 11:48:00,333 [INFO] ⚠️ No coincide parte: IAG INT.AIRL.GRP 4.971.476.010 - 4.971.476.010 100
+2025-04-20 11:48:00,333 [INFO] ⚠️ No coincide parte: IDR INDRA A 176.654.402 - 176.654.402 100
+2025-04-20 11:48:00,333 [INFO] ⚠️ No coincide parte: ITX INDITEX 1.869.991.200 - 1.869.991.200 60
+2025-04-20 11:48:00,333 [INFO] ⚠️ No coincide parte: LOG LOGISTA 106.200.000 - 106.200.000 80
+2025-04-20 11:48:00,333 [INFO] ⚠️ No coincide parte: MAP MAPFRE 1.847.731.964 - 1.847.731.964 60
+2025-04-20 11:48:00,333 [INFO] ⚠️ No coincide parte: MRL MERLIN PROP. 563.724.899 - 563.724.899 100
+2025-04-20 11:48:00,333 [INFO] ⚠️ No coincide parte: MTS ARCEL.MITTAL 170.561.954 - 170.561.954 20
+2025-04-20 11:48:00,333 [INFO] ⚠️ No coincide parte: NTGY NATURGY 193.922.760 - 193.922.760 20
+2025-04-20 11:48:00,333 [INFO] ⚠️ No coincide parte: PUIG PUIG BRANDS 174.819.678 - 174.819.678 100 º Aviso 02/2025 – Gestor del Índice Índices Secretaría de Gestión de los Índices ibex@grupobme.es 91.709.53.86 Sociedad Bolsas, S.A.U., domicilio social en Madrid, Plaza de la Lealtad 1, C.I.F. A-82695677 e inscrita en el Registro Mercantil de Madrid en el tomo 15.611, folio 5, sección 8, hoja núm. M-262818. 3
+2025-04-20 11:48:00,333 [INFO] ⚠️ No coincide parte: RED REDEIA CORPO 541.080.000 - 541.080.000 100
+2025-04-20 11:48:00,333 [INFO] ⚠️ No coincide parte: ROVI LABORAT.ROVI 30.741.457 - 30.741.457 60
+2025-04-20 11:48:00,333 [INFO] ⚠️ No coincide parte: SAN SANTANDER 15.152.492.322 - 15.152.492.322 100
+2025-04-20 11:48:00,333 [INFO] ⚠️ No coincide parte: SLR SOLARIA 124.950.876 - 124.950.876 100
+2025-04-20 11:48:00,333 [INFO] ⚠️ No coincide parte: TEF TELEFONICA 5.670.161.554 - 5.670.161.554 100
+2025-04-20 11:48:00,333 [INFO] ⚠️ No coincide parte: UNI UNICAJA 2.057.147.574 - 2.057.147.574 80
+2025-04-20 11:48:00,334 [INFO] ⚠️ No coincide parte: IBEX 35® BANCOS Simb. Nombre Titulos Antes Estatus Modificaciones Comp. 24/03/2025 % Coef FF BBVA BBVA 5.763.285.465 - 5.763.285.465 100
+2025-04-20 11:48:00,334 [INFO] ⚠️ No coincide parte: BKT BANKINTER 898.866.154 - 898.866.154 100
+2025-04-20 11:48:00,334 [INFO] ⚠️ No coincide parte: CABK CAIXABANK 5.739.950.277 - 5.739.950.277 80
+2025-04-20 11:48:00,334 [INFO] ⚠️ No coincide parte: SAN SANTANDER 15.429.599.106 - 15.429.599.106 100
+2025-04-20 11:48:00,334 [INFO] ⚠️ No coincide parte: UNI UNICAJA 2.057.147.574 - 2.057.147.574 80
+2025-04-20 11:48:00,334 [INFO] ⚠️ No coincide parte: IBEX 35® ENERGÍA Simb. Nombre Titulos Antes Estatus Modificaciones Comp. 24/03/2025 % Coef FF ANE ACCIONA ENER 64.952.366 - 64.952.366 20
+2025-04-20 11:48:00,334 [INFO] ⚠️ No coincide parte: ELE ENDESA 423.500.847 - 423.500.847 40
+2025-04-20 11:48:00,334 [INFO] ⚠️ No coincide parte: ENG ENAGAS 261.990.074 - 261.990.074 100
+2025-04-20 11:48:00,334 [INFO] ⚠️ No coincide parte: IBE IBERDROLA 2.056.022.731 - 2.056.022.731 100
+2025-04-20 11:48:00,334 [INFO] ⚠️ No coincide parte: NTGY NATURGY 193.922.760 - 193.922.760 20
+2025-04-20 11:48:00,334 [INFO] ⚠️ No coincide parte: RED REDEIA CORPO 541.080.000 - 541.080.000 100
+2025-04-20 11:48:00,334 [INFO] ⚠️ No coincide parte: SLR SOLARIA 124.950.876 - 124.950.876 100 º Aviso 02/2025 – Gestor del Índice Índices Secretaría de Gestión de los Índices ibex@grupobme.es 91.709.53.86 Sociedad Bolsas, S.A.U., domicilio social en Madrid, Plaza de la Lealtad 1, C.I.F. A-82695677 e inscrita en el Registro Mercantil de Madrid en el tomo 15.611, folio 5, sección 8, hoja núm. M-262818. 4
+2025-04-20 11:48:00,335 [INFO] ⚠️ No coincide parte: IBEX ® CONSTRUCCIÓN Simb. Nombre Titulos Antes Estatus Modificaciones Comp. 24/03/2025 % Coef FF ACS ACS CONST. 271.664.594 - 271.664.594 100
+2025-04-20 11:48:00,335 [INFO] ⚠️ No coincide parte: ANA ACCIONA 43.885.322 - 43.885.322 80
+2025-04-20 11:48:00,335 [INFO] ⚠️ No coincide parte: FER FERROVIAL 333.069.476 - 333.069.476 100
+2025-04-20 11:48:00,335 [INFO] ⚠️ No coincide parte: SCYR SACYR 779.906.655 16.951.143 796.857.798 100 Esta relación tiene el carácter de composición definitiva, a no ser que el Gestor tenga que realizar algún ajuste como consecuencia de operaciones financieras comunicadas con posterioridad a este anuncio. Lo que se pone en conocimiento del público en general a los efectos oportunos. Madrid, 19 de marzo de 2025 Este material ha sido preparado por Bolsas y Mercados Españoles, Sociedad Holding de Mercados y Sistemas Financieros S. A. (BME) y/o sus filiales (en conjunto, "BME") para el uso exclusivo de las personas a las que a las que BME entrega este material. Este material o cualquiera de sus contenidos no debe interpretarse como un acuerdo vinculante, una recomendación, un consejo de inversión, solicitud, invitación u oferta de compra o venta de información financiera, productos, soluciones o servicios. Dicha información tampoco es un reflejo de posiciones (propias o de terceros) en firme de los intervinientes en el Mercado de Valores Español. BME no tiene ninguna obligación de actualizar, revisar o mantener al día el contenido de este material, y estará sujeto a cambios sin previo aviso en cualquier momento. Ninguna representación, garantía o compromiso -expreso o implícito- es compromiso -expreso o implícito- es o será dado por BME en cuanto a la exactitud, integridad, suficiencia, idoneidad o fiabilidad del contenido de este material. Al reflejar opiniones teóricas, su contenido es meramente informativo y por tanto no debe ser utilizado para valoración de carteras o patrimonios, ni servir de base para recomendaciones de inversión. Ni las Entidades contribuidoras, ni Bolsas y Mercados Españoles, Sociedad Holding de Mercados y Sistemas Financieros S.A.(BME) ni de ninguna de sus filiales, serán responsables de ninguna pérdida financiera, ni decisión tomada sobre la base de la información contenida en este material. En general, Bolsas y Mercados Españoles, Sociedad Holding de Mercados y Sistemas Financieros S. A. (BME) ni ninguna de sus filiales, ni las Entidades contribuidoras, sus administradores, representantes, asociados, sociedades controladas, directores, socios, empleados o asesores asumen responsabilidad alguna en relación con dicha información, ni de cualquier uso no autorizado del mismo. Este material es propiedad de BME y no puede ser impreso, copiado, reproducido, publicado, transmitido, divulgado o distribuido de ninguna forma sin el consentimiento previo por escrito de BME. 2025 Bolsas y Mercados Españoles, Sociedad Holding de Mercados y Sistemas Financieros S. A. Todos los derechos reservados. BME Plaza de la Lealtad,1 Palacio de la Bolsa 28014 Madrid www.bolsasymercados.es
+2025-04-20 11:48:00,335 [INFO] 📊 (_parsear_bloque) Se extrajeron 7 filas de la tabla.
+2025-04-20 11:48:00,337 [INFO] 📥 Insertado/actualizado: FER – FERROVIAL SE
+2025-04-20 11:48:00,338 [INFO] 📥 FER – FERROVIAL SE
+2025-04-20 11:48:00,340 [INFO] 📥 Insertado/actualizado: IBE – IBERDROLA
+2025-04-20 11:48:00,340 [INFO] 📥 IBE – IBERDROLA
+2025-04-20 11:48:00,343 [INFO] 📥 Insertado/actualizado: REP – REPSOL
+2025-04-20 11:48:00,343 [INFO] 📥 REP – REPSOL
+2025-04-20 11:48:00,345 [INFO] 📥 Insertado/actualizado: SAB – B. SABADELL
+2025-04-20 11:48:00,345 [INFO] 📥 SAB – B. SABADELL
+2025-04-20 11:48:00,347 [INFO] 📥 Insertado/actualizado: SCYR – SACYR
+2025-04-20 11:48:00,347 [INFO] 📥 SCYR – SACYR
+2025-04-20 11:48:00,348 [INFO] 📥 Insertado/actualizado: SAB – B. SABADELL
+2025-04-20 11:48:00,348 [INFO] 📥 SAB – B. SABADELL
+2025-04-20 11:48:00,349 [INFO] 📥 Insertado/actualizado: REP – REPSOL
+2025-04-20 11:48:00,349 [INFO] 📥 REP – REPSOL
+2025-04-20 11:48:00,350 [INFO] 🗑️ PDF temporal eliminado.
+2025-04-20 11:48:00,350 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
+2025-04-20 11:48:00,350 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
+2025-04-20 11:48:00,350 [INFO] === FIN DEL PROCESO DE SCRAPING ===
+2025-04-20 11:51:33,265 [INFO] ✅ Base de datos 'bolsa' verificada o creada.
+2025-04-20 11:51:33,268 [INFO] ✅ Tabla 'indices' verificada o creada correctamente.
+2025-04-20 11:51:33,448 [INFO] === INICIO DEL PROCESO DE SCRAPING ===
+2025-04-20 11:51:33,448 [INFO] ====== WebDriver manager ======
+2025-04-20 11:51:34,233 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-20 11:51:34,278 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-20 11:51:34,323 [INFO] Driver [C:\Users\yo_xa\.wdm\drivers\chromedriver\win64\135.0.7049.95\chromedriver-win32/chromedriver.exe] found in cache
+2025-04-20 11:51:35,449 [INFO] 🚀 Inicio del scraping de índices bursátiles.
+2025-04-20 11:51:42,426 [INFO] 📛 Ya existe un registro para 'IBEX 35 (IBEX)' en la fecha actual. No se insertó.
+2025-04-20 11:51:49,004 [INFO] 📛 Ya existe un registro para 'S&P 500 (SPX)' en la fecha actual. No se insertó.
+2025-04-20 11:51:55,512 [INFO] 📛 Ya existe un registro para 'Nasdaq 100 (NDX)' en la fecha actual. No se insertó.
+2025-04-20 11:52:01,823 [INFO] 📛 Ya existe un registro para 'DAX (GDAXI)' en la fecha actual. No se insertó.
+2025-04-20 11:52:08,054 [INFO] 📛 Ya existe un registro para 'MSCI World (MIWO00000PUS)' en la fecha actual. No se insertó.
+2025-04-20 11:52:10,173 [INFO] 🏁 Fin del scraping. Navegador cerrado.
+2025-04-20 11:52:10,174 [INFO] 📊 RESUMEN FINAL:
+2025-04-20 11:52:10,174 [INFO] ✅ Índices guardados: 0
+2025-04-20 11:52:10,174 [INFO] ℹ️ Índices omitidos: 5
+2025-04-20 11:52:10,174 [INFO] ❌ Fallos: 0
+2025-04-20 11:52:10,175 [INFO] ✅ Scraping de índices completado.
+2025-04-20 11:52:11,467 [INFO] Se cargaron 3 empresas desde empresas_bme.csv
+2025-04-20 11:52:11,467 [INFO] 🚀 Iniciando scraping de empresas BME
+2025-04-20 11:52:11,468 [INFO] 🔍 Iniciando scraping para BBVA
+2025-04-20 11:52:11,468 [INFO] 📄 Accediendo a la web de BBVA: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Banco-Bilbao-Vizcaya-Argentaria-ES0113211835
+2025-04-20 11:52:12,552 [INFO] 📥 Insertado/actualizado: BBVA - 2025
+2025-04-20 11:52:12,552 [INFO] ✅ Datos insertados para BBVA, año 2025
+2025-04-20 11:52:12,626 [INFO] 📥 Insertado/actualizado: BBVA - 2024
+2025-04-20 11:52:12,626 [INFO] ✅ Datos insertados para BBVA, año 2024
+2025-04-20 11:52:12,702 [INFO] 📥 Insertado/actualizado: BBVA - 2023
+2025-04-20 11:52:12,702 [INFO] ✅ Datos insertados para BBVA, año 2023
+2025-04-20 11:52:12,786 [INFO] 📥 Insertado/actualizado: BBVA - 2022
+2025-04-20 11:52:12,786 [INFO] ✅ Datos insertados para BBVA, año 2022
+2025-04-20 11:52:12,866 [INFO] 📥 Insertado/actualizado: BBVA - 2021
+2025-04-20 11:52:12,866 [INFO] ✅ Datos insertados para BBVA, año 2021
+2025-04-20 11:52:12,866 [INFO] 🔍 Iniciando scraping para Inditex
+2025-04-20 11:52:12,866 [INFO] 📄 Accediendo a la web de Inditex: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Ind-De-Diseno-Textil-Inditex-ES0148396007
+2025-04-20 11:52:13,697 [INFO] 📥 Insertado/actualizado: Inditex - 2025
+2025-04-20 11:52:13,697 [INFO] ✅ Datos insertados para Inditex, año 2025
+2025-04-20 11:52:13,770 [INFO] 📥 Insertado/actualizado: Inditex - 2024
+2025-04-20 11:52:13,770 [INFO] ✅ Datos insertados para Inditex, año 2024
+2025-04-20 11:52:13,844 [INFO] 📥 Insertado/actualizado: Inditex - 2023
+2025-04-20 11:52:13,845 [INFO] ✅ Datos insertados para Inditex, año 2023
+2025-04-20 11:52:13,923 [INFO] 📥 Insertado/actualizado: Inditex - 2022
+2025-04-20 11:52:13,923 [INFO] ✅ Datos insertados para Inditex, año 2022
+2025-04-20 11:52:13,995 [INFO] 📥 Insertado/actualizado: Inditex - 2021
+2025-04-20 11:52:13,995 [INFO] ✅ Datos insertados para Inditex, año 2021
+2025-04-20 11:52:13,995 [INFO] 🔍 Iniciando scraping para Santander
+2025-04-20 11:52:13,995 [INFO] 📄 Accediendo a la web de Santander: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Banco-Santander-ES0113900J37
+2025-04-20 11:52:14,821 [INFO] 📥 Insertado/actualizado: Santander - 2025
+2025-04-20 11:52:14,821 [INFO] ✅ Datos insertados para Santander, año 2025
+2025-04-20 11:52:14,909 [INFO] 📥 Insertado/actualizado: Santander - 2024
+2025-04-20 11:52:14,909 [INFO] ✅ Datos insertados para Santander, año 2024
+2025-04-20 11:52:14,999 [INFO] 📥 Insertado/actualizado: Santander - 2023
+2025-04-20 11:52:14,999 [INFO] ✅ Datos insertados para Santander, año 2023
+2025-04-20 11:52:15,082 [INFO] 📥 Insertado/actualizado: Santander - 2022
+2025-04-20 11:52:15,082 [INFO] ✅ Datos insertados para Santander, año 2022
+2025-04-20 11:52:15,146 [INFO] 📥 Insertado/actualizado: Santander - 2021
+2025-04-20 11:52:15,146 [INFO] ✅ Datos insertados para Santander, año 2021
+2025-04-20 11:52:17,232 [INFO] ✅ Scraping de empresas BME finalizado.
+2025-04-20 11:52:17,232 [INFO] ✅ Scraping de empresas BME completado.
+2025-04-20 11:52:17,236 [INFO] 🔧 Poppler configurado en: C:\Users\yo_xa\PycharmProjects\PythonProject\poppler\poppler-24.08.0\Library\bin
+2025-04-20 11:52:17,237 [INFO] 🔍 Tesseract configurado en: C:\Users\yo_xa\PycharmProjects\PythonProject\tesseract\Tesseract-OCR\tesseract.exe
+2025-04-20 11:52:17,237 [INFO] 🚀 Iniciando scraping de PDF del IBEX 35
+2025-04-20 11:52:17,373 [INFO] 📥 PDF descargado: https://www.bolsasymercados.es/bme-exchange/docs/Indices/Avisos/esp/gestorindice/Aviso_Gestor_Indices_02-25.pdf
+2025-04-20 11:52:17,580 [INFO] ⚠️ No coincide parte: del 24 de marzo de 2025 Índices 19 de marzo 2025 º Aviso 02/2025 – Gestor del Índice Índices Secretaría de Gestión de los Índices ibex@grupobme.es 91.709.53.86 Sociedad Bolsas, S.A.U., domicilio social en Madrid, Plaza de la Lealtad 1, C.I.F. A-82695677 e inscrita en el Registro Mercantil de Madrid en el tomo 15.611, folio 5, sección 8, hoja núm. M-262818. 2 En consonancia con el Aviso nº 03/2025 del Comité de 13 de marzo de 2025, y hechas las modificaciones previstas en las Normas de Técnicas para la Composición y Cálculo de los Índices IBEX® y de Estrategia sobre Acciones, Sociedad de Bolsas, como Gestor del índice IBEX 35®, comunica la composición del mismo a partir del 24 de marzo de 2025. IBEX 35® Simb. Nombre Titulos Antes Estatus Modificaciones Comp. 24/03/2025 %Coef FF ACS ACS CONST. 271.664.594 - 271.664.594 100
+2025-04-20 11:52:17,580 [INFO] ⚠️ No coincide parte: ACX ACERINOX 249.335.371 - 249.335.371 100
+2025-04-20 11:52:17,580 [INFO] ⚠️ No coincide parte: AENA AENA 120.000.000 - 120.000.000 80
+2025-04-20 11:52:17,580 [INFO] ⚠️ No coincide parte: AMS AMADEUS IT 450.499.205 - 450.499.205 100
+2025-04-20 11:52:17,580 [INFO] ⚠️ No coincide parte: ANA ACCIONA 43.885.322 - 43.885.322 80
+2025-04-20 11:52:17,580 [INFO] ⚠️ No coincide parte: ANE ACCIONA ENER 64.952.366 - 64.952.366 20
+2025-04-20 11:52:17,580 [INFO] ⚠️ No coincide parte: BBVA BBVA 5.763.285.465 - 5.763.285.465 100
+2025-04-20 11:52:17,580 [INFO] ⚠️ No coincide parte: BKT BANKINTER 898.866.154 - 898.866.154 100
+2025-04-20 11:52:17,580 [INFO] ⚠️ No coincide parte: CABK CAIXABANK 5.739.950.277 - 5.739.950.277 80
+2025-04-20 11:52:17,580 [INFO] ⚠️ No coincide parte: CLNX CELLNEX 706.475.375 - 706.475.375 100
+2025-04-20 11:52:17,580 [INFO] ⚠️ No coincide parte: COL INM.COLONIAL 250.937.875 - 250.937.875 40
+2025-04-20 11:52:17,580 [INFO] ⚠️ No coincide parte: ELE ENDESA 423.500.847 - 423.500.847 40
+2025-04-20 11:52:17,580 [INFO] ⚠️ No coincide parte: ENG ENAGAS 261.990.074 - 261.990.074 100
+2025-04-20 11:52:17,580 [INFO] ⚠️ No coincide parte: FDR FLUIDRA 115.277.442 - 115.277.442 60
+2025-04-20 11:52:17,580 [INFO] ⚠️ No coincide parte: GRF GRIFOLS 426.129.798 - 426.129.798 100
+2025-04-20 11:52:17,580 [INFO] ⚠️ No coincide parte: IAG INT.AIRL.GRP 4.971.476.010 - 4.971.476.010 100
+2025-04-20 11:52:17,580 [INFO] ⚠️ No coincide parte: IDR INDRA A 176.654.402 - 176.654.402 100
+2025-04-20 11:52:17,580 [INFO] ⚠️ No coincide parte: ITX INDITEX 1.869.991.200 - 1.869.991.200 60
+2025-04-20 11:52:17,580 [INFO] ⚠️ No coincide parte: LOG LOGISTA 106.200.000 - 106.200.000 80
+2025-04-20 11:52:17,580 [INFO] ⚠️ No coincide parte: MAP MAPFRE 1.847.731.964 - 1.847.731.964 60
+2025-04-20 11:52:17,580 [INFO] ⚠️ No coincide parte: MRL MERLIN PROP. 563.724.899 - 563.724.899 100
+2025-04-20 11:52:17,581 [INFO] ⚠️ No coincide parte: MTS ARCEL.MITTAL 170.561.954 - 170.561.954 20
+2025-04-20 11:52:17,581 [INFO] ⚠️ No coincide parte: NTGY NATURGY 193.922.760 - 193.922.760 20
+2025-04-20 11:52:17,581 [INFO] ⚠️ No coincide parte: PUIG PUIG BRANDS 174.819.678 - 174.819.678 100 º Aviso 02/2025 – Gestor del Índice Índices Secretaría de Gestión de los Índices ibex@grupobme.es 91.709.53.86 Sociedad Bolsas, S.A.U., domicilio social en Madrid, Plaza de la Lealtad 1, C.I.F. A-82695677 e inscrita en el Registro Mercantil de Madrid en el tomo 15.611, folio 5, sección 8, hoja núm. M-262818. 3
+2025-04-20 11:52:17,581 [INFO] ⚠️ No coincide parte: RED REDEIA CORPO 541.080.000 - 541.080.000 100
+2025-04-20 11:52:17,581 [INFO] ⚠️ No coincide parte: ROVI LABORAT.ROVI 30.741.457 - 30.741.457 60
+2025-04-20 11:52:17,581 [INFO] ⚠️ No coincide parte: SAN SANTANDER 15.152.492.322 - 15.152.492.322 100
+2025-04-20 11:52:17,581 [INFO] ⚠️ No coincide parte: SLR SOLARIA 124.950.876 - 124.950.876 100
+2025-04-20 11:52:17,581 [INFO] ⚠️ No coincide parte: TEF TELEFONICA 5.670.161.554 - 5.670.161.554 100
+2025-04-20 11:52:17,581 [INFO] ⚠️ No coincide parte: UNI UNICAJA 2.057.147.574 - 2.057.147.574 80
+2025-04-20 11:52:17,583 [INFO] ⚠️ No coincide parte: IBEX 35® BANCOS Simb. Nombre Titulos Antes Estatus Modificaciones Comp. 24/03/2025 % Coef FF BBVA BBVA 5.763.285.465 - 5.763.285.465 100
+2025-04-20 11:52:17,583 [INFO] ⚠️ No coincide parte: BKT BANKINTER 898.866.154 - 898.866.154 100
+2025-04-20 11:52:17,583 [INFO] ⚠️ No coincide parte: CABK CAIXABANK 5.739.950.277 - 5.739.950.277 80
+2025-04-20 11:52:17,583 [INFO] ⚠️ No coincide parte: SAN SANTANDER 15.429.599.106 - 15.429.599.106 100
+2025-04-20 11:52:17,583 [INFO] ⚠️ No coincide parte: UNI UNICAJA 2.057.147.574 - 2.057.147.574 80
+2025-04-20 11:52:17,583 [INFO] ⚠️ No coincide parte: IBEX 35® ENERGÍA Simb. Nombre Titulos Antes Estatus Modificaciones Comp. 24/03/2025 % Coef FF ANE ACCIONA ENER 64.952.366 - 64.952.366 20
+2025-04-20 11:52:17,583 [INFO] ⚠️ No coincide parte: ELE ENDESA 423.500.847 - 423.500.847 40
+2025-04-20 11:52:17,583 [INFO] ⚠️ No coincide parte: ENG ENAGAS 261.990.074 - 261.990.074 100
+2025-04-20 11:52:17,583 [INFO] ⚠️ No coincide parte: IBE IBERDROLA 2.056.022.731 - 2.056.022.731 100
+2025-04-20 11:52:17,583 [INFO] ⚠️ No coincide parte: NTGY NATURGY 193.922.760 - 193.922.760 20
+2025-04-20 11:52:17,583 [INFO] ⚠️ No coincide parte: RED REDEIA CORPO 541.080.000 - 541.080.000 100
+2025-04-20 11:52:17,584 [INFO] ⚠️ No coincide parte: SLR SOLARIA 124.950.876 - 124.950.876 100 º Aviso 02/2025 – Gestor del Índice Índices Secretaría de Gestión de los Índices ibex@grupobme.es 91.709.53.86 Sociedad Bolsas, S.A.U., domicilio social en Madrid, Plaza de la Lealtad 1, C.I.F. A-82695677 e inscrita en el Registro Mercantil de Madrid en el tomo 15.611, folio 5, sección 8, hoja núm. M-262818. 4
+2025-04-20 11:52:17,584 [INFO] ⚠️ No coincide parte: IBEX ® CONSTRUCCIÓN Simb. Nombre Titulos Antes Estatus Modificaciones Comp. 24/03/2025 % Coef FF ACS ACS CONST. 271.664.594 - 271.664.594 100
+2025-04-20 11:52:17,584 [INFO] ⚠️ No coincide parte: ANA ACCIONA 43.885.322 - 43.885.322 80
+2025-04-20 11:52:17,584 [INFO] ⚠️ No coincide parte: FER FERROVIAL 333.069.476 - 333.069.476 100
+2025-04-20 11:52:17,584 [INFO] ⚠️ No coincide parte: SCYR SACYR 779.906.655 16.951.143 796.857.798 100 Esta relación tiene el carácter de composición definitiva, a no ser que el Gestor tenga que realizar algún ajuste como consecuencia de operaciones financieras comunicadas con posterioridad a este anuncio. Lo que se pone en conocimiento del público en general a los efectos oportunos. Madrid, 19 de marzo de 2025 Este material ha sido preparado por Bolsas y Mercados Españoles, Sociedad Holding de Mercados y Sistemas Financieros S. A. (BME) y/o sus filiales (en conjunto, "BME") para el uso exclusivo de las personas a las que a las que BME entrega este material. Este material o cualquiera de sus contenidos no debe interpretarse como un acuerdo vinculante, una recomendación, un consejo de inversión, solicitud, invitación u oferta de compra o venta de información financiera, productos, soluciones o servicios. Dicha información tampoco es un reflejo de posiciones (propias o de terceros) en firme de los intervinientes en el Mercado de Valores Español. BME no tiene ninguna obligación de actualizar, revisar o mantener al día el contenido de este material, y estará sujeto a cambios sin previo aviso en cualquier momento. Ninguna representación, garantía o compromiso -expreso o implícito- es compromiso -expreso o implícito- es o será dado por BME en cuanto a la exactitud, integridad, suficiencia, idoneidad o fiabilidad del contenido de este material. Al reflejar opiniones teóricas, su contenido es meramente informativo y por tanto no debe ser utilizado para valoración de carteras o patrimonios, ni servir de base para recomendaciones de inversión. Ni las Entidades contribuidoras, ni Bolsas y Mercados Españoles, Sociedad Holding de Mercados y Sistemas Financieros S.A.(BME) ni de ninguna de sus filiales, serán responsables de ninguna pérdida financiera, ni decisión tomada sobre la base de la información contenida en este material. En general, Bolsas y Mercados Españoles, Sociedad Holding de Mercados y Sistemas Financieros S. A. (BME) ni ninguna de sus filiales, ni las Entidades contribuidoras, sus administradores, representantes, asociados, sociedades controladas, directores, socios, empleados o asesores asumen responsabilidad alguna en relación con dicha información, ni de cualquier uso no autorizado del mismo. Este material es propiedad de BME y no puede ser impreso, copiado, reproducido, publicado, transmitido, divulgado o distribuido de ninguna forma sin el consentimiento previo por escrito de BME. 2025 Bolsas y Mercados Españoles, Sociedad Holding de Mercados y Sistemas Financieros S. A. Todos los derechos reservados. BME Plaza de la Lealtad,1 Palacio de la Bolsa 28014 Madrid www.bolsasymercados.es
+2025-04-20 11:52:17,584 [INFO] 📊 (_parsear_bloque) Se extrajeron 7 filas de la tabla.
+2025-04-20 11:52:17,587 [INFO] 📥 Insertado/actualizado: FER – FERROVIAL SE
+2025-04-20 11:52:17,588 [INFO] 📥 FER – FERROVIAL SE
+2025-04-20 11:52:17,591 [INFO] 📥 Insertado/actualizado: IBE – IBERDROLA
+2025-04-20 11:52:17,591 [INFO] 📥 IBE – IBERDROLA
+2025-04-20 11:52:17,593 [INFO] 📥 Insertado/actualizado: REP – REPSOL
+2025-04-20 11:52:17,594 [INFO] 📥 REP – REPSOL
+2025-04-20 11:52:17,595 [INFO] 📥 Insertado/actualizado: SAB – B. SABADELL
+2025-04-20 11:52:17,595 [INFO] 📥 SAB – B. SABADELL
+2025-04-20 11:52:17,597 [INFO] 📥 Insertado/actualizado: SCYR – SACYR
+2025-04-20 11:52:17,597 [INFO] 📥 SCYR – SACYR
+2025-04-20 11:52:17,598 [INFO] 📥 Insertado/actualizado: SAB – B. SABADELL
+2025-04-20 11:52:17,599 [INFO] 📥 SAB – B. SABADELL
+2025-04-20 11:52:17,600 [INFO] 📥 Insertado/actualizado: REP – REPSOL
+2025-04-20 11:52:17,600 [INFO] 📥 REP – REPSOL
+2025-04-20 11:52:17,601 [INFO] 🗑️ PDF temporal eliminado.
+2025-04-20 11:52:17,601 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
+2025-04-20 11:52:17,601 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
+2025-04-20 11:52:17,601 [INFO] === FIN DEL PROCESO DE SCRAPING ===
+2025-04-20 12:00:28,804 [INFO] ✅ Base de datos 'bolsa' verificada o creada.
+2025-04-20 12:00:28,806 [INFO] ✅ Tabla 'indices' verificada o creada correctamente.
+2025-04-20 12:00:28,807 [INFO] ✅ Tabla 'datos_empresas' verificada o creada correctamente.
+2025-04-20 12:00:28,809 [INFO] ✅ Tabla 'composicion_ibex35' verificada o creada correctamente.
+2025-04-21 17:36:46,265 [INFO] ✅ Base de datos 'bolsa' verificada o creada.
+2025-04-21 17:36:46,277 [INFO] ✅ Tabla 'indices' verificada o creada correctamente.
+2025-04-21 17:36:46,684 [INFO] === INICIO DEL PROCESO DE SCRAPING ===
+2025-04-21 17:36:46,684 [INFO] ====== WebDriver manager ======
+2025-04-21 17:36:48,282 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-21 17:36:48,363 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-21 17:36:48,408 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-21 17:36:48,514 [INFO] WebDriver version 135.0.7049.95 selected
+2025-04-21 17:36:48,516 [INFO] Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/135.0.7049.95/win32/chromedriver-win32.zip
+2025-04-21 17:36:48,516 [INFO] About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/135.0.7049.95/win32/chromedriver-win32.zip
+2025-04-21 17:36:48,619 [INFO] Driver downloading response is 200
+2025-04-21 17:36:49,315 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-21 17:36:49,747 [INFO] Driver has been saved in cache [C:\Users\yo_xa\.wdm\drivers\chromedriver\win64\135.0.7049.95]
+2025-04-21 17:36:51,252 [INFO] 🚀 Inicio del scraping de índices bursátiles.
+2025-04-21 17:36:58,369 [INFO] 📥 Guardado: IBEX 35 (IBEX) - 12918.0 - 0,00 - (0,00%)
+2025-04-21 17:37:04,776 [INFO] 📥 Guardado: S&P 500 (SPX) - 5136.94 - -145,76 - (-2,76%)
+2025-04-21 17:37:11,169 [INFO] 📥 Guardado: Nasdaq 100 (NDX) - 17727.31 - -530,78 - (-2,91%)
+2025-04-21 17:37:17,733 [INFO] 📥 Guardado: DAX (GDAXI) - 21205.86 - -105,16 - (-0,49%)
+2025-04-21 17:37:23,962 [INFO] 📥 Guardado: MSCI World (MIWO00000PUS) - 3416.05 - -60,01 - (-1,73%)
+2025-04-21 17:37:26,065 [INFO] 🏁 Fin del scraping. Navegador cerrado.
+2025-04-21 17:37:26,066 [INFO] 📊 RESUMEN FINAL:
+2025-04-21 17:37:26,066 [INFO] ✅ Índices guardados: 5
+2025-04-21 17:37:26,066 [INFO] ℹ️ Índices omitidos: 0
+2025-04-21 17:37:26,066 [INFO] ❌ Fallos: 0
+2025-04-21 17:37:26,067 [INFO] ✅ Scraping de índices completado.
+2025-04-21 17:37:28,011 [INFO] Se cargaron 3 empresas desde empresas_bme.csv
+2025-04-21 17:37:28,011 [INFO] 🚀 Iniciando scraping de empresas BME
+2025-04-21 17:37:28,011 [INFO] 🔍 Iniciando scraping para BBVA
+2025-04-21 17:37:28,011 [INFO] 📄 Accediendo a la web de BBVA: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Banco-Bilbao-Vizcaya-Argentaria-ES0113211835
+2025-04-21 17:37:29,058 [INFO] 📛 Registro duplicado: BBVA - 2025. No se insertó.
+2025-04-21 17:37:29,131 [INFO] 📛 Registro duplicado: BBVA - 2024. No se insertó.
+2025-04-21 17:37:29,202 [INFO] 📛 Registro duplicado: BBVA - 2023. No se insertó.
+2025-04-21 17:37:29,286 [INFO] 📛 Registro duplicado: BBVA - 2022. No se insertó.
+2025-04-21 17:37:29,369 [INFO] 📛 Registro duplicado: BBVA - 2021. No se insertó.
+2025-04-21 17:37:29,369 [INFO] ⚠️ Todas las filas fueron ignoradas para BBVA
+2025-04-21 17:37:29,369 [INFO] 🔍 Iniciando scraping para Inditex
+2025-04-21 17:37:29,369 [INFO] 📄 Accediendo a la web de Inditex: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Ind-De-Diseno-Textil-Inditex-ES0148396007
+2025-04-21 17:37:30,212 [INFO] 📛 Registro duplicado: Inditex - 2025. No se insertó.
+2025-04-21 17:37:30,283 [INFO] 📛 Registro duplicado: Inditex - 2024. No se insertó.
+2025-04-21 17:37:30,352 [INFO] 📛 Registro duplicado: Inditex - 2023. No se insertó.
+2025-04-21 17:37:30,421 [INFO] 📛 Registro duplicado: Inditex - 2022. No se insertó.
+2025-04-21 17:37:30,493 [INFO] 📛 Registro duplicado: Inditex - 2021. No se insertó.
+2025-04-21 17:37:30,493 [INFO] ⚠️ Todas las filas fueron ignoradas para Inditex
+2025-04-21 17:37:30,493 [INFO] 🔍 Iniciando scraping para Santander
+2025-04-21 17:37:30,493 [INFO] 📄 Accediendo a la web de Santander: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Banco-Santander-ES0113900J37
+2025-04-21 17:37:31,325 [INFO] 📛 Registro duplicado: Santander - 2025. No se insertó.
+2025-04-21 17:37:31,412 [INFO] 📛 Registro duplicado: Santander - 2024. No se insertó.
+2025-04-21 17:37:31,496 [INFO] 📛 Registro duplicado: Santander - 2023. No se insertó.
+2025-04-21 17:37:31,579 [INFO] 📛 Registro duplicado: Santander - 2022. No se insertó.
+2025-04-21 17:37:31,637 [INFO] 📛 Registro duplicado: Santander - 2021. No se insertó.
+2025-04-21 17:37:31,638 [INFO] ⚠️ Todas las filas fueron ignoradas para Santander
+2025-04-21 17:37:33,726 [INFO] ✅ Scraping de empresas BME finalizado.
+2025-04-21 17:37:33,727 [INFO] ✅ Scraping de empresas BME completado.
+2025-04-21 17:37:33,729 [INFO] 🔧 Poppler configurado en: C:\Users\yo_xa\PycharmProjects\PythonProject\poppler\poppler-24.08.0\Library\bin
+2025-04-21 17:37:33,729 [INFO] 🔍 Tesseract configurado en: C:\Users\yo_xa\PycharmProjects\PythonProject\tesseract\Tesseract-OCR\tesseract.exe
+2025-04-21 17:37:33,729 [INFO] 🚀 Iniciando scraping de PDF del IBEX 35
+2025-04-21 17:37:33,840 [INFO] 📥 PDF descargado: https://www.bolsasymercados.es/bme-exchange/docs/Indices/Avisos/esp/gestorindice/Aviso_Gestor_Indices_02-25.pdf
+2025-04-21 17:37:34,114 [INFO] ⚠️ No coincide parte: del 24 de marzo de 2025 Índices 19 de marzo 2025 º Aviso 02/2025 – Gestor del Índice Índices Secretaría de Gestión de los Índices ibex@grupobme.es 91.709.53.86 Sociedad Bolsas, S.A.U., domicilio social en Madrid, Plaza de la Lealtad 1, C.I.F. A-82695677 e inscrita en el Registro Mercantil de Madrid en el tomo 15.611, folio 5, sección 8, hoja núm. M-262818. 2 En consonancia con el Aviso nº 03/2025 del Comité de 13 de marzo de 2025, y hechas las modificaciones previstas en las Normas de Técnicas para la Composición y Cálculo de los Índices IBEX® y de Estrategia sobre Acciones, Sociedad de Bolsas, como Gestor del índice IBEX 35®, comunica la composición del mismo a partir del 24 de marzo de 2025. IBEX 35® Simb. Nombre Titulos Antes Estatus Modificaciones Comp. 24/03/2025 %Coef FF ACS ACS CONST. 271.664.594 - 271.664.594 100
+2025-04-21 17:37:34,114 [INFO] ⚠️ No coincide parte: ACX ACERINOX 249.335.371 - 249.335.371 100
+2025-04-21 17:37:34,114 [INFO] ⚠️ No coincide parte: AENA AENA 120.000.000 - 120.000.000 80
+2025-04-21 17:37:34,114 [INFO] ⚠️ No coincide parte: AMS AMADEUS IT 450.499.205 - 450.499.205 100
+2025-04-21 17:37:34,114 [INFO] ⚠️ No coincide parte: ANA ACCIONA 43.885.322 - 43.885.322 80
+2025-04-21 17:37:34,114 [INFO] ⚠️ No coincide parte: ANE ACCIONA ENER 64.952.366 - 64.952.366 20
+2025-04-21 17:37:34,114 [INFO] ⚠️ No coincide parte: BBVA BBVA 5.763.285.465 - 5.763.285.465 100
+2025-04-21 17:37:34,114 [INFO] ⚠️ No coincide parte: BKT BANKINTER 898.866.154 - 898.866.154 100
+2025-04-21 17:37:34,115 [INFO] ⚠️ No coincide parte: CABK CAIXABANK 5.739.950.277 - 5.739.950.277 80
+2025-04-21 17:37:34,115 [INFO] ⚠️ No coincide parte: CLNX CELLNEX 706.475.375 - 706.475.375 100
+2025-04-21 17:37:34,115 [INFO] ⚠️ No coincide parte: COL INM.COLONIAL 250.937.875 - 250.937.875 40
+2025-04-21 17:37:34,115 [INFO] ⚠️ No coincide parte: ELE ENDESA 423.500.847 - 423.500.847 40
+2025-04-21 17:37:34,115 [INFO] ⚠️ No coincide parte: ENG ENAGAS 261.990.074 - 261.990.074 100
+2025-04-21 17:37:34,115 [INFO] ⚠️ No coincide parte: FDR FLUIDRA 115.277.442 - 115.277.442 60
+2025-04-21 17:37:34,115 [INFO] ⚠️ No coincide parte: GRF GRIFOLS 426.129.798 - 426.129.798 100
+2025-04-21 17:37:34,115 [INFO] ⚠️ No coincide parte: IAG INT.AIRL.GRP 4.971.476.010 - 4.971.476.010 100
+2025-04-21 17:37:34,115 [INFO] ⚠️ No coincide parte: IDR INDRA A 176.654.402 - 176.654.402 100
+2025-04-21 17:37:34,115 [INFO] ⚠️ No coincide parte: ITX INDITEX 1.869.991.200 - 1.869.991.200 60
+2025-04-21 17:37:34,115 [INFO] ⚠️ No coincide parte: LOG LOGISTA 106.200.000 - 106.200.000 80
+2025-04-21 17:37:34,115 [INFO] ⚠️ No coincide parte: MAP MAPFRE 1.847.731.964 - 1.847.731.964 60
+2025-04-21 17:37:34,115 [INFO] ⚠️ No coincide parte: MRL MERLIN PROP. 563.724.899 - 563.724.899 100
+2025-04-21 17:37:34,115 [INFO] ⚠️ No coincide parte: MTS ARCEL.MITTAL 170.561.954 - 170.561.954 20
+2025-04-21 17:37:34,115 [INFO] ⚠️ No coincide parte: NTGY NATURGY 193.922.760 - 193.922.760 20
+2025-04-21 17:37:34,115 [INFO] ⚠️ No coincide parte: PUIG PUIG BRANDS 174.819.678 - 174.819.678 100 º Aviso 02/2025 – Gestor del Índice Índices Secretaría de Gestión de los Índices ibex@grupobme.es 91.709.53.86 Sociedad Bolsas, S.A.U., domicilio social en Madrid, Plaza de la Lealtad 1, C.I.F. A-82695677 e inscrita en el Registro Mercantil de Madrid en el tomo 15.611, folio 5, sección 8, hoja núm. M-262818. 3
+2025-04-21 17:37:34,115 [INFO] ⚠️ No coincide parte: RED REDEIA CORPO 541.080.000 - 541.080.000 100
+2025-04-21 17:37:34,115 [INFO] ⚠️ No coincide parte: ROVI LABORAT.ROVI 30.741.457 - 30.741.457 60
+2025-04-21 17:37:34,115 [INFO] ⚠️ No coincide parte: SAN SANTANDER 15.152.492.322 - 15.152.492.322 100
+2025-04-21 17:37:34,115 [INFO] ⚠️ No coincide parte: SLR SOLARIA 124.950.876 - 124.950.876 100
+2025-04-21 17:37:34,115 [INFO] ⚠️ No coincide parte: TEF TELEFONICA 5.670.161.554 - 5.670.161.554 100
+2025-04-21 17:37:34,115 [INFO] ⚠️ No coincide parte: UNI UNICAJA 2.057.147.574 - 2.057.147.574 80
+2025-04-21 17:37:34,115 [INFO] ⚠️ No coincide parte: IBEX 35® BANCOS Simb. Nombre Titulos Antes Estatus Modificaciones Comp. 24/03/2025 % Coef FF BBVA BBVA 5.763.285.465 - 5.763.285.465 100
+2025-04-21 17:37:34,115 [INFO] ⚠️ No coincide parte: BKT BANKINTER 898.866.154 - 898.866.154 100
+2025-04-21 17:37:34,115 [INFO] ⚠️ No coincide parte: CABK CAIXABANK 5.739.950.277 - 5.739.950.277 80
+2025-04-21 17:37:34,116 [INFO] ⚠️ No coincide parte: SAN SANTANDER 15.429.599.106 - 15.429.599.106 100
+2025-04-21 17:37:34,116 [INFO] ⚠️ No coincide parte: UNI UNICAJA 2.057.147.574 - 2.057.147.574 80
+2025-04-21 17:37:34,116 [INFO] ⚠️ No coincide parte: IBEX 35® ENERGÍA Simb. Nombre Titulos Antes Estatus Modificaciones Comp. 24/03/2025 % Coef FF ANE ACCIONA ENER 64.952.366 - 64.952.366 20
+2025-04-21 17:37:34,116 [INFO] ⚠️ No coincide parte: ELE ENDESA 423.500.847 - 423.500.847 40
+2025-04-21 17:37:34,116 [INFO] ⚠️ No coincide parte: ENG ENAGAS 261.990.074 - 261.990.074 100
+2025-04-21 17:37:34,116 [INFO] ⚠️ No coincide parte: IBE IBERDROLA 2.056.022.731 - 2.056.022.731 100
+2025-04-21 17:37:34,116 [INFO] ⚠️ No coincide parte: NTGY NATURGY 193.922.760 - 193.922.760 20
+2025-04-21 17:37:34,116 [INFO] ⚠️ No coincide parte: RED REDEIA CORPO 541.080.000 - 541.080.000 100
+2025-04-21 17:37:34,116 [INFO] ⚠️ No coincide parte: SLR SOLARIA 124.950.876 - 124.950.876 100 º Aviso 02/2025 – Gestor del Índice Índices Secretaría de Gestión de los Índices ibex@grupobme.es 91.709.53.86 Sociedad Bolsas, S.A.U., domicilio social en Madrid, Plaza de la Lealtad 1, C.I.F. A-82695677 e inscrita en el Registro Mercantil de Madrid en el tomo 15.611, folio 5, sección 8, hoja núm. M-262818. 4
+2025-04-21 17:37:34,116 [INFO] ⚠️ No coincide parte: IBEX ® CONSTRUCCIÓN Simb. Nombre Titulos Antes Estatus Modificaciones Comp. 24/03/2025 % Coef FF ACS ACS CONST. 271.664.594 - 271.664.594 100
+2025-04-21 17:37:34,116 [INFO] ⚠️ No coincide parte: ANA ACCIONA 43.885.322 - 43.885.322 80
+2025-04-21 17:37:34,116 [INFO] ⚠️ No coincide parte: FER FERROVIAL 333.069.476 - 333.069.476 100
+2025-04-21 17:37:34,116 [INFO] ⚠️ No coincide parte: SCYR SACYR 779.906.655 16.951.143 796.857.798 100 Esta relación tiene el carácter de composición definitiva, a no ser que el Gestor tenga que realizar algún ajuste como consecuencia de operaciones financieras comunicadas con posterioridad a este anuncio. Lo que se pone en conocimiento del público en general a los efectos oportunos. Madrid, 19 de marzo de 2025 Este material ha sido preparado por Bolsas y Mercados Españoles, Sociedad Holding de Mercados y Sistemas Financieros S. A. (BME) y/o sus filiales (en conjunto, "BME") para el uso exclusivo de las personas a las que a las que BME entrega este material. Este material o cualquiera de sus contenidos no debe interpretarse como un acuerdo vinculante, una recomendación, un consejo de inversión, solicitud, invitación u oferta de compra o venta de información financiera, productos, soluciones o servicios. Dicha información tampoco es un reflejo de posiciones (propias o de terceros) en firme de los intervinientes en el Mercado de Valores Español. BME no tiene ninguna obligación de actualizar, revisar o mantener al día el contenido de este material, y estará sujeto a cambios sin previo aviso en cualquier momento. Ninguna representación, garantía o compromiso -expreso o implícito- es compromiso -expreso o implícito- es o será dado por BME en cuanto a la exactitud, integridad, suficiencia, idoneidad o fiabilidad del contenido de este material. Al reflejar opiniones teóricas, su contenido es meramente informativo y por tanto no debe ser utilizado para valoración de carteras o patrimonios, ni servir de base para recomendaciones de inversión. Ni las Entidades contribuidoras, ni Bolsas y Mercados Españoles, Sociedad Holding de Mercados y Sistemas Financieros S.A.(BME) ni de ninguna de sus filiales, serán responsables de ninguna pérdida financiera, ni decisión tomada sobre la base de la información contenida en este material. En general, Bolsas y Mercados Españoles, Sociedad Holding de Mercados y Sistemas Financieros S. A. (BME) ni ninguna de sus filiales, ni las Entidades contribuidoras, sus administradores, representantes, asociados, sociedades controladas, directores, socios, empleados o asesores asumen responsabilidad alguna en relación con dicha información, ni de cualquier uso no autorizado del mismo. Este material es propiedad de BME y no puede ser impreso, copiado, reproducido, publicado, transmitido, divulgado o distribuido de ninguna forma sin el consentimiento previo por escrito de BME. 2025 Bolsas y Mercados Españoles, Sociedad Holding de Mercados y Sistemas Financieros S. A. Todos los derechos reservados. BME Plaza de la Lealtad,1 Palacio de la Bolsa 28014 Madrid www.bolsasymercados.es
+2025-04-21 17:37:34,117 [INFO] 📊 (_parsear_bloque) Se extrajeron 7 filas de la tabla.
+2025-04-21 17:37:34,131 [INFO] 📥 Insertado/actualizado: FER – FERROVIAL SE
+2025-04-21 17:37:34,132 [INFO] 📥 FER – FERROVIAL SE
+2025-04-21 17:37:34,138 [INFO] 📥 Insertado/actualizado: IBE – IBERDROLA
+2025-04-21 17:37:34,138 [INFO] 📥 IBE – IBERDROLA
+2025-04-21 17:37:34,144 [INFO] 📥 Insertado/actualizado: REP – REPSOL
+2025-04-21 17:37:34,144 [INFO] 📥 REP – REPSOL
+2025-04-21 17:37:34,151 [INFO] 📥 Insertado/actualizado: SAB – B. SABADELL
+2025-04-21 17:37:34,151 [INFO] 📥 SAB – B. SABADELL
+2025-04-21 17:37:34,156 [INFO] 📥 Insertado/actualizado: SCYR – SACYR
+2025-04-21 17:37:34,157 [INFO] 📥 SCYR – SACYR
+2025-04-21 17:37:34,159 [INFO] 📥 Insertado/actualizado: SAB – B. SABADELL
+2025-04-21 17:37:34,160 [INFO] 📥 SAB – B. SABADELL
+2025-04-21 17:37:34,161 [INFO] 📥 Insertado/actualizado: REP – REPSOL
+2025-04-21 17:37:34,161 [INFO] 📥 REP – REPSOL
+2025-04-21 17:37:34,162 [INFO] 🗑️ PDF temporal eliminado.
+2025-04-21 17:37:34,162 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
+2025-04-21 17:37:34,162 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
+2025-04-21 17:37:34,162 [INFO] === FIN DEL PROCESO DE SCRAPING ===
+2025-04-21 17:40:30,342 [INFO] ✅ Base de datos 'bolsa' verificada o creada.
+2025-04-21 17:40:30,345 [INFO] ✅ Tabla 'indices' verificada o creada correctamente.
+2025-04-21 17:40:30,522 [INFO] === INICIO DEL PROCESO DE SCRAPING ===
+2025-04-21 17:40:30,522 [INFO] ====== WebDriver manager ======
+2025-04-21 17:40:31,341 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-21 17:40:31,399 [INFO] Get LATEST chromedriver version for google-chrome
+2025-04-21 17:40:31,442 [INFO] Driver [C:\Users\yo_xa\.wdm\drivers\chromedriver\win64\135.0.7049.95\chromedriver-win32/chromedriver.exe] found in cache
+2025-04-21 17:40:32,554 [INFO] 🚀 Inicio del scraping de índices bursátiles.
+2025-04-21 17:40:39,888 [INFO] 📛 Ya existe un registro para 'IBEX 35 (IBEX)' en la fecha actual. No se insertó.
+2025-04-21 17:40:46,098 [INFO] 📛 Ya existe un registro para 'S&P 500 (SPX)' en la fecha actual. No se insertó.
+2025-04-21 17:40:52,437 [INFO] 📛 Ya existe un registro para 'Nasdaq 100 (NDX)' en la fecha actual. No se insertó.
+2025-04-21 17:40:58,970 [INFO] 📛 Ya existe un registro para 'DAX (GDAXI)' en la fecha actual. No se insertó.
+2025-04-21 17:41:05,358 [INFO] 📛 Ya existe un registro para 'MSCI World (MIWO00000PUS)' en la fecha actual. No se insertó.
+2025-04-21 17:41:07,470 [INFO] 🏁 Fin del scraping. Navegador cerrado.
+2025-04-21 17:41:07,470 [INFO] 📊 RESUMEN FINAL:
+2025-04-21 17:41:07,470 [INFO] ✅ Índices guardados: 0
+2025-04-21 17:41:07,470 [INFO] ℹ️ Índices omitidos: 5
+2025-04-21 17:41:07,470 [INFO] ❌ Fallos: 0
+2025-04-21 17:41:07,470 [INFO] ✅ Scraping de índices completado.
+2025-04-21 17:41:08,713 [INFO] Se cargaron 3 empresas desde empresas_bme.csv
+2025-04-21 17:41:08,713 [INFO] 🚀 Iniciando scraping de empresas BME
+2025-04-21 17:41:08,713 [INFO] 🔍 Iniciando scraping para BBVA
+2025-04-21 17:41:08,713 [INFO] 📄 Accediendo a la web de BBVA: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Banco-Bilbao-Vizcaya-Argentaria-ES0113211835
+2025-04-21 17:41:10,594 [INFO] 📛 Registro duplicado: BBVA - 2025. No se insertó.
+2025-04-21 17:41:10,665 [INFO] 📛 Registro duplicado: BBVA - 2024. No se insertó.
+2025-04-21 17:41:10,731 [INFO] 📛 Registro duplicado: BBVA - 2023. No se insertó.
+2025-04-21 17:41:10,789 [INFO] 📛 Registro duplicado: BBVA - 2022. No se insertó.
+2025-04-21 17:41:10,865 [INFO] 📛 Registro duplicado: BBVA - 2021. No se insertó.
+2025-04-21 17:41:10,865 [INFO] ⚠️ Todas las filas fueron ignoradas para BBVA
+2025-04-21 17:41:10,865 [INFO] 🔍 Iniciando scraping para Inditex
+2025-04-21 17:41:10,865 [INFO] 📄 Accediendo a la web de Inditex: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Ind-De-Diseno-Textil-Inditex-ES0148396007
+2025-04-21 17:41:11,702 [INFO] 📛 Registro duplicado: Inditex - 2025. No se insertó.
+2025-04-21 17:41:11,782 [INFO] 📛 Registro duplicado: Inditex - 2024. No se insertó.
+2025-04-21 17:41:11,867 [INFO] 📛 Registro duplicado: Inditex - 2023. No se insertó.
+2025-04-21 17:41:11,969 [INFO] 📛 Registro duplicado: Inditex - 2022. No se insertó.
+2025-04-21 17:41:12,051 [INFO] 📛 Registro duplicado: Inditex - 2021. No se insertó.
+2025-04-21 17:41:12,051 [INFO] ⚠️ Todas las filas fueron ignoradas para Inditex
+2025-04-21 17:41:12,051 [INFO] 🔍 Iniciando scraping para Santander
+2025-04-21 17:41:12,051 [INFO] 📄 Accediendo a la web de Santander: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Banco-Santander-ES0113900J37
+2025-04-21 17:41:12,900 [INFO] 📛 Registro duplicado: Santander - 2025. No se insertó.
+2025-04-21 17:41:12,984 [INFO] 📛 Registro duplicado: Santander - 2024. No se insertó.
+2025-04-21 17:41:13,073 [INFO] 📛 Registro duplicado: Santander - 2023. No se insertó.
+2025-04-21 17:41:13,156 [INFO] 📛 Registro duplicado: Santander - 2022. No se insertó.
+2025-04-21 17:41:13,217 [INFO] 📛 Registro duplicado: Santander - 2021. No se insertó.
+2025-04-21 17:41:13,218 [INFO] ⚠️ Todas las filas fueron ignoradas para Santander
+2025-04-21 17:41:15,306 [INFO] ✅ Scraping de empresas BME finalizado.
+2025-04-21 17:41:15,306 [INFO] ✅ Scraping de empresas BME completado.
+2025-04-21 17:41:15,310 [INFO] 🔧 Poppler configurado en: C:\Users\yo_xa\PycharmProjects\PythonProject\poppler\poppler-24.08.0\Library\bin
+2025-04-21 17:41:15,311 [INFO] 🔍 Tesseract configurado en: C:\Users\yo_xa\PycharmProjects\PythonProject\tesseract\Tesseract-OCR\tesseract.exe
+2025-04-21 17:41:15,311 [INFO] 🚀 Iniciando scraping de PDF del IBEX 35
+2025-04-21 17:41:15,644 [INFO] 📥 PDF descargado: https://www.bolsasymercados.es/bme-exchange/docs/Indices/Avisos/esp/gestorindice/Aviso_Gestor_Indices_02-25.pdf
+2025-04-21 17:41:15,819 [INFO] ⚠️ No coincide parte: del 24 de marzo de 2025 Índices 19 de marzo 2025 º Aviso 02/2025 – Gestor del Índice Índices Secretaría de Gestión de los Índices ibex@grupobme.es 91.709.53.86 Sociedad Bolsas, S.A.U., domicilio social en Madrid, Plaza de la Lealtad 1, C.I.F. A-82695677 e inscrita en el Registro Mercantil de Madrid en el tomo 15.611, folio 5, sección 8, hoja núm. M-262818. 2 En consonancia con el Aviso nº 03/2025 del Comité de 13 de marzo de 2025, y hechas las modificaciones previstas en las Normas de Técnicas para la Composición y Cálculo de los Índices IBEX® y de Estrategia sobre Acciones, Sociedad de Bolsas, como Gestor del índice IBEX 35®, comunica la composición del mismo a partir del 24 de marzo de 2025. IBEX 35® Simb. Nombre Titulos Antes Estatus Modificaciones Comp. 24/03/2025 %Coef FF ACS ACS CONST. 271.664.594 - 271.664.594 100
+2025-04-21 17:41:15,819 [INFO] ⚠️ No coincide parte: ACX ACERINOX 249.335.371 - 249.335.371 100
+2025-04-21 17:41:15,819 [INFO] ⚠️ No coincide parte: AENA AENA 120.000.000 - 120.000.000 80
+2025-04-21 17:41:15,819 [INFO] ⚠️ No coincide parte: AMS AMADEUS IT 450.499.205 - 450.499.205 100
+2025-04-21 17:41:15,819 [INFO] ⚠️ No coincide parte: ANA ACCIONA 43.885.322 - 43.885.322 80
+2025-04-21 17:41:15,819 [INFO] ⚠️ No coincide parte: ANE ACCIONA ENER 64.952.366 - 64.952.366 20
+2025-04-21 17:41:15,819 [INFO] ⚠️ No coincide parte: BBVA BBVA 5.763.285.465 - 5.763.285.465 100
+2025-04-21 17:41:15,820 [INFO] ⚠️ No coincide parte: BKT BANKINTER 898.866.154 - 898.866.154 100
+2025-04-21 17:41:15,820 [INFO] ⚠️ No coincide parte: CABK CAIXABANK 5.739.950.277 - 5.739.950.277 80
+2025-04-21 17:41:15,820 [INFO] ⚠️ No coincide parte: CLNX CELLNEX 706.475.375 - 706.475.375 100
+2025-04-21 17:41:15,820 [INFO] ⚠️ No coincide parte: COL INM.COLONIAL 250.937.875 - 250.937.875 40
+2025-04-21 17:41:15,820 [INFO] ⚠️ No coincide parte: ELE ENDESA 423.500.847 - 423.500.847 40
+2025-04-21 17:41:15,820 [INFO] ⚠️ No coincide parte: ENG ENAGAS 261.990.074 - 261.990.074 100
+2025-04-21 17:41:15,820 [INFO] ⚠️ No coincide parte: FDR FLUIDRA 115.277.442 - 115.277.442 60
+2025-04-21 17:41:15,820 [INFO] ⚠️ No coincide parte: GRF GRIFOLS 426.129.798 - 426.129.798 100
+2025-04-21 17:41:15,820 [INFO] ⚠️ No coincide parte: IAG INT.AIRL.GRP 4.971.476.010 - 4.971.476.010 100
+2025-04-21 17:41:15,820 [INFO] ⚠️ No coincide parte: IDR INDRA A 176.654.402 - 176.654.402 100
+2025-04-21 17:41:15,820 [INFO] ⚠️ No coincide parte: ITX INDITEX 1.869.991.200 - 1.869.991.200 60
+2025-04-21 17:41:15,820 [INFO] ⚠️ No coincide parte: LOG LOGISTA 106.200.000 - 106.200.000 80
+2025-04-21 17:41:15,820 [INFO] ⚠️ No coincide parte: MAP MAPFRE 1.847.731.964 - 1.847.731.964 60
+2025-04-21 17:41:15,820 [INFO] ⚠️ No coincide parte: MRL MERLIN PROP. 563.724.899 - 563.724.899 100
+2025-04-21 17:41:15,820 [INFO] ⚠️ No coincide parte: MTS ARCEL.MITTAL 170.561.954 - 170.561.954 20
+2025-04-21 17:41:15,820 [INFO] ⚠️ No coincide parte: NTGY NATURGY 193.922.760 - 193.922.760 20
+2025-04-21 17:41:15,820 [INFO] ⚠️ No coincide parte: PUIG PUIG BRANDS 174.819.678 - 174.819.678 100 º Aviso 02/2025 – Gestor del Índice Índices Secretaría de Gestión de los Índices ibex@grupobme.es 91.709.53.86 Sociedad Bolsas, S.A.U., domicilio social en Madrid, Plaza de la Lealtad 1, C.I.F. A-82695677 e inscrita en el Registro Mercantil de Madrid en el tomo 15.611, folio 5, sección 8, hoja núm. M-262818. 3
+2025-04-21 17:41:15,820 [INFO] ⚠️ No coincide parte: RED REDEIA CORPO 541.080.000 - 541.080.000 100
+2025-04-21 17:41:15,820 [INFO] ⚠️ No coincide parte: ROVI LABORAT.ROVI 30.741.457 - 30.741.457 60
+2025-04-21 17:41:15,820 [INFO] ⚠️ No coincide parte: SAN SANTANDER 15.152.492.322 - 15.152.492.322 100
+2025-04-21 17:41:15,820 [INFO] ⚠️ No coincide parte: SLR SOLARIA 124.950.876 - 124.950.876 100
+2025-04-21 17:41:15,820 [INFO] ⚠️ No coincide parte: TEF TELEFONICA 5.670.161.554 - 5.670.161.554 100
+2025-04-21 17:41:15,820 [INFO] ⚠️ No coincide parte: UNI UNICAJA 2.057.147.574 - 2.057.147.574 80
+2025-04-21 17:41:15,822 [INFO] ⚠️ No coincide parte: IBEX 35® BANCOS Simb. Nombre Titulos Antes Estatus Modificaciones Comp. 24/03/2025 % Coef FF BBVA BBVA 5.763.285.465 - 5.763.285.465 100
+2025-04-21 17:41:15,822 [INFO] ⚠️ No coincide parte: BKT BANKINTER 898.866.154 - 898.866.154 100
+2025-04-21 17:41:15,822 [INFO] ⚠️ No coincide parte: CABK CAIXABANK 5.739.950.277 - 5.739.950.277 80
+2025-04-21 17:41:15,823 [INFO] ⚠️ No coincide parte: SAN SANTANDER 15.429.599.106 - 15.429.599.106 100
+2025-04-21 17:41:15,823 [INFO] ⚠️ No coincide parte: UNI UNICAJA 2.057.147.574 - 2.057.147.574 80
+2025-04-21 17:41:15,823 [INFO] ⚠️ No coincide parte: IBEX 35® ENERGÍA Simb. Nombre Titulos Antes Estatus Modificaciones Comp. 24/03/2025 % Coef FF ANE ACCIONA ENER 64.952.366 - 64.952.366 20
+2025-04-21 17:41:15,823 [INFO] ⚠️ No coincide parte: ELE ENDESA 423.500.847 - 423.500.847 40
+2025-04-21 17:41:15,823 [INFO] ⚠️ No coincide parte: ENG ENAGAS 261.990.074 - 261.990.074 100
+2025-04-21 17:41:15,823 [INFO] ⚠️ No coincide parte: IBE IBERDROLA 2.056.022.731 - 2.056.022.731 100
+2025-04-21 17:41:15,823 [INFO] ⚠️ No coincide parte: NTGY NATURGY 193.922.760 - 193.922.760 20
+2025-04-21 17:41:15,823 [INFO] ⚠️ No coincide parte: RED REDEIA CORPO 541.080.000 - 541.080.000 100
+2025-04-21 17:41:15,823 [INFO] ⚠️ No coincide parte: SLR SOLARIA 124.950.876 - 124.950.876 100 º Aviso 02/2025 – Gestor del Índice Índices Secretaría de Gestión de los Índices ibex@grupobme.es 91.709.53.86 Sociedad Bolsas, S.A.U., domicilio social en Madrid, Plaza de la Lealtad 1, C.I.F. A-82695677 e inscrita en el Registro Mercantil de Madrid en el tomo 15.611, folio 5, sección 8, hoja núm. M-262818. 4
+2025-04-21 17:41:15,823 [INFO] ⚠️ No coincide parte: IBEX ® CONSTRUCCIÓN Simb. Nombre Titulos Antes Estatus Modificaciones Comp. 24/03/2025 % Coef FF ACS ACS CONST. 271.664.594 - 271.664.594 100
+2025-04-21 17:41:15,823 [INFO] ⚠️ No coincide parte: ANA ACCIONA 43.885.322 - 43.885.322 80
+2025-04-21 17:41:15,823 [INFO] ⚠️ No coincide parte: FER FERROVIAL 333.069.476 - 333.069.476 100
+2025-04-21 17:41:15,823 [INFO] ⚠️ No coincide parte: SCYR SACYR 779.906.655 16.951.143 796.857.798 100 Esta relación tiene el carácter de composición definitiva, a no ser que el Gestor tenga que realizar algún ajuste como consecuencia de operaciones financieras comunicadas con posterioridad a este anuncio. Lo que se pone en conocimiento del público en general a los efectos oportunos. Madrid, 19 de marzo de 2025 Este material ha sido preparado por Bolsas y Mercados Españoles, Sociedad Holding de Mercados y Sistemas Financieros S. A. (BME) y/o sus filiales (en conjunto, "BME") para el uso exclusivo de las personas a las que a las que BME entrega este material. Este material o cualquiera de sus contenidos no debe interpretarse como un acuerdo vinculante, una recomendación, un consejo de inversión, solicitud, invitación u oferta de compra o venta de información financiera, productos, soluciones o servicios. Dicha información tampoco es un reflejo de posiciones (propias o de terceros) en firme de los intervinientes en el Mercado de Valores Español. BME no tiene ninguna obligación de actualizar, revisar o mantener al día el contenido de este material, y estará sujeto a cambios sin previo aviso en cualquier momento. Ninguna representación, garantía o compromiso -expreso o implícito- es compromiso -expreso o implícito- es o será dado por BME en cuanto a la exactitud, integridad, suficiencia, idoneidad o fiabilidad del contenido de este material. Al reflejar opiniones teóricas, su contenido es meramente informativo y por tanto no debe ser utilizado para valoración de carteras o patrimonios, ni servir de base para recomendaciones de inversión. Ni las Entidades contribuidoras, ni Bolsas y Mercados Españoles, Sociedad Holding de Mercados y Sistemas Financieros S.A.(BME) ni de ninguna de sus filiales, serán responsables de ninguna pérdida financiera, ni decisión tomada sobre la base de la información contenida en este material. En general, Bolsas y Mercados Españoles, Sociedad Holding de Mercados y Sistemas Financieros S. A. (BME) ni ninguna de sus filiales, ni las Entidades contribuidoras, sus administradores, representantes, asociados, sociedades controladas, directores, socios, empleados o asesores asumen responsabilidad alguna en relación con dicha información, ni de cualquier uso no autorizado del mismo. Este material es propiedad de BME y no puede ser impreso, copiado, reproducido, publicado, transmitido, divulgado o distribuido de ninguna forma sin el consentimiento previo por escrito de BME. 2025 Bolsas y Mercados Españoles, Sociedad Holding de Mercados y Sistemas Financieros S. A. Todos los derechos reservados. BME Plaza de la Lealtad,1 Palacio de la Bolsa 28014 Madrid www.bolsasymercados.es
+2025-04-21 17:41:15,825 [INFO] 📊 (_parsear_bloque) Se extrajeron 7 filas de la tabla.
+2025-04-21 17:41:15,828 [INFO] 📥 Insertado/actualizado: FER – FERROVIAL SE
+2025-04-21 17:41:15,828 [INFO] 📥 FER – FERROVIAL SE
+2025-04-21 17:41:15,830 [INFO] 📥 Insertado/actualizado: IBE – IBERDROLA
+2025-04-21 17:41:15,830 [INFO] 📥 IBE – IBERDROLA
+2025-04-21 17:41:15,832 [INFO] 📥 Insertado/actualizado: REP – REPSOL
+2025-04-21 17:41:15,832 [INFO] 📥 REP – REPSOL
+2025-04-21 17:41:15,834 [INFO] 📥 Insertado/actualizado: SAB – B. SABADELL
+2025-04-21 17:41:15,834 [INFO] 📥 SAB – B. SABADELL
+2025-04-21 17:41:15,836 [INFO] 📥 Insertado/actualizado: SCYR – SACYR
+2025-04-21 17:41:15,836 [INFO] 📥 SCYR – SACYR
+2025-04-21 17:41:15,838 [INFO] 📥 Insertado/actualizado: SAB – B. SABADELL
+2025-04-21 17:41:15,838 [INFO] 📥 SAB – B. SABADELL
+2025-04-21 17:41:15,839 [INFO] 📥 Insertado/actualizado: REP – REPSOL
+2025-04-21 17:41:15,839 [INFO] 📥 REP – REPSOL
+2025-04-21 17:41:15,840 [INFO] 🗑️ PDF temporal eliminado.
+2025-04-21 17:41:15,840 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
+2025-04-21 17:41:15,840 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
+2025-04-21 17:41:15,840 [INFO] === FIN DEL PROCESO DE SCRAPING ===

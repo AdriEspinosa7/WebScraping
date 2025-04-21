@@ -132,8 +132,8 @@ class IbexPDFScraper:
                                     "titulos_antes": (antes.replace(".", "").replace(",", ".").strip()
                                                       if antes else ""),
                                     "estatus": None if est in ("-", "", None) else est.strip(),
-                                    "modificaciones": None if mod in ("-", "", None)
-                                                       else mod.replace(".", "").replace(",", ".").strip(),
+                                    "modificaciones": "" if mod in ("-", "", None)
+                                    else mod.replace(".", "").replace(",", ".").strip(),
                                     "comp": (comp.replace(".", "").replace(",", ".").strip()
                                              if comp else ""),
                                     "coef_ff": coef.strip() if coef else "",
@@ -180,14 +180,17 @@ class IbexPDFScraper:
             # Intentamos capturar las líneas que sigan este patrón aproximado:
             # SIMBOLO  NOMBRE LARGO  TITULOS  (opcional -MODIFICACIONES)  COMP.  %COEF
             match = re.match(
-                r"^([A-Z]{2,5})\s+(.+?)\s+([\d\.]+)\s+(?:-([\d\.]+)\s+)?([\d\.]+)\s+(\d{2,3})$",
+                r"^([A-Z]{2,5})\s+(.+?)\s+([\d\.]+)\s+(?:-?([\d\.]*)\s+)?([\d\.]+)\s+(\d{2,3})$",
                 l
             )
             if match:
                 simbolo = match.group(1)
                 nombre = match.group(2).strip()
                 titulos_antes = match.group(3).replace(".", "")
-                modificaciones = match.group(4).replace(".", "") if match.group(4) else None
+
+                mod_raw = match.group(4)
+                modificaciones = match.group(4).replace(".", "") if match.group(4) else ""
+
                 comp = match.group(5).replace(".", "")
                 coef_ff = match.group(6)
 
@@ -195,7 +198,7 @@ class IbexPDFScraper:
                     "simbolo": simbolo,
                     "nombre": nombre,
                     "titulos_antes": titulos_antes,
-                    "estatus": None,  # No se puede detectar por OCR
+                    "estatus": None,
                     "modificaciones": modificaciones,
                     "comp": comp,
                     "coef_ff": coef_ff,
@@ -234,35 +237,41 @@ class IbexPDFScraper:
 
     def _parsear_bloque(self, bloque: str) -> list[dict]:
         """
-        Extrae todas las filas del bloque de texto usando un único regex global.
+        Extrae todas las filas del bloque de texto usando un split
+        en cada punto donde termina un coeficiente y empieza un nuevo símbolo.
         """
-        # Convertir saltos de línea en espacios para facilitar el match continuo
+        # 1) Aplanamos líneas y múltiples espacios
         flat = " ".join(bloque.split())
 
-        # Patrón:
-        # 1=SÍMBOLO (2–5 letras mayúsculas)
-        # 2=NOMBRE (lazy hasta encontrar números)
-        # 3=Títulos antes (números con puntos)
-        # 4=Estatus o modificaciones (guión o número)
-        # 5=Comp. (números con puntos)
-        # 6=%Coef FF (1–3 dígitos)
+        # 2) Dividimos justo después de un dígito (el coeficiente) y justo antes
+        #    de un nuevo símbolo (2–5 mayúsculas + espacio)
+        partes = re.split(r'(?<=\d)\s+(?=[A-Z]{2,5}\s)', flat)
+
+        # 3) Patrón exacto para cada parte:
+        #    SÍMBOLO NOMBRE TITULOS(-MOD) COMP COEF
         PAT = re.compile(
-            r"([A-Z]{2,5})\s+"  # símbolo
-            r"(.+?)\s+"  # nombre (lazy)
-            r"([\d\.]+)\s+"  # títulos antes
-            r"(-|[\d\.]+)\s+"  # modificaciones (puede ser "-")
-            r"([\d\.]+)\s+"  # comp.
-            r"(\d{1,3})(?=\s+[A-Z]{2,5}\s|$)"  # %coef FF + lookahead
+            r"^([A-Z]{2,5})\s+"          # 1) símbolo
+            r"(.+?)\s+"                  # 2) nombre (lazy)
+            r"([\d\.]+)\s+"              # 3) títulos antes
+            r"(-?[\d\.]+)\s+"            # 4) modificaciones (puede ser "-" o "-10.005.504")
+            r"([\d\.]+)\s+"              # 5) comp.
+            r"(\d{1,3})$"                # 6) coeficiente FF (1–3 dígitos)
         )
 
         filas = []
-        for m in PAT.finditer(flat):
+        for p in partes:
+            texto = p.strip()
+            m = PAT.match(texto)
+            if not m:
+                log_info(f"⚠️ No coincide parte: {texto}")
+                continue
+
             simbolo, nombre, tit, mod, comp, coef = m.groups()
             filas.append({
                 "simbolo": simbolo,
                 "nombre": nombre.strip(),
                 "titulos_antes": tit.replace(".", ""),
-                "estatus": None,  # no fiable vía OCR/text
+                "estatus": None,  # no lo tenemos en OCR
                 "modificaciones": None if mod == "-" else mod.replace(".", ""),
                 "comp": comp.replace(".", ""),
                 "coef_ff": coef,
@@ -270,8 +279,10 @@ class IbexPDFScraper:
             })
 
         if filas:
-            log_info(f"📊 (Bloque) Se extrajeron {len(filas)} filas de la tabla.")
+            log_info(f"📊 (_parsear_bloque) Se extrajeron {len(filas)} filas de la tabla.")
         return filas
+
+
 
     def ejecutar(self):
         log_info("🚀 Iniciando scraping de PDF del IBEX 35")

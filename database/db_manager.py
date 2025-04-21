@@ -42,7 +42,7 @@ def conectar():
     )
 
 # ========================
-# Crear tabla 'indices' si no existe (solo para índices bursátiles)
+# Crear tabla 'indices' si no existe
 # ========================
 def crear_tabla_si_no_existe():
     conexion = conectar()
@@ -97,7 +97,7 @@ def existe_registro(nombre):
 def guardar_datos(nombre, precio, variacion, porcentaje, fecha_hora):
     if existe_registro(nombre):
         log_info(f"📛 Ya existe un registro para '{nombre}' en la fecha actual. No se insertó.")
-        return False  # Ya existía
+        return False
 
     conexion = conectar()
     cursor = conexion.cursor()
@@ -111,19 +111,13 @@ def guardar_datos(nombre, precio, variacion, porcentaje, fecha_hora):
         cursor.execute(consulta, valores)
         conexion.commit()
         log_info(f"📥 Guardado: {nombre} - {precio} - {variacion} - {porcentaje}")
-        return True  # Guardado exitosamente
+        return True
     except mysql.connector.Error as error:
         log_error(f"❌ Error al guardar en MySQL: {error}")
         return False
     finally:
         cursor.close()
         conexion.close()
-
-# ========================
-# Inicialización (crear BD y tabla 'indices')
-# ========================
-crear_base_datos_si_no_existe()
-crear_tabla_si_no_existe()
 
 # ========================
 # Guardar datos anuales de empresas cotizadas (BME)
@@ -149,7 +143,7 @@ def insertar_datos_empresa(datos):
         cursor.execute(consulta_check, valores_check)
         if cursor.fetchone()[0] > 0:
             log_info(f"📛 Registro duplicado: {datos['empresa']} - {datos['anio']}. No se insertó.")
-            return False  # Duplicado, no se insertó
+            return False
 
         consulta = """
             INSERT INTO datos_empresas (
@@ -177,7 +171,7 @@ def insertar_datos_empresa(datos):
         cursor.execute(consulta, valores)
         conexion.commit()
         log_info(f"📥 Insertado/actualizado: {datos['empresa']} - {datos['anio']}")
-        return True  # Insertado correctamente
+        return True
 
     except mysql.connector.Error as error:
         log_error(f"❌ Error al insertar datos de empresa: {error}")
@@ -187,6 +181,9 @@ def insertar_datos_empresa(datos):
         cursor.close()
         conexion.close()
 
+# ========================
+# Guardar datos de composición del IBEX 35
+# ========================
 def insertar_datos_composicion(datos):
     conexion = conectar()
     cursor = conexion.cursor()
@@ -223,6 +220,14 @@ def insertar_datos_composicion(datos):
     finally:
         cursor.close()
         conexion.close()
+
+# ========================
+# Inicialización al importar módulo
+# ========================
+crear_base_datos_si_no_existe()
+crear_tabla_si_no_existe()
+
+
 
 
 
