@@ -31,7 +31,9 @@ class IbexPDFScraper:
             "bme-exchange/docs/Indices/Avisos/esp/gestorindice/"
             "Aviso_Gestor_Indices_02-25.pdf"
         )
-        self.extras_dir = extras_dir or os.path.join(os.getcwd(), "extras")
+        # localizamos extras/ como carpeta hermana de scraper/
+        base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+        self.extras_dir = extras_dir or os.path.join(base_dir, "extras")
         self.poppler_path = self._configurar_poppler()
         self._configurar_tesseract()
 
@@ -250,12 +252,12 @@ class IbexPDFScraper:
         # 3) Patrón exacto para cada parte:
         #    SÍMBOLO NOMBRE TITULOS(-MOD) COMP COEF
         PAT = re.compile(
-            r"^([A-Z]{2,5})\s+"          # 1) símbolo
-            r"(.+?)\s+"                  # 2) nombre (lazy)
-            r"([\d\.]+)\s+"              # 3) títulos antes
-            r"(-?[\d\.]+)\s+"            # 4) modificaciones (puede ser "-" o "-10.005.504")
-            r"([\d\.]+)\s+"              # 5) comp.
-            r"(\d{1,3})$"                # 6) coeficiente FF (1–3 dígitos)
+            r"^([A-Z]{2,5})\s+"  # 1) símbolo
+            r"(.+?)\s+"  # 2) nombre
+            r"([\d\.]+)\s+"  # 3) títulos antes
+            r"(-[\d\.]+|[\d\.]+|-)\s+"  # 4) modificaciones: -1234.56  ó 1234.56  ó -
+            r"([\d\.]+)\s+"  # 5) comp.
+            r"(\d{1,3})$"  # 6) coeficiente FF
         )
 
         filas = []
@@ -272,7 +274,7 @@ class IbexPDFScraper:
                 "nombre": nombre.strip(),
                 "titulos_antes": tit.replace(".", ""),
                 "estatus": None,  # no lo tenemos en OCR
-                "modificaciones": None if mod == "-" else mod.replace(".", ""),
+                "modificaciones": "" if mod == "-" else mod.replace(".", ""),
                 "comp": comp.replace(".", ""),
                 "coef_ff": coef,
                 "fecha_insercion": datetime.now().date()
@@ -299,6 +301,11 @@ class IbexPDFScraper:
                 simbolo = d.get("simbolo", "").strip()
                 nombre = d.get("nombre", "").strip()
                 coef = d.get("coef_ff", "").strip()
+
+                # ① Saltamos las filas de encabezado de sección (“IBEX …”)
+                if simbolo.upper() == "IBEX":
+                    log_info(f"⚠️ Fila de sección ignorada: {d}")
+                    continue
 
                 if not simbolo or not nombre:
                     log_info(f"⚠️ Fila ignorada por falta de datos clave: {d}")
