@@ -1,5 +1,3 @@
-# scraper/ibex_pdf_scraper.py
-
 import os
 import re
 import tempfile
@@ -34,6 +32,8 @@ class IbexPDFScraper:
         # localizamos extras/ como carpeta hermana de scraper/
         base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
         self.extras_dir = extras_dir or os.path.join(base_dir, "extras")
+        # atributo para nombre real de PDF
+        self.pdf_name = None
         self.poppler_path = self._configurar_poppler()
         self._configurar_tesseract()
 
@@ -104,10 +104,20 @@ class IbexPDFScraper:
             if r.status_code != 200:
                 log_error(f"❌ Error al descargar PDF: HTTP {r.status_code}")
                 return ""
+            # Extraer nombre real del PDF (cabecera o URL)
+            cd = r.headers.get('content-disposition', '')
+            filename = None
+            if cd:
+                m = re.search(r"filename\*?=\"?([^;\"]+)\"?", cd)
+                if m:
+                    filename = m.group(1)
+            if not filename:
+                filename = os.path.basename(self.pdf_url)
+            self.pdf_name = filename
             tmp = tempfile.NamedTemporaryFile(delete=False, suffix=".pdf")
             tmp.write(r.content)
             tmp.close()
-            log_info(f"📥 PDF descargado: {self.pdf_url}")
+            log_info(f"📥 PDF descargado: {self.pdf_url} -> {filename}")
             return tmp.name
         except Exception as e:
             log_error(f"❌ Excepción descargando PDF: {e}")
@@ -139,7 +149,8 @@ class IbexPDFScraper:
                                     "comp": (comp.replace(".", "").replace(",", ".").strip()
                                              if comp else ""),
                                     "coef_ff": coef.strip() if coef else "",
-                                    "fecha_insercion": datetime.now().date()
+                                    "fecha_insercion": datetime.now().date(),
+                                    "nombre_pdf": self.pdf_name
                                 })
             log_info(f"📊 Se extrajeron {len(filas)} filas con pdfplumber.")
         except Exception as e:
@@ -176,90 +187,43 @@ class IbexPDFScraper:
             texto = texto[idx + len(marcador):]
         return [l.strip() for l in texto.splitlines() if l.strip()]
 
-    def _parsear_lineas(self, lines: list[str]) -> list[dict]:
+    def _parsear_lineas(self, lines: list[str], pdf_path: str) -> list[dict]:
         filas = []
         for l in lines:
-            # Intentamos capturar las líneas que sigan este patrón aproximado:
-            # SIMBOLO  NOMBRE LARGO  TITULOS  (opcional -MODIFICACIONES)  COMP.  %COEF
             match = re.match(
-                r"^([A-Z]{2,5})\s+(.+?)\s+([\d\.]+)\s+(?:-?([\d\.]*)\s+)?([\d\.]+)\s+(\d{2,3})$",
+                r"^([A-Z]{2,5})\s+(.+?)\s+([\d\.]+)\s+(?:-?([\d\.]*))?\s+([\d\.]+)\s+(\d{2,3})$",
                 l
             )
             if match:
-                simbolo = match.group(1)
-                nombre = match.group(2).strip()
-                titulos_antes = match.group(3).replace(".", "")
-
-                mod_raw = match.group(4)
-                modificaciones = match.group(4).replace(".", "") if match.group(4) else ""
-
-                comp = match.group(5).replace(".", "")
-                coef_ff = match.group(6)
-
-                fila = {
+                simbolo, nombre, tit, mod, comp, coef = match.groups()
+                filas.append({
                     "simbolo": simbolo,
-                    "nombre": nombre,
-                    "titulos_antes": titulos_antes,
+                    "nombre": nombre.strip(),
+                    "titulos_antes": tit.replace(".", ""),
                     "estatus": None,
-                    "modificaciones": modificaciones,
-                    "comp": comp,
-                    "coef_ff": coef_ff,
-                    "fecha_insercion": datetime.now().date()
-                }
-                filas.append(fila)
+                    "modificaciones": "" if not mod else mod.replace(".", ""),
+                    "comp": comp.replace(".", ""),
+                    "coef_ff": coef,
+                    "fecha_insercion": datetime.now().date(),
+                    "nombre_pdf": self.pdf_name
+                })
             else:
                 log_info(f"⚠️ Línea ignorada por no coincidir: {l}")
-
         if filas:
-            log_info(f"📊 (Regex/OCR) Se extrajeron {len(filas)} filas de la tabla.")
+            log_info(f"📊 (_parsear_lineas) Se extrajeron {len(filas)} filas de la tabla.")
         return filas
 
-    def extraer_tabla(self, pdf_path: str) -> list[dict]:
-        """
-        1) Sacamos todo el texto con PyMuPDF.
-        2) Localizamos el bloque tras el marcador.
-        3) Se lo pasamos a _parsear_bloque() para extraer 1 registro tras otro.
-        4) Devolver lista de dicts o [].
-        """
-        texto = self._extraer_texto_fitz(pdf_path)
-        marcador = "Composición del índice IBEX 35® a partir"
-        pos = texto.find(marcador)
-        if pos < 0:
-            log_error("❌ No se encontró el marcador en el PDF.")
-            return []
-        bloque = texto[pos + len(marcador):]
-        datos = self._parsear_bloque(bloque)
-        if datos:
-            return datos
-
-        # Si no hubo ningún match, probamos pdfplumber u OCR como antes…
-        return self._extraer_con_pdfplumber(pdf_path) \
-            or self._parsear_bloque(self._extraer_texto_ocr(pdf_path) if convert_from_path else "") \
-            or []
-
-    def _parsear_bloque(self, bloque: str) -> list[dict]:
-        """
-        Extrae todas las filas del bloque de texto usando un split
-        en cada punto donde termina un coeficiente y empieza un nuevo símbolo.
-        """
-        # 1) Aplanamos líneas y múltiples espacios
+    def _parsear_bloque(self, bloque: str, pdf_path: str) -> list[dict]:
         flat = " ".join(bloque.split())
-
-        # 2) Dividimos justo después de un dígito (el coeficiente) y justo antes
-        #    de un nuevo símbolo (2–5 mayúsculas + espacio)
         partes = re.split(r'(?<=\d)\s+(?=[A-Z]{2,5}\s)', flat)
-
-        # 3) Patrón exacto para cada parte:
-        #    SÍMBOLO NOMBRE TITULOS(-MOD) COMP COEF
         PAT = re.compile(
-            r"^([A-Z]{2,5})\s+"  # 1) símbolo
-            r"(.+?)\s+"  # 2) nombre
-            r"([\d\.]+)\s+"  # 3) títulos antes
-            r"(-[\d\.]+|[\d\.]+|-)\s+"  # 4) modificaciones: -1234.56  ó 1234.56  ó -
-            r"([\d\.]+)\s+"  # 5) comp.
-            r"(\d{1,3})$"  # 6) coeficiente FF
+            r"^([A-Z]{2,5})\s+"
+            r"(.+?)\s+"
+            r"([\d\.]+)\s+"
+            r"(-[\d\.]+|[\d\.]+|-)\s+"
+            r"([\d\.]+)\s+"
+            r"(\d{1,3})$"
         )
-
         filas = []
         for p in partes:
             texto = p.strip()
@@ -267,24 +231,48 @@ class IbexPDFScraper:
             if not m:
                 log_info(f"⚠️ No coincide parte: {texto}")
                 continue
-
             simbolo, nombre, tit, mod, comp, coef = m.groups()
             filas.append({
                 "simbolo": simbolo,
                 "nombre": nombre.strip(),
                 "titulos_antes": tit.replace(".", ""),
-                "estatus": None,  # no lo tenemos en OCR
+                "estatus": None,
                 "modificaciones": "" if mod == "-" else mod.replace(".", ""),
                 "comp": comp.replace(".", ""),
                 "coef_ff": coef,
-                "fecha_insercion": datetime.now().date()
+                "fecha_insercion": datetime.now().date(),
+                "nombre_pdf": self.pdf_name
             })
-
         if filas:
             log_info(f"📊 (_parsear_bloque) Se extrajeron {len(filas)} filas de la tabla.")
         return filas
 
-
+    def extraer_tabla(self, pdf_path: str) -> list[dict]:
+        texto = self._extraer_texto_fitz(pdf_path)
+        marcadores = [
+            "Composición del índice IBEX 35® a partir",
+            "Composición del índice IBEX 35 a partir",
+            "Composición del índice IBEX 35",
+        ]
+        bloque = None
+        for marcador in marcadores:
+            pos = texto.find(marcador)
+            if pos >= 0:
+                bloque = texto[pos + len(marcador):]
+                break
+        if bloque:
+            datos = self._parsear_bloque(bloque, pdf_path)
+            if datos:
+                return datos
+        else:
+            log_error("❌ No se encontró ningún marcador reconocible en el PDF.")
+        datos_pdfplumber = self._extraer_con_pdfplumber(pdf_path)
+        if datos_pdfplumber:
+            return datos_pdfplumber
+        if convert_from_path:
+            texto_ocr = self._extraer_texto_ocr(pdf_path)
+            return self._parsear_bloque(texto_ocr, pdf_path)
+        return []
 
     def ejecutar(self):
         log_info("🚀 Iniciando scraping de PDF del IBEX 35")
@@ -301,16 +289,12 @@ class IbexPDFScraper:
                 simbolo = d.get("simbolo", "").strip()
                 nombre = d.get("nombre", "").strip()
                 coef = d.get("coef_ff", "").strip()
-
-                # ① Saltamos las filas de encabezado de sección (“IBEX …”)
                 if simbolo.upper() == "IBEX":
                     log_info(f"⚠️ Fila de sección ignorada: {d}")
                     continue
-
                 if not simbolo or not nombre:
                     log_info(f"⚠️ Fila ignorada por falta de datos clave: {d}")
                     continue
-
                 ok = insertar_datos_composicion(d)
                 tag = "📥" if ok else "📛"
                 log_info(f"{tag} {simbolo} – {nombre}")
@@ -330,6 +314,17 @@ def ejecutar_scraping_pdf():
 
 if __name__ == "__main__":
     ejecutar_scraping_pdf()
+
+
+
+
+
+
+
+
+
+
+
 
 
 

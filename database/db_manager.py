@@ -185,20 +185,29 @@ def insertar_datos_empresa(datos):
 # Guardar datos de composición del IBEX 35
 # ========================
 def insertar_datos_composicion(datos):
+    """
+    Inserta o actualiza la composición del IBEX 35,
+    guardando también el nombre del PDF fuente para evitar duplicados.
+    """
     conexion = conectar()
     cursor = conexion.cursor()
     try:
         consulta = """
             INSERT INTO composicion_ibex35 (
                 simbolo, nombre, titulos_antes, estatus,
-                modificaciones, comp, coef_ff, fecha_insercion
-            ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
+                modificaciones, comp, coef_ff, fecha_insercion,
+                nombre_pdf
+            ) VALUES (
+                %s, %s, %s, %s, %s, %s, %s, %s, %s
+            )
             ON DUPLICATE KEY UPDATE
-              titulos_antes = VALUES(titulos_antes),
-              estatus       = VALUES(estatus),
-              modificaciones= VALUES(modificaciones),
-              comp          = VALUES(comp),
-              coef_ff       = VALUES(coef_ff)
+              titulos_antes  = VALUES(titulos_antes),
+              estatus        = VALUES(estatus),
+              modificaciones = VALUES(modificaciones),
+              comp           = VALUES(comp),
+              coef_ff        = VALUES(coef_ff),
+              -- si vuelve a procesar el mismo PDF, volvemos a escribirlo
+              nombre_pdf     = VALUES(nombre_pdf)
         """
         valores = (
             datos.get("simbolo", ""),
@@ -208,11 +217,12 @@ def insertar_datos_composicion(datos):
             datos.get("modificaciones", ""),
             datos.get("comp", ""),
             datos.get("coef_ff", ""),
-            datos.get("fecha_insercion", "")
+            datos.get("fecha_insercion", ""),
+            datos.get("nombre_pdf", "")
         )
         cursor.execute(consulta, valores)
         conexion.commit()
-        log_info(f"📥 Insertado/actualizado: {datos.get('simbolo', '')} – {datos.get('nombre', '')}")
+        log_info(f"📥 Insertado/actualizado: {datos.get('simbolo', '')} – {datos.get('nombre', '')} (PDF: {datos.get('nombre_pdf')})")
         return True
     except mysql.connector.Error as error:
         log_error(f"❌ Error al insertar datos de composición: {error}")
@@ -221,11 +231,13 @@ def insertar_datos_composicion(datos):
         cursor.close()
         conexion.close()
 
+
 # ========================
 # Inicialización al importar módulo
 # ========================
 crear_base_datos_si_no_existe()
 crear_tabla_si_no_existe()
+
 
 
 
