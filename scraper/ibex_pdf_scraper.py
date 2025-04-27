@@ -189,19 +189,24 @@ class IbexPDFScraper:
 
     def _parsear_lineas(self, lines: list[str], pdf_path: str) -> list[dict]:
         filas = []
+        PAT = re.compile(
+            r"^([A-Z]{2,5})\s+"  # símbolo
+            r"(.+?)\s+"  # nombre (mínimo espacio)
+            r"([\d\.]+)\s+"  # títulos antes
+            r"(-[\d\.]+|[\d\.]+|-)\s+"  # modificaciones (número o guion)
+            r"([\d\.]+)\s+"  # comp
+            r"(\d{1,3})$"  # coef_ff
+        )
         for l in lines:
-            match = re.match(
-                r"^([A-Z]{2,5})\s+(.+?)\s+([\d\.]+)\s+(?:-?([\d\.]*))?\s+([\d\.]+)\s+(\d{2,3})$",
-                l
-            )
-            if match:
-                simbolo, nombre, tit, mod, comp, coef = match.groups()
+            m = PAT.match(l)
+            if m:
+                simbolo, nombre, tit, mod, comp, coef = m.groups()
                 filas.append({
                     "simbolo": simbolo,
                     "nombre": nombre.strip(),
                     "titulos_antes": tit.replace(".", ""),
                     "estatus": None,
-                    "modificaciones": "" if not mod else mod.replace(".", ""),
+                    "modificaciones": "" if mod == "-" else mod.replace(".", ""),
                     "comp": comp.replace(".", ""),
                     "coef_ff": coef,
                     "fecha_insercion": datetime.now().date(),
@@ -214,26 +219,31 @@ class IbexPDFScraper:
         return filas
 
     def _parsear_bloque(self, bloque: str, pdf_path: str) -> list[dict]:
-        flat = " ".join(bloque.split())
-        partes = re.split(r'(?<=\d)\s+(?=[A-Z]{2,5}\s)', flat)
+        partes = re.split(r'(?<=\d)\s+(?=[A-Z]{2,5}\s)', bloque)
         PAT = re.compile(
-            r"^([A-Z]{2,5})\s+"
-            r"(.+?)\s+"
-            r"([\d\.]+)\s+"
-            r"(-[\d\.]+|[\d\.]+|-)\s+"
-            r"([\d\.]+)\s+"
-            r"(\d{1,3})$"
+            r"^([A-Z]{2,5})\s+"  # símbolo
+            r"(.+?)\s+"  # nombre
+            r"([\d\.]+)\s+"  # títulos antes
+            r"(-?[\d\.]+|-)\s+"  # modificaciones
+            r"([\d\.]+)\s+"  # composición
+            r"(\d{1,3})\b"  # coeficiente
         )
+
         filas = []
         for p in partes:
             texto = p.strip()
+
+            # ⛔ Ignorar líneas basura tipo "IBEX 35 BANCOS" o "IBEX ENERGÍA"
+            if texto.startswith("IBEX"):
+                continue
+
             m = PAT.match(texto)
             if not m:
-                log_info(f"⚠️ No coincide parte: {texto}")
                 continue
-            simbolo, nombre, tit, mod, comp, coef = m.groups()
+
+            s, nombre, tit, mod, comp, coef = m.groups()
             filas.append({
-                "simbolo": simbolo,
+                "simbolo": s,
                 "nombre": nombre.strip(),
                 "titulos_antes": tit.replace(".", ""),
                 "estatus": None,
@@ -243,36 +253,69 @@ class IbexPDFScraper:
                 "fecha_insercion": datetime.now().date(),
                 "nombre_pdf": self.pdf_name
             })
-        if filas:
-            log_info(f"📊 (_parsear_bloque) Se extrajeron {len(filas)} filas de la tabla.")
         return filas
 
     def extraer_tabla(self, pdf_path: str) -> list[dict]:
+        """
+        Extrae la tabla del IBEX 35® desde el PDF dado.
+        Utiliza primero fitz (PyMuPDF); si falla, intenta con pdfplumber; si todo falla, intenta OCR.
+        """
+        # 1) Extraer texto con fitz
         texto = self._extraer_texto_fitz(pdf_path)
-        marcadores = [
-            "Composición del índice IBEX 35® a partir",
-            "Composición del índice IBEX 35 a partir",
-            "Composición del índice IBEX 35",
-        ]
-        bloque = None
-        for marcador in marcadores:
-            pos = texto.find(marcador)
-            if pos >= 0:
-                bloque = texto[pos + len(marcador):]
-                break
-        if bloque:
+        flat = " ".join(texto.split())
+
+        # 2) Buscar el marcador ACS como inicio
+        marker = "ACS ACS CONST."
+        pos = flat.find(marker)
+        if pos != -1:
+            bloque = flat[pos:]
             datos = self._parsear_bloque(bloque, pdf_path)
-            if datos:
+            datos = self._limpiar_datos(datos)
+            if datos and len(datos) == 35:
                 return datos
-        else:
-            log_error("❌ No se encontró ningún marcador reconocible en el PDF.")
+
+        # 3) Si no ha funcionado, usar pdfplumber
         datos_pdfplumber = self._extraer_con_pdfplumber(pdf_path)
-        if datos_pdfplumber:
+        datos_pdfplumber = self._limpiar_datos(datos_pdfplumber)
+        if datos_pdfplumber and len(datos_pdfplumber) == 35:
             return datos_pdfplumber
+
+        # 4) Si sigue sin funcionar, OCR (si disponible)
         if convert_from_path:
             texto_ocr = self._extraer_texto_ocr(pdf_path)
-            return self._parsear_bloque(texto_ocr, pdf_path)
+            datos_ocr = self._parsear_bloque(texto_ocr, pdf_path)
+            datos_ocr = self._limpiar_datos(datos_ocr)
+            if datos_ocr and len(datos_ocr) == 35:
+                return datos_ocr
+
+        # 5) Si todo falla, devolver lista vacía
         return []
+
+    def _limpiar_datos(self, datos: list[dict]) -> list[dict]:
+        """
+        Limpia los datos eliminando entradas no válidas y dejando exactamente las 35 empresas.
+        """
+        # Filtrar entradas que empiecen por 'IBEX' o estén corruptas
+        datos_filtrados = [
+            d for d in datos
+            if d.get("simbolo")
+               and d.get("nombre")
+               and not d["simbolo"].startswith("IBEX")
+        ]
+
+        # Eliminar duplicados por símbolo
+        simbolos_vistos = set()
+        datos_unicos = []
+        for d in datos_filtrados:
+            s = d["simbolo"]
+            if s not in simbolos_vistos:
+                simbolos_vistos.add(s)
+                datos_unicos.append(d)
+
+        # Ordenar alfabéticamente por símbolo
+        datos_ordenados = sorted(datos_unicos, key=lambda x: x["simbolo"])
+
+        return datos_ordenados
 
     def ejecutar(self):
         log_info("🚀 Iniciando scraping de PDF del IBEX 35")
@@ -289,12 +332,12 @@ class IbexPDFScraper:
                 simbolo = d.get("simbolo", "").strip()
                 nombre = d.get("nombre", "").strip()
                 coef = d.get("coef_ff", "").strip()
-                if simbolo.upper() == "IBEX":
-                    log_info(f"⚠️ Fila de sección ignorada: {d}")
-                    continue
-                if not simbolo or not nombre:
+
+                # En lugar de filtrar por 'IBEX', filtramos por ausencia de datos clave
+                if not simbolo or not nombre or not coef:
                     log_info(f"⚠️ Fila ignorada por falta de datos clave: {d}")
                     continue
+
                 ok = insertar_datos_composicion(d)
                 tag = "📥" if ok else "📛"
                 log_info(f"{tag} {simbolo} – {nombre}")
