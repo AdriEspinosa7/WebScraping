@@ -219,26 +219,29 @@ class IbexPDFScraper:
         return filas
 
     def _parsear_bloque(self, bloque: str, pdf_path: str) -> list[dict]:
+        """
+        Parsea el bloque de texto plano extraído del PDF y devuelve una lista de diccionarios con los datos.
+        """
         partes = re.split(r'(?<=\d)\s+(?=[A-Z]{2,5}\s)', bloque)
         PAT = re.compile(
             r"^([A-Z]{2,5})\s+"  # símbolo
-            r"(.+?)\s+"  # nombre
+            r"([A-Z].+?)\s+"  # nombre (mayúscula inicial)
             r"([\d\.]+)\s+"  # títulos antes
             r"(-?[\d\.]+|-)\s+"  # modificaciones
             r"([\d\.]+)\s+"  # composición
-            r"(\d{1,3})\b"  # coeficiente
+            r"(\d{1,3})\b"  # coeficiente FF
         )
 
         filas = []
         for p in partes:
             texto = p.strip()
 
-            # ⛔ Ignorar líneas basura tipo "IBEX 35 BANCOS" o "IBEX ENERGÍA"
             if texto.startswith("IBEX"):
-                continue
+                continue  # ⛔ Ignorar secciones de cabecera
 
             m = PAT.match(texto)
             if not m:
+                log_info(f"⚠️ No coincide parte: {texto}")
                 continue
 
             s, nombre, tit, mod, comp, coef = m.groups()
@@ -253,7 +256,10 @@ class IbexPDFScraper:
                 "fecha_insercion": datetime.now().date(),
                 "nombre_pdf": self.pdf_name
             })
+
+        log_info(f"📊 (_parsear_bloque) Se extrajeron {len(filas)} filas de la tabla.")
         return filas
+
 
     def extraer_tabla(self, pdf_path: str) -> list[dict]:
         """
@@ -264,23 +270,25 @@ class IbexPDFScraper:
         texto = self._extraer_texto_fitz(pdf_path)
         flat = " ".join(texto.split())
 
-        # 2) Buscar el marcador ACS como inicio
-        marker = "ACS ACS CONST."
-        pos = flat.find(marker)
-        if pos != -1:
-            bloque = flat[pos:]
+        # Buscar bloque desde el primer patrón completo de fila detectado
+        match = re.search(
+            r"[A-Z]{2,5}\s+[\w\.\s&\-ÁÉÍÓÚÑÜ]+?\s+[\d\.]+\s+(?:-[\d\.]+|[\d\.]+|-)\s+[\d\.]+\s+\d{1,3}",
+            flat
+        )
+        if match:
+            bloque = flat[match.start():]
             datos = self._parsear_bloque(bloque, pdf_path)
             datos = self._limpiar_datos(datos)
             if datos and len(datos) == 35:
                 return datos
 
-        # 3) Si no ha funcionado, usar pdfplumber
+        # 2) Si no ha funcionado, usar pdfplumber
         datos_pdfplumber = self._extraer_con_pdfplumber(pdf_path)
         datos_pdfplumber = self._limpiar_datos(datos_pdfplumber)
         if datos_pdfplumber and len(datos_pdfplumber) == 35:
             return datos_pdfplumber
 
-        # 4) Si sigue sin funcionar, OCR (si disponible)
+        # 3) Si sigue sin funcionar, OCR (si disponible)
         if convert_from_path:
             texto_ocr = self._extraer_texto_ocr(pdf_path)
             datos_ocr = self._parsear_bloque(texto_ocr, pdf_path)
@@ -288,7 +296,7 @@ class IbexPDFScraper:
             if datos_ocr and len(datos_ocr) == 35:
                 return datos_ocr
 
-        # 5) Si todo falla, devolver lista vacía
+        # 4) Si falla, devolver lista vacía
         return []
 
     def _limpiar_datos(self, datos: list[dict]) -> list[dict]:

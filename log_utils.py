@@ -1,38 +1,56 @@
 import logging
+from pathlib import Path
 
 def configurar_logger():
     """
-    Configura el logger principal del proyecto para escribir en 'log.txt'
-    y mostrar los mensajes también por consola.
-    Asegura que no se añadan múltiples handlers si ya hay uno configurado.
+    Configura el logger para escribir en 'log.txt' en la raíz del proyecto,
+    sin importar desde qué subcarpeta se ejecute el script.
+    Elimina cualquier handler existente para evitar duplicados.
     """
     logger = logging.getLogger()
     logger.setLevel(logging.INFO)
 
-    if not logger.handlers:
-        formatter = logging.Formatter('%(asctime)s [%(levelname)s] %(message)s')
+    # Eliminar handlers previos (si los hubiera)
+    for handler in list(logger.handlers):
+        logger.removeHandler(handler)
 
-        # Handler para archivo
-        file_handler = logging.FileHandler('log.txt', encoding='utf-8')
-        file_handler.setFormatter(formatter)
-        logger.addHandler(file_handler)
+    formatter = logging.Formatter('%(asctime)s [%(levelname)s] %(message)s')
 
-        # Handler para consola
-        console_handler = logging.StreamHandler()
-        console_handler.setFormatter(formatter)
-        logger.addHandler(console_handler)
+    # Directorio raíz del proyecto: carpeta donde está este archivo
+    proyecto_raiz = Path(__file__).resolve().parent
+    ruta_log = proyecto_raiz / "log.txt"
+
+    # Crear handler de archivo
+    file_handler = logging.FileHandler(ruta_log, encoding='utf-8')
+    file_handler.setFormatter(formatter)
+    logger.addHandler(file_handler)
+
+    # Crear handler de consola
+    console_handler = logging.StreamHandler()
+    console_handler.setFormatter(formatter)
+    logger.addHandler(console_handler)
+
+    # Evitar propagación a handlers superiores
+    logger.propagate = False
 
     return logger
 
 # Configurar logger al importar el módulo
-configurar_logger()
+logger = configurar_logger()
 
-# Funciones auxiliares para registrar mensajes
+# Funciones auxiliares
+
 def log_info(mensaje):
-    logging.info(mensaje)
+    logger.info(mensaje)
 
 def log_error(mensaje):
-    logging.error(mensaje)
+    logger.error(mensaje)
+
+
+
+
+
+
 
 
 
