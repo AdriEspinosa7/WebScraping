@@ -219,45 +219,40 @@ class IbexPDFScraper:
         return filas
 
     def _parsear_bloque(self, bloque: str, pdf_path: str) -> list[dict]:
-        """
-        Parsea el bloque de texto plano extraído del PDF y devuelve una lista de diccionarios con los datos.
-        """
-        partes = re.split(r'(?<=\d)\s+(?=[A-Z]{2,5}\s)', bloque)
         PAT = re.compile(
-            r"^([A-Z]{2,5})\s+"  # símbolo
-            r"([A-Z].+?)\s+"  # nombre (mayúscula inicial)
-            r"([\d\.]+)\s+"  # títulos antes
-            r"(-?[\d\.]+|-)\s+"  # modificaciones
-            r"([\d\.]+)\s+"  # composición
-            r"(\d{1,3})\b"  # coeficiente FF
+            r"(?:%Coef\s+)?(?:FF\s+)?([A-Z]{2,5})\s+"  # símbolo, ignorando posibles prefijos como '%Coef FF'
+            r"([A-Z][A-Z\s\.\-&]{2,})\s+"  # nombre en mayúsculas con espacios o puntos
+            r"([\d.]+)\s+"  # títulos antes
+            r"(-?[\d.]+|-)\s+"  # modificaciones
+            r"([\d.]+)\s+"  # composición
+            r"(\d{1,3})\b"  # coeficiente
         )
 
+        flat = " ".join(bloque.split())
+        matches = PAT.findall(flat)
+
         filas = []
-        for p in partes:
-            texto = p.strip()
+        for m in matches:
+            s, nombre, tit, mod, comp, coef = m
 
-            if texto.startswith("IBEX"):
-                continue  # ⛔ Ignorar secciones de cabecera
-
-            m = PAT.match(texto)
-            if not m:
-                log_info(f"⚠️ No coincide parte: {texto}")
+            # ⛔ Ignorar líneas tipo 'IBEX ENERGÍA'
+            if s.upper().startswith("IBEX"):
                 continue
 
-            s, nombre, tit, mod, comp, coef = m.groups()
             filas.append({
-                "simbolo": s,
+                "simbolo": s.strip(),
                 "nombre": nombre.strip(),
                 "titulos_antes": tit.replace(".", ""),
                 "estatus": None,
-                "modificaciones": "" if mod == "-" else mod.replace(".", ""),
+                "modificaciones": "" if mod in ("-", "–", "−") else mod.replace(".", ""),
                 "comp": comp.replace(".", ""),
-                "coef_ff": coef,
+                "coef_ff": coef.strip(),
                 "fecha_insercion": datetime.now().date(),
                 "nombre_pdf": self.pdf_name
             })
 
-        log_info(f"📊 (_parsear_bloque) Se extrajeron {len(filas)} filas de la tabla.")
+        if filas:
+            log_info(f"📊 (_parsear_bloque) Se extrajeron {len(filas)} filas de la tabla.")
         return filas
 
 
@@ -296,7 +291,7 @@ class IbexPDFScraper:
             if datos_ocr and len(datos_ocr) == 35:
                 return datos_ocr
 
-        # 4) Si falla, devolver lista vacía
+        # 4) Si todo falla, devolver lista vacía
         return []
 
     def _limpiar_datos(self, datos: list[dict]) -> list[dict]:
