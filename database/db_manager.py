@@ -1,7 +1,6 @@
 import mysql.connector
-from mysql.connector import errorcode
 from datetime import datetime
-from log_utils import log_info, log_error
+from utils.log_utils import log_info, log_error
 
 # ========================
 # Configuración de conexión

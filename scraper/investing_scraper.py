@@ -8,7 +8,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
 from database.db_manager import guardar_datos
-from log_utils import log_info, log_error
+from utils.log_utils import log_info, log_error
 
 
 class InvestingScraper:

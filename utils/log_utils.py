@@ -16,8 +16,8 @@ def configurar_logger():
 
     formatter = logging.Formatter('%(asctime)s [%(levelname)s] %(message)s')
 
-    # Directorio raíz del proyecto: carpeta donde está este archivo
-    proyecto_raiz = Path(__file__).resolve().parent
+    # Carpeta raíz del proyecto (subimos desde utils/)
+    proyecto_raiz = Path(__file__).resolve().parent.parent
     ruta_log = proyecto_raiz / "log.txt"
 
     # Crear handler de archivo
@@ -45,6 +45,7 @@ def log_info(mensaje):
 
 def log_error(mensaje):
     logger.error(mensaje)
+
 
 
 

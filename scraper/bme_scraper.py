@@ -8,8 +8,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from scraper.parser import parsear_fila_bme
 from database.db_manager import insertar_datos_empresa
-from log_utils import log_info, log_error
-from bs4 import BeautifulSoup
+from utils.log_utils import log_info, log_error
+
 
 class BmeScraper:
     def __init__(self):

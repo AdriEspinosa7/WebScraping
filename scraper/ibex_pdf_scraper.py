@@ -7,8 +7,8 @@ from datetime import datetime
 import fitz           # PyMuPDF
 import pdfplumber     # pip install pdfplumber
 
-from scraper.ocr_utils import configurar_ocr, extraer_texto_ocr
-from log_utils import log_info, log_error
+from utils.ocr_utils import configurar_ocr, extraer_texto_ocr
+from utils.log_utils import log_info, log_error
 from database.db_manager import insertar_datos_composicion
 
 

@@ -1,8 +1,7 @@
 import os
 import platform
 import zipfile
-import tempfile
-from log_utils import log_info, log_error
+from utils.log_utils import log_info, log_error
 
 # OCR requerimientos
 try:
@@ -26,7 +25,7 @@ def configurar_ocr(poppler_path=None, extras_dir="extras"):
 
 
 def _configurar_poppler(extras_dir):
-    base = os.path.abspath("poppler")
+    base = os.path.abspath("../scraper/poppler")
     zip_path = os.path.join(extras_dir, "poppler.zip")
     if not os.path.isdir(base) or not any(
         f.lower().endswith(".exe")
@@ -55,7 +54,7 @@ def _configurar_poppler(extras_dir):
 def _configurar_tesseract(extras_dir):
     if platform.system() != "Windows" or pytesseract is None:
         return
-    base = os.path.abspath("tesseract")
+    base = os.path.abspath("../scraper/tesseract")
     zip_path = os.path.join(extras_dir, "tesseract.zip")
 
     if not os.path.exists(os.path.join(base, "tesseract.exe")):
