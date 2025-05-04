@@ -4036,3 +4036,306 @@
 2025-04-30 10:38:42,862 [INFO] 📥 UNI – UNICAJA
 2025-04-30 10:38:42,862 [INFO] 🗑️ PDF temporal eliminado.
 2025-04-30 10:38:42,862 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
+2025-04-30 22:13:29,017 [INFO] ✅ Base de datos 'bolsa' verificada o creada.
+2025-04-30 22:13:29,028 [INFO] ✅ Tabla 'indices' verificada o creada correctamente.
+2025-04-30 22:13:29,031 [INFO] 🔧 Poppler configurado en: C:\Users\yo_xa\PycharmProjects\PythonProject\scraper\poppler\poppler-24.08.0\Library\bin
+2025-04-30 22:13:29,260 [INFO] 🧠 Tesseract descomprimido automáticamente.
+2025-04-30 22:13:29,261 [ERROR] ❌ Falta 'spa.traineddata' en tessdata.
+2025-04-30 22:13:29,261 [INFO] 🚀 Iniciando scraping de PDF del IBEX 35
+2025-04-30 22:13:29,518 [INFO] 📥 PDF descargado: https://www.bolsasymercados.es/bme-exchange/docs/Indices/Avisos/esp/gestorindice/Aviso_Gestor_Indices_02-25.pdf -> Aviso_Gestor_Indices_02-25.pdf
+2025-04-30 22:13:29,764 [INFO] 📊 (_parsear_bloque) Se extrajeron 53 filas de la tabla.
+2025-04-30 22:13:29,803 [INFO] 📥 Insertado/actualizado: ACS – ACS CONST. (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:13:29,803 [INFO] 📥 ACS – ACS CONST.
+2025-04-30 22:13:29,807 [INFO] 📥 Insertado/actualizado: ACX – ACERINOX (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:13:29,808 [INFO] 📥 ACX – ACERINOX
+2025-04-30 22:13:29,811 [INFO] 📥 Insertado/actualizado: AENA – AENA (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:13:29,812 [INFO] 📥 AENA – AENA
+2025-04-30 22:13:29,816 [INFO] 📥 Insertado/actualizado: AMS – AMADEUS IT (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:13:29,816 [INFO] 📥 AMS – AMADEUS IT
+2025-04-30 22:13:29,819 [INFO] 📥 Insertado/actualizado: ANA – ACCIONA (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:13:29,820 [INFO] 📥 ANA – ACCIONA
+2025-04-30 22:13:29,823 [INFO] 📥 Insertado/actualizado: ANE – ACCIONA ENER (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:13:29,824 [INFO] 📥 ANE – ACCIONA ENER
+2025-04-30 22:13:29,827 [INFO] 📥 Insertado/actualizado: BBVA – BBVA (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:13:29,827 [INFO] 📥 BBVA – BBVA
+2025-04-30 22:13:29,831 [INFO] 📥 Insertado/actualizado: BKT – BANKINTER (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:13:29,831 [INFO] 📥 BKT – BANKINTER
+2025-04-30 22:13:29,835 [INFO] 📥 Insertado/actualizado: CABK – CAIXABANK (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:13:29,835 [INFO] 📥 CABK – CAIXABANK
+2025-04-30 22:13:29,838 [INFO] 📥 Insertado/actualizado: CLNX – CELLNEX (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:13:29,838 [INFO] 📥 CLNX – CELLNEX
+2025-04-30 22:13:29,841 [INFO] 📥 Insertado/actualizado: COL – INM.COLONIAL (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:13:29,842 [INFO] 📥 COL – INM.COLONIAL
+2025-04-30 22:13:29,845 [INFO] 📥 Insertado/actualizado: ELE – ENDESA (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:13:29,845 [INFO] 📥 ELE – ENDESA
+2025-04-30 22:13:29,848 [INFO] 📥 Insertado/actualizado: ENG – ENAGAS (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:13:29,849 [INFO] 📥 ENG – ENAGAS
+2025-04-30 22:13:29,852 [INFO] 📥 Insertado/actualizado: FDR – FLUIDRA (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:13:29,852 [INFO] 📥 FDR – FLUIDRA
+2025-04-30 22:13:29,855 [INFO] 📥 Insertado/actualizado: FER – FERROVIAL SE (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:13:29,855 [INFO] 📥 FER – FERROVIAL SE
+2025-04-30 22:13:29,859 [INFO] 📥 Insertado/actualizado: GRF – GRIFOLS (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:13:29,859 [INFO] 📥 GRF – GRIFOLS
+2025-04-30 22:13:29,862 [INFO] 📥 Insertado/actualizado: IAG – INT.AIRL.GRP (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:13:29,862 [INFO] 📥 IAG – INT.AIRL.GRP
+2025-04-30 22:13:29,866 [INFO] 📥 Insertado/actualizado: IBE – IBERDROLA (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:13:29,866 [INFO] 📥 IBE – IBERDROLA
+2025-04-30 22:13:29,869 [INFO] 📥 Insertado/actualizado: IDR – INDRA A (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:13:29,869 [INFO] 📥 IDR – INDRA A
+2025-04-30 22:13:29,873 [INFO] 📥 Insertado/actualizado: ITX – INDITEX (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:13:29,873 [INFO] 📥 ITX – INDITEX
+2025-04-30 22:13:29,876 [INFO] 📥 Insertado/actualizado: LOG – LOGISTA (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:13:29,876 [INFO] 📥 LOG – LOGISTA
+2025-04-30 22:13:29,879 [INFO] 📥 Insertado/actualizado: MAP – MAPFRE (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:13:29,879 [INFO] 📥 MAP – MAPFRE
+2025-04-30 22:13:29,883 [INFO] 📥 Insertado/actualizado: MRL – MERLIN PROP. (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:13:29,883 [INFO] 📥 MRL – MERLIN PROP.
+2025-04-30 22:13:29,886 [INFO] 📥 Insertado/actualizado: MTS – ARCEL.MITTAL (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:13:29,887 [INFO] 📥 MTS – ARCEL.MITTAL
+2025-04-30 22:13:29,890 [INFO] 📥 Insertado/actualizado: NTGY – NATURGY (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:13:29,890 [INFO] 📥 NTGY – NATURGY
+2025-04-30 22:13:29,893 [INFO] 📥 Insertado/actualizado: PUIG – PUIG BRANDS (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:13:29,893 [INFO] 📥 PUIG – PUIG BRANDS
+2025-04-30 22:13:29,897 [INFO] 📥 Insertado/actualizado: RED – REDEIA CORPO (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:13:29,897 [INFO] 📥 RED – REDEIA CORPO
+2025-04-30 22:13:29,900 [INFO] 📥 Insertado/actualizado: REP – REPSOL (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:13:29,900 [INFO] 📥 REP – REPSOL
+2025-04-30 22:13:29,904 [INFO] 📥 Insertado/actualizado: ROVI – LABORAT.ROVI (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:13:29,904 [INFO] 📥 ROVI – LABORAT.ROVI
+2025-04-30 22:13:29,908 [INFO] 📥 Insertado/actualizado: SAB – B. SABADELL (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:13:29,908 [INFO] 📥 SAB – B. SABADELL
+2025-04-30 22:13:29,911 [INFO] 📥 Insertado/actualizado: SAN – SANTANDER (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:13:29,911 [INFO] 📥 SAN – SANTANDER
+2025-04-30 22:13:29,915 [INFO] 📥 Insertado/actualizado: SCYR – SACYR (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:13:29,915 [INFO] 📥 SCYR – SACYR
+2025-04-30 22:13:29,918 [INFO] 📥 Insertado/actualizado: SLR – SOLARIA (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:13:29,918 [INFO] 📥 SLR – SOLARIA
+2025-04-30 22:13:29,922 [INFO] 📥 Insertado/actualizado: TEF – TELEFONICA (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:13:29,922 [INFO] 📥 TEF – TELEFONICA
+2025-04-30 22:13:29,925 [INFO] 📥 Insertado/actualizado: UNI – UNICAJA (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:13:29,926 [INFO] 📥 UNI – UNICAJA
+2025-04-30 22:13:29,926 [INFO] 🗑️ PDF temporal eliminado.
+2025-04-30 22:13:29,926 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
+2025-04-30 22:17:28,203 [INFO] ✅ Base de datos 'bolsa' verificada o creada.
+2025-04-30 22:17:28,205 [INFO] ✅ Tabla 'indices' verificada o creada correctamente.
+2025-04-30 22:17:28,206 [INFO] 🔧 Poppler configurado en: C:\Users\yo_xa\PycharmProjects\PythonProject\scraper\poppler\poppler-24.08.0\Library\bin
+2025-04-30 22:17:28,438 [INFO] 🧠 Tesseract descomprimido automáticamente.
+2025-04-30 22:17:28,439 [ERROR] ❌ Falta 'spa.traineddata' en tessdata.
+2025-04-30 22:17:28,439 [INFO] 🚀 Iniciando scraping de PDF del IBEX 35
+2025-04-30 22:17:28,748 [INFO] 📥 PDF descargado: https://www.bolsasymercados.es/bme-exchange/docs/Indices/Avisos/esp/gestorindice/Aviso_Gestor_Indices_02-25.pdf -> Aviso_Gestor_Indices_02-25.pdf
+2025-04-30 22:17:28,945 [INFO] 📊 (_parsear_bloque) Se extrajeron 53 filas de la tabla.
+2025-04-30 22:17:28,945 [INFO] ✅ Datos extraídos usando PyMuPDF (fitz).
+2025-04-30 22:17:28,953 [INFO] 📥 Insertado/actualizado: ACS – ACS CONST. (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:17:28,953 [INFO] 📥 ACS – ACS CONST.
+2025-04-30 22:17:28,958 [INFO] 📥 Insertado/actualizado: ACX – ACERINOX (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:17:28,958 [INFO] 📥 ACX – ACERINOX
+2025-04-30 22:17:28,963 [INFO] 📥 Insertado/actualizado: AENA – AENA (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:17:28,963 [INFO] 📥 AENA – AENA
+2025-04-30 22:17:28,967 [INFO] 📥 Insertado/actualizado: AMS – AMADEUS IT (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:17:28,967 [INFO] 📥 AMS – AMADEUS IT
+2025-04-30 22:17:28,971 [INFO] 📥 Insertado/actualizado: ANA – ACCIONA (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:17:28,971 [INFO] 📥 ANA – ACCIONA
+2025-04-30 22:17:28,976 [INFO] 📥 Insertado/actualizado: ANE – ACCIONA ENER (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:17:28,976 [INFO] 📥 ANE – ACCIONA ENER
+2025-04-30 22:17:28,980 [INFO] 📥 Insertado/actualizado: BBVA – BBVA (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:17:28,980 [INFO] 📥 BBVA – BBVA
+2025-04-30 22:17:28,984 [INFO] 📥 Insertado/actualizado: BKT – BANKINTER (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:17:28,984 [INFO] 📥 BKT – BANKINTER
+2025-04-30 22:17:28,988 [INFO] 📥 Insertado/actualizado: CABK – CAIXABANK (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:17:28,988 [INFO] 📥 CABK – CAIXABANK
+2025-04-30 22:17:28,992 [INFO] 📥 Insertado/actualizado: CLNX – CELLNEX (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:17:28,992 [INFO] 📥 CLNX – CELLNEX
+2025-04-30 22:17:28,996 [INFO] 📥 Insertado/actualizado: COL – INM.COLONIAL (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:17:28,996 [INFO] 📥 COL – INM.COLONIAL
+2025-04-30 22:17:29,000 [INFO] 📥 Insertado/actualizado: ELE – ENDESA (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:17:29,000 [INFO] 📥 ELE – ENDESA
+2025-04-30 22:17:29,004 [INFO] 📥 Insertado/actualizado: ENG – ENAGAS (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:17:29,004 [INFO] 📥 ENG – ENAGAS
+2025-04-30 22:17:29,008 [INFO] 📥 Insertado/actualizado: FDR – FLUIDRA (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:17:29,008 [INFO] 📥 FDR – FLUIDRA
+2025-04-30 22:17:29,012 [INFO] 📥 Insertado/actualizado: FER – FERROVIAL SE (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:17:29,012 [INFO] 📥 FER – FERROVIAL SE
+2025-04-30 22:17:29,016 [INFO] 📥 Insertado/actualizado: GRF – GRIFOLS (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:17:29,016 [INFO] 📥 GRF – GRIFOLS
+2025-04-30 22:17:29,019 [INFO] 📥 Insertado/actualizado: IAG – INT.AIRL.GRP (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:17:29,019 [INFO] 📥 IAG – INT.AIRL.GRP
+2025-04-30 22:17:29,023 [INFO] 📥 Insertado/actualizado: IBE – IBERDROLA (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:17:29,023 [INFO] 📥 IBE – IBERDROLA
+2025-04-30 22:17:29,026 [INFO] 📥 Insertado/actualizado: IDR – INDRA A (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:17:29,026 [INFO] 📥 IDR – INDRA A
+2025-04-30 22:17:29,030 [INFO] 📥 Insertado/actualizado: ITX – INDITEX (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:17:29,030 [INFO] 📥 ITX – INDITEX
+2025-04-30 22:17:29,033 [INFO] 📥 Insertado/actualizado: LOG – LOGISTA (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:17:29,034 [INFO] 📥 LOG – LOGISTA
+2025-04-30 22:17:29,037 [INFO] 📥 Insertado/actualizado: MAP – MAPFRE (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:17:29,037 [INFO] 📥 MAP – MAPFRE
+2025-04-30 22:17:29,041 [INFO] 📥 Insertado/actualizado: MRL – MERLIN PROP. (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:17:29,041 [INFO] 📥 MRL – MERLIN PROP.
+2025-04-30 22:17:29,044 [INFO] 📥 Insertado/actualizado: MTS – ARCEL.MITTAL (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:17:29,045 [INFO] 📥 MTS – ARCEL.MITTAL
+2025-04-30 22:17:29,048 [INFO] 📥 Insertado/actualizado: NTGY – NATURGY (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:17:29,049 [INFO] 📥 NTGY – NATURGY
+2025-04-30 22:17:29,052 [INFO] 📥 Insertado/actualizado: PUIG – PUIG BRANDS (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:17:29,053 [INFO] 📥 PUIG – PUIG BRANDS
+2025-04-30 22:17:29,056 [INFO] 📥 Insertado/actualizado: RED – REDEIA CORPO (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:17:29,056 [INFO] 📥 RED – REDEIA CORPO
+2025-04-30 22:17:29,059 [INFO] 📥 Insertado/actualizado: REP – REPSOL (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:17:29,059 [INFO] 📥 REP – REPSOL
+2025-04-30 22:17:29,063 [INFO] 📥 Insertado/actualizado: ROVI – LABORAT.ROVI (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:17:29,063 [INFO] 📥 ROVI – LABORAT.ROVI
+2025-04-30 22:17:29,067 [INFO] 📥 Insertado/actualizado: SAB – B. SABADELL (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:17:29,067 [INFO] 📥 SAB – B. SABADELL
+2025-04-30 22:17:29,070 [INFO] 📥 Insertado/actualizado: SAN – SANTANDER (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:17:29,070 [INFO] 📥 SAN – SANTANDER
+2025-04-30 22:17:29,074 [INFO] 📥 Insertado/actualizado: SCYR – SACYR (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:17:29,074 [INFO] 📥 SCYR – SACYR
+2025-04-30 22:17:29,077 [INFO] 📥 Insertado/actualizado: SLR – SOLARIA (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:17:29,077 [INFO] 📥 SLR – SOLARIA
+2025-04-30 22:17:29,081 [INFO] 📥 Insertado/actualizado: TEF – TELEFONICA (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:17:29,081 [INFO] 📥 TEF – TELEFONICA
+2025-04-30 22:17:29,085 [INFO] 📥 Insertado/actualizado: UNI – UNICAJA (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-04-30 22:17:29,085 [INFO] 📥 UNI – UNICAJA
+2025-04-30 22:17:29,085 [INFO] 🗑️ PDF temporal eliminado.
+2025-04-30 22:17:29,085 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
+2025-04-30 22:17:54,280 [INFO] ✅ Base de datos 'bolsa' verificada o creada.
+2025-04-30 22:17:54,283 [INFO] ✅ Tabla 'indices' verificada o creada correctamente.
+2025-04-30 22:18:40,749 [INFO] ✅ Base de datos 'bolsa' verificada o creada.
+2025-04-30 22:18:40,752 [INFO] ✅ Tabla 'indices' verificada o creada correctamente.
+2025-05-02 20:30:03,692 [INFO] ✅ Base de datos 'bolsa' verificada o creada.
+2025-05-02 20:30:03,712 [INFO] ✅ Tabla 'indices' verificada o creada correctamente.
+2025-05-04 11:09:18,487 [INFO] ✅ Base de datos 'bolsa' verificada o creada.
+2025-05-04 11:09:18,499 [INFO] ✅ Tabla 'indices' verificada o creada correctamente.
+2025-05-04 11:13:41,802 [INFO] ✅ Base de datos 'bolsa' verificada o creada.
+2025-05-04 11:13:41,805 [INFO] ✅ Tabla 'indices' verificada o creada correctamente.
+2025-05-04 11:13:41,993 [INFO] === INICIO DEL PROCESO DE SCRAPING ===
+2025-05-04 11:13:41,993 [INFO] ====== WebDriver manager ======
+2025-05-04 11:13:42,961 [INFO] Get LATEST chromedriver version for google-chrome
+2025-05-04 11:13:43,051 [INFO] Get LATEST chromedriver version for google-chrome
+2025-05-04 11:13:43,098 [INFO] Get LATEST chromedriver version for google-chrome
+2025-05-04 11:13:43,213 [INFO] WebDriver version 135.0.7049.114 selected
+2025-05-04 11:13:43,215 [INFO] Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/135.0.7049.114/win32/chromedriver-win32.zip
+2025-05-04 11:13:43,215 [INFO] About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/135.0.7049.114/win32/chromedriver-win32.zip
+2025-05-04 11:13:43,303 [INFO] Driver downloading response is 200
+2025-05-04 11:13:43,881 [INFO] Get LATEST chromedriver version for google-chrome
+2025-05-04 11:13:44,054 [INFO] Driver has been saved in cache [C:\Users\yo_xa\.wdm\drivers\chromedriver\win64\135.0.7049.114]
+2025-05-04 11:13:45,428 [INFO] 🚀 Inicio del scraping de índices bursátiles.
+2025-05-04 11:13:52,325 [INFO] 📥 Guardado: IBEX 35 (IBEX) - 13446.7 - +158,90 - (+1,20%)
+2025-05-04 11:13:58,668 [INFO] 📥 Guardado: S&P 500 (SPX) - 5686.67 - +82,53 - (+1,47%)
+2025-05-04 11:14:05,078 [INFO] 📥 Guardado: Nasdaq 100 (NDX) - 20102.61 - +315,91 - (+1,60%)
+2025-05-04 11:14:11,605 [INFO] 📥 Guardado: DAX (GDAXI) - 23086.65 - +589,67 - (+2,62%)
+2025-05-04 11:14:18,014 [INFO] 📥 Guardado: MSCI World (MIWO00000PUS) - 3724.62 - +60,88 - (+1,66%)
+2025-05-04 11:14:20,132 [INFO] 🏁 Fin del scraping. Navegador cerrado.
+2025-05-04 11:14:20,132 [INFO] 📊 RESUMEN FINAL:
+2025-05-04 11:14:20,132 [INFO] ✅ Índices guardados: 5
+2025-05-04 11:14:20,133 [INFO] ℹ️ Índices omitidos: 0
+2025-05-04 11:14:20,133 [INFO] ❌ Fallos: 0
+2025-05-04 11:14:20,133 [INFO] ✅ Scraping de índices completado.
+2025-05-04 11:14:22,092 [INFO] Se cargaron 3 empresas desde empresas_bme.csv
+2025-05-04 11:14:22,092 [INFO] 🚀 Iniciando scraping de empresas BME
+2025-05-04 11:14:22,092 [INFO] 🔍 Iniciando scraping para BBVA
+2025-05-04 11:14:22,092 [INFO] 📄 Accediendo a la web de BBVA: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Banco-Bilbao-Vizcaya-Argentaria-ES0113211835
+2025-05-04 11:14:23,227 [INFO] 📥 Insertado/actualizado: BBVA - 2025
+2025-05-04 11:14:23,227 [INFO] ✅ Datos insertados para BBVA, año 2025
+2025-05-04 11:14:23,302 [INFO] 📛 Registro duplicado: BBVA - 2024. No se insertó.
+2025-05-04 11:14:23,369 [INFO] 📛 Registro duplicado: BBVA - 2023. No se insertó.
+2025-05-04 11:14:23,453 [INFO] 📛 Registro duplicado: BBVA - 2022. No se insertó.
+2025-05-04 11:14:23,551 [INFO] 📛 Registro duplicado: BBVA - 2021. No se insertó.
+2025-05-04 11:14:23,551 [INFO] 🔍 Iniciando scraping para Inditex
+2025-05-04 11:14:23,551 [INFO] 📄 Accediendo a la web de Inditex: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Ind-De-Diseno-Textil-Inditex-ES0148396007
+2025-05-04 11:14:24,385 [INFO] 📥 Insertado/actualizado: Inditex - 2025
+2025-05-04 11:14:24,385 [INFO] ✅ Datos insertados para Inditex, año 2025
+2025-05-04 11:14:24,461 [INFO] 📛 Registro duplicado: Inditex - 2024. No se insertó.
+2025-05-04 11:14:24,529 [INFO] 📛 Registro duplicado: Inditex - 2023. No se insertó.
+2025-05-04 11:14:24,604 [INFO] 📛 Registro duplicado: Inditex - 2022. No se insertó.
+2025-05-04 11:14:24,673 [INFO] 📛 Registro duplicado: Inditex - 2021. No se insertó.
+2025-05-04 11:14:24,673 [INFO] 🔍 Iniciando scraping para Santander
+2025-05-04 11:14:24,673 [INFO] 📄 Accediendo a la web de Santander: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Banco-Santander-ES0113900J37
+2025-05-04 11:14:25,527 [INFO] 📥 Insertado/actualizado: Santander - 2025
+2025-05-04 11:14:25,527 [INFO] ✅ Datos insertados para Santander, año 2025
+2025-05-04 11:14:25,612 [INFO] 📛 Registro duplicado: Santander - 2024. No se insertó.
+2025-05-04 11:14:25,688 [INFO] 📛 Registro duplicado: Santander - 2023. No se insertó.
+2025-05-04 11:14:25,772 [INFO] 📛 Registro duplicado: Santander - 2022. No se insertó.
+2025-05-04 11:14:25,837 [INFO] 📛 Registro duplicado: Santander - 2021. No se insertó.
+2025-05-04 11:14:27,925 [INFO] ✅ Scraping de empresas BME finalizado.
+2025-05-04 11:14:27,925 [INFO] ✅ Scraping de empresas BME completado.
+2025-05-04 11:14:27,927 [INFO] 🔧 Poppler configurado en: C:\Users\yo_xa\PycharmProjects\PythonProject\poppler\poppler-24.08.0\Library\bin
+2025-05-04 11:14:28,162 [INFO] 🧠 Tesseract descomprimido automáticamente.
+2025-05-04 11:14:28,163 [INFO] 🔍 Tesseract configurado en: C:\Users\yo_xa\PycharmProjects\PythonProject\tesseract\Tesseract-OCR\tesseract.exe
+2025-05-04 11:14:28,163 [INFO] 🚀 Iniciando scraping de PDF del IBEX 35
+2025-05-04 11:14:28,290 [INFO] 📥 PDF descargado: https://www.bolsasymercados.es/bme-exchange/docs/Indices/Avisos/esp/gestorindice/Aviso_Gestor_Indices_02-25.pdf -> Aviso_Gestor_Indices_02-25.pdf
+2025-05-04 11:14:28,554 [INFO] 📊 (_parsear_bloque) Se extrajeron 53 filas de la tabla.
+2025-05-04 11:14:28,554 [INFO] ✅ Datos extraídos usando PyMuPDF (fitz).
+2025-05-04 11:14:28,568 [INFO] 📥 Insertado/actualizado: ACS – ACS CONST. (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-04 11:14:28,568 [INFO] 📥 ACS – ACS CONST.
+2025-05-04 11:14:28,574 [INFO] 📥 Insertado/actualizado: ACX – ACERINOX (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-04 11:14:28,574 [INFO] 📥 ACX – ACERINOX
+2025-05-04 11:14:28,579 [INFO] 📥 Insertado/actualizado: AENA – AENA (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-04 11:14:28,579 [INFO] 📥 AENA – AENA
+2025-05-04 11:14:28,584 [INFO] 📥 Insertado/actualizado: AMS – AMADEUS IT (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-04 11:14:28,585 [INFO] 📥 AMS – AMADEUS IT
+2025-05-04 11:14:28,590 [INFO] 📥 Insertado/actualizado: ANA – ACCIONA (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-04 11:14:28,590 [INFO] 📥 ANA – ACCIONA
+2025-05-04 11:14:28,596 [INFO] 📥 Insertado/actualizado: ANE – ACCIONA ENER (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-04 11:14:28,596 [INFO] 📥 ANE – ACCIONA ENER
+2025-05-04 11:14:28,601 [INFO] 📥 Insertado/actualizado: BBVA – BBVA (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-04 11:14:28,601 [INFO] 📥 BBVA – BBVA
+2025-05-04 11:14:28,606 [INFO] 📥 Insertado/actualizado: BKT – BANKINTER (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-04 11:14:28,606 [INFO] 📥 BKT – BANKINTER
+2025-05-04 11:14:28,610 [INFO] 📥 Insertado/actualizado: CABK – CAIXABANK (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-04 11:14:28,610 [INFO] 📥 CABK – CAIXABANK
+2025-05-04 11:14:28,614 [INFO] 📥 Insertado/actualizado: CLNX – CELLNEX (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-04 11:14:28,614 [INFO] 📥 CLNX – CELLNEX
+2025-05-04 11:14:28,619 [INFO] 📥 Insertado/actualizado: COL – INM.COLONIAL (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-04 11:14:28,619 [INFO] 📥 COL – INM.COLONIAL
+2025-05-04 11:14:28,623 [INFO] 📥 Insertado/actualizado: ELE – ENDESA (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-04 11:14:28,623 [INFO] 📥 ELE – ENDESA
+2025-05-04 11:14:28,628 [INFO] 📥 Insertado/actualizado: ENG – ENAGAS (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-04 11:14:28,628 [INFO] 📥 ENG – ENAGAS
+2025-05-04 11:14:28,632 [INFO] 📥 Insertado/actualizado: FDR – FLUIDRA (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-04 11:14:28,632 [INFO] 📥 FDR – FLUIDRA
+2025-05-04 11:14:28,636 [INFO] 📥 Insertado/actualizado: FER – FERROVIAL SE (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-04 11:14:28,636 [INFO] 📥 FER – FERROVIAL SE
+2025-05-04 11:14:28,640 [INFO] 📥 Insertado/actualizado: GRF – GRIFOLS (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-04 11:14:28,640 [INFO] 📥 GRF – GRIFOLS
+2025-05-04 11:14:28,644 [INFO] 📥 Insertado/actualizado: IAG – INT.AIRL.GRP (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-04 11:14:28,644 [INFO] 📥 IAG – INT.AIRL.GRP
+2025-05-04 11:14:28,647 [INFO] 📥 Insertado/actualizado: IBE – IBERDROLA (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-04 11:14:28,647 [INFO] 📥 IBE – IBERDROLA
+2025-05-04 11:14:28,650 [INFO] 📥 Insertado/actualizado: IDR – INDRA A (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-04 11:14:28,651 [INFO] 📥 IDR – INDRA A
+2025-05-04 11:14:28,654 [INFO] 📥 Insertado/actualizado: ITX – INDITEX (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-04 11:14:28,654 [INFO] 📥 ITX – INDITEX
+2025-05-04 11:14:28,657 [INFO] 📥 Insertado/actualizado: LOG – LOGISTA (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-04 11:14:28,657 [INFO] 📥 LOG – LOGISTA
+2025-05-04 11:14:28,660 [INFO] 📥 Insertado/actualizado: MAP – MAPFRE (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-04 11:14:28,660 [INFO] 📥 MAP – MAPFRE
+2025-05-04 11:14:28,664 [INFO] 📥 Insertado/actualizado: MRL – MERLIN PROP. (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-04 11:14:28,664 [INFO] 📥 MRL – MERLIN PROP.
+2025-05-04 11:14:28,668 [INFO] 📥 Insertado/actualizado: MTS – ARCEL.MITTAL (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-04 11:14:28,668 [INFO] 📥 MTS – ARCEL.MITTAL
+2025-05-04 11:14:28,671 [INFO] 📥 Insertado/actualizado: NTGY – NATURGY (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-04 11:14:28,672 [INFO] 📥 NTGY – NATURGY
+2025-05-04 11:14:28,675 [INFO] 📥 Insertado/actualizado: PUIG – PUIG BRANDS (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-04 11:14:28,675 [INFO] 📥 PUIG – PUIG BRANDS
+2025-05-04 11:14:28,678 [INFO] 📥 Insertado/actualizado: RED – REDEIA CORPO (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-04 11:14:28,678 [INFO] 📥 RED – REDEIA CORPO
+2025-05-04 11:14:28,681 [INFO] 📥 Insertado/actualizado: REP – REPSOL (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-04 11:14:28,682 [INFO] 📥 REP – REPSOL
+2025-05-04 11:14:28,685 [INFO] 📥 Insertado/actualizado: ROVI – LABORAT.ROVI (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-04 11:14:28,685 [INFO] 📥 ROVI – LABORAT.ROVI
+2025-05-04 11:14:28,688 [INFO] 📥 Insertado/actualizado: SAB – B. SABADELL (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-04 11:14:28,689 [INFO] 📥 SAB – B. SABADELL
+2025-05-04 11:14:28,692 [INFO] 📥 Insertado/actualizado: SAN – SANTANDER (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-04 11:14:28,692 [INFO] 📥 SAN – SANTANDER
+2025-05-04 11:14:28,695 [INFO] 📥 Insertado/actualizado: SCYR – SACYR (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-04 11:14:28,696 [INFO] 📥 SCYR – SACYR
+2025-05-04 11:14:28,699 [INFO] 📥 Insertado/actualizado: SLR – SOLARIA (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-04 11:14:28,699 [INFO] 📥 SLR – SOLARIA
+2025-05-04 11:14:28,703 [INFO] 📥 Insertado/actualizado: TEF – TELEFONICA (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-04 11:14:28,703 [INFO] 📥 TEF – TELEFONICA
+2025-05-04 11:14:28,706 [INFO] 📥 Insertado/actualizado: UNI – UNICAJA (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-04 11:14:28,706 [INFO] 📥 UNI – UNICAJA
+2025-05-04 11:14:28,707 [INFO] 🗑️ PDF temporal eliminado.
+2025-05-04 11:14:28,707 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
+2025-05-04 11:14:28,707 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
+2025-05-04 11:14:28,707 [INFO] === FIN DEL PROCESO DE SCRAPING ===

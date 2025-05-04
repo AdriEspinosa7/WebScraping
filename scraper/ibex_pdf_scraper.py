@@ -3,19 +3,11 @@ import re
 import tempfile
 import requests
 from datetime import datetime
-import platform
-import zipfile
 
 import fitz           # PyMuPDF
 import pdfplumber     # pip install pdfplumber
-# OCR fallback:
-try:
-    from pdf2image import convert_from_path  # pip install pdf2image
-    import pytesseract                       # pip install pytesseract
-except ImportError:
-    convert_from_path = None
-    pytesseract = None
 
+from scraper.ocr_utils import configurar_ocr, extraer_texto_ocr
 from log_utils import log_info, log_error
 from database.db_manager import insertar_datos_composicion
 
@@ -34,69 +26,7 @@ class IbexPDFScraper:
         self.extras_dir = extras_dir or os.path.join(base_dir, "extras")
         # atributo para nombre real de PDF
         self.pdf_name = None
-        self.poppler_path = self._configurar_poppler()
-        self._configurar_tesseract()
-
-    def _configurar_poppler(self) -> str:
-        if platform.system() != "Windows":
-            return None
-        base = os.path.join(os.getcwd(), "poppler")
-        zip_path = os.path.join(self.extras_dir, "poppler.zip")
-        if not os.path.isdir(base) or not any(
-            f.lower().endswith(".exe")
-            for _, _, files in os.walk(base)
-            for f in files
-        ):
-            if not os.path.isfile(zip_path):
-                log_error("❌ No se encontró 'poppler.zip' en extras/.")
-                return None
-            try:
-                with zipfile.ZipFile(zip_path, "r") as z:
-                    z.extractall(base)
-                log_info("🧩 Poppler descomprimido automáticamente.")
-            except Exception as e:
-                log_error(f"❌ Error al descomprimir poppler.zip: {e}")
-                return None
-        for root, _, files in os.walk(base):
-            if "pdftoppm.exe" in files:
-                log_info(f"🔧 Poppler configurado en: {root}")
-                return root
-        log_error("❌ Poppler descomprimido pero faltan binarios.")
-        return None
-
-    def _configurar_tesseract(self):
-        if platform.system() != "Windows" or pytesseract is None:
-            return
-        base = os.path.join(os.getcwd(), "tesseract")
-        zip_path = os.path.join(self.extras_dir, "tesseract.zip")
-        if not any(
-                f.lower() == "tesseract.exe"
-                for _, _, files in os.walk(base)
-                for f in files
-        ):
-            if not os.path.isfile(zip_path):
-                log_error("❌ No se encontró 'tesseract.zip' en extras/. OCR no funcionará.")
-                return
-            try:
-                with zipfile.ZipFile(zip_path, "r") as z:
-                    z.extractall(base)
-                log_info("🧠 Tesseract descomprimido automáticamente.")
-            except Exception as e:
-                log_error(f"❌ Error al descomprimir tesseract.zip: {e}")
-                return
-
-        for root, _, files in os.walk(base):
-            if "tesseract.exe" in files:
-                exe = os.path.join(root, "tesseract.exe")
-                pytesseract.pytesseract.tesseract_cmd = exe
-                tessdata_dir = os.path.join(os.path.dirname(exe), "tessdata")
-                os.environ["TESSDATA_PREFIX"] = os.path.dirname(tessdata_dir)
-                if not os.path.exists(os.path.join(tessdata_dir, "spa.traineddata")):
-                    log_error("❌ Falta 'spa.traineddata' en tessdata.")
-                else:
-                    log_info(f"🔍 Tesseract configurado en: {exe}")
-                return
-        log_error("❌ Tesseract descomprimido pero no se encontró tesseract.exe.")
+        self.poppler_path = configurar_ocr(extras_dir=self.extras_dir)
 
     def descargar_pdf(self) -> str:
         try:
@@ -165,19 +95,6 @@ class IbexPDFScraper:
             return txt
         except Exception as e:
             log_error(f"❌ Error abriendo PDF en PyMuPDF: {e}")
-            return ""
-
-    def _extraer_texto_ocr(self, pdf_path: str) -> str:
-        try:
-            imgs = convert_from_path(pdf_path,
-                                     dpi=300,
-                                     poppler_path=self.poppler_path)
-            texto = ""
-            for img in imgs:
-                texto += pytesseract.image_to_string(img, lang="spa") + "\n"
-            return texto
-        except Exception as e:
-            log_error(f"❌ Error en OCR del PDF: {e}")
             return ""
 
     def _limpiar_lineas(self, texto: str) -> list[str]:
@@ -275,20 +192,23 @@ class IbexPDFScraper:
             datos = self._parsear_bloque(bloque, pdf_path)
             datos = self._limpiar_datos(datos)
             if datos and len(datos) == 35:
+                log_info("✅ Datos extraídos usando PyMuPDF (fitz).")
                 return datos
 
         # 2) Si no ha funcionado, usar pdfplumber
         datos_pdfplumber = self._extraer_con_pdfplumber(pdf_path)
         datos_pdfplumber = self._limpiar_datos(datos_pdfplumber)
         if datos_pdfplumber and len(datos_pdfplumber) == 35:
+            log_info("✅ Datos extraídos usando pdfplumber.")
             return datos_pdfplumber
 
         # 3) Si sigue sin funcionar, OCR (si disponible)
-        if convert_from_path:
-            texto_ocr = self._extraer_texto_ocr(pdf_path)
+        texto_ocr = extraer_texto_ocr(pdf_path, self.poppler_path)
+        if texto_ocr:
             datos_ocr = self._parsear_bloque(texto_ocr, pdf_path)
             datos_ocr = self._limpiar_datos(datos_ocr)
             if datos_ocr and len(datos_ocr) == 35:
+                log_info("✅ Datos extraídos usando OCR (Tesseract).")
                 return datos_ocr
 
         # 4) Si todo falla, devolver lista vacía
@@ -353,10 +273,8 @@ class IbexPDFScraper:
 
         log_info("✅ Scraping de PDFs de IBEX 35 completado.")
 
-
 def ejecutar_scraping_pdf():
     IbexPDFScraper().ejecutar()
-
 
 if __name__ == "__main__":
     ejecutar_scraping_pdf()

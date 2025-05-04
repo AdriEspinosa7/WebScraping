@@ -4,6 +4,7 @@ from scraper.ibex_pdf_scraper import IbexPDFScraper
 from log_utils import log_info, log_error
 
 # Ejecutar verificación de requisitos antes de comenzar
+
 import requirements_check
 
 def main():
