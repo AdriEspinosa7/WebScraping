@@ -4595,3 +4595,199 @@
 2025-05-04 11:34:08,802 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
 2025-05-04 11:34:08,802 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
 2025-05-04 11:34:08,802 [INFO] === FIN DEL PROCESO DE SCRAPING ===
+2025-05-05 20:54:09,829 [INFO] ✅ Base de datos 'bolsa' verificada o creada.
+2025-05-05 20:54:09,832 [INFO] ✅ Tabla 'indices' verificada o creada correctamente.
+2025-05-05 20:54:10,666 [INFO] === INICIO DEL PROCESO DE SCRAPING ===
+2025-05-05 20:54:10,666 [INFO] ====== WebDriver manager ======
+2025-05-05 20:54:11,765 [INFO] Get LATEST chromedriver version for google-chrome
+2025-05-05 20:54:11,841 [INFO] Get LATEST chromedriver version for google-chrome
+2025-05-05 20:54:11,889 [INFO] Get LATEST chromedriver version for google-chrome
+2025-05-05 20:54:11,986 [INFO] WebDriver version 135.0.7049.114 selected
+2025-05-05 20:54:11,988 [INFO] Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/135.0.7049.114/win32/chromedriver-win32.zip
+2025-05-05 20:54:11,988 [INFO] About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/135.0.7049.114/win32/chromedriver-win32.zip
+2025-05-05 20:54:12,067 [INFO] Driver downloading response is 200
+2025-05-05 20:54:12,219 [INFO] Get LATEST chromedriver version for google-chrome
+2025-05-05 20:54:12,373 [INFO] Driver has been saved in cache [C:\Users\yo_xa\.wdm\drivers\chromedriver\win64\135.0.7049.114]
+2025-05-05 20:54:13,994 [INFO] 🚀 Inicio del scraping de índices bursátiles.
+2025-05-05 20:54:21,245 [INFO] 📥 Guardado: IBEX 35 (IBEX) - 13518.0 - +71,30 - (+0,53%)
+2025-05-05 20:54:27,765 [INFO] 📥 Guardado: S&P 500 (SPX) - 5680.09 - -6,59 - (-0,12%)
+2025-05-05 20:54:34,256 [INFO] 📥 Guardado: Nasdaq 100 (NDX) - 20083.87 - -18,75 - (-0,09%)
+2025-05-05 20:54:40,961 [INFO] 📥 Guardado: DAX (GDAXI) - 23335.42 - +248,77 - (+1,08%)
+2025-05-05 20:54:47,162 [INFO] 📥 Guardado: MSCI World (MIWO00000PUS) - 3719.38 - -5,24 - (-0,14%)
+2025-05-05 20:54:49,271 [INFO] 🏁 Fin del scraping. Navegador cerrado.
+2025-05-05 20:54:49,271 [INFO] 📊 RESUMEN FINAL:
+2025-05-05 20:54:49,271 [INFO] ✅ Índices guardados: 5
+2025-05-05 20:54:49,271 [INFO] ℹ️ Índices omitidos: 0
+2025-05-05 20:54:49,271 [INFO] ❌ Fallos: 0
+2025-05-05 20:54:49,271 [INFO] ✅ Scraping de índices completado.
+2025-05-05 20:54:50,896 [INFO] Se cargaron 3 empresas desde empresas_bme.csv
+2025-05-05 20:54:50,896 [INFO] 🚀 Iniciando scraping de empresas BME
+2025-05-05 20:54:50,896 [INFO] 🔍 Iniciando scraping para BBVA
+2025-05-05 20:54:50,896 [INFO] 📄 Accediendo a la web de BBVA: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Banco-Bilbao-Vizcaya-Argentaria-ES0113211835
+2025-05-05 20:54:52,099 [INFO] 📥 Insertado/actualizado: BBVA - 2025
+2025-05-05 20:54:52,099 [INFO] ✅ Datos insertados para BBVA, año 2025
+2025-05-05 20:54:52,186 [INFO] 📛 Registro duplicado: BBVA - 2024. No se insertó.
+2025-05-05 20:54:52,271 [INFO] 📛 Registro duplicado: BBVA - 2023. No se insertó.
+2025-05-05 20:54:52,364 [INFO] 📛 Registro duplicado: BBVA - 2022. No se insertó.
+2025-05-05 20:54:52,437 [INFO] 📛 Registro duplicado: BBVA - 2021. No se insertó.
+2025-05-05 20:54:52,437 [INFO] 🔍 Iniciando scraping para Inditex
+2025-05-05 20:54:52,437 [INFO] 📄 Accediendo a la web de Inditex: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Ind-De-Diseno-Textil-Inditex-ES0148396007
+2025-05-05 20:54:53,436 [INFO] 📥 Insertado/actualizado: Inditex - 2025
+2025-05-05 20:54:53,436 [INFO] ✅ Datos insertados para Inditex, año 2025
+2025-05-05 20:54:53,523 [INFO] 📛 Registro duplicado: Inditex - 2024. No se insertó.
+2025-05-05 20:54:53,591 [INFO] 📛 Registro duplicado: Inditex - 2023. No se insertó.
+2025-05-05 20:54:53,654 [INFO] 📛 Registro duplicado: Inditex - 2022. No se insertó.
+2025-05-05 20:54:53,719 [INFO] 📛 Registro duplicado: Inditex - 2021. No se insertó.
+2025-05-05 20:54:53,719 [INFO] 🔍 Iniciando scraping para Santander
+2025-05-05 20:54:53,719 [INFO] 📄 Accediendo a la web de Santander: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Banco-Santander-ES0113900J37
+2025-05-05 20:54:55,568 [INFO] 📥 Insertado/actualizado: Santander - 2025
+2025-05-05 20:54:55,568 [INFO] ✅ Datos insertados para Santander, año 2025
+2025-05-05 20:54:55,628 [INFO] 📛 Registro duplicado: Santander - 2024. No se insertó.
+2025-05-05 20:54:55,684 [INFO] 📛 Registro duplicado: Santander - 2023. No se insertó.
+2025-05-05 20:54:55,741 [INFO] 📛 Registro duplicado: Santander - 2022. No se insertó.
+2025-05-05 20:54:55,794 [INFO] 📛 Registro duplicado: Santander - 2021. No se insertó.
+2025-05-05 20:54:57,883 [INFO] ✅ Scraping de empresas BME finalizado.
+2025-05-05 20:54:57,883 [INFO] ✅ Scraping de empresas BME completado.
+2025-05-05 20:54:57,887 [INFO] 🔧 Poppler configurado en: C:\Users\yo_xa\PycharmProjects\scraper\poppler\poppler-24.08.0\Library\bin
+2025-05-05 20:54:58,114 [INFO] 🧠 Tesseract descomprimido automáticamente.
+2025-05-05 20:54:58,114 [ERROR] ❌ Falta 'spa.traineddata' en tessdata.
+2025-05-05 20:54:58,114 [INFO] 🚀 Iniciando scraping de PDF del IBEX 35
+2025-05-05 20:54:58,225 [INFO] 📥 PDF descargado: https://www.bolsasymercados.es/bme-exchange/docs/Indices/Avisos/esp/gestorindice/Aviso_Gestor_Indices_02-25.pdf -> Aviso_Gestor_Indices_02-25.pdf
+2025-05-05 20:54:58,586 [INFO] 📊 (_parsear_bloque) Se extrajeron 53 filas de la tabla.
+2025-05-05 20:54:58,587 [INFO] ✅ Datos extraídos usando PyMuPDF (fitz).
+2025-05-05 20:54:58,592 [INFO] 📥 Insertado/actualizado: ACS – ACS CONST. (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-05 20:54:58,592 [INFO] 📥 ACS – ACS CONST.
+2025-05-05 20:54:58,597 [INFO] 📥 Insertado/actualizado: ACX – ACERINOX (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-05 20:54:58,597 [INFO] 📥 ACX – ACERINOX
+2025-05-05 20:54:58,601 [INFO] 📥 Insertado/actualizado: AENA – AENA (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-05 20:54:58,601 [INFO] 📥 AENA – AENA
+2025-05-05 20:54:58,605 [INFO] 📥 Insertado/actualizado: AMS – AMADEUS IT (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-05 20:54:58,605 [INFO] 📥 AMS – AMADEUS IT
+2025-05-05 20:54:58,609 [INFO] 📥 Insertado/actualizado: ANA – ACCIONA (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-05 20:54:58,609 [INFO] 📥 ANA – ACCIONA
+2025-05-05 20:54:58,613 [INFO] 📥 Insertado/actualizado: ANE – ACCIONA ENER (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-05 20:54:58,613 [INFO] 📥 ANE – ACCIONA ENER
+2025-05-05 20:54:58,617 [INFO] 📥 Insertado/actualizado: BBVA – BBVA (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-05 20:54:58,617 [INFO] 📥 BBVA – BBVA
+2025-05-05 20:54:58,621 [INFO] 📥 Insertado/actualizado: BKT – BANKINTER (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-05 20:54:58,621 [INFO] 📥 BKT – BANKINTER
+2025-05-05 20:54:58,625 [INFO] 📥 Insertado/actualizado: CABK – CAIXABANK (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-05 20:54:58,625 [INFO] 📥 CABK – CAIXABANK
+2025-05-05 20:54:58,629 [INFO] 📥 Insertado/actualizado: CLNX – CELLNEX (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-05 20:54:58,629 [INFO] 📥 CLNX – CELLNEX
+2025-05-05 20:54:58,633 [INFO] 📥 Insertado/actualizado: COL – INM.COLONIAL (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-05 20:54:58,633 [INFO] 📥 COL – INM.COLONIAL
+2025-05-05 20:54:58,637 [INFO] 📥 Insertado/actualizado: ELE – ENDESA (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-05 20:54:58,637 [INFO] 📥 ELE – ENDESA
+2025-05-05 20:54:58,641 [INFO] 📥 Insertado/actualizado: ENG – ENAGAS (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-05 20:54:58,641 [INFO] 📥 ENG – ENAGAS
+2025-05-05 20:54:58,644 [INFO] 📥 Insertado/actualizado: FDR – FLUIDRA (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-05 20:54:58,645 [INFO] 📥 FDR – FLUIDRA
+2025-05-05 20:54:58,648 [INFO] 📥 Insertado/actualizado: FER – FERROVIAL SE (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-05 20:54:58,649 [INFO] 📥 FER – FERROVIAL SE
+2025-05-05 20:54:58,652 [INFO] 📥 Insertado/actualizado: GRF – GRIFOLS (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-05 20:54:58,653 [INFO] 📥 GRF – GRIFOLS
+2025-05-05 20:54:58,656 [INFO] 📥 Insertado/actualizado: IAG – INT.AIRL.GRP (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-05 20:54:58,656 [INFO] 📥 IAG – INT.AIRL.GRP
+2025-05-05 20:54:58,660 [INFO] 📥 Insertado/actualizado: IBE – IBERDROLA (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-05 20:54:58,660 [INFO] 📥 IBE – IBERDROLA
+2025-05-05 20:54:58,664 [INFO] 📥 Insertado/actualizado: IDR – INDRA A (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-05 20:54:58,664 [INFO] 📥 IDR – INDRA A
+2025-05-05 20:54:58,668 [INFO] 📥 Insertado/actualizado: ITX – INDITEX (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-05 20:54:58,668 [INFO] 📥 ITX – INDITEX
+2025-05-05 20:54:58,672 [INFO] 📥 Insertado/actualizado: LOG – LOGISTA (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-05 20:54:58,672 [INFO] 📥 LOG – LOGISTA
+2025-05-05 20:54:58,676 [INFO] 📥 Insertado/actualizado: MAP – MAPFRE (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-05 20:54:58,676 [INFO] 📥 MAP – MAPFRE
+2025-05-05 20:54:58,679 [INFO] 📥 Insertado/actualizado: MRL – MERLIN PROP. (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-05 20:54:58,680 [INFO] 📥 MRL – MERLIN PROP.
+2025-05-05 20:54:58,683 [INFO] 📥 Insertado/actualizado: MTS – ARCEL.MITTAL (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-05 20:54:58,684 [INFO] 📥 MTS – ARCEL.MITTAL
+2025-05-05 20:54:58,687 [INFO] 📥 Insertado/actualizado: NTGY – NATURGY (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-05 20:54:58,688 [INFO] 📥 NTGY – NATURGY
+2025-05-05 20:54:58,691 [INFO] 📥 Insertado/actualizado: PUIG – PUIG BRANDS (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-05 20:54:58,692 [INFO] 📥 PUIG – PUIG BRANDS
+2025-05-05 20:54:58,695 [INFO] 📥 Insertado/actualizado: RED – REDEIA CORPO (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-05 20:54:58,695 [INFO] 📥 RED – REDEIA CORPO
+2025-05-05 20:54:58,699 [INFO] 📥 Insertado/actualizado: REP – REPSOL (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-05 20:54:58,699 [INFO] 📥 REP – REPSOL
+2025-05-05 20:54:58,703 [INFO] 📥 Insertado/actualizado: ROVI – LABORAT.ROVI (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-05 20:54:58,703 [INFO] 📥 ROVI – LABORAT.ROVI
+2025-05-05 20:54:58,707 [INFO] 📥 Insertado/actualizado: SAB – B. SABADELL (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-05 20:54:58,707 [INFO] 📥 SAB – B. SABADELL
+2025-05-05 20:54:58,711 [INFO] 📥 Insertado/actualizado: SAN – SANTANDER (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-05 20:54:58,711 [INFO] 📥 SAN – SANTANDER
+2025-05-05 20:54:58,714 [INFO] 📥 Insertado/actualizado: SCYR – SACYR (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-05 20:54:58,714 [INFO] 📥 SCYR – SACYR
+2025-05-05 20:54:58,718 [INFO] 📥 Insertado/actualizado: SLR – SOLARIA (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-05 20:54:58,718 [INFO] 📥 SLR – SOLARIA
+2025-05-05 20:54:58,721 [INFO] 📥 Insertado/actualizado: TEF – TELEFONICA (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-05 20:54:58,721 [INFO] 📥 TEF – TELEFONICA
+2025-05-05 20:54:58,725 [INFO] 📥 Insertado/actualizado: UNI – UNICAJA (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-05 20:54:58,725 [INFO] 📥 UNI – UNICAJA
+2025-05-05 20:54:58,726 [INFO] 🗑️ PDF temporal eliminado.
+2025-05-05 20:54:58,726 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
+2025-05-05 20:54:58,726 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
+2025-05-05 20:54:58,726 [INFO] Iniciando scraping de deuda pública (AIAF SEND)
+2025-05-05 20:54:58,726 [INFO] ====== WebDriver manager ======
+2025-05-05 20:54:59,491 [INFO] Get LATEST chromedriver version for google-chrome
+2025-05-05 20:54:59,539 [INFO] Get LATEST chromedriver version for google-chrome
+2025-05-05 20:54:59,573 [INFO] Driver [C:\Users\yo_xa\.wdm\drivers\chromedriver\win64\135.0.7049.114\chromedriver-win32/chromedriver.exe] found in cache
+2025-05-05 20:55:19,434 [INFO] No se encontraron datos para insertar.
+2025-05-05 20:55:19,434 [INFO] ✅ Scraping de deuda pública completado.
+2025-05-05 20:55:19,434 [INFO] === FIN DEL PROCESO DE SCRAPING ===
+2025-05-05 21:10:05,940 [INFO] ✅ Base de datos 'bolsa' verificada o creada.
+2025-05-05 21:10:05,941 [INFO] ✅ Tabla 'indices' verificada o creada correctamente.
+2025-05-05 21:10:05,942 [INFO] Iniciando scraping de deuda pública (AIAF SEND)
+2025-05-05 21:10:05,942 [INFO] ====== WebDriver manager ======
+2025-05-05 21:10:06,758 [INFO] Get LATEST chromedriver version for google-chrome
+2025-05-05 21:10:06,805 [INFO] Get LATEST chromedriver version for google-chrome
+2025-05-05 21:10:06,851 [INFO] Driver [C:\Users\yo_xa\.wdm\drivers\chromedriver\win64\135.0.7049.114\chromedriver-win32/chromedriver.exe] found in cache
+2025-05-05 21:10:15,369 [INFO] No se encontraron datos para insertar.
+2025-05-05 21:13:02,379 [INFO] ✅ Base de datos 'bolsa' verificada o creada.
+2025-05-05 21:13:02,381 [INFO] ✅ Tabla 'indices' verificada o creada correctamente.
+2025-05-05 21:13:02,381 [INFO] Iniciando scraping de deuda pública (AIAF SEND)
+2025-05-05 21:13:02,381 [INFO] ====== WebDriver manager ======
+2025-05-05 21:13:03,148 [INFO] Get LATEST chromedriver version for google-chrome
+2025-05-05 21:13:03,199 [INFO] Get LATEST chromedriver version for google-chrome
+2025-05-05 21:13:03,245 [INFO] Driver [C:\Users\yo_xa\.wdm\drivers\chromedriver\win64\135.0.7049.114\chromedriver-win32/chromedriver.exe] found in cache
+2025-05-05 21:13:12,220 [ERROR] Error al extraer la tabla de deuda pública: could not convert string to float: '-'
+2025-05-05 21:13:12,220 [INFO] No se encontraron datos para insertar.
+2025-05-05 21:14:03,474 [INFO] ✅ Base de datos 'bolsa' verificada o creada.
+2025-05-05 21:14:03,475 [INFO] ✅ Tabla 'indices' verificada o creada correctamente.
+2025-05-05 21:14:03,476 [INFO] Iniciando scraping de deuda pública (AIAF SEND)
+2025-05-05 21:14:03,476 [INFO] ====== WebDriver manager ======
+2025-05-05 21:14:04,191 [INFO] Get LATEST chromedriver version for google-chrome
+2025-05-05 21:14:04,232 [INFO] Get LATEST chromedriver version for google-chrome
+2025-05-05 21:14:04,271 [INFO] Driver [C:\Users\yo_xa\.wdm\drivers\chromedriver\win64\135.0.7049.114\chromedriver-win32/chromedriver.exe] found in cache
+2025-05-05 21:14:12,714 [INFO] 📥 447 registros de deuda pública insertados correctamente.
+2025-05-05 21:14:12,715 [INFO] Se han insertado 447 registros de deuda pública.
+2025-05-05 21:27:49,990 [INFO] ✅ Base de datos 'bolsa' verificada o creada.
+2025-05-05 21:27:49,991 [INFO] ✅ Tabla 'indices' verificada o creada correctamente.
+2025-05-05 21:28:01,497 [INFO] ✅ Base de datos 'bolsa' verificada o creada.
+2025-05-05 21:28:01,499 [INFO] ✅ Tabla 'indices' verificada o creada correctamente.
+2025-05-05 21:28:01,499 [INFO] Iniciando scraping de deuda pública (AIAF SEND)
+2025-05-05 21:28:01,499 [INFO] ====== WebDriver manager ======
+2025-05-05 21:28:02,217 [INFO] Get LATEST chromedriver version for google-chrome
+2025-05-05 21:28:02,282 [INFO] Get LATEST chromedriver version for google-chrome
+2025-05-05 21:28:02,326 [INFO] Driver [C:\Users\yo_xa\.wdm\drivers\chromedriver\win64\135.0.7049.114\chromedriver-win32/chromedriver.exe] found in cache
+2025-05-05 21:28:10,746 [ERROR] ❌ Error al insertar datos de deuda pública en la base de datos: 'compra_numero'
+2025-05-05 21:28:10,746 [INFO] Se han insertado 447 registros de deuda pública.
+2025-05-05 21:29:39,379 [INFO] ✅ Base de datos 'bolsa' verificada o creada.
+2025-05-05 21:29:39,382 [INFO] ✅ Tabla 'indices' verificada o creada correctamente.
+2025-05-05 21:29:39,382 [INFO] Iniciando scraping de deuda pública (AIAF SEND)
+2025-05-05 21:29:39,382 [INFO] ====== WebDriver manager ======
+2025-05-05 21:29:40,185 [INFO] Get LATEST chromedriver version for google-chrome
+2025-05-05 21:29:40,230 [INFO] Get LATEST chromedriver version for google-chrome
+2025-05-05 21:29:40,269 [INFO] Driver [C:\Users\yo_xa\.wdm\drivers\chromedriver\win64\135.0.7049.114\chromedriver-win32/chromedriver.exe] found in cache
+2025-05-05 21:29:48,755 [INFO] 📥 447 registros de deuda pública insertados correctamente.
+2025-05-05 21:29:48,755 [INFO] Se han insertado 447 registros de deuda pública.
+2025-05-05 21:37:17,473 [INFO] ✅ Base de datos 'bolsa' verificada o creada.
+2025-05-05 21:37:17,474 [INFO] ✅ Tabla 'indices' verificada o creada correctamente.
+2025-05-05 21:37:17,474 [INFO] Iniciando scraping de deuda pública (AIAF SEND)
+2025-05-05 21:37:17,475 [INFO] ====== WebDriver manager ======
+2025-05-05 21:37:18,210 [INFO] Get LATEST chromedriver version for google-chrome
+2025-05-05 21:37:18,257 [INFO] Get LATEST chromedriver version for google-chrome
+2025-05-05 21:37:18,299 [INFO] Driver [C:\Users\yo_xa\.wdm\drivers\chromedriver\win64\135.0.7049.114\chromedriver-win32/chromedriver.exe] found in cache
+2025-05-05 21:37:26,988 [INFO] 📥 447 registros de deuda pública insertados correctamente.
+2025-05-05 21:37:26,988 [INFO] Se han insertado 447 registros de deuda pública.

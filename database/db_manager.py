@@ -1,14 +1,7 @@
 import mysql.connector
 from datetime import datetime
 from utils.log_utils import log_info, log_error
-
-# ========================
-# Configuración de conexión
-# ========================
-DB_HOST = "localhost"
-DB_USER = "root"
-DB_PASSWORD = ""
-DB_NAME = "bolsa"
+from config import DB_HOST, DB_USER, DB_PASSWORD, DB_NAME
 
 # ========================
 # Crear base de datos si no existe
@@ -229,6 +222,67 @@ def insertar_datos_composicion(datos):
     finally:
         cursor.close()
         conexion.close()
+
+# ========================
+# Guardar datos de deuda pública
+# ========================
+def insertar_datos_deuda_publica(lista_datos):
+    conexion = None
+    cursor = None
+    try:
+        conexion = conectar()
+        cursor = conexion.cursor()
+
+        consulta = """
+            INSERT INTO deuda_publica (
+                descripcion, isin,
+                compra_numero, compra_importe, compra_tir, compra_precio,
+                venta_precio, venta_tir, venta_importe, venta_numero,
+                ultimo_precio, ultimo_tir, importe_nominal,
+                fecha_insercion
+            ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+            ON DUPLICATE KEY UPDATE
+                compra_numero = VALUES(compra_numero),
+                compra_importe = VALUES(compra_importe),
+                compra_tir = VALUES(compra_tir),
+                compra_precio = VALUES(compra_precio),
+                venta_precio = VALUES(venta_precio),
+                venta_tir = VALUES(venta_tir),
+                venta_importe = VALUES(venta_importe),
+                venta_numero = VALUES(venta_numero),
+                ultimo_precio = VALUES(ultimo_precio),
+                ultimo_tir = VALUES(ultimo_tir),
+                importe_nominal = VALUES(importe_nominal),
+                descripcion = VALUES(descripcion)
+        """
+
+        for fila in lista_datos:
+            cursor.execute(consulta, (
+                fila["descripcion"],
+                fila["isin"],
+                fila["compra_numero"],
+                fila["compra_importe"],
+                fila["compra_tir"],
+                fila["compra_precio"],
+                fila["venta_precio"],
+                fila["venta_tir"],
+                fila["venta_importe"],
+                fila["venta_numero"],
+                fila["ultimo_precio"],
+                fila["ultimo_tir"],
+                fila["importe_nominal"],
+                fila["fecha_insercion"]
+            ))
+
+        conexion.commit()
+        log_info(f"📥 {len(lista_datos)} registros de deuda pública insertados correctamente.")
+    except Exception as e:
+        log_error(f"❌ Error al insertar datos de deuda pública en la base de datos: {e}")
+    finally:
+        if cursor:
+            cursor.close()
+        if conexion:
+            conexion.close()
 
 
 # ========================

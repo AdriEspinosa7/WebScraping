@@ -1,9 +1,8 @@
 from scraper.investing_scraper import ejecutar_scraping_indices
 from scraper.bme_scraper import BmeScraper
 from scraper.ibex_pdf_scraper import IbexPDFScraper
+from scraper.deuda_publica import ejecutar_scraper_deuda_publica
 from utils.log_utils import log_info, log_error
-
-# Ejecutar verificación de requisitos antes de comenzar
 
 import datetime
 import traceback
@@ -34,6 +33,13 @@ def main():
         log_error(f"❌ Error durante el scraping de PDFs IBEX 35: {e}")
         log_error(traceback.format_exc())
 
+    try:
+        ejecutar_scraper_deuda_publica()
+        log_info("✅ Scraping de deuda pública completado.")
+    except Exception as e:
+        log_error(f"❌ Error durante el scraping de deuda pública: {e}")
+        log_error(traceback.format_exc())
+
     log_info("=== FIN DEL PROCESO DE SCRAPING ===")
 
     # ✅ Notificación visual clara del estado final
@@ -45,6 +51,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
