@@ -24,9 +24,18 @@ def configurar_ocr(poppler_path=None, extras_dir="extras"):
     return poppler_dir
 
 
+def _obtener_ruta_raiz_proyecto():
+    """
+    Devuelve la ruta absoluta a la raíz del proyecto, un nivel por encima de la carpeta actual (/scraper).
+    """
+    return os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+
+
 def _configurar_poppler(extras_dir):
-    base = os.path.abspath("../scraper/poppler")
+    base_dir = _obtener_ruta_raiz_proyecto()
+    base = os.path.join(base_dir, 'poppler')
     zip_path = os.path.join(extras_dir, "poppler.zip")
+
     if not os.path.isdir(base) or not any(
         f.lower().endswith(".exe")
         for _, _, files in os.walk(base)
@@ -54,7 +63,9 @@ def _configurar_poppler(extras_dir):
 def _configurar_tesseract(extras_dir):
     if platform.system() != "Windows" or pytesseract is None:
         return
-    base = os.path.abspath("../scraper/tesseract")
+
+    base_dir = _obtener_ruta_raiz_proyecto()
+    base = os.path.join(base_dir, 'tesseract')
     zip_path = os.path.join(extras_dir, "tesseract.zip")
 
     if not os.path.exists(os.path.join(base, "tesseract.exe")):
@@ -100,3 +111,4 @@ def extraer_texto_ocr(pdf_path, poppler_path):
     except Exception as e:
         log_error(f"❌ Error en OCR del PDF: {e}")
         return ""
+
