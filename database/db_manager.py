@@ -284,12 +284,113 @@ def insertar_datos_deuda_publica(lista_datos):
         if conexion:
             conexion.close()
 
+def crear_tabla_deuda_publica_si_no_existe():
+    conexion = conectar()
+    cursor = conexion.cursor()
+
+    crear_tabla_sql = """
+    CREATE TABLE IF NOT EXISTS deuda_publica (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        descripcion VARCHAR(255),
+        isin VARCHAR(50),
+        compra_numero VARCHAR(50),
+        compra_importe VARCHAR(50),
+        compra_tir VARCHAR(50),
+        compra_precio VARCHAR(50),
+        venta_precio VARCHAR(50),
+        venta_tir VARCHAR(50),
+        venta_importe VARCHAR(50),
+        venta_numero VARCHAR(50),
+        ultimo_precio VARCHAR(50),
+        ultimo_tir VARCHAR(50),
+        importe_nominal VARCHAR(50),
+        fecha_insercion DATE NOT NULL,
+        UNIQUE KEY unique_isin_fecha (isin, fecha_insercion)
+    );
+    """
+
+    try:
+        cursor.execute(crear_tabla_sql)
+        conexion.commit()
+        log_info("✅ Tabla 'deuda_publica' verificada o creada correctamente.")
+    except Exception as e:
+        log_error(f"❌ Error al crear/verificar la tabla 'deuda_publica': {e}")
+    finally:
+        cursor.close()
+        conexion.close()
+
+def crear_tabla_composicion_ibex35_si_no_existe():
+    conexion = conectar()
+    cursor = conexion.cursor()
+
+    crear_tabla_sql = """
+    CREATE TABLE IF NOT EXISTS composicion_ibex35 (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        simbolo VARCHAR(20),
+        nombre VARCHAR(255),
+        titulos_antes VARCHAR(100),
+        estatus VARCHAR(100),
+        modificaciones VARCHAR(100),
+        comp VARCHAR(100),
+        coef_ff VARCHAR(100),
+        fecha_insercion DATE NOT NULL,
+        nombre_pdf VARCHAR(255),
+        UNIQUE KEY unique_simbolo_fecha (simbolo, fecha_insercion)
+    );
+    """
+
+    try:
+        cursor.execute(crear_tabla_sql)
+        conexion.commit()
+        log_info("✅ Tabla 'composicion_ibex35' verificada o creada correctamente.")
+    except Exception as e:
+        log_error(f"❌ Error al crear/verificar la tabla 'composicion_ibex35': {e}")
+    finally:
+        cursor.close()
+        conexion.close()
+
+def crear_tabla_datos_empresas_si_no_existe():
+    conexion = conectar()
+    cursor = conexion.cursor()
+
+    crear_tabla_sql = """
+    CREATE TABLE IF NOT EXISTS datos_empresas (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        empresa VARCHAR(255),
+        anio INT,
+        capitalizacion DECIMAL(20, 2),
+        num_acciones BIGINT,
+        precio_cierre DECIMAL(10, 2),
+        ultimo_precio DECIMAL(10, 2),
+        precio_max DECIMAL(10, 2),
+        precio_min DECIMAL(10, 2),
+        volumen BIGINT,
+        efectivo DECIMAL(20, 2),
+        fecha_registro DATE NOT NULL,
+        UNIQUE KEY unique_empresa_anio (empresa, anio)
+    );
+    """
+
+    try:
+        cursor.execute(crear_tabla_sql)
+        conexion.commit()
+        log_info("✅ Tabla 'datos_empresas' verificada o creada correctamente.")
+    except Exception as e:
+        log_error(f"❌ Error al crear/verificar la tabla 'datos_empresas': {e}")
+    finally:
+        cursor.close()
+        conexion.close()
+
 
 # ========================
 # Inicialización al importar módulo
 # ========================
 crear_base_datos_si_no_existe()
 crear_tabla_si_no_existe()
+crear_tabla_datos_empresas_si_no_existe()
+crear_tabla_composicion_ibex35_si_no_existe()
+crear_tabla_deuda_publica_si_no_existe()
+
 
 
 

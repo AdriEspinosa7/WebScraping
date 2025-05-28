@@ -5857,3 +5857,297 @@ Stacktrace:
 2025-05-22 11:36:02,318 [INFO] Se han insertado 448 registros de deuda pública.
 2025-05-22 11:36:02,318 [INFO] ✅ Scraping de deuda pública completado.
 2025-05-22 11:36:02,318 [INFO] === FIN DEL PROCESO DE SCRAPING ===
+2025-05-27 20:01:17,288 [ERROR] ❌ Error al crear la base de datos: 2003 (HY000): Can't connect to MySQL server on 'localhost:3306' (10061)
+2025-05-28 19:12:10,579 [INFO] ✅ Base de datos 'bolsa' verificada o creada.
+2025-05-28 19:12:10,602 [INFO] ✅ Tabla 'indices' verificada o creada correctamente.
+2025-05-28 19:12:11,021 [INFO] === INICIO DEL PROCESO DE SCRAPING ===
+2025-05-28 19:12:11,021 [INFO] ====== WebDriver manager ======
+2025-05-28 19:12:12,050 [INFO] Get LATEST chromedriver version for google-chrome
+2025-05-28 19:12:12,124 [INFO] Get LATEST chromedriver version for google-chrome
+2025-05-28 19:12:12,172 [INFO] Get LATEST chromedriver version for google-chrome
+2025-05-28 19:12:12,278 [INFO] WebDriver version 136.0.7103.113 selected
+2025-05-28 19:12:12,281 [INFO] Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/136.0.7103.113/win32/chromedriver-win32.zip
+2025-05-28 19:12:12,281 [INFO] About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/136.0.7103.113/win32/chromedriver-win32.zip
+2025-05-28 19:12:12,374 [INFO] Driver downloading response is 200
+2025-05-28 19:12:12,607 [INFO] Get LATEST chromedriver version for google-chrome
+2025-05-28 19:12:12,913 [INFO] Driver has been saved in cache [C:\Users\yo_xa\.wdm\drivers\chromedriver\win64\136.0.7103.113]
+2025-05-28 19:12:15,240 [INFO] 🚀 Inicio del scraping de índices bursátiles.
+2025-05-28 19:12:21,856 [INFO] 📥 Guardado: IBEX 35 (IBEX) - 14111.2 - -128,70 - (-0,90%)
+2025-05-28 19:12:27,752 [INFO] 📥 Guardado: S&P 500 (SPX) - 5916.32 - -5,22 - (-0,09%)
+2025-05-28 19:12:33,856 [INFO] 📥 Guardado: Nasdaq 100 (NDX) - 21428.8 - +13,81 - (+0,06%)
+2025-05-28 19:12:39,807 [INFO] 📥 Guardado: DAX (GDAXI) - 24067.06 - -159,43 - (-0,66%)
+2025-05-28 19:12:46,069 [INFO] 📥 Guardado: MSCI World (MIWO00000PUS) - 3858.19 - -10,87 - (-0,28%)
+2025-05-28 19:12:48,195 [INFO] 🏁 Fin del scraping. Navegador cerrado.
+2025-05-28 19:12:48,196 [INFO] 📊 RESUMEN FINAL:
+2025-05-28 19:12:48,196 [INFO] ✅ Índices guardados: 5
+2025-05-28 19:12:48,196 [INFO] ℹ️ Índices omitidos: 0
+2025-05-28 19:12:48,196 [INFO] ❌ Fallos: 0
+2025-05-28 19:12:48,196 [INFO] ✅ Scraping de índices completado.
+2025-05-28 19:12:50,256 [INFO] Se cargaron 3 empresas desde empresas_bme.csv
+2025-05-28 19:12:50,256 [INFO] 🚀 Iniciando scraping de empresas BME
+2025-05-28 19:12:50,256 [INFO] 🔍 Iniciando scraping para BBVA
+2025-05-28 19:12:50,256 [INFO] 📄 Accediendo a la web de BBVA: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Banco-Bilbao-Vizcaya-Argentaria-ES0113211835
+2025-05-28 19:12:51,435 [ERROR] ❌ Error al insertar datos de empresa: 1146 (42S02): Table 'bolsa.datos_empresas' doesn't exist
+2025-05-28 19:12:51,533 [ERROR] ❌ Error al insertar datos de empresa: 1146 (42S02): Table 'bolsa.datos_empresas' doesn't exist
+2025-05-28 19:12:51,599 [ERROR] ❌ Error al insertar datos de empresa: 1146 (42S02): Table 'bolsa.datos_empresas' doesn't exist
+2025-05-28 19:12:51,679 [ERROR] ❌ Error al insertar datos de empresa: 1146 (42S02): Table 'bolsa.datos_empresas' doesn't exist
+2025-05-28 19:12:51,749 [ERROR] ❌ Error al insertar datos de empresa: 1146 (42S02): Table 'bolsa.datos_empresas' doesn't exist
+2025-05-28 19:12:51,749 [INFO] ⚠️ Todas las filas fueron ignoradas para BBVA
+2025-05-28 19:12:51,749 [INFO] 🔍 Iniciando scraping para Inditex
+2025-05-28 19:12:51,749 [INFO] 📄 Accediendo a la web de Inditex: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Ind-De-Diseno-Textil-Inditex-ES0148396007
+2025-05-28 19:12:52,599 [ERROR] ❌ Error al insertar datos de empresa: 1146 (42S02): Table 'bolsa.datos_empresas' doesn't exist
+2025-05-28 19:12:52,680 [ERROR] ❌ Error al insertar datos de empresa: 1146 (42S02): Table 'bolsa.datos_empresas' doesn't exist
+2025-05-28 19:12:52,759 [ERROR] ❌ Error al insertar datos de empresa: 1146 (42S02): Table 'bolsa.datos_empresas' doesn't exist
+2025-05-28 19:12:52,842 [ERROR] ❌ Error al insertar datos de empresa: 1146 (42S02): Table 'bolsa.datos_empresas' doesn't exist
+2025-05-28 19:12:52,906 [ERROR] ❌ Error al insertar datos de empresa: 1146 (42S02): Table 'bolsa.datos_empresas' doesn't exist
+2025-05-28 19:12:52,906 [INFO] ⚠️ Todas las filas fueron ignoradas para Inditex
+2025-05-28 19:12:52,906 [INFO] 🔍 Iniciando scraping para Santander
+2025-05-28 19:12:52,906 [INFO] 📄 Accediendo a la web de Santander: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Banco-Santander-ES0113900J37
+2025-05-28 19:12:53,775 [ERROR] ❌ Error al insertar datos de empresa: 1146 (42S02): Table 'bolsa.datos_empresas' doesn't exist
+2025-05-28 19:12:53,859 [ERROR] ❌ Error al insertar datos de empresa: 1146 (42S02): Table 'bolsa.datos_empresas' doesn't exist
+2025-05-28 19:12:53,934 [ERROR] ❌ Error al insertar datos de empresa: 1146 (42S02): Table 'bolsa.datos_empresas' doesn't exist
+2025-05-28 19:12:54,027 [ERROR] ❌ Error al insertar datos de empresa: 1146 (42S02): Table 'bolsa.datos_empresas' doesn't exist
+2025-05-28 19:12:54,090 [ERROR] ❌ Error al insertar datos de empresa: 1146 (42S02): Table 'bolsa.datos_empresas' doesn't exist
+2025-05-28 19:12:54,090 [INFO] ⚠️ Todas las filas fueron ignoradas para Santander
+2025-05-28 19:12:56,195 [INFO] ✅ Scraping de empresas BME finalizado.
+2025-05-28 19:12:56,196 [INFO] ✅ Scraping de empresas BME completado.
+2025-05-28 19:12:56,197 [INFO] 🔧 Poppler configurado en: C:\Users\yo_xa\PycharmProjects\PythonProject\poppler\poppler-24.08.0\Library\bin
+2025-05-28 19:12:56,449 [INFO] 🧠 Tesseract descomprimido automáticamente.
+2025-05-28 19:12:56,449 [INFO] 🔍 Tesseract configurado en: C:\Users\yo_xa\PycharmProjects\PythonProject\tesseract\Tesseract-OCR\tesseract.exe
+2025-05-28 19:12:56,449 [INFO] 🚀 Iniciando scraping de PDF del IBEX 35
+2025-05-28 19:12:56,560 [INFO] 📥 PDF descargado: https://www.bolsasymercados.es/bme-exchange/docs/Indices/Avisos/esp/gestorindice/Aviso_Gestor_Indices_02-25.pdf -> Aviso_Gestor_Indices_02-25.pdf
+2025-05-28 19:12:56,965 [INFO] 📊 (_parsear_bloque) Se extrajeron 53 filas de la tabla.
+2025-05-28 19:12:56,965 [INFO] ✅ Datos extraídos usando PyMuPDF (fitz).
+2025-05-28 19:12:56,967 [ERROR] ❌ Error al insertar datos de composición: 1146 (42S02): Table 'bolsa.composicion_ibex35' doesn't exist
+2025-05-28 19:12:56,967 [INFO] 📛 ACS – ACS CONST.
+2025-05-28 19:12:56,970 [ERROR] ❌ Error al insertar datos de composición: 1146 (42S02): Table 'bolsa.composicion_ibex35' doesn't exist
+2025-05-28 19:12:56,970 [INFO] 📛 ACX – ACERINOX
+2025-05-28 19:12:56,972 [ERROR] ❌ Error al insertar datos de composición: 1146 (42S02): Table 'bolsa.composicion_ibex35' doesn't exist
+2025-05-28 19:12:56,972 [INFO] 📛 AENA – AENA
+2025-05-28 19:12:56,974 [ERROR] ❌ Error al insertar datos de composición: 1146 (42S02): Table 'bolsa.composicion_ibex35' doesn't exist
+2025-05-28 19:12:56,974 [INFO] 📛 AMS – AMADEUS IT
+2025-05-28 19:12:56,976 [ERROR] ❌ Error al insertar datos de composición: 1146 (42S02): Table 'bolsa.composicion_ibex35' doesn't exist
+2025-05-28 19:12:56,976 [INFO] 📛 ANA – ACCIONA
+2025-05-28 19:12:56,978 [ERROR] ❌ Error al insertar datos de composición: 1146 (42S02): Table 'bolsa.composicion_ibex35' doesn't exist
+2025-05-28 19:12:56,978 [INFO] 📛 ANE – ACCIONA ENER
+2025-05-28 19:12:56,979 [ERROR] ❌ Error al insertar datos de composición: 1146 (42S02): Table 'bolsa.composicion_ibex35' doesn't exist
+2025-05-28 19:12:56,980 [INFO] 📛 BBVA – BBVA
+2025-05-28 19:12:56,981 [ERROR] ❌ Error al insertar datos de composición: 1146 (42S02): Table 'bolsa.composicion_ibex35' doesn't exist
+2025-05-28 19:12:56,981 [INFO] 📛 BKT – BANKINTER
+2025-05-28 19:12:56,982 [ERROR] ❌ Error al insertar datos de composición: 1146 (42S02): Table 'bolsa.composicion_ibex35' doesn't exist
+2025-05-28 19:12:56,982 [INFO] 📛 CABK – CAIXABANK
+2025-05-28 19:12:56,983 [ERROR] ❌ Error al insertar datos de composición: 1146 (42S02): Table 'bolsa.composicion_ibex35' doesn't exist
+2025-05-28 19:12:56,983 [INFO] 📛 CLNX – CELLNEX
+2025-05-28 19:12:56,984 [ERROR] ❌ Error al insertar datos de composición: 1146 (42S02): Table 'bolsa.composicion_ibex35' doesn't exist
+2025-05-28 19:12:56,985 [INFO] 📛 COL – INM.COLONIAL
+2025-05-28 19:12:56,986 [ERROR] ❌ Error al insertar datos de composición: 1146 (42S02): Table 'bolsa.composicion_ibex35' doesn't exist
+2025-05-28 19:12:56,986 [INFO] 📛 ELE – ENDESA
+2025-05-28 19:12:56,987 [ERROR] ❌ Error al insertar datos de composición: 1146 (42S02): Table 'bolsa.composicion_ibex35' doesn't exist
+2025-05-28 19:12:56,987 [INFO] 📛 ENG – ENAGAS
+2025-05-28 19:12:56,988 [ERROR] ❌ Error al insertar datos de composición: 1146 (42S02): Table 'bolsa.composicion_ibex35' doesn't exist
+2025-05-28 19:12:56,988 [INFO] 📛 FDR – FLUIDRA
+2025-05-28 19:12:56,990 [ERROR] ❌ Error al insertar datos de composición: 1146 (42S02): Table 'bolsa.composicion_ibex35' doesn't exist
+2025-05-28 19:12:56,990 [INFO] 📛 FER – FERROVIAL SE
+2025-05-28 19:12:56,991 [ERROR] ❌ Error al insertar datos de composición: 1146 (42S02): Table 'bolsa.composicion_ibex35' doesn't exist
+2025-05-28 19:12:56,991 [INFO] 📛 GRF – GRIFOLS
+2025-05-28 19:12:56,992 [ERROR] ❌ Error al insertar datos de composición: 1146 (42S02): Table 'bolsa.composicion_ibex35' doesn't exist
+2025-05-28 19:12:56,992 [INFO] 📛 IAG – INT.AIRL.GRP
+2025-05-28 19:12:56,993 [ERROR] ❌ Error al insertar datos de composición: 1146 (42S02): Table 'bolsa.composicion_ibex35' doesn't exist
+2025-05-28 19:12:56,993 [INFO] 📛 IBE – IBERDROLA
+2025-05-28 19:12:56,994 [ERROR] ❌ Error al insertar datos de composición: 1146 (42S02): Table 'bolsa.composicion_ibex35' doesn't exist
+2025-05-28 19:12:56,994 [INFO] 📛 IDR – INDRA A
+2025-05-28 19:12:56,995 [ERROR] ❌ Error al insertar datos de composición: 1146 (42S02): Table 'bolsa.composicion_ibex35' doesn't exist
+2025-05-28 19:12:56,995 [INFO] 📛 ITX – INDITEX
+2025-05-28 19:12:56,996 [ERROR] ❌ Error al insertar datos de composición: 1146 (42S02): Table 'bolsa.composicion_ibex35' doesn't exist
+2025-05-28 19:12:56,996 [INFO] 📛 LOG – LOGISTA
+2025-05-28 19:12:56,997 [ERROR] ❌ Error al insertar datos de composición: 1146 (42S02): Table 'bolsa.composicion_ibex35' doesn't exist
+2025-05-28 19:12:56,997 [INFO] 📛 MAP – MAPFRE
+2025-05-28 19:12:56,998 [ERROR] ❌ Error al insertar datos de composición: 1146 (42S02): Table 'bolsa.composicion_ibex35' doesn't exist
+2025-05-28 19:12:56,998 [INFO] 📛 MRL – MERLIN PROP.
+2025-05-28 19:12:56,999 [ERROR] ❌ Error al insertar datos de composición: 1146 (42S02): Table 'bolsa.composicion_ibex35' doesn't exist
+2025-05-28 19:12:56,999 [INFO] 📛 MTS – ARCEL.MITTAL
+2025-05-28 19:12:57,000 [ERROR] ❌ Error al insertar datos de composición: 1146 (42S02): Table 'bolsa.composicion_ibex35' doesn't exist
+2025-05-28 19:12:57,000 [INFO] 📛 NTGY – NATURGY
+2025-05-28 19:12:57,001 [ERROR] ❌ Error al insertar datos de composición: 1146 (42S02): Table 'bolsa.composicion_ibex35' doesn't exist
+2025-05-28 19:12:57,002 [INFO] 📛 PUIG – PUIG BRANDS
+2025-05-28 19:12:57,003 [ERROR] ❌ Error al insertar datos de composición: 1146 (42S02): Table 'bolsa.composicion_ibex35' doesn't exist
+2025-05-28 19:12:57,003 [INFO] 📛 RED – REDEIA CORPO
+2025-05-28 19:12:57,004 [ERROR] ❌ Error al insertar datos de composición: 1146 (42S02): Table 'bolsa.composicion_ibex35' doesn't exist
+2025-05-28 19:12:57,004 [INFO] 📛 REP – REPSOL
+2025-05-28 19:12:57,005 [ERROR] ❌ Error al insertar datos de composición: 1146 (42S02): Table 'bolsa.composicion_ibex35' doesn't exist
+2025-05-28 19:12:57,005 [INFO] 📛 ROVI – LABORAT.ROVI
+2025-05-28 19:12:57,006 [ERROR] ❌ Error al insertar datos de composición: 1146 (42S02): Table 'bolsa.composicion_ibex35' doesn't exist
+2025-05-28 19:12:57,006 [INFO] 📛 SAB – B. SABADELL
+2025-05-28 19:12:57,007 [ERROR] ❌ Error al insertar datos de composición: 1146 (42S02): Table 'bolsa.composicion_ibex35' doesn't exist
+2025-05-28 19:12:57,007 [INFO] 📛 SAN – SANTANDER
+2025-05-28 19:12:57,008 [ERROR] ❌ Error al insertar datos de composición: 1146 (42S02): Table 'bolsa.composicion_ibex35' doesn't exist
+2025-05-28 19:12:57,008 [INFO] 📛 SCYR – SACYR
+2025-05-28 19:12:57,009 [ERROR] ❌ Error al insertar datos de composición: 1146 (42S02): Table 'bolsa.composicion_ibex35' doesn't exist
+2025-05-28 19:12:57,009 [INFO] 📛 SLR – SOLARIA
+2025-05-28 19:12:57,010 [ERROR] ❌ Error al insertar datos de composición: 1146 (42S02): Table 'bolsa.composicion_ibex35' doesn't exist
+2025-05-28 19:12:57,010 [INFO] 📛 TEF – TELEFONICA
+2025-05-28 19:12:57,011 [ERROR] ❌ Error al insertar datos de composición: 1146 (42S02): Table 'bolsa.composicion_ibex35' doesn't exist
+2025-05-28 19:12:57,012 [INFO] 📛 UNI – UNICAJA
+2025-05-28 19:12:57,012 [INFO] 🗑️ PDF temporal eliminado.
+2025-05-28 19:12:57,012 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
+2025-05-28 19:12:57,012 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
+2025-05-28 19:12:57,012 [INFO] Iniciando scraping de deuda pública (AIAF SEND)
+2025-05-28 19:12:57,012 [INFO] ====== WebDriver manager ======
+2025-05-28 19:12:57,882 [INFO] Get LATEST chromedriver version for google-chrome
+2025-05-28 19:12:57,930 [INFO] Get LATEST chromedriver version for google-chrome
+2025-05-28 19:12:57,969 [INFO] Driver [C:\Users\yo_xa\.wdm\drivers\chromedriver\win64\136.0.7103.113\chromedriver-win32/chromedriver.exe] found in cache
+2025-05-28 19:13:10,773 [ERROR] ❌ Error al insertar datos de deuda pública en la base de datos: 1146 (42S02): Table 'bolsa.deuda_publica' doesn't exist
+2025-05-28 19:13:10,773 [INFO] Se han insertado 450 registros de deuda pública.
+2025-05-28 19:13:10,774 [INFO] ✅ Scraping de deuda pública completado.
+2025-05-28 19:13:10,774 [INFO] === FIN DEL PROCESO DE SCRAPING ===
+2025-05-28 19:27:07,824 [INFO] ✅ Base de datos 'bolsa' verificada o creada.
+2025-05-28 19:27:07,826 [INFO] ✅ Tabla 'indices' verificada o creada correctamente.
+2025-05-28 19:27:07,862 [INFO] ✅ Tabla 'datos_empresas' verificada o creada correctamente.
+2025-05-28 19:27:07,890 [INFO] ✅ Tabla 'composicion_ibex35' verificada o creada correctamente.
+2025-05-28 19:27:07,943 [INFO] ✅ Tabla 'deuda_publica' verificada o creada correctamente.
+2025-05-28 19:27:08,121 [INFO] === INICIO DEL PROCESO DE SCRAPING ===
+2025-05-28 19:27:08,122 [INFO] ====== WebDriver manager ======
+2025-05-28 19:27:08,943 [INFO] Get LATEST chromedriver version for google-chrome
+2025-05-28 19:27:09,019 [INFO] Get LATEST chromedriver version for google-chrome
+2025-05-28 19:27:09,065 [INFO] Driver [C:\Users\yo_xa\.wdm\drivers\chromedriver\win64\136.0.7103.113\chromedriver-win32/chromedriver.exe] found in cache
+2025-05-28 19:27:10,166 [INFO] 🚀 Inicio del scraping de índices bursátiles.
+2025-05-28 19:27:16,778 [INFO] 📛 Ya existe un registro para 'IBEX 35 (IBEX)' en la fecha actual. No se insertó.
+2025-05-28 19:27:22,759 [INFO] 📛 Ya existe un registro para 'S&P 500 (SPX)' en la fecha actual. No se insertó.
+2025-05-28 19:27:28,749 [INFO] 📛 Ya existe un registro para 'Nasdaq 100 (NDX)' en la fecha actual. No se insertó.
+2025-05-28 19:27:34,607 [INFO] 📛 Ya existe un registro para 'DAX (GDAXI)' en la fecha actual. No se insertó.
+2025-05-28 19:27:40,363 [INFO] 📛 Ya existe un registro para 'MSCI World (MIWO00000PUS)' en la fecha actual. No se insertó.
+2025-05-28 19:27:42,472 [INFO] 🏁 Fin del scraping. Navegador cerrado.
+2025-05-28 19:27:42,473 [INFO] 📊 RESUMEN FINAL:
+2025-05-28 19:27:42,473 [INFO] ✅ Índices guardados: 0
+2025-05-28 19:27:42,473 [INFO] ℹ️ Índices omitidos: 5
+2025-05-28 19:27:42,473 [INFO] ❌ Fallos: 0
+2025-05-28 19:27:42,473 [INFO] ✅ Scraping de índices completado.
+2025-05-28 19:27:43,759 [INFO] Se cargaron 3 empresas desde empresas_bme.csv
+2025-05-28 19:27:43,759 [INFO] 🚀 Iniciando scraping de empresas BME
+2025-05-28 19:27:43,760 [INFO] 🔍 Iniciando scraping para BBVA
+2025-05-28 19:27:43,760 [INFO] 📄 Accediendo a la web de BBVA: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Banco-Bilbao-Vizcaya-Argentaria-ES0113211835
+2025-05-28 19:27:45,601 [INFO] 📥 Insertado/actualizado: BBVA - 2025
+2025-05-28 19:27:45,601 [INFO] ✅ Datos insertados para BBVA, año 2025
+2025-05-28 19:27:45,673 [INFO] 📥 Insertado/actualizado: BBVA - 2024
+2025-05-28 19:27:45,673 [INFO] ✅ Datos insertados para BBVA, año 2024
+2025-05-28 19:27:45,735 [INFO] 📥 Insertado/actualizado: BBVA - 2023
+2025-05-28 19:27:45,735 [INFO] ✅ Datos insertados para BBVA, año 2023
+2025-05-28 19:27:45,795 [INFO] 📥 Insertado/actualizado: BBVA - 2022
+2025-05-28 19:27:45,796 [INFO] ✅ Datos insertados para BBVA, año 2022
+2025-05-28 19:27:45,874 [INFO] 📥 Insertado/actualizado: BBVA - 2021
+2025-05-28 19:27:45,874 [INFO] ✅ Datos insertados para BBVA, año 2021
+2025-05-28 19:27:45,874 [INFO] 🔍 Iniciando scraping para Inditex
+2025-05-28 19:27:45,874 [INFO] 📄 Accediendo a la web de Inditex: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Ind-De-Diseno-Textil-Inditex-ES0148396007
+2025-05-28 19:27:46,714 [INFO] 📥 Insertado/actualizado: Inditex - 2025
+2025-05-28 19:27:46,714 [INFO] ✅ Datos insertados para Inditex, año 2025
+2025-05-28 19:27:46,784 [INFO] 📥 Insertado/actualizado: Inditex - 2024
+2025-05-28 19:27:46,784 [INFO] ✅ Datos insertados para Inditex, año 2024
+2025-05-28 19:27:46,853 [INFO] 📥 Insertado/actualizado: Inditex - 2023
+2025-05-28 19:27:46,853 [INFO] ✅ Datos insertados para Inditex, año 2023
+2025-05-28 19:27:46,918 [INFO] 📥 Insertado/actualizado: Inditex - 2022
+2025-05-28 19:27:46,918 [INFO] ✅ Datos insertados para Inditex, año 2022
+2025-05-28 19:27:46,994 [INFO] 📥 Insertado/actualizado: Inditex - 2021
+2025-05-28 19:27:46,994 [INFO] ✅ Datos insertados para Inditex, año 2021
+2025-05-28 19:27:46,994 [INFO] 🔍 Iniciando scraping para Santander
+2025-05-28 19:27:46,994 [INFO] 📄 Accediendo a la web de Santander: https://www.bolsasymercados.es/bme-exchange/es/Mercados-y-Cotizaciones/Acciones/Mercado-Continuo/Ficha/Banco-Santander-ES0113900J37
+2025-05-28 19:27:47,776 [INFO] 📥 Insertado/actualizado: Santander - 2025
+2025-05-28 19:27:47,776 [INFO] ✅ Datos insertados para Santander, año 2025
+2025-05-28 19:27:47,940 [INFO] 📥 Insertado/actualizado: Santander - 2024
+2025-05-28 19:27:47,941 [INFO] ✅ Datos insertados para Santander, año 2024
+2025-05-28 19:27:48,016 [INFO] 📥 Insertado/actualizado: Santander - 2023
+2025-05-28 19:27:48,016 [INFO] ✅ Datos insertados para Santander, año 2023
+2025-05-28 19:27:48,090 [INFO] 📥 Insertado/actualizado: Santander - 2022
+2025-05-28 19:27:48,090 [INFO] ✅ Datos insertados para Santander, año 2022
+2025-05-28 19:27:48,160 [INFO] 📥 Insertado/actualizado: Santander - 2021
+2025-05-28 19:27:48,160 [INFO] ✅ Datos insertados para Santander, año 2021
+2025-05-28 19:27:50,251 [INFO] ✅ Scraping de empresas BME finalizado.
+2025-05-28 19:27:50,252 [INFO] ✅ Scraping de empresas BME completado.
+2025-05-28 19:27:50,255 [INFO] 🔧 Poppler configurado en: C:\Users\yo_xa\PycharmProjects\PythonProject\poppler\poppler-24.08.0\Library\bin
+2025-05-28 19:27:50,468 [INFO] 🧠 Tesseract descomprimido automáticamente.
+2025-05-28 19:27:50,469 [INFO] 🔍 Tesseract configurado en: C:\Users\yo_xa\PycharmProjects\PythonProject\tesseract\Tesseract-OCR\tesseract.exe
+2025-05-28 19:27:50,469 [INFO] 🚀 Iniciando scraping de PDF del IBEX 35
+2025-05-28 19:27:50,732 [INFO] 📥 PDF descargado: https://www.bolsasymercados.es/bme-exchange/docs/Indices/Avisos/esp/gestorindice/Aviso_Gestor_Indices_02-25.pdf -> Aviso_Gestor_Indices_02-25.pdf
+2025-05-28 19:27:50,907 [INFO] 📊 (_parsear_bloque) Se extrajeron 53 filas de la tabla.
+2025-05-28 19:27:50,907 [INFO] ✅ Datos extraídos usando PyMuPDF (fitz).
+2025-05-28 19:27:50,915 [INFO] 📥 Insertado/actualizado: ACS – ACS CONST. (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-28 19:27:50,915 [INFO] 📥 ACS – ACS CONST.
+2025-05-28 19:27:50,920 [INFO] 📥 Insertado/actualizado: ACX – ACERINOX (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-28 19:27:50,920 [INFO] 📥 ACX – ACERINOX
+2025-05-28 19:27:50,925 [INFO] 📥 Insertado/actualizado: AENA – AENA (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-28 19:27:50,925 [INFO] 📥 AENA – AENA
+2025-05-28 19:27:50,930 [INFO] 📥 Insertado/actualizado: AMS – AMADEUS IT (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-28 19:27:50,931 [INFO] 📥 AMS – AMADEUS IT
+2025-05-28 19:27:50,934 [INFO] 📥 Insertado/actualizado: ANA – ACCIONA (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-28 19:27:50,935 [INFO] 📥 ANA – ACCIONA
+2025-05-28 19:27:50,940 [INFO] 📥 Insertado/actualizado: ANE – ACCIONA ENER (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-28 19:27:50,940 [INFO] 📥 ANE – ACCIONA ENER
+2025-05-28 19:27:50,944 [INFO] 📥 Insertado/actualizado: BBVA – BBVA (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-28 19:27:50,944 [INFO] 📥 BBVA – BBVA
+2025-05-28 19:27:50,949 [INFO] 📥 Insertado/actualizado: BKT – BANKINTER (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-28 19:27:50,949 [INFO] 📥 BKT – BANKINTER
+2025-05-28 19:27:50,953 [INFO] 📥 Insertado/actualizado: CABK – CAIXABANK (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-28 19:27:50,953 [INFO] 📥 CABK – CAIXABANK
+2025-05-28 19:27:50,958 [INFO] 📥 Insertado/actualizado: CLNX – CELLNEX (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-28 19:27:50,958 [INFO] 📥 CLNX – CELLNEX
+2025-05-28 19:27:50,962 [INFO] 📥 Insertado/actualizado: COL – INM.COLONIAL (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-28 19:27:50,962 [INFO] 📥 COL – INM.COLONIAL
+2025-05-28 19:27:50,966 [INFO] 📥 Insertado/actualizado: ELE – ENDESA (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-28 19:27:50,966 [INFO] 📥 ELE – ENDESA
+2025-05-28 19:27:50,970 [INFO] 📥 Insertado/actualizado: ENG – ENAGAS (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-28 19:27:50,970 [INFO] 📥 ENG – ENAGAS
+2025-05-28 19:27:50,973 [INFO] 📥 Insertado/actualizado: FDR – FLUIDRA (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-28 19:27:50,974 [INFO] 📥 FDR – FLUIDRA
+2025-05-28 19:27:50,977 [INFO] 📥 Insertado/actualizado: FER – FERROVIAL SE (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-28 19:27:50,977 [INFO] 📥 FER – FERROVIAL SE
+2025-05-28 19:27:50,981 [INFO] 📥 Insertado/actualizado: GRF – GRIFOLS (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-28 19:27:50,981 [INFO] 📥 GRF – GRIFOLS
+2025-05-28 19:27:50,984 [INFO] 📥 Insertado/actualizado: IAG – INT.AIRL.GRP (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-28 19:27:50,984 [INFO] 📥 IAG – INT.AIRL.GRP
+2025-05-28 19:27:50,987 [INFO] 📥 Insertado/actualizado: IBE – IBERDROLA (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-28 19:27:50,988 [INFO] 📥 IBE – IBERDROLA
+2025-05-28 19:27:50,991 [INFO] 📥 Insertado/actualizado: IDR – INDRA A (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-28 19:27:50,992 [INFO] 📥 IDR – INDRA A
+2025-05-28 19:27:50,995 [INFO] 📥 Insertado/actualizado: ITX – INDITEX (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-28 19:27:50,995 [INFO] 📥 ITX – INDITEX
+2025-05-28 19:27:50,999 [INFO] 📥 Insertado/actualizado: LOG – LOGISTA (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-28 19:27:50,999 [INFO] 📥 LOG – LOGISTA
+2025-05-28 19:27:51,003 [INFO] 📥 Insertado/actualizado: MAP – MAPFRE (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-28 19:27:51,003 [INFO] 📥 MAP – MAPFRE
+2025-05-28 19:27:51,007 [INFO] 📥 Insertado/actualizado: MRL – MERLIN PROP. (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-28 19:27:51,007 [INFO] 📥 MRL – MERLIN PROP.
+2025-05-28 19:27:51,011 [INFO] 📥 Insertado/actualizado: MTS – ARCEL.MITTAL (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-28 19:27:51,011 [INFO] 📥 MTS – ARCEL.MITTAL
+2025-05-28 19:27:51,014 [INFO] 📥 Insertado/actualizado: NTGY – NATURGY (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-28 19:27:51,015 [INFO] 📥 NTGY – NATURGY
+2025-05-28 19:27:51,018 [INFO] 📥 Insertado/actualizado: PUIG – PUIG BRANDS (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-28 19:27:51,018 [INFO] 📥 PUIG – PUIG BRANDS
+2025-05-28 19:27:51,022 [INFO] 📥 Insertado/actualizado: RED – REDEIA CORPO (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-28 19:27:51,022 [INFO] 📥 RED – REDEIA CORPO
+2025-05-28 19:27:51,025 [INFO] 📥 Insertado/actualizado: REP – REPSOL (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-28 19:27:51,025 [INFO] 📥 REP – REPSOL
+2025-05-28 19:27:51,029 [INFO] 📥 Insertado/actualizado: ROVI – LABORAT.ROVI (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-28 19:27:51,029 [INFO] 📥 ROVI – LABORAT.ROVI
+2025-05-28 19:27:51,033 [INFO] 📥 Insertado/actualizado: SAB – B. SABADELL (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-28 19:27:51,033 [INFO] 📥 SAB – B. SABADELL
+2025-05-28 19:27:51,037 [INFO] 📥 Insertado/actualizado: SAN – SANTANDER (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-28 19:27:51,037 [INFO] 📥 SAN – SANTANDER
+2025-05-28 19:27:51,041 [INFO] 📥 Insertado/actualizado: SCYR – SACYR (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-28 19:27:51,041 [INFO] 📥 SCYR – SACYR
+2025-05-28 19:27:51,044 [INFO] 📥 Insertado/actualizado: SLR – SOLARIA (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-28 19:27:51,044 [INFO] 📥 SLR – SOLARIA
+2025-05-28 19:27:51,047 [INFO] 📥 Insertado/actualizado: TEF – TELEFONICA (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-28 19:27:51,048 [INFO] 📥 TEF – TELEFONICA
+2025-05-28 19:27:51,051 [INFO] 📥 Insertado/actualizado: UNI – UNICAJA (PDF: Aviso_Gestor_Indices_02-25.pdf)
+2025-05-28 19:27:51,052 [INFO] 📥 UNI – UNICAJA
+2025-05-28 19:27:51,052 [INFO] 🗑️ PDF temporal eliminado.
+2025-05-28 19:27:51,052 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
+2025-05-28 19:27:51,052 [INFO] ✅ Scraping de PDFs de IBEX 35 completado.
+2025-05-28 19:27:51,052 [INFO] Iniciando scraping de deuda pública (AIAF SEND)
+2025-05-28 19:27:51,052 [INFO] ====== WebDriver manager ======
+2025-05-28 19:27:51,806 [INFO] Get LATEST chromedriver version for google-chrome
+2025-05-28 19:27:55,940 [INFO] Get LATEST chromedriver version for google-chrome
+2025-05-28 19:27:55,986 [INFO] Driver [C:\Users\yo_xa\.wdm\drivers\chromedriver\win64\136.0.7103.113\chromedriver-win32/chromedriver.exe] found in cache
+2025-05-28 19:28:04,697 [INFO] 📥 450 registros de deuda pública insertados correctamente.
+2025-05-28 19:28:04,697 [INFO] Se han insertado 450 registros de deuda pública.
+2025-05-28 19:28:04,697 [INFO] ✅ Scraping de deuda pública completado.
+2025-05-28 19:28:04,698 [INFO] === FIN DEL PROCESO DE SCRAPING ===

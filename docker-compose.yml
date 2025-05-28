@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  bolsa_scraper:
+    build: .
+    container_name: bolsa_scraper
+    environment:
+      - TZ=Europe/Madrid
+    volumes:
+      - .:/app
+    restart: unless-stopped

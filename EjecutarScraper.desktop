@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Ejecutar Scraper Bolsa
+Comment=Ejecuta manualmente el scraper en cualquier momento
+Exec=gnome-terminal -- bash -c "cd \"$(dirname %k)\" && docker start bolsa_scraper"
+Icon=utilities-terminal
+Terminal=false
