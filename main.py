@@ -4,6 +4,7 @@ from scraper.ibex_pdf_scraper import IbexPDFScraper
 from scraper.deuda_publica import ejecutar_scraper_deuda_publica
 from utils.log_utils import log_info, log_error
 
+
 import datetime
 import traceback
 
@@ -42,7 +43,7 @@ def main():
 
     log_info("=== FIN DEL PROCESO DE SCRAPING ===")
 
-    # ✅ Notificación visual clara del estado final
+    # Notificación del estado final
     print("\n===========================================")
     print("🏁 TODOS LOS SCRAPINGS HAN FINALIZADO.")
     print("📄 Consulta el archivo 'log.txt' para más detalles.")

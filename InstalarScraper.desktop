@@ -1,8 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Type=Application
-Name=Instalar Scraper Bolsa
-Comment=Instala el scraper y programa la ejecución diaria a las 20:00
-Exec=gnome-terminal -- bash -c "cd \"$(dirname %k)\" && chmod +x run.sh && ./run.sh && (crontab -l 2>/dev/null; echo '0 20 * * * cd \"$(dirname %k)\" && docker start bolsa_scraper') | crontab -"
-Icon=utilities-terminal
-Terminal=false

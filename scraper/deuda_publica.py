@@ -13,7 +13,7 @@ def parse_int(text):
     devolviendo sólo la parte entera.
     """
     txt = text.strip()
-    # quitamos todo lo que no sea dígito o coma/punto
+    # quitamos lo que no sea dígito o coma/punto
     txt = re.sub(r"[^\d.,]", "", txt)
     # si hay coma, la parte entera es antes de ella:
     if "," in txt:

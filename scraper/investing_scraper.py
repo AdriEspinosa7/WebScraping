@@ -1,6 +1,7 @@
 import time
 import os
 import csv
+import re
 from datetime import datetime
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
@@ -9,6 +10,10 @@ from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
 from database.db_manager import guardar_datos
 from utils.log_utils import log_info, log_error
+from selenium.common.exceptions import TimeoutException
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from bs4 import BeautifulSoup
 
 
 class InvestingScraper:
@@ -68,25 +73,87 @@ class InvestingScraper:
             log_error(f"❌ Error al leer indices.csv: {e}")
             raise
 
+
+    def parsear_numero(self, texto):
+        """
+        Convierte textos numéricos en float, manejando formatos latino y anglosajón.
+        """
+        try:
+            texto = texto.strip()
+
+            # Patrón típico latino: 14.196,78 o 92.290.819
+            if re.match(r"^\d{1,3}(\.\d{3})+,\d{2}$", texto) or re.match(r"^\d{1,3}(\.\d{3})+$", texto):
+                texto_limpio = texto.replace('.', '').replace(',', '.')
+                return float(texto_limpio)
+
+            # Patrón típico anglosajón: 2,149,190.33 o 92,290,819
+            if re.match(r"^\d{1,3}(,\d{3})+(\.\d+)?$", texto):
+                texto_limpio = texto.replace(',', '')
+                return float(texto_limpio)
+
+            # Solo coma decimal: 123,45
+            if re.match(r"^\d+,\d+$", texto):
+                return float(texto.replace(',', '.'))
+
+            # Solo punto decimal: 123.45
+            return float(texto)
+        except ValueError:
+            log_error(f"❌ Error al convertir número: {texto}")
+            raise
+
     def obtener_datos(self, url, reintentos=3):
         for intento in range(reintentos):
             try:
                 self.driver.get(url)
                 time.sleep(5)
 
-                nombre = self.driver.find_element(By.CSS_SELECTOR, "h1").text.strip()
-                precio = self.driver.find_element(By.CSS_SELECTOR, "span[data-test='instrument-price-last']").text.strip()
-                variacion = self.driver.find_element(By.CSS_SELECTOR, "span[data-test='instrument-price-change']").text.strip()
-                porcentaje = self.driver.find_element(By.CSS_SELECTOR, "span[data-test='instrument-price-change-percent']").text.strip()
+                # Verificar el título del documento con BeautifulSoup
+                soup = BeautifulSoup(self.driver.page_source, 'html.parser')
+                titulo = soup.title.string.strip().lower() if soup.title and soup.title.string else ""
 
-                precio = float(precio.replace(".", "").replace(",", "."))
+                # Detectar errores reales según el título
+                if any(e in titulo for e in ["404", "not found", "error", "access denied"]):
+                    log_error(f"❌ Página con error detectado en el título: '{titulo}' -> {url}")
+                    return None, None, None, None
+
+                # Esperar a que aparezca el nombre del índice
+                try:
+                    nombre_element = WebDriverWait(self.driver, 5).until(
+                        EC.presence_of_element_located((By.CSS_SELECTOR, "h1"))
+                    )
+                    nombre = nombre_element.text.strip()
+                except TimeoutException:
+                    log_error(f"❌ No se encontró el título <h1> en {url}.")
+                    return None, None, None, None
+
+                # Esperar a que aparezca el precio actual
+                try:
+                    price_element = WebDriverWait(self.driver, 10).until(
+                        EC.presence_of_element_located((By.CSS_SELECTOR, "span[data-test='instrument-price-last']"))
+                    )
+                    precio_bruto = price_element.text.strip()
+                except TimeoutException:
+                    log_error(f"❌ No se encontró el precio para {nombre}.")
+                    return None, None, None, None
+
+                # Obtener variación y porcentaje
+                variacion_bruta = self.driver.find_element(By.CSS_SELECTOR,
+                                                           "span[data-test='instrument-price-change']").text.strip()
+                porcentaje_bruto = self.driver.find_element(By.CSS_SELECTOR,
+                                                            "span[data-test='instrument-price-change-percent']").text.strip()
+
+                precio = self.parsear_numero(precio_bruto)
+                variacion = variacion_bruta.strip()
+                porcentaje = porcentaje_bruto.strip()
 
                 return nombre, precio, variacion, porcentaje
+
             except Exception as e:
                 print(f"Error en intento {intento + 1}: {e}")
                 time.sleep(2)
 
         return None, None, None, None
+
 
     def ejecutar(self):
         guardados = 0
@@ -132,6 +199,4 @@ def ejecutar_scraping_indices():
         scraper.ejecutar()
     except Exception as e:
         log_error(f"❌ Error al ejecutar el scraping de índices: {e}")
-
-
 

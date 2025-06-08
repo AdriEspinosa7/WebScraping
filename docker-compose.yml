@@ -2,10 +2,10 @@ version: "3.9"
 
 services:
   bolsa_scraper:
-    build: .
+    image: scraper-bolsa
     container_name: bolsa_scraper
+    restart: unless-stopped
     environment:
       - TZ=Europe/Madrid
     volumes:
-      - .:/app
-    restart: unless-stopped
+      - ./log.txt:/app/log.txt

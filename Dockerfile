@@ -1,28 +1,36 @@
+# Usa Python 3.11 slim como base
 FROM python:3.11-slim
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-# Instalación de dependencias
+# 1. Instalamos dependencias del sistema
 RUN apt-get update && \
-    apt-get install -y tesseract-ocr poppler-utils cron unzip && \
-    apt-get clean && \
+    apt-get install -y \
+        tesseract-ocr \
+        poppler-utils \
+        cron \
+        unzip \
+        chromium \
+        chromium-driver \
+    && apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-# Establece el directorio de trabajo
+# 2. Creamos un enlace “google-chrome” que apunte a Chromium,
+#    de modo que ChromeDriver lo encuentre automáticamente.
+RUN ln -s /usr/bin/chromium /usr/bin/google-chrome
+
+# 3. Directorio de trabajo
 WORKDIR /app
 
-# Copia todos los archivos al contenedor
+# 4. Copiamos todo el código al contenedor
 COPY . .
 
-# Instala las dependencias de Python
-RUN pip install --no-cache-dir -r requirements_check.py || true
-RUN python requirements_check.py
+# 5. Instalamos las dependencias Python desde requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
-# Crea una tarea cron para ejecutar main.py todos los días a las 20:00
+# 6. Programamos cron para ejecutar main.py cada día a las 20:00
 RUN echo "0 20 * * * cd /app && /usr/local/bin/python main.py >> /app/log.txt 2>&1" > /etc/cron.d/bolsa-cron
-
-# Da permisos correctos
 RUN chmod 0644 /etc/cron.d/bolsa-cron && crontab /etc/cron.d/bolsa-cron
 
-# Comando por defecto: lanza cron en primer plano
+# 7. Por defecto arrancamos cron en primer plano
 CMD ["cron", "-f"]

@@ -46,7 +46,7 @@ class BmeScraper:
             log_info(f"📄 Accediendo a la web de {empresa}: {url}")
             self.driver.get(url)
 
-            tablas = WebDriverWait(self.driver, 10).until(
+            tablas = WebDriverWait(self.driver, 15).until(
                 EC.presence_of_all_elements_located((By.XPATH, '//div[@class="table-responsive"]/table'))
             )
 
